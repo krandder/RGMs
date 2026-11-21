@@ -1,0 +1,102 @@
+[
+  {
+    "seed": 11,
+    "readouts": {
+      "w2-d2-s1": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 124
+      },
+      "w3-d2-s1": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 124
+      },
+      "flat-lag2": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 9
+      }
+    }
+  },
+  {
+    "seed": 12,
+    "readouts": {
+      "w2-d2-s1": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 126
+      },
+      "w3-d2-s1": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 126
+      },
+      "flat-lag2": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 9
+      }
+    }
+  },
+  {
+    "seed": 13,
+    "readouts": {
+      "w2-d2-s1": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 116
+      },
+      "w3-d2-s1": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 116
+      },
+      "flat-lag2": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 9
+      }
+    }
+  },
+  {
+    "seed": 14,
+    "readouts": {
+      "w2-d2-s1": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 115
+      },
+      "w3-d2-s1": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 115
+      },
+      "flat-lag2": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 9
+      }
+    }
+  },
+  {
+    "seed": 15,
+    "readouts": {
+      "w2-d2-s1": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 124
+      },
+      "w3-d2-s1": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 124
+      },
+      "flat-lag2": {
+        "total_scored_contexts": 2046,
+        "with_unique_previous_rain": 2046,
+        "observed_evidence_context_action_rows": 9
+      }
+    }
+  }
+]

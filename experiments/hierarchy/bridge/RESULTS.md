@@ -15,6 +15,8 @@ Means over the five fixed seeds per world. Loss is held-out negative natural-log
 
 **What was inferred.** The posterior weights seven readouts of upstream FSL dictionaries fitted on independent data. Only four distinct feature partitions were observed on the evidence stream for each seed. In the Markov world the flat readout received essentially all the posterior mass. In the lag-two world almost all mass went to the two equivalent-on-training-data depth-two, stride-one configurations. This does not identify a unique grouping, a true RGM depth, or the posterior of the full RGM. It is evidence about prediction conditional on dictionaries and the included candidates.
 
+**What the readout retained.** In a [post hoc check](context_check.json), each observed stride-one, two-level context distinguished yesterday’s rain at all 2,046 scored positions per seed. Its 384-transition evidence stream split into 115–126 context/action rows, versus nine for the plain memory model. Here the fitted readout retains the useful history but divides data among finer contexts; its worse score is not evidence that it forgot the previous observation.
+
 **Cost and decision ties.** Evaluating and normalizing all seven evidences took less than a millisecond at the median in each world, after dictionaries and counts were available. The sampled local-flow learner took about .11–.17 s at the medians, visited each candidate, and gave a maximum empirical total-variation distance of .0060 among the ten cases (8,192 draws per case). With so few candidates enumeration is preferable. The apparent return difference between approximate and exact inference is sensitive to ties: in lag-two weather their respective means were .7709 and .7661 under a strict comparison, .7709 and .7704 for a 1e-12 tie tolerance, and .7709 for both at 1e-5. The tolerance analysis was added after seeing the initial result. There is no evidence here that approximate sampling improves control.
 
 **Reproduce.** From the fork root with upstream requirements installed, set `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1` and run:
@@ -22,6 +24,7 @@ Means over the five fixed seeds per world. Loss is held-out negative natural-log
 ```sh
 python3 -m experiments.hierarchy.bridge.experiment --output /tmp/bridge-results.json
 python3 -m experiments.hierarchy.bridge.summarize --results /tmp/bridge-results.json --repeat
+python3 -m experiments.hierarchy.bridge.context_check --out /tmp/bridge-context.json
 python3 -m pytest -q experiments/hierarchy/bridge/test_bridge.py
 ```
 

@@ -27,7 +27,7 @@ def fitted_libraries(h):
     return ([get(s,c) for s,c in enumerate(h.contexts)],
             [get(s,rot[c]) for s,c in enumerate(h.contexts)])
 
-def search(successor,r,terminal,horizon,library,uniforms,k):
+def search(successor,r,terminal,horizon,library,uniforms,k,*,prefer_last=False):
     n,actions=r.shape; table=np.zeros((horizon+1,n),dtype=int)
     values=np.zeros((horizon+1,n)); nstrings=steps=0
     for rem in range(1,horizon+1):
@@ -51,10 +51,11 @@ def search(successor,r,terminal,horizon,library,uniforms,k):
                     best=max(best,total)
                 firstvalues.append(best)
             values[rem,s]=max(firstvalues)
-            table[rem,s]=next(a for a,v in enumerate(firstvalues) if v>=values[rem,s]-1e-12)
+            order=reversed(range(actions)) if prefer_last else range(actions)
+            table[rem,s]=next(a for a in order if firstvalues[a]>=values[rem,s]-1e-12)
     return table,values,nstrings,steps
 
-def run(seed):
+def run(seed,*,prefer_last=False):
     w=corridor(); n,A=len(w.states),w.action_count; H=w.horizon; log=generate_log(w,seed)
     before=time.perf_counter(); p,r,done,*_=empirical_model(log,n,A); e_time=time.perf_counter()-before
     assert np.all((p==0)|(p==1))
@@ -66,7 +67,7 @@ def run(seed):
     libraries={'fsl':f,'rotated-fsl':swap,'pooled':pool,'raw-state':raw,'primitive':[[] for _ in range(n)]}
     for name,library in libraries.items():
         for k in (2,8):
-            before=time.perf_counter(); tab,scored,strings,steps=search(p.argmax(2),r,done,H,library,u,k); elapsed=time.perf_counter()-before
+            before=time.perf_counter(); tab,scored,strings,steps=search(p.argmax(2),r,done,H,library,u,k,prefer_last=prefer_last); elapsed=time.perf_counter()-before
             assert np.all(scored<=model_value+1e-9)
             rows.append(dict(library=name,k=k,n_candidates=strings,primitive_model_steps=steps,planning_seconds=elapsed,
                         exact_return=exact_evaluate(w,tab),root_predicted_best=float(w.initial@scored[-1]),

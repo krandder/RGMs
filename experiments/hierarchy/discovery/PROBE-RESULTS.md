@@ -24,8 +24,10 @@ across policies and budgets. In this small family, probe selection gains
 in acquisition value and posterior concentration coincide at the larger
 training budget. The 200-update concentration comparison is less clear.
 
+A post hoc [seed sensitivity](../acquisition_check/seed_check.json) kept the four truths together within each of the five seeds. Across all 32 sign assignments, the two-sided sign-flip values at 1,000 updates were .250 against random and .125 against reward; at 200 updates they were .625 and .500. This check assumes sign symmetry and the policy labels were not randomized. The measured positive mean should not be read as strong evidence beyond these worlds. The design and primary metric were committed before the study; the bootstrap specification was committed separately after the first saved cell.
+
 The average hides heterogeneity. At 1,000 updates, the information-policy area
-by truth is 0.3424, 0.3126, 0.3222, and 0.3218. Reward-only is 0.4716, 0.2374,
+by truth is 0.3424, 0.3126, 0.3222, and 0.3218. The shallow truth starts with .555 probability; at the final round its mean fell to .205 with information, .235 with random and .445 with reward. Reward-only is 0.4716, 0.2374,
 0.1845, and 0.2187, respectively; reward wins on truth 0. This is a fixed set
 of synthetic worlds with five seeds. Bootstrap intervals describe seed
 variation in this set, retaining all four truths per resampled seed; they do

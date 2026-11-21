@@ -1,0 +1,14 @@
+{
+  "intervention_cases": 27,
+  "null_cases": 12,
+  "rounds": 624,
+  "candidates": 26,
+  "max_abs_error": {
+    "truth_mass": 2.1094237467877974e-15,
+    "node_presence": 2.9976021664879227e-15,
+    "joint_flag": 3.3306690738754696e-15,
+    "conditional_flag": 2.886579864025407e-15,
+    "brier": 4.996003610813204e-16,
+    "max_false_control": 2.220446049250313e-15
+  }
+}

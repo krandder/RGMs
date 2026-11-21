@@ -1,0 +1,7 @@
+{
+  "result_sha256": "ec38ba3f1fbf9afca91d842bf33cb83d946e4a48391e120392ac29702797ebf8",
+  "check": "Brier scores, true-control inclusion, false-control maxima and conditional flags independently recomputed from saved marginals and recursive true-tree leaf sets",
+  "prefix_readouts_checked": 27,
+  "maximum_error": 0.0,
+  "passed": true
+}

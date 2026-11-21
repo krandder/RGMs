@@ -1,0 +1,5348 @@
+{
+  "role": "Post hoc oracle diagnostic; no trained-study action uses this information.",
+  "tie_tolerance": 1e-12,
+  "mean": {
+    "information": {
+      "truth_mass": 0.306617869205109,
+      "information": 0.03525844782590955,
+      "information_regret": 2.55351295663786e-17,
+      "reward_regret": 0.22780687437907582,
+      "mean_truth_mass_by_tree": [
+        0.3631902934171588,
+        0.2981789370783465,
+        0.24314987700007254,
+        0.32195236932485793
+      ]
+    },
+    "reward": {
+      "truth_mass": 0.27806473522405784,
+      "information": 0.009755312693421782,
+      "information_regret": 0.035111593687623045,
+      "reward_regret": 0.0,
+      "mean_truth_mass_by_tree": [
+        0.4715939135797814,
+        0.23741757244418193,
+        0.18450686411950795,
+        0.21874059075275995
+      ]
+    },
+    "random": {
+      "truth_mass": 0.27921033916803645,
+      "information": 0.028387692176713775,
+      "information_regret": 0.028107613696555334,
+      "reward_regret": 0.16683049039166847,
+      "mean_truth_mass_by_tree": [
+        0.3842674922049623,
+        0.2747317935403789,
+        0.19004106810151758,
+        0.26780100282528685
+      ]
+    }
+  },
+  "paired_worlds": [
+    {
+      "truth": 0,
+      "seed": 11,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5164563840504321,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.4537661736497971,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.29317353713835426
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.356421447986362,
+          "information": 0.05967199304695914,
+          "information_regret": 0.0,
+          "reward_regret": 0.3296590996760712
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3070230805780628,
+          "information": 0.03232625278988821,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.2585062960570912,
+          "information": 0.041334563083227804,
+          "information_regret": 4.440892098500626e-16,
+          "reward_regret": 0.5569862975565951
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.2126289414752273,
+          "information": 0.050503091065749794,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.5748248305374786
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.17064190985337144,
+          "information": 0.060229828907737204,
+          "information_regret": 0.0,
+          "reward_regret": 0.5922957703740064
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14636423703478404,
+          "information": 0.036066932794434514,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.12434831971825282,
+          "information": 0.040004152006205995,
+          "information_regret": 0.0,
+          "reward_regret": 0.6969197374420226
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 11,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5255320144273413,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.49921411281861994,
+          "information": 0.007249586167556998,
+          "information_regret": 0.025547979209557203,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.47682768393738023,
+          "information": 0.00721621261525085,
+          "information_regret": 0.03773848849410344,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.45767236312045356,
+          "information": 0.006805797768117516,
+          "information_regret": 0.047617499990976864,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.441061271650101,
+          "information": 0.006323148512087595,
+          "information_regret": 0.055737607432757574,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4264672475069723,
+          "information": 0.005857245883880369,
+          "information_regret": 0.0625369456326017,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.41349785727547156,
+          "information": 0.005432871330314004,
+          "information_regret": 0.06832824953906624,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4018587934036707,
+          "information": 0.005053953266274336,
+          "information_regret": 0.07333394802894144,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3913257313725789,
+          "information": 0.004717607641525623,
+          "information_regret": 0.07771499290671224,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 11,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 2,
+          "y": 0,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5992453110657315,
+          "information": 0.02832941651476717,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.231449134796134
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5874736696782816,
+          "information": 0.013602965464769357,
+          "information_regret": 0.03872738617590232,
+          "reward_regret": 0.3299937109255478
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5706585498610746,
+          "information": 0.010693958937268988,
+          "information_regret": 0.06488447085104188,
+          "reward_regret": 0.3799110277419252
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.460757319021688,
+          "information": 0.07040141837580194,
+          "information_regret": 0.023408808772179768,
+          "reward_regret": 0.20110277928973352
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.44615047118101114,
+          "information": 0.026315862360143605,
+          "information_regret": 0.09312764575666366,
+          "reward_regret": 0.043332001150042876
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.4109026620705744,
+          "information": 0.019595773459111232,
+          "information_regret": 0.07497216755341163,
+          "reward_regret": 0.2050704179921391
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3476808260110838,
+          "information": 0.05324321477519289,
+          "information_regret": 0.04778614253270863,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.31881769715474456,
+          "information": 0.01922437028871915,
+          "information_regret": 0.1006626492556375,
+          "reward_regret": 0.4116352887927217
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.29571621071203397,
+          "information": 0.014953939856440002,
+          "information_regret": 0.11603505554424642,
+          "reward_regret": 0.4727384167339008
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 23,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5164563840504321,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "truth_mass": 0.5164563840504321,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.29317353713835426
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.4992141128186197,
+          "information": 0.07117165293005012,
+          "information_regret": 0.0,
+          "reward_regret": 0.27590412228301253
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.46433430294152217,
+          "information": 0.03469686465224808,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.4230735893224798,
+          "information": 0.0495795345612815,
+          "information_regret": 0.0,
+          "reward_regret": 0.49205504161735886
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.34017288739355767,
+          "information": 0.047350718525590585,
+          "information_regret": 0.0,
+          "reward_regret": 0.5395672244919498
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.28202124289559516,
+          "information": 0.04934164781242667,
+          "information_regret": 0.0,
+          "reward_regret": 0.5683045187677402
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "truth_mass": 0.28575148832151887,
+          "information": 0.03740251029266184,
+          "information_regret": 0.0,
+          "reward_regret": 0.6022575805572941
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.25758652730236636,
+          "information": 0.041960388730237996,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 23,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5255320144273413,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.49921411281861994,
+          "information": 0.007249586167556998,
+          "information_regret": 0.025547979209557203,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.47682768393738023,
+          "information": 0.00721621261525085,
+          "information_regret": 0.03773848849410344,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.45767236312045356,
+          "information": 0.006805797768117516,
+          "information_regret": 0.047617499990976864,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.441061271650101,
+          "information": 0.006323148512087595,
+          "information_regret": 0.055737607432757574,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4264672475069723,
+          "information": 0.005857245883880369,
+          "information_regret": 0.0625369456326017,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.41349785727547156,
+          "information": 0.005432871330314004,
+          "information_regret": 0.06832824953906624,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4018587934036707,
+          "information": 0.005053953266274336,
+          "information_regret": 0.07333394802894144,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3913257313725789,
+          "information": 0.004717607641525623,
+          "information_regret": 0.07771499290671224,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 23,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.5164563840504321,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.47540642974924885,
+          "information": 0.014753604061213288,
+          "information_regret": 0.016604133323500303,
+          "reward_regret": 0.13801981370858207
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.4436683951044409,
+          "information": 0.012523351885775913,
+          "information_regret": 0.03375894506796007,
+          "reward_regret": 0.1856064541388178
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.37426352016248776,
+          "information": 0.057351477409899765,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.34901221407657235,
+          "information": 0.013337328343218324,
+          "information_regret": 0.08283019500932909,
+          "reward_regret": 0.49073178957643915
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3001617980016071,
+          "information": 0.042963489315304804,
+          "information_regret": 0.06432070784468191,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.25401938493047743,
+          "information": 0.04967585329013513,
+          "information_regret": 0.08439298083647606,
+          "reward_regret": 0.5640319357254927
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.22359739232027145,
+          "information": 0.033246303466007765,
+          "information_regret": 0.13407491350718082,
+          "reward_regret": 0.6131942064147274
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.19524296230776442,
+          "information": 0.03664538379705484,
+          "information_regret": 0.15148102612191905,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 37,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5164563840504321,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.4537661736497971,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.29317353713835426
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.356421447986362,
+          "information": 0.05967199304695914,
+          "information_regret": 0.0,
+          "reward_regret": 0.3296590996760712
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3070230805780628,
+          "information": 0.03232625278988821,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.2585062960570912,
+          "information": 0.041334563083227804,
+          "information_regret": 4.440892098500626e-16,
+          "reward_regret": 0.5569862975565951
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "truth_mass": 0.34017288739355767,
+          "information": 0.050503091065749794,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.5748248305374786
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.28202124289559516,
+          "information": 0.04934164781242667,
+          "information_regret": 0.0,
+          "reward_regret": 0.5683045187677404
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.2358407101771546,
+          "information": 0.03740251029266206,
+          "information_regret": 0.0,
+          "reward_regret": 0.602257580557294
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.20278290886944597,
+          "information": 0.03683657587016165,
+          "information_regret": 0.0,
+          "reward_regret": 0.6222654863716554
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 37,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5255320144273413,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.49921411281861994,
+          "information": 0.007249586167556998,
+          "information_regret": 0.025547979209557203,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.47682768393738023,
+          "information": 0.00721621261525085,
+          "information_regret": 0.03773848849410344,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.45767236312045356,
+          "information": 0.006805797768117516,
+          "information_regret": 0.047617499990976864,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.441061271650101,
+          "information": 0.006323148512087595,
+          "information_regret": 0.055737607432757574,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.5178537326353179,
+          "information": 0.005857245883880369,
+          "information_regret": 0.0625369456326017,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5057875655789541,
+          "information": 0.0031134287885110634,
+          "information_regret": 0.0827489915292916,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.49468806997212056,
+          "information": 0.002965598337325126,
+          "information_regret": 0.08871646005591227,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4844416857127379,
+          "information": 0.002821446765476354,
+          "information_regret": 0.0939802922269517,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 37,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.5164563840504321,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.4537661736497971,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.06907765942136682
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.40740410993321025,
+          "information": 0.02185207159319069,
+          "information_regret": 0.037819921453768446,
+          "reward_regret": 0.17816559485246578
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.37426352016248776,
+          "information": 0.016605413527625235,
+          "information_regret": 0.06458344191158805,
+          "reward_regret": 0.22972599781352734
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.34901221407657235,
+          "information": 0.013337328343218102,
+          "information_regret": 0.08283019500932953,
+          "reward_regret": 0.2600905119214122
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.41214139369238406,
+          "information": 0.10728419715998694,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3361402608885959,
+          "information": 0.043428889706431884,
+          "information_regret": 0.02973330918383299,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.290261062501368,
+          "information": 0.029328988770357833,
+          "information_regret": 0.036421591986105506,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.27463474581989633,
+          "information": 0.014218222118412616,
+          "information_regret": 0.05134969002071066,
+          "reward_regret": 0.5027751176875094
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 53,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5164563840504321,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.4537661736497971,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.29317353713835426
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "truth_mass": 0.4992141128186197,
+          "information": 0.05967199304695914,
+          "information_regret": 0.0,
+          "reward_regret": 0.3296590996760712
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.46433430294152217,
+          "information": 0.03469686465224786,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.39593156923100575
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.4230735893224794,
+          "information": 0.0495795345612815,
+          "information_regret": 0.0,
+          "reward_regret": 0.41314946301278943
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.34017288739355767,
+          "information": 0.04735071852559081,
+          "information_regret": 0.0,
+          "reward_regret": 0.05968204248388154
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.28202124289559466,
+          "information": 0.04934164781242667,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.23584071017715502,
+          "information": 0.03740251029266206,
+          "information_regret": 0.0,
+          "reward_regret": 0.3446426543455805
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.2027829088694456,
+          "information": 0.036836575870161425,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 53,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5255320144273413,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.49921411281861994,
+          "information": 0.007249586167556998,
+          "information_regret": 0.025547979209557203,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.47682768393738023,
+          "information": 0.00721621261525085,
+          "information_regret": 0.03773848849410344,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.45767236312045356,
+          "information": 0.006805797768117516,
+          "information_regret": 0.047617499990976864,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.441061271650101,
+          "information": 0.006323148512087595,
+          "information_regret": 0.055737607432757574,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4264672475069723,
+          "information": 0.005857245883880369,
+          "information_regret": 0.0625369456326017,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.41349785727547156,
+          "information": 0.005432871330314004,
+          "information_regret": 0.06832824953906624,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4018587934036707,
+          "information": 0.005053953266274336,
+          "information_regret": 0.07333394802894144,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3913257313725789,
+          "information": 0.004717607641525623,
+          "information_regret": 0.07771499290671224,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 53,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5164563840504321,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.4537661736497971,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.29317353713835426
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.40740410993321025,
+          "information": 0.02185207159319047,
+          "information_regret": 0.03781992145376867,
+          "reward_regret": 0.40540585208787394
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.3070230805780628,
+          "information": 0.08118885543921328,
+          "information_regret": 0.0,
+          "reward_regret": 0.34834026623953174
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.2585062960570912,
+          "information": 0.041334563083228026,
+          "information_regret": 0.0,
+          "reward_regret": 0.46086033586584246
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.2126289414752273,
+          "information": 0.05050309106574935,
+          "information_regret": 0.0,
+          "reward_regret": 0.48122688630555277
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.18509984739524613,
+          "information": 0.03142332827024652,
+          "information_regret": 0.028806500637490906,
+          "reward_regret": 0.5319274262476457
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.15957795813240938,
+          "information": 0.0354219774974438,
+          "information_regret": 0.03224533090608683,
+          "reward_regret": 0.5444535364061284
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.12434831971825282,
+          "information": 0.07516693754332393,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 71,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5164563840504321,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.4537661736497971,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.29317353713835426
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.356421447986362,
+          "information": 0.05967199304695914,
+          "information_regret": 0.0,
+          "reward_regret": 0.3296590996760712
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3070230805780628,
+          "information": 0.03232625278988821,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.2585062960570912,
+          "information": 0.041334563083227804,
+          "information_regret": 4.440892098500626e-16,
+          "reward_regret": 0.5569862975565951
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.2126289414752273,
+          "information": 0.050503091065749794,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.5748248305374786
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.17064190985337144,
+          "information": 0.060229828907737204,
+          "information_regret": 0.0,
+          "reward_regret": 0.5922957703740064
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.2358407101771546,
+          "information": 0.036066932794434514,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.3724563982183652,
+          "information": 0.03683657587016187,
+          "information_regret": 0.0,
+          "reward_regret": 0.4568287239518628
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 71,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5255320144273413,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.49921411281861994,
+          "information": 0.007249586167556998,
+          "information_regret": 0.025547979209557203,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.47682768393738023,
+          "information": 0.00721621261525085,
+          "information_regret": 0.03773848849410344,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.45767236312045356,
+          "information": 0.006805797768117516,
+          "information_regret": 0.047617499990976864,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.441061271650101,
+          "information": 0.006323148512087595,
+          "information_regret": 0.055737607432757574,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4264672475069723,
+          "information": 0.005857245883880369,
+          "information_regret": 0.0625369456326017,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.41349785727547156,
+          "information": 0.005432871330314004,
+          "information_regret": 0.06832824953906624,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.49468806997212056,
+          "information": 0.005053953266274336,
+          "information_regret": 0.07333394802894144,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.567389156353742,
+          "information": 0.0028214467654765762,
+          "information_regret": 0.0939802922269517,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 0,
+      "seed": 71,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5547792351072148,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.5164563840504321,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.47540642974924885,
+          "information": 0.014753604061213288,
+          "information_regret": 0.01660413332350008,
+          "reward_regret": 0.13801981370858207
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.4436683951044409,
+          "information": 0.012523351885776357,
+          "information_regret": 0.03375894506796007,
+          "reward_regret": 0.1856064541388178
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.37426352016248776,
+          "information": 0.05735147740989999,
+          "information_regret": 0.0,
+          "reward_regret": 0.09272193414925989
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.34901221407657235,
+          "information": 0.013337328343218102,
+          "information_regret": 0.08283019500932953,
+          "reward_regret": 0.2600905119214122
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.30016179800160736,
+          "information": 0.042963489315304804,
+          "information_regret": 0.06432070784468213,
+          "reward_regret": 0.2189557887340475
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.25401938493047743,
+          "information": 0.049675853290134686,
+          "information_regret": 0.08439298083647628,
+          "reward_regret": 0.23908163907219146
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.23576717398277364,
+          "information": 0.015137963301442348,
+          "information_regret": 0.15218325367174623,
+          "reward_regret": 0.3217293539371849
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.28260096143000624,
+          "information": 0.1774418321275757,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 11,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.16030187557370745,
+          "information": 0.02832941651476717,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "truth_mass": 0.23118785179731946,
+          "information": 0.0523303516406719,
+          "information_regret": 0.0,
+          "reward_regret": 0.040075468893426835
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "truth_mass": 0.1466783172031479,
+          "information": 0.05440172668465393,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.11716967576416339,
+          "information": 0.03169605472956427,
+          "information_regret": 0.0,
+          "reward_regret": 0.0152789913753279
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "truth_mass": 0.06575420955916202,
+          "information": 0.0338737114210268,
+          "information_regret": 0.0,
+          "reward_regret": 0.030919775548876427
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.03648691614158263,
+          "information": 0.017654659311356125,
+          "information_regret": 0.0,
+          "reward_regret": 0.18276225183810374
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.03531609032754245,
+          "information": 0.022797492194686297,
+          "information_regret": 0.0,
+          "reward_regret": 0.19519973273144434
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.04917239231322862,
+          "information": 0.01490421981257406,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.03415448492628996,
+          "information": 0.014893509952235984,
+          "information_regret": 0.0,
+          "reward_regret": 0.15872627968681252
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 11,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.016657802709577174,
+          "information_regret": 0.011671613805190217,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.03902393331105314,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.30047153230882795,
+          "information": 0.0711716529300499,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.36641465108016347,
+          "information": 0.02765193143759559,
+          "information_regret": 0.0070449332146524934,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "truth_mass": 0.4618797835721259,
+          "information": 0.03584252813507116,
+          "information_regret": 0.011869785882040906,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.25558035204022717,
+          "information": 0.02184401039821693,
+          "information_regret": 0.014517540394078265,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.29494622672612875,
+          "information": 0.011681568730109282,
+          "information_regret": 0.026364148499907314,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.3255176120479611,
+          "information": 0.008793525261768576,
+          "information_regret": 0.031040508488503593,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.35017031324542697,
+          "information": 0.0069352707822554205,
+          "information_regret": 0.034627371898257375,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 11,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.13815531884273366,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.18207794211673425,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.06907765942136682
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "truth_mass": 0.25039294359069014,
+          "information": 0.02185207159319069,
+          "information_regret": 0.037819921453768446,
+          "reward_regret": 0.17816559485246578
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.29126389601657343,
+          "information": 0.030967309323787884,
+          "information_regret": 0.01699503581471462,
+          "reward_regret": 0.16366773606867976
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "truth_mass": 0.15469737387064433,
+          "information": 0.021747361241513552,
+          "information_regret": 0.04011622235559886,
+          "reward_regret": 0.2089117414714415
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.14920186512965433,
+          "information": 0.008998250646794492,
+          "information_regret": 0.05424700065650567,
+          "reward_regret": 0.16689720542329942
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.18129610057784837,
+          "information": 0.07086150867839835,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.2147401146785853,
+          "information": 0.019602586537387445,
+          "information_regret": 0.02115299918771707,
+          "reward_regret": 0.2933279232042117
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.24837371124882188,
+          "information": 0.02695408685983125,
+          "information_regret": 0.020656507711553918,
+          "reward_regret": 0.4232320319105032
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 23,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.18207794211673425,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.29317353713835426
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "truth_mass": 0.30047153230882795,
+          "information": 0.05967199304695914,
+          "information_regret": 0.0,
+          "reward_regret": 0.3296590996760712
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3493471937337898,
+          "information": 0.03469686465224786,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.41777429738716987,
+          "information": 0.0495795345612815,
+          "information_regret": 0.0,
+          "reward_regret": 0.4920550416173588
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.41988998074955414,
+          "information": 0.04735071852559036,
+          "information_regret": 0.0,
+          "reward_regret": 0.5395672244919498
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.4568955727028031,
+          "information": 0.04934164781242667,
+          "information_regret": 0.0,
+          "reward_regret": 0.5683045187677404
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.45849557389370715,
+          "information": 0.03740251029266228,
+          "information_regret": 0.0,
+          "reward_regret": 0.6022575805572936
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.481834505628357,
+          "information": 0.03683657587016165,
+          "information_regret": 0.0,
+          "reward_regret": 0.6222654863716551
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 23,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.17679699870930782,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.19265654316443284,
+          "information": 0.002988663224585908,
+          "information_regret": 0.032937596249167145,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.13012472403930544,
+          "information": 0.003327242970674993,
+          "information_regret": 0.04714920078522766,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.13487589142613263,
+          "information": 0.0005881259955355933,
+          "information_regret": 0.013468254631339605,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.13940371242814875,
+          "information": 0.000762922542183686,
+          "information_regret": 0.01871078627539946,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14365788416611644,
+          "information": 0.0008747593558375844,
+          "information_regret": 0.023810216404403617,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14763525000020772,
+          "information": 0.0009365629981832324,
+          "information_regret": 0.028601437614618197,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.1264806895541223,
+          "information": 0.0009657472723050287,
+          "information_regret": 0.03304788757510546,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.12881869937460647,
+          "information": 0.0006404541894589055,
+          "information_regret": 0.03892359429605019,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 23,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.23845162284125043,
+          "information": 0.014753604061213288,
+          "information_regret": 0.02427032924983985,
+          "reward_regret": 0.10348098399789865
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.3120376813353655,
+          "information": 0.024338907457481795,
+          "information_regret": 0.028462745160970027,
+          "reward_regret": 0.11711397990251049
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.29126389601657343,
+          "information": 0.027772626197584138,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.3604136960086133,
+          "information": 0.06186358359711264,
+          "information_regret": 0.0,
+          "reward_regret": 0.2921292421023974
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.4006631856294397,
+          "information": 0.0373875289538792,
+          "information_regret": 0.0,
+          "reward_regret": 0.4048439873032963
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4568955727028031,
+          "information": 0.05108245552162449,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.47943050379660007,
+          "information": 0.030539629783999045,
+          "information_regret": 0.006862880508663016,
+          "reward_regret": 0.608784660167334
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5149656560434049,
+          "information": 0.036976586854666316,
+          "information_regret": 0.007273544359901241,
+          "reward_regret": 0.5795245835662616
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 37,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.18207794211673425,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.29317353713835426
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.21452618400454604,
+          "information": 0.05967199304695914,
+          "information_regret": 0.0,
+          "reward_regret": 0.3296590996760712
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.23099230647397898,
+          "information": 0.03232625278988821,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.2552683243082142,
+          "information": 0.041334563083227804,
+          "information_regret": 4.440892098500626e-16,
+          "reward_regret": 0.5569862975565951
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.26245701950825756,
+          "information": 0.050503091065749794,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.5748248305374786
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.27645269671554273,
+          "information": 0.060229828907737204,
+          "information_regret": 0.0,
+          "reward_regret": 0.5922957703740064
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.2845452543217386,
+          "information": 0.036066932794434514,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.29546529089261364,
+          "information": 0.040004152006205995,
+          "information_regret": 0.0,
+          "reward_regret": 0.6969197374420226
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 37,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.15815599519088616,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.16692862906046005,
+          "information": 0.007249586167556998,
+          "information_regret": 0.025547979209557203,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.1743907720208732,
+          "information": 0.00721621261525085,
+          "information_regret": 0.03773848849410344,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.18077587895984876,
+          "information": 0.006805797768117516,
+          "information_regret": 0.047617499990976864,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.18631290944996642,
+          "information": 0.006323148512087595,
+          "information_regret": 0.055737607432757574,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.19117758416434258,
+          "information": 0.005857245883880369,
+          "information_regret": 0.0625369456326017,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.1955007142415095,
+          "information": 0.005432871330314004,
+          "information_regret": 0.06832824953906624,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.19938040219877648,
+          "information": 0.005053953266274336,
+          "information_regret": 0.07333394802894144,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.20289142287580705,
+          "information": 0.004717607641525623,
+          "information_regret": 0.07771499290671224,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 37,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.13815531884273366,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.14307097370475028,
+          "information": 0.014753604061213288,
+          "information_regret": 0.016604133323500303,
+          "reward_regret": 0.13801981370858207
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.14835509463881588,
+          "information": 0.012523351885775913,
+          "information_regret": 0.03375894506796007,
+          "reward_regret": 0.1856064541388178
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "truth_mass": 0.20869723354349295,
+          "information": 0.03260093008822973,
+          "information_regret": 0.024750547321670036,
+          "reward_regret": 0.16307419670169682
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.31579154269798665,
+          "information": 0.06708415380688426,
+          "information_regret": 0.012287688449898582,
+          "reward_regret": 0.13717400529003707
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "truth_mass": 0.36899899682533815,
+          "information": 0.013933448513496316,
+          "information_regret": 0.0850644809639034,
+          "reward_regret": 0.2683834152958517
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.3907185902635329,
+          "information": 0.01125199978524627,
+          "information_regret": 0.06618108844449266,
+          "reward_regret": 0.29882537736345444
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.4091213660425401,
+          "information": 0.00963474804943143,
+          "information_regret": 0.0718297944261006,
+          "reward_regret": 0.31071970209975047
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5080511545388713,
+          "information": 0.08499729554998003,
+          "information_regret": 0.0,
+          "reward_regret": 0.03785905635865483
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 53,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.16030187557370745,
+          "information": 0.02832941651476717,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "truth_mass": 0.23118785179731946,
+          "information": 0.0523303516406719,
+          "information_regret": 0.0,
+          "reward_regret": 0.040075468893426835
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.30557241066797847,
+          "information": 0.05440172668465393,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.36641465108016347,
+          "information": 0.046290371315497625,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "truth_mass": 0.4389201351305033,
+          "information": 0.06681013556234505,
+          "information_regret": 0.0,
+          "reward_regret": 0.05216319685516217
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4943533246926875,
+          "information": 0.041934601203378885,
+          "information_regret": 0.0,
+          "reward_regret": 0.052548228350110415
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.5707413398190366,
+          "information": 0.055091262292497944,
+          "information_regret": 0.0,
+          "reward_regret": 0.12566497164196944
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "truth_mass": 0.6500193458128269,
+          "information": 0.03767334854970994,
+          "information_regret": 0.0,
+          "reward_regret": 0.21891811109601195
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "truth_mass": 0.6977876089660949,
+          "information": 0.028168295218838346,
+          "information_regret": 0.0,
+          "reward_regret": 0.1850248164982076
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 53,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "truth_mass": 0.08015093778685371,
+          "information": 0.016657802709577174,
+          "information_regret": 0.011671613805190217,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.09545208623827198,
+          "information": 0.06331862523382736,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.1366560756007926,
+          "information": 0.04206444350359273,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.11137003535002728,
+          "information": 0.02376194088829975,
+          "information_regret": 0.00641698983692629,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "truth_mass": 0.20224917122134126,
+          "information": 0.027159054854729803,
+          "information_regret": 0.01814597788582195,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "truth_mass": 0.2663872317993213,
+          "information": 0.01652857188783796,
+          "information_regret": 0.01904343279683296,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.30642283088515254,
+          "information": 0.011660710372565997,
+          "information_regret": 0.023786613745487295,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.3377329479048394,
+          "information": 0.008647200187943849,
+          "information_regret": 0.028658853660343153,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "truth_mass": 0.37146204815149203,
+          "information": 0.006759424371701406,
+          "information_regret": 0.03137638035935053,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 53,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "truth_mass": 0.1178646658062052,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.11115963113913241
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.1178646658062052,
+          "information": 0.006840300207188399,
+          "information_regret": 0.029085959266564654,
+          "reward_regret": 0.014733083225775656
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.1502357661544141,
+          "information": 0.04958230922322682,
+          "information_regret": 0.0,
+          "reward_regret": 0.06629887451599042
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "truth_mass": 0.17991122019148822,
+          "information": 0.016394495827189548,
+          "information_regret": 0.03156784931131296,
+          "reward_regret": 0.14175835350449445
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.20378586301137752,
+          "information": 0.007840756902558477,
+          "information_regret": 0.026732778334686902,
+          "reward_regret": 0.16323113429069125
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.2229313111181207,
+          "information": 0.006908379642853069,
+          "information_regret": 0.03445885589526321,
+          "reward_regret": 0.19483288986250286
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.19468584454921165,
+          "information": 0.0426731918614176,
+          "information_regret": 0.005140951964583529,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.21340600312919,
+          "information": 0.019596382055599992,
+          "information_regret": 0.035079633769960594,
+          "reward_regret": 0.42695485335688277
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.20497098434218472,
+          "information": 0.022499771081208486,
+          "information_regret": 0.04064207158816857,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 71,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "truth_mass": 0.15412523453154633,
+          "information": 0.02832941651476717,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.23118785179731946,
+          "information": 0.05051649513660195,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.30557241066797847,
+          "information": 0.05440172668465415,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.37558941538603496,
+          "information": 0.046290371315497625,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.4387213252026321,
+          "information": 0.04121134310831098,
+          "information_regret": 0.0,
+          "reward_regret": 0.21824472068379813
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "truth_mass": 0.5155512225741664,
+          "information": 0.036182012929792284,
+          "information_regret": 0.0,
+          "reward_regret": 0.2737933405857894
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5686805809827244,
+          "information": 0.039917211063074,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.6287054540161021,
+          "information": 0.03531858132884158,
+          "information_regret": 0.0,
+          "reward_regret": 0.43424404753813794
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.6742208200669464,
+          "information": 0.03380766166866778,
+          "information_regret": 0.0,
+          "reward_regret": 0.4040443624094078
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 71,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.016657802709577174,
+          "information_regret": 0.011671613805190217,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "truth_mass": 0.23118785179731946,
+          "information": 0.03902393331105314,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.30557241066797847,
+          "information": 0.05440172668465415,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.37558941538603496,
+          "information": 0.046290371315497625,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4148174923662466,
+          "information": 0.02448256267619109,
+          "information_regret": 0.016728780432119894,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.4538933394805413,
+          "information": 0.016996787082340648,
+          "information_regret": 0.036327350599838715,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.47760452227208655,
+          "information": 0.013502540575971,
+          "information_regret": 0.04622102083609869,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4967770579884935,
+          "information": 0.010643857558802372,
+          "information_regret": 0.057446669499453984,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5128744523196462,
+          "information": 0.008774245275004477,
+          "information_regret": 0.06637998452459892,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 1,
+      "seed": 71,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "truth_mass": 0.16030187557370745,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.23118785179731946,
+          "information": 0.05233035164067168,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.30557241066797847,
+          "information": 0.05440172668465415,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.37558941538603496,
+          "information": 0.046290371315497625,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.4387213252026321,
+          "information": 0.04121134310831098,
+          "information_regret": 0.0,
+          "reward_regret": 0.21824472068379813
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.48030761459426985,
+          "information": 0.0261761894002972,
+          "information_regret": 0.010005823529495084,
+          "reward_regret": 0.27350292813585514
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.5179525970991891,
+          "information": 0.039022480078733546,
+          "information_regret": 0.003273336902309021,
+          "reward_regret": 0.2829049024642889
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.5716572001203494,
+          "information": 0.045335377093683515,
+          "information_regret": 0.0,
+          "reward_regret": 0.32031660316913
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.6050941245059254,
+          "information": 0.028374612061204063,
+          "information_regret": 0.013335400123449803,
+          "reward_regret": 0.3544257398632544
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 11,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "truth_mass": 0.13815531884273366,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.03902393331105314,
+          "information_regret": 0.0,
+          "reward_regret": 0.23273058514465828
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.10015717743627596,
+          "information": 0.0711716529300499,
+          "information_regret": 0.0,
+          "reward_regret": 0.25863470742767086
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.1164490645779299,
+          "information": 0.03469686465224808,
+          "information_regret": 0.0,
+          "reward_regret": 0.39593156923100575
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.07957605664517527,
+          "information": 0.0495795345612815,
+          "information_regret": 0.0,
+          "reward_regret": 0.41314946301278943
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.05419548153844591,
+          "information": 0.04735071852559081,
+          "information_regret": 0.0,
+          "reward_regret": 0.05968204248388154
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.06725863573356104,
+          "information": 0.036156732018070015,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "truth_mass": 0.15150008670981982,
+          "information": 0.04204071823715294,
+          "information_regret": 0.0,
+          "reward_regret": 0.285497613303824
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.18284806674728296,
+          "information": 0.028699884400134268,
+          "information_regret": 0.0,
+          "reward_regret": 0.34877709694195813
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 11,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.15815599519088616,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.16692862906046005,
+          "information": 0.007249586167556998,
+          "information_regret": 0.025547979209557203,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.20503964853811657,
+          "information": 0.00721621261525085,
+          "information_regret": 0.03773848849410344,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.21538621954054277,
+          "information": 0.0034265724776396667,
+          "information_regret": 0.05852699243761461,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.23384124744332047,
+          "information": 0.00337437011615771,
+          "information_regret": 0.0679437748487155,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.24319908097110557,
+          "information": 0.0029057258714866308,
+          "information_regret": 0.07878509070380924,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.2514705186093966,
+          "information": 0.0027893168312425054,
+          "information_regret": 0.0861097195724374,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.1581008619426519,
+          "information": 0.0026681370579826336,
+          "information_regret": 0.09248763900959434,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.16221613995320774,
+          "information": 0.0006404541894606819,
+          "information_regret": 0.03892359429604997,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 11,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "truth_mass": 0.1178646658062052,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.11115963113913241
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.1178646658062052,
+          "information": 0.006840300207188177,
+          "information_regret": 0.029085959266564876,
+          "reward_regret": 0.11763345838711214
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.1082918304978286,
+          "information": 0.02866301267757998,
+          "information_regret": 0.020919296545646837,
+          "reward_regret": 0.12868327080644393
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.11410538376179348,
+          "information": 0.02130002806119191,
+          "information_regret": 0.05036199163011168,
+          "reward_regret": 0.20382117372925715
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.09779127283390915,
+          "information": 0.033743287748440265,
+          "information_regret": 0.05391585666043297,
+          "reward_regret": 0.20991813033002488
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.10128351288209268,
+          "information": 0.024660807557310704,
+          "information_regret": 0.07608365860216115,
+          "reward_regret": 0.24945671515092277
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.08690301506368407,
+          "information": 0.03169432611010281,
+          "information_regret": 0.0772900762582227,
+          "reward_regret": 0.2554017873537118
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.07601022866571076,
+          "information": 0.02377224503954789,
+          "information_regret": 0.09055775633719287,
+          "reward_regret": 0.2795701674886168
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.07686061201305572,
+          "information": 0.027953520728549508,
+          "information_regret": 0.08951100818985669,
+          "reward_regret": 0.28504873320634205
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 23,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.13815531884273366,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.18207794211673425,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.29317353713835426
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.21452618400454604,
+          "information": 0.05967199304695914,
+          "information_regret": 0.0,
+          "reward_regret": 0.3296590996760712
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.3195757555018126,
+          "information": 0.03232625278988821,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.36041369600861295,
+          "information": 0.038700838206327415,
+          "information_regret": 0.0,
+          "reward_regret": 0.2569354794825673
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.4006631856294397,
+          "information": 0.03738752895387942,
+          "information_regret": 0.0,
+          "reward_regret": 0.3068750145039423
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.4568955727028031,
+          "information": 0.051082455521623826,
+          "information_regret": 0.0,
+          "reward_regret": 0.32590889911625814
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.5555266201943746,
+          "information": 0.03740251029266184,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.6009256802563293,
+          "information": 0.04196038873023822,
+          "information_regret": 0.0,
+          "reward_regret": 0.2709495878728576
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 23,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.15815599519088616,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.16692862906046005,
+          "information": 0.007249586167556998,
+          "information_regret": 0.025547979209557203,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.20503964853811657,
+          "information": 0.00721621261525085,
+          "information_regret": 0.03773848849410344,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.22301056929252705,
+          "information": 0.0034265724776396667,
+          "information_regret": 0.05852699243761461,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.23384124744332047,
+          "information": 0.0030078953163232836,
+          "information_regret": 0.0702343441508515,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.24319908097110557,
+          "information": 0.0029057258714866308,
+          "information_regret": 0.07878509070380924,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.25652288904410114,
+          "information": 0.0027893168312425054,
+          "information_regret": 0.0861097195724374,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.26729638875346207,
+          "information": 0.002583470302777169,
+          "information_regret": 0.09395857850624689,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.2755647416576808,
+          "information": 0.0024406929878184602,
+          "information_regret": 0.10055068746203188,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 23,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.23845162284125043,
+          "information": 0.01475360406121351,
+          "information_regret": 0.01660413332350008,
+          "reward_regret": 0.3793851062809112
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.25962141561792745,
+          "information": 0.012523351885776135,
+          "information_regret": 0.03375894506796007,
+          "reward_regret": 0.43709677678157555
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.2754716225030519,
+          "information": 0.010666478935665635,
+          "information_regret": 0.04668499847423435,
+          "reward_regret": 0.4718594989656763
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "truth_mass": 0.28872766908022784,
+          "information": 0.06585897043203337,
+          "information_regret": 0.0,
+          "reward_regret": 0.33225888727521685
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3386121082646401,
+          "information": 0.04847006621456651,
+          "information_regret": 0.08673890585161614,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.44500007947948517,
+          "information": 0.03218232791264075,
+          "information_regret": 0.11625936321588481,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.500903998339287,
+          "information": 0.023075157295853188,
+          "information_regret": 0.08972595054392918,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.4235215853990646,
+          "information": 0.018952697378674443,
+          "information_regret": 0.08140387655552139,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 37,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.13815531884273366,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.18207794211673425,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.29317353713835426
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.21452618400454604,
+          "information": 0.05967199304695914,
+          "information_regret": 0.0,
+          "reward_regret": 0.3296590996760712
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.23099230647397898,
+          "information": 0.03232625278988821,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.24311268981734707,
+          "information": 0.041334563083227804,
+          "information_regret": 4.440892098500626e-16,
+          "reward_regret": 0.5569862975565951
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.26245701950825756,
+          "information": 0.050503091065749794,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.5748248305374786
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "truth_mass": 0.4568955727028031,
+          "information": 0.060229828907737204,
+          "information_regret": 0.0,
+          "reward_regret": 0.5922957703740064
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.45849557389370715,
+          "information": 0.03740251029266228,
+          "information_regret": 0.0,
+          "reward_regret": 0.6022575805572936
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "truth_mass": 0.6101140753100728,
+          "information": 0.036836575870161425,
+          "information_regret": 0.0,
+          "reward_regret": 0.6222654863716551
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 37,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.15815599519088616,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.19265654316443284,
+          "information": 0.007249586167556998,
+          "information_regret": 0.025547979209557203,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.20503964853811657,
+          "information": 0.003327242970674993,
+          "information_regret": 0.04714920078522766,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.21538621954054277,
+          "information": 0.0034265724776396667,
+          "information_regret": 0.05852699243761461,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.2243045814203064,
+          "information": 0.00337437011615771,
+          "information_regret": 0.0679437748487155,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.2321444991015139,
+          "information": 0.0032561192358169233,
+          "information_regret": 0.07590447844082471,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.23913504891340936,
+          "information": 0.0031134287885112855,
+          "information_regret": 0.08274899152929138,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.151351703418634,
+          "information": 0.002965598337324904,
+          "information_regret": 0.0887164600559125,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.16221613995320774,
+          "information": 0.0009744055184954803,
+          "information_regret": 0.03715967103686468,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 37,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 1,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.13815531884273366,
+          "information": 0.016657802709577174,
+          "information_regret": 0.011671613805189995,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.03902393331105314,
+          "information_regret": 0.0,
+          "reward_regret": 0.23273058514465828
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.10015717743627596,
+          "information": 0.0711716529300499,
+          "information_regret": 0.0,
+          "reward_regret": 0.25863470742767086
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.12783030220072514,
+          "information": 0.02765193143759559,
+          "information_regret": 0.0070449332146524934,
+          "reward_regret": 0.05007858871813797
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.14302815634008748,
+          "information": 0.017613263130618728,
+          "information_regret": 0.021087575075708243,
+          "reward_regret": 0.21088598429111222
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "truth_mass": 0.20319431830402593,
+          "information": 0.012942412044509854,
+          "information_regret": 0.0353938832651004,
+          "reward_regret": 0.3030994626951465
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.22905889790924314,
+          "information": 0.026963432527895792,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.23641672778205136,
+          "information": 0.009906926615755207,
+          "information_regret": 0.023912212880687678,
+          "reward_regret": 0.4315830015668664
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "truth_mass": 0.28244229188429754,
+          "information": 0.007674865106900297,
+          "information_regret": 0.029182143083936074,
+          "reward_regret": 0.47509495664663504
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 53,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.16030187557370745,
+          "information": 0.02832941651476739,
+          "information_regret": 0.0,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "truth_mass": 0.09545208623827198,
+          "information": 0.05233035164067168,
+          "information_regret": 0.0,
+          "reward_regret": 0.04007546889342689
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "truth_mass": 0.04263861247529574,
+          "information": 0.04206444350359284,
+          "information_regret": 0.0,
+          "reward_regret": 0.20227395688086403
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.03516517189799122,
+          "information": 0.03702016338558778,
+          "information_regret": 0.0,
+          "reward_regret": 0.3537643351444125
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.02625845603346938,
+          "information": 0.036021623747101494,
+          "information_regret": 0.0,
+          "reward_regret": 0.03296734865436679
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.0431451351525284,
+          "information": 0.02969494105822601,
+          "information_regret": 0.0,
+          "reward_regret": 0.33032455191283183
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.07214289843324777,
+          "information": 0.029247224833993002,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.08927786714173772,
+          "information": 0.028539369865283826,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "truth_mass": 0.05142423225658374,
+          "information": 0.02606199316783875,
+          "information_regret": 0.0,
+          "reward_regret": 0.16015316018705916
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 53,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.13815531884273366,
+          "information": 0.016657802709577174,
+          "information_regret": 0.011671613805190217,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.03902393331105314,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.10015717743627596,
+          "information": 0.0711716529300499,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.12783030220072514,
+          "information": 0.02765193143759559,
+          "information_regret": 0.0070449332146524934,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14302815634008748,
+          "information": 0.017613263130619394,
+          "information_regret": 0.0210875750757078,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.15317359668786523,
+          "information": 0.012942412044509854,
+          "information_regret": 0.03539388326510062,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.16063304423589547,
+          "information": 0.010228567525905063,
+          "information_regret": 0.04576454818957254,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.16644719606617364,
+          "information": 0.008451985575361975,
+          "information_regret": 0.0537990642529822,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.171160554680047,
+          "information": 0.007198050212159801,
+          "information_regret": 0.06027957651674498,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 53,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.15815599519088616,
+          "information": 0.005759675749655413,
+          "information_regret": 0.02256974076511198,
+          "reward_regret": 0.11115963113913241
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.17679699870930782,
+          "information": 0.0577560648610107,
+          "information_regret": 0.0,
+          "reward_regret": 0.05271866506362871
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.13511735827352542,
+          "information": 0.00804976299758331,
+          "information_regret": 0.08191106393235481,
+          "reward_regret": 0.13359429854836913
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "truth_mass": 0.11276544553395829,
+          "information": 0.04018525572323073,
+          "information_regret": 0.0,
+          "reward_regret": 0.01688966978419068
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.16204209905289846,
+          "information": 0.03392080013288745,
+          "information_regret": 0.0,
+          "reward_regret": 0.22024245187298336
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.18920986204966278,
+          "information": 0.005701326263253481,
+          "information_regret": 0.024938852030459424,
+          "reward_regret": 0.35768900746952126
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.22545287032326475,
+          "information": 0.021912132265980544,
+          "information_regret": 0.008448497783431597,
+          "reward_regret": 0.3089521242574893
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "truth_mass": 0.21158177722810922,
+          "information": 0.03098925161582744,
+          "information_regret": 0.009556458559975223,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "truth_mass": 0.07623249514796648,
+          "information": 0.05204891077372964,
+          "information_regret": 0.0,
+          "reward_regret": 0.4200471069777708
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 71,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.13815531884273366,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.29317353713835426
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.30047153230882795,
+          "information": 0.07117165293005012,
+          "information_regret": 0.0,
+          "reward_regret": 0.2586347074276708
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.3493471937337898,
+          "information": 0.03469686465224808,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.39593156923100575
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "truth_mass": 0.43872132520263285,
+          "information": 0.04957953456128128,
+          "information_regret": 0.0,
+          "reward_regret": 0.41314946301278943
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.4771306620342986,
+          "information": 0.036182012929791396,
+          "information_regret": 0.0,
+          "reward_regret": 0.03499324855782904
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5346688396614571,
+          "information": 0.04307456738471438,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.5706216446545983,
+          "information": 0.03434701218653302,
+          "information_regret": 0.0,
+          "reward_regret": 0.30437618471386946
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.6603439075208201,
+          "information": 0.033945629286907586,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 71,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.15815599519088616,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.16692862906046005,
+          "information": 0.007249586167556998,
+          "information_regret": 0.025547979209557203,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.20503964853811657,
+          "information": 0.00721621261525085,
+          "information_regret": 0.03773848849410344,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.21538621954054277,
+          "information": 0.0034265724776396667,
+          "information_regret": 0.05852699243761461,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.13940371242814875,
+          "information": 0.00337437011615771,
+          "information_regret": 0.0679437748487155,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.14884145972497342,
+          "information": 0.0008747593558375844,
+          "information_regret": 0.023810216404403617,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.1536637468965977,
+          "information": 0.0005733578841411457,
+          "information_regret": 0.029870915305148626,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.1581008619426522,
+          "information": 0.0006149103352031116,
+          "information_regret": 0.03457277151575111,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.16568208930207673,
+          "information": 0.0006404541894589055,
+          "information_regret": 0.03892359429605019,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 2,
+      "seed": 71,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 3,
+          "y": 1,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "truth_mass": 0.15815599519088616,
+          "information": 0.005759675749655635,
+          "information_regret": 0.022569740765111757,
+          "reward_regret": 0.08333333333333331
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "truth_mass": 0.16692862906046005,
+          "information": 0.007249586167556998,
+          "information_regret": 0.050506478693453705,
+          "reward_regret": 0.11841016686704642
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.18422706276059467,
+          "information": 0.08043182591281295,
+          "information_regret": 0.0,
+          "reward_regret": 0.007824779487209055
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.2251425533569746,
+          "information": 0.047963555906157085,
+          "information_regret": 0.06844253400689149,
+          "reward_regret": 0.0936961056136168
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.14875538884847841,
+          "information": 0.01620054388656622,
+          "information_regret": 0.11423200643943543,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.1684325964498702,
+          "information": 0.010713994214015754,
+          "information_regret": 0.07091650247735193,
+          "reward_regret": 0.19189283130775794
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.20978357999652303,
+          "information": 0.03698080905457912,
+          "information_regret": 0.025542186498585195,
+          "reward_regret": 0.050463189640237244
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.24210164753521787,
+          "information": 0.01683120957574813,
+          "information_regret": 0.06590505187479989,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.26710200612959084,
+          "information": 0.02635592793772501,
+          "information_regret": 0.06336260062994648,
+          "reward_regret": 0.25960377708972604
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 11,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.16030187557370745,
+          "information": 0.02832941651476739,
+          "information_regret": 0.0,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.24045281336056124,
+          "information": 0.05233035164067168,
+          "information_regret": 0.0,
+          "reward_regret": 0.04007546889342689
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "truth_mass": 0.3467817776959793,
+          "information": 0.043743927041585806,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.40609436436685736,
+          "information": 0.029341907111615773,
+          "information_regret": 0.0,
+          "reward_regret": 0.3895248250896262
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.47872657415979486,
+          "information": 0.04013666728780285,
+          "information_regret": 0.0,
+          "reward_regret": 0.41257813637992147
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.5196334728172357,
+          "information": 0.02604588230498117,
+          "information_regret": 1.1102230246251565e-16,
+          "reward_regret": 0.3599292541199886
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.5616334687690463,
+          "information": 0.04420795717171355,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.6092495300836394,
+          "information": 0.028242392530134386,
+          "information_regret": 1.1102230246251565e-16,
+          "reward_regret": 0.3437966099202725
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.658837209210343,
+          "information": 0.033438749142851165,
+          "information_regret": 0.0,
+          "reward_regret": 0.3559739592671937
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 11,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.016657802709577174,
+          "information_regret": 0.011671613805190217,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.03902393331105314,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "truth_mass": 0.1366560756007926,
+          "information": 0.0711716529300499,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.19394110100098447,
+          "information": 0.02376194088829997,
+          "information_regret": 0.006416989836926179,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.2312158138733701,
+          "information": 0.014442020562536184,
+          "information_regret": 0.01694499369476643,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.2589416674494101,
+          "information": 0.010133450070088257,
+          "information_regret": 0.028216391915763084,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.2810012922642221,
+          "information": 0.007701445805416762,
+          "information_regret": 0.034495802494370675,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.2943394242989093,
+          "information": 0.04437439341232441,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.29915917252137875,
+          "information": 0.03382349509462235,
+          "information_regret": 0.0011100721546710712,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 11,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.15815599519088616,
+          "information": 0.005759675749655413,
+          "information_regret": 0.010898126959921761,
+          "reward_regret": 0.11115963113913241
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.14307097370475028,
+          "information": 0.0327975653771142,
+          "information_regret": 0.0,
+          "reward_regret": 0.05271866506362871
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "truth_mass": 0.12880243504167763,
+          "information": 0.02433890745748135,
+          "information_regret": 0.02194338949625463,
+          "reward_regret": 0.15288172332869804
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.11410538376179348,
+          "information": 0.0500962914971117,
+          "information_regret": 0.015945851521387278,
+          "reward_regret": 0.13305015219010485
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.12030154007542336,
+          "information": 0.016944574316130057,
+          "information_regret": 0.07071457009274318,
+          "reward_regret": 0.24366081201323364
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.1567756809259581,
+          "information": 0.09899792947739972,
+          "information_regret": 0.0,
+          "reward_regret": 0.02537528712503989
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.2774329669974486,
+          "information": 0.05026103716455621,
+          "information_regret": 0.005710165949029067,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.2997034029129426,
+          "information": 0.017507157034673426,
+          "information_regret": 0.025656250401629777,
+          "reward_regret": 0.3329911965737721
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.3175770301886141,
+          "information": 0.014163649559601366,
+          "information_regret": 0.036231885000045594,
+          "reward_regret": 0.35562934096800025
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 23,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.13815531884273366,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.18207794211673425,
+          "information": 0.03135773738471359,
+          "information_regret": 0.0,
+          "reward_regret": 0.29317353713835426
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "truth_mass": 0.30047153230882795,
+          "information": 0.05967199304695914,
+          "information_regret": 0.0,
+          "reward_regret": 0.3296590996760712
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.3493471937337898,
+          "information": 0.03469686465224786,
+          "information_regret": 2.220446049250313e-16,
+          "reward_regret": 0.39593156923100575
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "truth_mass": 0.18255739431444815,
+          "information": 0.0495795345612815,
+          "information_regret": 0.0,
+          "reward_regret": 0.41314946301278943
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.191003110687186,
+          "information": 0.03895246086992121,
+          "information_regret": 0.0,
+          "reward_regret": 0.05476721829433451
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.2525001445163659,
+          "information": 0.03878475248117397,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.267833601425213,
+          "information": 0.028539369865285158,
+          "information_regret": 0.0,
+          "reward_regret": 0.04112145210695112
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.11362365286484054,
+          "information": 0.026061993167839193,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 23,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "truth_mass": 0.1178646658062052,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.12524568628503238,
+          "information": 0.002988663224585908,
+          "information_regret": 0.032937596249167145,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.13012472403930544,
+          "information": 0.0004620388914839957,
+          "information_regret": 0.008577770314562638,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.13487589142613263,
+          "information": 0.0005881259955355933,
+          "information_regret": 0.013468254631339827,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.14353254750258818,
+          "information": 0.000762922542183686,
+          "information_regret": 0.01871078627539946,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.1501963349821913,
+          "information": 0.0005147322745746585,
+          "information_regret": 0.02479622991807995,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.1559115501778037,
+          "information": 0.0004956405647176254,
+          "information_regret": 0.03018366354181068,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.1618710517259885,
+          "information": 0.0005126017652197223,
+          "information_regret": 0.03510848319447368,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.13775138330666573,
+          "information": 0.0005027522861815736,
+          "information_regret": 0.0398499494711857,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 23,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.13815531884273366,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.17679699870930782,
+          "information": 0.014753604061213288,
+          "information_regret": 0.016604133323500303,
+          "reward_regret": 0.13801981370858207
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "truth_mass": 0.27826297805799083,
+          "information": 0.049582309223226595,
+          "information_regret": 0.0,
+          "reward_regret": 0.06629887451599042
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.3360023423232019,
+          "information": 0.029035321192357078,
+          "information_regret": 0.031093021367230467,
+          "reward_regret": 0.14014535802017314
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "truth_mass": 0.16438496324910487,
+          "information": 0.019467456040526132,
+          "information_regret": 0.025783849667980085,
+          "reward_regret": 0.1946004851955204
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.20231383713919915,
+          "information": 0.009669922752102655,
+          "information_regret": 0.021066395449150788,
+          "reward_regret": 0.1743641999101352
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.28558702501177674,
+          "information": 0.03992798545884946,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.33666685935515533,
+          "information": 0.027464535643265453,
+          "information_regret": 0.006296308298280762,
+          "reward_regret": 0.007791312686333179
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.14043390475659887,
+          "information": 0.046029513065860006,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 37,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.16030187557370745,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "truth_mass": 0.23118785179731946,
+          "information": 0.05233035164067168,
+          "information_regret": 0.0,
+          "reward_regret": 0.25
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.30557241066797847,
+          "information": 0.05440172668465393,
+          "information_regret": 0.0,
+          "reward_regret": 0.26685744752688784
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.37558941538603563,
+          "information": 0.046290371315497625,
+          "information_regret": 0.0,
+          "reward_regret": 0.37082254112361757
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.43872132520263285,
+          "information": 0.04121134310831054,
+          "information_regret": 0.0,
+          "reward_regret": 0.4136677360686799
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.4771306620342986,
+          "information": 0.03618201292979162,
+          "information_regret": 0.0,
+          "reward_regret": 0.03499324855782904
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.5830174432341195,
+          "information": 0.04307456738471438,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.6265616568409543,
+          "information": 0.027609424339186228,
+          "information_regret": 0.0,
+          "reward_regret": 0.3381665153952005
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "truth_mass": 0.6844954263983383,
+          "information": 0.030615017158727054,
+          "information_regret": 0.0,
+          "reward_regret": 0.35229578070872736
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 37,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.17679699870930782,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.19265654316443284,
+          "information": 0.002988663224585908,
+          "information_regret": 0.03293759624916692,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.20995965468717287,
+          "information": 0.003327242970674993,
+          "information_regret": 0.04714920078522766,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "truth_mass": 0.13752573515805797,
+          "information": 0.0030957065433261377,
+          "information_regret": 0.06000925724807393,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.14353254750258818,
+          "information": 0.0004602200726739891,
+          "information_regret": 0.019343859850827316,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.1501963349821913,
+          "information": 0.0005147322745744365,
+          "information_regret": 0.02479622991808017,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.1559115501778037,
+          "information": 0.0004956405647176254,
+          "information_regret": 0.03018366354181068,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.1618710517259885,
+          "information": 0.0005126017652199444,
+          "information_regret": 0.03510848319447368,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.16714476622531824,
+          "information": 0.0005027522861813516,
+          "information_regret": 0.0398499494711857,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 37,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.23845162284125043,
+          "information": 0.014753604061213288,
+          "information_regret": 0.01660413332350008,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.2945838245546196,
+          "information": 0.012523351885776135,
+          "information_regret": 0.03375894506796007,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "truth_mass": 0.1131323089172407,
+          "information": 0.03459772512351478,
+          "information_regret": 0.0,
+          "reward_regret": 0.3471857869879853
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.11814454589071417,
+          "information": 0.017620719354491055,
+          "information_regret": 0.018322646694961975,
+          "reward_regret": 0.25454549455471054
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.156135093449555,
+          "information": 0.038194740464281174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2594937581519322
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.19435603295387915,
+          "information": 0.022989445919205487,
+          "information_regret": 0.006668280171365337,
+          "reward_regret": 0.35192084445828065
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.28175532665367076,
+          "information": 0.04489265908558271,
+          "information_regret": 0.0,
+          "reward_regret": 0.37398772899503174
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.28699921975304116,
+          "information": 0.02427525191492541,
+          "information_regret": 0.011485536071235591,
+          "reward_regret": 0.39263300118029365
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 53,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.16030187557370745,
+          "information": 0.016657802709577174,
+          "information_regret": 0.0,
+          "reward_regret": 0.2592754326019331
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.24045281336056124,
+          "information": 0.05233035164067168,
+          "information_regret": 0.0,
+          "reward_regret": 0.25
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.30047153230882795,
+          "information": 0.043743927041585584,
+          "information_regret": 0.0,
+          "reward_regret": 0.305103769728462
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3493471937337898,
+          "information": 0.03469686465224786,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.41777429738716987,
+          "information": 0.0495795345612815,
+          "information_regret": 0.0,
+          "reward_regret": 0.49205504161735886
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.41988998074955414,
+          "information": 0.047350718525590585,
+          "information_regret": 0.0,
+          "reward_regret": 0.5395672244919498
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.4568955727028031,
+          "information": 0.04934164781242667,
+          "information_regret": 0.0,
+          "reward_regret": 0.5683045187677402
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.5555266201943746,
+          "information": 0.03740251029266184,
+          "information_regret": 0.0,
+          "reward_regret": 0.6022575805572941
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.6009256802563293,
+          "information": 0.04196038873023822,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 53,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.17679699870930782,
+          "information": 0.005759675749655635,
+          "information_regret": 0.010898126959921539,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.19265654316443284,
+          "information": 0.002988663224585908,
+          "information_regret": 0.03293759624916692,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.20503964853811657,
+          "information": 0.003327242970674993,
+          "information_regret": 0.04714920078522766,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.21538621954054277,
+          "information": 0.0034265724776396667,
+          "information_regret": 0.05852699243761461,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.2243045814203064,
+          "information": 0.003374370116157488,
+          "information_regret": 0.06794377484871572,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.2321444991015139,
+          "information": 0.0032561192358171454,
+          "information_regret": 0.07590447844082471,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.23913504891340936,
+          "information": 0.0031134287885110634,
+          "information_regret": 0.0827489915292916,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.2588931810644276,
+          "information": 0.002965598337325126,
+          "information_regret": 0.08871646005591227,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.26562838632013563,
+          "information": 0.0025484668757371765,
+          "information_regret": 0.09811184984556154,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 53,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 2,
+          "y": 1,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.016657802709577174,
+          "information_regret": 0.011671613805190217,
+          "reward_regret": 0.009275432601933004
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.24045281336056124,
+          "information": 0.05754270019964425,
+          "information_regret": 0.0,
+          "reward_regret": 0.017269414855341725
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.2732470408521036,
+          "information": 0.023772536451496462,
+          "information_regret": 0.04247548152449876,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.30056601670070154,
+          "information": 0.015997380904928082,
+          "information_regret": 0.06867647352352402,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.3361369151904726,
+          "information": 0.030271770499887496,
+          "information_regret": 0.06997291037471665,
+          "reward_regret": 0.5591110437934284
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.3599367638561072,
+          "information": 0.01194661428443955,
+          "information_regret": 0.09453534688558707,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.5204920922250351,
+          "information": 0.12141261875301224,
+          "information_regret": 0.0,
+          "reward_regret": 0.4527454448594623
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.5537828516094824,
+          "information": 0.012159182134984015,
+          "information_regret": 0.048915796326970296,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.6368846667179836,
+          "information": 0.064769594596367,
+          "information_regret": 0.0,
+          "reward_regret": 0.47012152528371687
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 71,
+      "policy": "information",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.16030187557370745,
+          "information": 0.02832941651476739,
+          "information_regret": 0.0,
+          "reward_regret": 0.0371017304077321
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "truth_mass": 0.23118785179731946,
+          "information": 0.05233035164067168,
+          "information_regret": 0.0,
+          "reward_regret": 0.04007546889342689
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "truth_mass": 0.1466783172031479,
+          "information": 0.05440172668465393,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.11716967576416339,
+          "information": 0.03169605472956427,
+          "information_regret": 0.0,
+          "reward_regret": 0.0152789913753279
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.14527998300356887,
+          "information": 0.0338737114210268,
+          "information_regret": 0.0,
+          "reward_regret": 0.030919775548876427
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.18806165821834908,
+          "information": 0.037224865808137664,
+          "information_regret": 0.0,
+          "reward_regret": 0.03631999575089223
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.2992805755386441,
+          "information": 0.03170764511759239,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.33921910230059643,
+          "information": 0.028094701797181543,
+          "information_regret": 0.0,
+          "reward_regret": 0.03741007194233052
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.3849602084389506,
+          "information": 0.03399016528225851,
+          "information_regret": 0.0,
+          "reward_regret": 0.044522507176953274
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 71,
+      "policy": "reward",
+      "rounds": [
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.016657802709577174,
+          "information_regret": 0.011671613805190217,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.03902393331105314,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.30047153230882795,
+          "information": 0.0711716529300499,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.36641465108016347,
+          "information": 0.02765193143759559,
+          "information_regret": 0.0070449332146524934,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.41777429738716987,
+          "information": 0.03584252813507116,
+          "information_regret": 0.011869785882040906,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.43101696456992594,
+          "information": 0.026948524703779286,
+          "information_regret": 0.027574417439274024,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4432666560566543,
+          "information": 0.017997337178690787,
+          "information_regret": 0.030759988162326835,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "truth_mass": 0.4535434991897116,
+          "information": 0.013425762191456414,
+          "information_regret": 0.03099174129561688,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.4953667444684637,
+          "information": 0.010648254677093849,
+          "information_regret": 0.03140938618673195,
+          "reward_regret": 0.0
+        }
+      ]
+    },
+    {
+      "truth": 3,
+      "seed": 71,
+      "policy": "random",
+      "rounds": [
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.14840692163092842,
+          "information": 2.220446049250313e-16,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "truth_mass": 0.20723297826410053,
+          "information": 0.016657802709577174,
+          "information_regret": 0.011671613805190217,
+          "reward_regret": 0.009275432601933031
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "truth_mass": 0.23845162284125043,
+          "information": 0.014753604061213288,
+          "information_regret": 0.04278909613843096,
+          "reward_regret": 0.08621156914255695
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.2818808431493596,
+          "information": 0.024338907457481795,
+          "information_regret": 0.06227984588254554,
+          "reward_regret": 0.08631397861884896
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "truth_mass": 0.3107291662608396,
+          "information": 0.01835600413245153,
+          "information_regret": 0.09725120843029589,
+          "reward_regret": 0.11795297892126597
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "truth_mass": 0.39313839764751823,
+          "information": 0.1369814621296379,
+          "information_regret": 0.0,
+          "reward_regret": 0.0
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "truth_mass": 0.4407336498455156,
+          "information": 0.05041755232223388,
+          "information_regret": 0.050123355042145934,
+          "reward_regret": 0.11238969308009927
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "truth_mass": 0.478307950450599,
+          "information": 0.017761295214736128,
+          "information_regret": 0.09008622664460586,
+          "reward_regret": 0.30942502913145215
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "truth_mass": 0.5340723073275105,
+          "information": 0.035000315259618775,
+          "information_regret": 0.05797430423455818,
+          "reward_regret": 0.3028117316142063
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "truth_mass": 0.6694158890238229,
+          "information": 0.08279704005425748,
+          "information_regret": 0.0,
+          "reward_regret": 0.05475517496280924
+        }
+      ]
+    }
+  ],
+  "trained_replay": {
+    "200": {
+      "records": 600,
+      "mean": {
+        "information": {
+          "truth_mass": 0.29140362300009914,
+          "information": 0.034495235876141804,
+          "information_regret": 1.1842435451721034e-05,
+          "reward_regret": 0.23495257594564317,
+          "mean_truth_mass_by_tree": [
+            0.342100559979918,
+            0.3118251278164793,
+            0.27408611231757696,
+            0.2376026918864223
+          ]
+        },
+        "reward": {
+          "truth_mass": 0.27806473522405784,
+          "information": 0.009755312693421782,
+          "information_regret": 0.035111593687623045,
+          "reward_regret": 0.0,
+          "mean_truth_mass_by_tree": [
+            0.4715939135797814,
+            0.23741757244418193,
+            0.18450686411950795,
+            0.21874059075275995
+          ]
+        },
+        "random": {
+          "truth_mass": 0.27921033916803645,
+          "information": 0.028387692176713775,
+          "information_regret": 0.028107613696555334,
+          "reward_regret": 0.16683049039166847,
+          "mean_truth_mass_by_tree": [
+            0.3842674922049623,
+            0.2747317935403789,
+            0.19004106810151758,
+            0.26780100282528685
+          ]
+        }
+      }
+    },
+    "1000": {
+      "records": 600,
+      "mean": {
+        "information": {
+          "truth_mass": 0.324755265238146,
+          "information": 0.03437227438529924,
+          "information_regret": 1.1842435451715482e-05,
+          "reward_regret": 0.22154653211871814,
+          "mean_truth_mass_by_tree": [
+            0.342412090843296,
+            0.31261360082258427,
+            0.322217026660873,
+            0.3217783426258306
+          ]
+        },
+        "reward": {
+          "truth_mass": 0.27806473522405784,
+          "information": 0.009755312693421782,
+          "information_regret": 0.035111593687623045,
+          "reward_regret": 0.0,
+          "mean_truth_mass_by_tree": [
+            0.4715939135797814,
+            0.23741757244418193,
+            0.18450686411950795,
+            0.21874059075275995
+          ]
+        },
+        "random": {
+          "truth_mass": 0.27921033916803645,
+          "information": 0.028387692176713775,
+          "information_regret": 0.028107613696555334,
+          "reward_regret": 0.16683049039166847,
+          "mean_truth_mass_by_tree": [
+            0.3842674922049623,
+            0.2747317935403789,
+            0.19004106810151758,
+            0.26780100282528685
+          ]
+        }
+      }
+    }
+  }
+}

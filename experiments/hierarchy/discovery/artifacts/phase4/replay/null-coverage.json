@@ -1,0 +1,195 @@
+{
+  "schema": "phase4-null-audit-v1",
+  "coverage_cells": 12,
+  "expected_cells": [
+    [
+      "exogenous",
+      11
+    ],
+    [
+      "exogenous",
+      23
+    ],
+    [
+      "exogenous",
+      37
+    ],
+    [
+      "observational_confounding",
+      11
+    ],
+    [
+      "observational_confounding",
+      23
+    ],
+    [
+      "observational_confounding",
+      37
+    ],
+    [
+      "randomized_null",
+      11
+    ],
+    [
+      "randomized_null",
+      23
+    ],
+    [
+      "randomized_null",
+      37
+    ],
+    [
+      "shuffled_observational",
+      11
+    ],
+    [
+      "shuffled_observational",
+      23
+    ],
+    [
+      "shuffled_observational",
+      37
+    ]
+  ],
+  "rounds": 192,
+  "sampler_updates": 192000,
+  "sampler_trajectories": 12288000,
+  "all_sources_match": true,
+  "source_sha256": {
+    "posterior/__init__.py": "43a9de04401d3c4c11c8f6b2750585b932087296c4944e84c8786dceeef94318",
+    "posterior/model.py": "e81a3d81766ba45070d98d2de775fb61a9f6188ab270434becd933293ecbbc3c",
+    "posterior/grammar.py": "39adfc3f157b6f34ca2e36a3385ea2190d2455426546a7f9a44ae2455dc25eec",
+    "posterior/tb.py": "13d04923be334b1732607fb50c34e83fe4e481a0762e06592cb331739c79d480",
+    "posterior/exact.py": "9261b7bfa8dda3ec953e60a141db28d23b8ef401ba3b344e375d74e1740ef01f",
+    "discovery/PHASE4-PROTOCOL.md": "2a9ff16fb33d2c69e700ae4daf8e3a9c54b03495bb538b92e440753e211e807e",
+    "discovery/acquisition.py": "3bc3df539ba5d7cf2a76bc78dea184a4dcc6762f6f7fd03f35332c72cfb8b006",
+    "discovery/trial.py": "bdd0edf4b4766b97b50f8e4aa6cff0809aad0cc140a9645999640298fdd5ac46",
+    "discovery/control_acquisition.py": "ade835cae342778ce94363aa9b447d37af83f4ac563329273498dce5b5fa28ee",
+    "discovery/controllability.py": "b8893f3f0f47fa19d012651273a26bca80e487118d2cd255472bddf91d3e394c",
+    "discovery/interventions.py": "bf9113d2313ce39bfed54c1e6c2ac1637269f812554db650948d67e0ba7c9133",
+    "discovery/control_trial.py": "e9b959413677054c4f51fff6b2e62b2060fefb950733aa6660c8fec3ef2ebf2f",
+    "discovery/control_stream.py": "ee4453aa0175fde68fb559c62998dfb5f7e192dcfaf64d27143616741bddc0df",
+    "discovery/run_phase4.py": "6a94869719d577ed1e7346487c6e9cb6e802cf15a075a3db28b1b5a5473ae2be",
+    "discovery/run_phase4_null.py": "2cea74595f54dfd2c7641bae75a612fe51914e66df8fe46afacc5509f3c7e69c"
+  },
+  "regenerated_observations_match": true,
+  "balanced_allocations_match": true,
+  "shuffle_preserves_xy_sequence_and_within_leaf_action_counts": true,
+  "all_round_exact_flag_recomputation_max_absolute_error": 1.887379141862766e-15,
+  "batch_elapsed_seconds": 888.0861308649182,
+  "sum_train_and_draw_seconds": 864.1177297849208,
+  "summaries": [
+    {
+      "arm": "randomized_null",
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "terminal_max_joint_control": [
+        0.3713400892331706,
+        0.21326565822555305,
+        0.8468047079011519
+      ],
+      "terminal_any_node_above_threshold_0_5": [
+        false,
+        false,
+        true
+      ],
+      "mean_over_rounds_flag_brier": [
+        0.025002746891761463,
+        0.014664117027790571,
+        0.04642750812136992
+      ],
+      "mean_terminal_max_joint_control": 0.47713681845329187,
+      "mean_flag_brier": 0.02869812401364065,
+      "mean_sample_tv": 0.08885812105978047,
+      "max_sample_tv": 0.1580017126603215,
+      "training_and_draw_seconds": 230.6429000897333
+    },
+    {
+      "arm": "observational_confounding",
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "terminal_max_joint_control": [
+        0.5914252986977924,
+        0.5956448543965658,
+        0.33711328740325064
+      ],
+      "terminal_any_node_above_threshold_0_5": [
+        true,
+        true,
+        false
+      ],
+      "mean_over_rounds_flag_brier": [
+        0.03926542286257863,
+        0.05554337934822959,
+        0.01460997882827728
+      ],
+      "mean_terminal_max_joint_control": 0.5080611468325362,
+      "mean_flag_brier": 0.0364729270130285,
+      "mean_sample_tv": 0.09728757957199498,
+      "max_sample_tv": 0.1534736245277705,
+      "training_and_draw_seconds": 224.82309367973357
+    },
+    {
+      "arm": "shuffled_observational",
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "terminal_max_joint_control": [
+        0.18849969548769185,
+        0.2368950319692301,
+        0.20749455473488976
+      ],
+      "terminal_any_node_above_threshold_0_5": [
+        false,
+        false,
+        false
+      ],
+      "mean_over_rounds_flag_brier": [
+        0.006765046872419036,
+        0.013840522208485268,
+        0.008386260532105706
+      ],
+      "mean_terminal_max_joint_control": 0.21096309406393723,
+      "mean_flag_brier": 0.00966394320433667,
+      "mean_sample_tv": 0.08970977423842753,
+      "max_sample_tv": 0.12148646247040819,
+      "training_and_draw_seconds": 214.2657417608425
+    },
+    {
+      "arm": "exogenous",
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "terminal_max_joint_control": [
+        0.10571085577915058,
+        0.8099317069433304,
+        0.4260126295311118
+      ],
+      "terminal_any_node_above_threshold_0_5": [
+        false,
+        true,
+        false
+      ],
+      "mean_over_rounds_flag_brier": [
+        0.005365093671611984,
+        0.04069547190075076,
+        0.02126567663707091
+      ],
+      "mean_terminal_max_joint_control": 0.44721839741786423,
+      "mean_flag_brier": 0.022442080736477885,
+      "mean_sample_tv": 0.08394990297265285,
+      "max_sample_tv": 0.133647928682692,
+      "training_and_draw_seconds": 194.38599425461143
+    }
+  ]
+}

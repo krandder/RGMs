@@ -1,0 +1,248 @@
+{
+  "schema": "hierarchy-phase3-summary-v1",
+  "n_cells": 120,
+  "n_truths": 4,
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "source_sha256": {
+    "posterior/__init__.py": "43a9de04401d3c4c11c8f6b2750585b932087296c4944e84c8786dceeef94318",
+    "posterior/model.py": "e81a3d81766ba45070d98d2de775fb61a9f6188ab270434becd933293ecbbc3c",
+    "posterior/grammar.py": "39adfc3f157b6f34ca2e36a3385ea2190d2455426546a7f9a44ae2455dc25eec",
+    "posterior/tb.py": "13d04923be334b1732607fb50c34e83fe4e481a0762e06592cb331739c79d480",
+    "posterior/exact.py": "9261b7bfa8dda3ec953e60a141db28d23b8ef401ba3b344e375d74e1740ef01f",
+    "discovery/PROTOCOL.md": "439272ce11e4a00fc2849dd83ffcd6a9da79d32f6125237ab5c40263b0073d4d",
+    "discovery/acquisition.py": "3bc3df539ba5d7cf2a76bc78dea184a4dcc6762f6f7fd03f35332c72cfb8b006",
+    "discovery/trial.py": "bdd0edf4b4766b97b50f8e4aa6cff0809aad0cc140a9645999640298fdd5ac46",
+    "discovery/run_phase3.py": "fa82338353e8b93c9e33076ac32c74b83a383fe4e67029acc963e86ed5f14d6d"
+  },
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 20261121,
+    "unit": "environment seed; all four truths retained per resample"
+  },
+  "budgets": {
+    "200": {
+      "policies": {
+        "information": {
+          "mean_area_under_truth_mass": 0.29140362300009914,
+          "mean_terminal_truth_mass": 0.36114026327583026,
+          "mean_terminal_entropy": 1.055939759690918,
+          "mean_first_round_truth_mass_0_8": 11.0,
+          "mean_sample_tv": 0.040146556340895694,
+          "mean_chosen_oracle_information_gain": 0.03449523587614179,
+          "total_train_and_sample_seconds": 136.203255453147,
+          "mean_area_by_truth": {
+            "0": 0.342100559979918,
+            "1": 0.3118251278164793,
+            "2": 0.27408611231757696,
+            "3": 0.2376026918864223
+          }
+        },
+        "reward": {
+          "mean_area_under_truth_mass": 0.27806473522405784,
+          "mean_terminal_truth_mass": 0.3046957545269689,
+          "mean_terminal_entropy": 1.1680242257983644,
+          "mean_first_round_truth_mass_0_8": 11.0,
+          "mean_sample_tv": 0.04108390956851178,
+          "mean_chosen_oracle_information_gain": 0.009755312693421803,
+          "total_train_and_sample_seconds": 124.35045616328716,
+          "mean_area_by_truth": {
+            "0": 0.4715939135797814,
+            "1": 0.2374175724441819,
+            "2": 0.18450686411950795,
+            "3": 0.2187405907527599
+          }
+        },
+        "random": {
+          "mean_area_under_truth_mass": 0.2792103391680364,
+          "mean_terminal_truth_mass": 0.32157342658405985,
+          "mean_terminal_entropy": 1.1361623697484973,
+          "mean_first_round_truth_mass_0_8": 11.0,
+          "mean_sample_tv": 0.03998828837866472,
+          "mean_chosen_oracle_information_gain": 0.028387692176713785,
+          "total_train_and_sample_seconds": 133.35587671212852,
+          "mean_area_by_truth": {
+            "0": 0.38426749220496237,
+            "1": 0.2747317935403789,
+            "2": 0.19004106810151755,
+            "3": 0.2678010028252868
+          }
+        }
+      },
+      "comparisons": {
+        "information_minus_random": {
+          "mean_paired_area_difference": 0.012193283832062718,
+          "descriptive_95pct_seed_bootstrap": [
+            -0.016893972285397064,
+            0.04202125886964722
+          ],
+          "paired_values": {
+            "truth0_seed11": -0.14912459263528433,
+            "truth0_seed23": -0.05856716902999215,
+            "truth0_seed37": -0.04766652762861451,
+            "truth0_seed53": 0.07928512011288741,
+            "truth0_seed71": -0.03476149194421829,
+            "truth1_seed11": -0.08494031980634228,
+            "truth1_seed23": 0.0012664784146892982,
+            "truth1_seed37": 0.017579300801158437,
+            "truth1_seed53": 0.2309642219431921,
+            "truth1_seed71": 0.020596990027804407,
+            "truth2_seed11": 0.006224236032210659,
+            "truth2_seed23": 0.04267767721373533,
+            "truth2_seed37": 0.16871295674830925,
+            "truth2_seed53": 0.012003956796575344,
+            "truth2_seed71": 0.19060639428946632,
+            "truth3_seed11": 0.22657856772376705,
+            "truth3_seed23": -0.13163819002105676,
+            "truth3_seed37": -0.0364594566752727,
+            "truth3_seed53": -0.05529012002455336,
+            "truth3_seed71": -0.15418235569720687
+          }
+        },
+        "information_minus_reward": {
+          "mean_paired_area_difference": 0.01333888777604133,
+          "descriptive_95pct_seed_bootstrap": [
+            -0.024788213374744107,
+            0.04428136254949668
+          ],
+          "paired_values": {
+            "truth0_seed11": -0.14873002851092093,
+            "truth0_seed23": -0.14873002851092093,
+            "truth0_seed37": -0.1465663911364427,
+            "truth0_seed53": -0.06157947633939864,
+            "truth0_seed71": -0.14186084350163386,
+            "truth1_seed11": -0.18086503595401995,
+            "truth1_seed23": 0.19535691839226638,
+            "truth1_seed37": 0.1151238970947176,
+            "truth1_seed53": 0.2007415178602226,
+            "truth1_seed71": 0.04168047946830028,
+            "truth2_seed11": -0.08351207935970965,
+            "truth2_seed23": 0.13747606619747282,
+            "truth2_seed37": 0.15742553572055837,
+            "truth2_seed53": 0.019957614472142865,
+            "truth2_seed71": 0.21654910395988047,
+            "truth3_seed11": 0.1871990582499896,
+            "truth3_seed23": -0.05151515080174114,
+            "truth3_seed37": 0.00306012041924833,
+            "truth3_seed53": 0.08658458317588211,
+            "truth3_seed71": -0.131018105375067
+          }
+        }
+      }
+    },
+    "1000": {
+      "policies": {
+        "information": {
+          "mean_area_under_truth_mass": 0.32475526523814596,
+          "mean_terminal_truth_mass": 0.41169773213271776,
+          "mean_terminal_entropy": 0.995043057487129,
+          "mean_first_round_truth_mass_0_8": 11.0,
+          "mean_sample_tv": 0.03975163303887284,
+          "mean_chosen_oracle_information_gain": 0.03437227438529921,
+          "total_train_and_sample_seconds": 683.9558494035155,
+          "mean_area_by_truth": {
+            "0": 0.34241209084329605,
+            "1": 0.31261360082258427,
+            "2": 0.32221702666087293,
+            "3": 0.3217783426258306
+          }
+        },
+        "reward": {
+          "mean_area_under_truth_mass": 0.27806473522405784,
+          "mean_terminal_truth_mass": 0.3046957545269689,
+          "mean_terminal_entropy": 1.1680242257983644,
+          "mean_first_round_truth_mass_0_8": 11.0,
+          "mean_sample_tv": 0.03843330898990664,
+          "mean_chosen_oracle_information_gain": 0.009755312693421803,
+          "total_train_and_sample_seconds": 596.6505933701992,
+          "mean_area_by_truth": {
+            "0": 0.4715939135797814,
+            "1": 0.2374175724441819,
+            "2": 0.18450686411950795,
+            "3": 0.2187405907527599
+          }
+        },
+        "random": {
+          "mean_area_under_truth_mass": 0.2792103391680364,
+          "mean_terminal_truth_mass": 0.32157342658405985,
+          "mean_terminal_entropy": 1.1361623697484973,
+          "mean_first_round_truth_mass_0_8": 11.0,
+          "mean_sample_tv": 0.03814598748428852,
+          "mean_chosen_oracle_information_gain": 0.028387692176713785,
+          "total_train_and_sample_seconds": 614.905435395427,
+          "mean_area_by_truth": {
+            "0": 0.38426749220496237,
+            "1": 0.2747317935403789,
+            "2": 0.19004106810151755,
+            "3": 0.2678010028252868
+          }
+        }
+      },
+      "comparisons": {
+        "information_minus_random": {
+          "mean_paired_area_difference": 0.045544926070109557,
+          "descriptive_95pct_seed_bootstrap": [
+            0.009405483688145257,
+            0.08168436845207386
+          ],
+          "paired_values": {
+            "truth0_seed11": -0.14912459263528433,
+            "truth0_seed23": -0.05856716902999215,
+            "truth0_seed37": -0.04610887331172453,
+            "truth0_seed53": 0.07928512011288741,
+            "truth0_seed71": -0.03476149194421829,
+            "truth1_seed11": -0.09339774524661418,
+            "truth1_seed23": 0.0012664784146892982,
+            "truth1_seed37": 0.017579300801158437,
+            "truth1_seed53": 0.2357831866147277,
+            "truth1_seed71": 0.028177815827065633,
+            "truth2_seed11": 0.2903412352311172,
+            "truth2_seed23": 0.025121687546835136,
+            "truth2_seed37": 0.1746382068358329,
+            "truth2_seed53": 0.012003956796575344,
+            "truth2_seed71": 0.15877470638641636,
+            "truth3_seed11": 0.22657856772376705,
+            "truth3_seed23": -0.008355903054413277,
+            "truth3_seed37": 0.19917871138573134,
+            "truth3_seed53": 0.007285342749057011,
+            "truth3_seed71": -0.15480001980142302
+          }
+        },
+        "information_minus_reward": {
+          "mean_paired_area_difference": 0.04669053001408817,
+          "descriptive_95pct_seed_bootstrap": [
+            0.012214823991419682,
+            0.08044199524659043
+          ],
+          "paired_values": {
+            "truth0_seed11": -0.14873002851092093,
+            "truth0_seed23": -0.14873002851092093,
+            "truth0_seed37": -0.14500873681955273,
+            "truth0_seed53": -0.06157947633939864,
+            "truth0_seed71": -0.14186084350163386,
+            "truth1_seed11": -0.18932246139429185,
+            "truth1_seed23": 0.19535691839226638,
+            "truth1_seed37": 0.1151238970947176,
+            "truth1_seed53": 0.20556048253175818,
+            "truth1_seed71": 0.049261305267561506,
+            "truth2_seed11": 0.20060491983919693,
+            "truth2_seed23": 0.11992007653057263,
+            "truth2_seed37": 0.16335078580808202,
+            "truth2_seed53": 0.019957614472142865,
+            "truth2_seed71": 0.1847174160568305,
+            "truth3_seed11": 0.1871990582499896,
+            "truth3_seed23": 0.07176713616490232,
+            "truth3_seed37": 0.23869828848025237,
+            "truth3_seed53": 0.14916004594949248,
+            "truth3_seed71": -0.13163576947928315
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "prior": {
+    "any_flag": 0.3960880634804452,
+    "max_node": 0.25
+  },
+  "rows": [
+    {
+      "arm": "exogenous",
+      "seed": 11,
+      "source_sha256": "25c2fa068bcb4b55b1a8515b4d213a1c537e49573493fbd9fa5c62157121d3ef",
+      "any_flag": 0.20521874372115345,
+      "max_node": 0.10571085577915058
+    },
+    {
+      "arm": "exogenous",
+      "seed": 23,
+      "source_sha256": "4e2625f380e08e4a69b563ba38095fdb7f3cbdb5320901d50cf337c802bdb423",
+      "any_flag": 0.8877788201131426,
+      "max_node": 0.8099317069433304
+    },
+    {
+      "arm": "exogenous",
+      "seed": 37,
+      "source_sha256": "6de91277a0cd4496c481cc5491cee1811451ada3e7d0fdeda35d778ea530e964",
+      "any_flag": 0.5555743512271888,
+      "max_node": 0.4260126295311118
+    },
+    {
+      "arm": "observational_confounding",
+      "seed": 11,
+      "source_sha256": "df0b26ebf4f205aad7341f0775f2a94b0b526af974181bdb943aba158444aa42",
+      "any_flag": 0.990818641135876,
+      "max_node": 0.5914252986977924
+    },
+    {
+      "arm": "observational_confounding",
+      "seed": 23,
+      "source_sha256": "19bbe15379415fda23fc0bdfa6a3db65fc912d2b5f1c570a96c944401a9a7555",
+      "any_flag": 0.8444689251853021,
+      "max_node": 0.5956448543965658
+    },
+    {
+      "arm": "observational_confounding",
+      "seed": 37,
+      "source_sha256": "627e1ec6ee0f0b526a812b6ac17358f32944f37765e46a1d283d94343e7c5d13",
+      "any_flag": 0.5230935763761643,
+      "max_node": 0.33711328740325064
+    },
+    {
+      "arm": "randomized_null",
+      "seed": 11,
+      "source_sha256": "8efa89863ecd5679d1467c461cac992003cdb7d3ef0f805614ba1aae1adaaa7f",
+      "any_flag": 0.7769622438373442,
+      "max_node": 0.3713400892331706
+    },
+    {
+      "arm": "randomized_null",
+      "seed": 23,
+      "source_sha256": "008d5b38ef0e70e627f06a8b716f51503ce4ee0c81706f2ded6e7ba1e4d8d995",
+      "any_flag": 0.4076934317388551,
+      "max_node": 0.21326565822555305
+    },
+    {
+      "arm": "randomized_null",
+      "seed": 37,
+      "source_sha256": "3d2f3975aeeac5e346afc133ed6df8bed5d7fddb99e06b23af35fea4029d7f6b",
+      "any_flag": 0.8982000386241468,
+      "max_node": 0.8468047079011519
+    },
+    {
+      "arm": "shuffled_observational",
+      "seed": 11,
+      "source_sha256": "b6a0bcae8b42ec465637d5a3688aa3f73cca568fbadb58ca4dd1e3f5e28d1b9e",
+      "any_flag": 0.3247433773060845,
+      "max_node": 0.18849969548769185
+    },
+    {
+      "arm": "shuffled_observational",
+      "seed": 23,
+      "source_sha256": "a4f820698d5749e09442e0d5afe14c39e4e48e5ac8a0f59ea7d13ceafa7e8f89",
+      "any_flag": 0.44329100131341664,
+      "max_node": 0.2368950319692301
+    },
+    {
+      "arm": "shuffled_observational",
+      "seed": 37,
+      "source_sha256": "6709fb6f95f310306eecbdaef16b542997be483afddb4dba281171764b621912",
+      "any_flag": 0.29843252561639666,
+      "max_node": 0.20749455473488976
+    }
+  ],
+  "threshold_counts": {
+    "max_node": 4,
+    "any_flag": 7
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "hierarchy-independent-replay-v1",
+  "phase": "phase3",
+  "cell": {
+    "truth_index": 0,
+    "environment_seed": 11,
+    "policy": "information",
+    "budget_updates_per_round": 1000
+  },
+  "reference_sha256": "82578c59e5f51ba480c18dd5b9e85c99782614bc7debde5f05373a15921ac423",
+  "rerun_sha256": "cafc47ae41a658b84dd43ea4cc442954dc2a27c72b3b353a8beb6442d7251f82",
+  "source_sha256": {
+    "posterior/__init__.py": "43a9de04401d3c4c11c8f6b2750585b932087296c4944e84c8786dceeef94318",
+    "posterior/model.py": "e81a3d81766ba45070d98d2de775fb61a9f6188ab270434becd933293ecbbc3c",
+    "posterior/grammar.py": "39adfc3f157b6f34ca2e36a3385ea2190d2455426546a7f9a44ae2455dc25eec",
+    "posterior/tb.py": "13d04923be334b1732607fb50c34e83fe4e481a0762e06592cb331739c79d480",
+    "posterior/exact.py": "9261b7bfa8dda3ec953e60a141db28d23b8ef401ba3b344e375d74e1740ef01f",
+    "discovery/PROTOCOL.md": "439272ce11e4a00fc2849dd83ffcd6a9da79d32f6125237ab5c40263b0073d4d",
+    "discovery/acquisition.py": "3bc3df539ba5d7cf2a76bc78dea184a4dcc6762f6f7fd03f35332c72cfb8b006",
+    "discovery/trial.py": "bdd0edf4b4766b97b50f8e4aa6cff0809aad0cc140a9645999640298fdd5ac46",
+    "discovery/run_phase3.py": "fa82338353e8b93c9e33076ac32c74b83a383fe4e67029acc963e86ed5f14d6d"
+  },
+  "ignored_timing_fields": [
+    "reward_seconds",
+    "train_and_sample_seconds"
+  ],
+  "all_non_timing_fields_match": true
+}

@@ -1,0 +1,420 @@
+{
+  "schema": "stream-sensitivity-replay-v1",
+  "created_utc": "2026-11-21T15:13:57.141854+00:00",
+  "passed": true,
+  "replicate": 1,
+  "worlds": 9,
+  "policies_per_world": 4,
+  "rounds_per_policy": 16,
+  "training_calls": 0,
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.0.2",
+    "scipy": "1.16.3"
+  },
+  "runtime_source_sha256": {
+    "posterior/__init__.py": "43a9de04401d3c4c11c8f6b2750585b932087296c4944e84c8786dceeef94318",
+    "posterior/model.py": "e81a3d81766ba45070d98d2de775fb61a9f6188ab270434becd933293ecbbc3c",
+    "posterior/grammar.py": "39adfc3f157b6f34ca2e36a3385ea2190d2455426546a7f9a44ae2455dc25eec",
+    "posterior/tb.py": "13d04923be334b1732607fb50c34e83fe4e481a0762e06592cb331739c79d480",
+    "posterior/exact.py": "9261b7bfa8dda3ec953e60a141db28d23b8ef401ba3b344e375d74e1740ef01f",
+    "discovery/PHASE4-PROTOCOL.md": "2a9ff16fb33d2c69e700ae4daf8e3a9c54b03495bb538b92e440753e211e807e",
+    "discovery/acquisition.py": "3bc3df539ba5d7cf2a76bc78dea184a4dcc6762f6f7fd03f35332c72cfb8b006",
+    "discovery/trial.py": "bdd0edf4b4766b97b50f8e4aa6cff0809aad0cc140a9645999640298fdd5ac46",
+    "discovery/control_acquisition.py": "ade835cae342778ce94363aa9b447d37af83f4ac563329273498dce5b5fa28ee",
+    "discovery/controllability.py": "b8893f3f0f47fa19d012651273a26bca80e487118d2cd255472bddf91d3e394c",
+    "discovery/interventions.py": "bf9113d2313ce39bfed54c1e6c2ac1637269f812554db650948d67e0ba7c9133",
+    "discovery/control_trial.py": "e9b959413677054c4f51fff6b2e62b2060fefb950733aa6660c8fec3ef2ebf2f",
+    "discovery/control_stream.py": "ee4453aa0175fde68fb559c62998dfb5f7e192dcfaf64d27143616741bddc0df",
+    "discovery/run_phase4.py": "6a94869719d577ed1e7346487c6e9cb6e802cf15a075a3db28b1b5a5473ae2be",
+    "discovery/run_phase4_null.py": "2cea74595f54dfd2c7641bae75a612fe51914e66df8fe46afacc5509f3c7e69c"
+  },
+  "portable_module_sha256": "7f6fb42cb02d161f5b32bdb7b851c056f905f8d3058a3ba37726529562685001",
+  "rows_sha256": "a5fa4945f0bef2def1be7f4afc8a61489e3cdb0e070ca0ef903b8132850e8dc2",
+  "comparison": "Exact parsed JSON metric and count equality, not saved-history equality.",
+  "comparisons": [
+    {
+      "key": [
+        "none",
+        11,
+        1
+      ],
+      "exact_metrics_and_counts_match": true
+    },
+    {
+      "key": [
+        "none",
+        23,
+        1
+      ],
+      "exact_metrics_and_counts_match": true
+    },
+    {
+      "key": [
+        "none",
+        37,
+        1
+      ],
+      "exact_metrics_and_counts_match": true
+    },
+    {
+      "key": [
+        "root",
+        11,
+        1
+      ],
+      "exact_metrics_and_counts_match": true
+    },
+    {
+      "key": [
+        "root",
+        23,
+        1
+      ],
+      "exact_metrics_and_counts_match": true
+    },
+    {
+      "key": [
+        "root",
+        37,
+        1
+      ],
+      "exact_metrics_and_counts_match": true
+    },
+    {
+      "key": [
+        "local",
+        11,
+        1
+      ],
+      "exact_metrics_and_counts_match": true
+    },
+    {
+      "key": [
+        "local",
+        23,
+        1
+      ],
+      "exact_metrics_and_counts_match": true
+    },
+    {
+      "key": [
+        "local",
+        37,
+        1
+      ],
+      "exact_metrics_and_counts_match": true
+    }
+  ],
+  "replayed_rows": [
+    {
+      "truth": "none",
+      "seed": 11,
+      "r": 1,
+      "bal": {
+        "area": 0.22367323448612866,
+        "term": 0.06892501360167709,
+        "inc": [],
+        "nu1": 8
+      },
+      "exlex": {
+        "area": 0.2900560982216121,
+        "term": 0.13247616009655316,
+        "inc": [],
+        "nu1": 8
+      },
+      "exrand": {
+        "area": 0.36732630612716966,
+        "term": 0.2230203547118877,
+        "inc": [],
+        "nu1": 8
+      },
+      "s256": {
+        "area": 0.26528101368391493,
+        "term": 0.1173436116962166,
+        "inc": [],
+        "nu1": 9
+      }
+    },
+    {
+      "truth": "none",
+      "seed": 23,
+      "r": 1,
+      "bal": {
+        "area": 0.2508830102369252,
+        "term": 0.11688573870612681,
+        "inc": [],
+        "nu1": 8
+      },
+      "exlex": {
+        "area": 0.22961704607280198,
+        "term": 0.06892501360167709,
+        "inc": [],
+        "nu1": 8
+      },
+      "exrand": {
+        "area": 0.22961704607280198,
+        "term": 0.06892501360167709,
+        "inc": [],
+        "nu1": 8
+      },
+      "s256": {
+        "area": 0.22961704607280195,
+        "term": 0.06892501360167709,
+        "inc": [],
+        "nu1": 8
+      }
+    },
+    {
+      "truth": "none",
+      "seed": 37,
+      "r": 1,
+      "bal": {
+        "area": 0.23847992105896132,
+        "term": 0.12655107101835136,
+        "inc": [],
+        "nu1": 8
+      },
+      "exlex": {
+        "area": 0.24243963806448693,
+        "term": 0.11688573870612702,
+        "inc": [],
+        "nu1": 8
+      },
+      "exrand": {
+        "area": 0.24870829752462276,
+        "term": 0.12152898944934293,
+        "inc": [],
+        "nu1": 9
+      },
+      "s256": {
+        "area": 0.24870829752462276,
+        "term": 0.12152898944934293,
+        "inc": [],
+        "nu1": 7
+      }
+    },
+    {
+      "truth": "root",
+      "seed": 11,
+      "r": 1,
+      "bal": {
+        "area": 0.45990369705865614,
+        "term": 0.885842298492923,
+        "inc": [
+          0.9664624831151167
+        ],
+        "nu1": 8
+      },
+      "exlex": {
+        "area": 0.49682341168613253,
+        "term": 0.7750920024402711,
+        "inc": [
+          0.8561513856196852
+        ],
+        "nu1": 10
+      },
+      "exrand": {
+        "area": 0.33162630328705667,
+        "term": 0.5855709351407297,
+        "inc": [
+          0.6597932215019269
+        ],
+        "nu1": 9
+      },
+      "s256": {
+        "area": 0.5143492118781823,
+        "term": 0.9415003510485164,
+        "inc": [
+          0.9611313623622559
+        ],
+        "nu1": 11
+      }
+    },
+    {
+      "truth": "root",
+      "seed": 23,
+      "r": 1,
+      "bal": {
+        "area": 0.24310313400091813,
+        "term": 0.42409961502766885,
+        "inc": [
+          0.45676262209155444
+        ],
+        "nu1": 8
+      },
+      "exlex": {
+        "area": 0.2920475066324926,
+        "term": 0.7691864938808574,
+        "inc": [
+          0.7837814855404163
+        ],
+        "nu1": 8
+      },
+      "exrand": {
+        "area": 0.16227667465691847,
+        "term": 0.14269344332484207,
+        "inc": [
+          0.1960497850592993
+        ],
+        "nu1": 9
+      },
+      "s256": {
+        "area": 0.2920475066324926,
+        "term": 0.7691864938808574,
+        "inc": [
+          0.7837814855404163
+        ],
+        "nu1": 8
+      }
+    },
+    {
+      "truth": "root",
+      "seed": 37,
+      "r": 1,
+      "bal": {
+        "area": 0.3701920753394126,
+        "term": 0.7514276341028987,
+        "inc": [
+          0.9714576891742083
+        ],
+        "nu1": 8
+      },
+      "exlex": {
+        "area": 0.5187577447283124,
+        "term": 0.927884567759845,
+        "inc": [
+          0.9554721775546835
+        ],
+        "nu1": 11
+      },
+      "exrand": {
+        "area": 0.5382892098279575,
+        "term": 0.9184166148731937,
+        "inc": [
+          0.9712441543511497
+        ],
+        "nu1": 11
+      },
+      "s256": {
+        "area": 0.5357086615740432,
+        "term": 0.9133158527205324,
+        "inc": [
+          0.9701270309795692
+        ],
+        "nu1": 10
+      }
+    },
+    {
+      "truth": "local",
+      "seed": 11,
+      "r": 1,
+      "bal": {
+        "area": 0.09746247610705921,
+        "term": 0.09521224546845698,
+        "inc": [
+          0.14772288812827064
+        ],
+        "nu1": 8
+      },
+      "exlex": {
+        "area": 0.027940097330213576,
+        "term": 0.029783775709485538,
+        "inc": [
+          0.04788251595625836
+        ],
+        "nu1": 6
+      },
+      "exrand": {
+        "area": 0.18151191700564667,
+        "term": 0.4164732743779395,
+        "inc": [
+          0.5322877647413256
+        ],
+        "nu1": 8
+      },
+      "s256": {
+        "area": 0.049813747856136445,
+        "term": 0.1355285902653739,
+        "inc": [
+          0.20388333006228176
+        ],
+        "nu1": 8
+      }
+    },
+    {
+      "truth": "local",
+      "seed": 23,
+      "r": 1,
+      "bal": {
+        "area": 0.1716769851664853,
+        "term": 0.27327905436452565,
+        "inc": [
+          0.41405052137073406
+        ],
+        "nu1": 8
+      },
+      "exlex": {
+        "area": 0.05067405205838091,
+        "term": 0.07908241744031537,
+        "inc": [
+          0.10233689431459043
+        ],
+        "nu1": 7
+      },
+      "exrand": {
+        "area": 0.02958066654741618,
+        "term": 0.03367836115769611,
+        "inc": [
+          0.05300327455943589
+        ],
+        "nu1": 9
+      },
+      "s256": {
+        "area": 0.051293244099418406,
+        "term": 0.07908241744031537,
+        "inc": [
+          0.10233689431459043
+        ],
+        "nu1": 7
+      }
+    },
+    {
+      "truth": "local",
+      "seed": 37,
+      "r": 1,
+      "bal": {
+        "area": 0.061997580749642664,
+        "term": 0.14835939946464322,
+        "inc": [
+          0.20301340972551835
+        ],
+        "nu1": 8
+      },
+      "exlex": {
+        "area": 0.05841157877431463,
+        "term": 0.1363145665265272,
+        "inc": [
+          0.22373521979361782
+        ],
+        "nu1": 7
+      },
+      "exrand": {
+        "area": 0.015740831681062432,
+        "term": 0.03494338638354783,
+        "inc": [
+          0.056177473010685354
+        ],
+        "nu1": 10
+      },
+      "s256": {
+        "area": 0.16870642831666777,
+        "term": 0.5741223666069232,
+        "inc": [
+          0.7906766791473412
+        ],
+        "nu1": 7
+      }
+    }
+  ]
+}

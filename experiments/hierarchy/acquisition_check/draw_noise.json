@@ -1,0 +1,17 @@
+{
+  "information": {
+    "rounds": 144,
+    "exact_iid_expected_tv": 0.08466622748354638,
+    "archived_sample_tv": 0.08183857805575169
+  },
+  "balanced": {
+    "rounds": 144,
+    "exact_iid_expected_tv": 0.08218749609070843,
+    "archived_sample_tv": 0.08190497132004632
+  },
+  "reward": {
+    "rounds": 144,
+    "exact_iid_expected_tv": 0.09620568969199823,
+    "archived_sample_tv": 0.09443682249055475
+  }
+}

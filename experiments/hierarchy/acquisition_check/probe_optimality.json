@@ -1,0 +1,31 @@
+{
+  "tolerance_nats": 1e-12,
+  "budgets": {
+    "200": {
+      "decisions": 200,
+      "within_tolerance": 199,
+      "mean_regret_nats": 1.1842435451721034e-05,
+      "outside_tolerance": [
+        {
+          "truth": 2,
+          "seed": 37,
+          "round": 8,
+          "regret_nats": 0.002368487090339877
+        }
+      ]
+    },
+    "1000": {
+      "decisions": 200,
+      "within_tolerance": 199,
+      "mean_regret_nats": 1.1842435451715482e-05,
+      "outside_tolerance": [
+        {
+          "truth": 1,
+          "seed": 71,
+          "round": 8,
+          "regret_nats": 0.002368487090339766
+        }
+      ]
+    }
+  }
+}

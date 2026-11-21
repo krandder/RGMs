@@ -1,0 +1,292 @@
+{
+  "files": [
+    {
+      "file": "mc_root.jsonl",
+      "sha256": "ec54c215df938769f1dfec83dadb8835df3bd6853edbe3106964b166226d13be",
+      "rows": 180,
+      "identical_duplicate_rows": 0
+    },
+    {
+      "file": "mc_nonelocal.jsonl",
+      "sha256": "28fe72fb4658f5a96efefb9a75fa41004634ef91d04dad356bac021b0ca474e1",
+      "rows": 307,
+      "identical_duplicate_rows": 0
+    },
+    {
+      "file": "mc_local37.jsonl",
+      "sha256": "c3c5477d02ea733c3656f22d687cc22e2b8d8183e18cc993666b7d4ebab228fd",
+      "rows": 60,
+      "identical_duplicate_rows": 7
+    },
+    {
+      "file": "r0_nonelocal.jsonl",
+      "sha256": "f19c5455e5caa0b0afbc9fff226570e7f9e33ef2052024252756c2cf4f7e981a",
+      "rows": 6,
+      "identical_duplicate_rows": 6
+    },
+    {
+      "file": "r0_root.jsonl",
+      "sha256": "9276927797f481815a52e79fb6e0318690fd6891b159759ddb1c9c0e4f27cce9",
+      "rows": 3,
+      "identical_duplicate_rows": 3
+    }
+  ],
+  "raw_rows": 556,
+  "unique_world_replicates": 540,
+  "conflicting_duplicates": 0,
+  "identical_duplicate_rows": 16,
+  "duplicates": [
+    {
+      "key": [
+        "local",
+        37,
+        0
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 301
+      },
+      "copy": {
+        "file": "mc_local37.jsonl",
+        "line": 1
+      }
+    },
+    {
+      "key": [
+        "local",
+        37,
+        1
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 302
+      },
+      "copy": {
+        "file": "mc_local37.jsonl",
+        "line": 2
+      }
+    },
+    {
+      "key": [
+        "local",
+        37,
+        2
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 303
+      },
+      "copy": {
+        "file": "mc_local37.jsonl",
+        "line": 3
+      }
+    },
+    {
+      "key": [
+        "local",
+        37,
+        3
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 304
+      },
+      "copy": {
+        "file": "mc_local37.jsonl",
+        "line": 4
+      }
+    },
+    {
+      "key": [
+        "local",
+        37,
+        4
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 305
+      },
+      "copy": {
+        "file": "mc_local37.jsonl",
+        "line": 5
+      }
+    },
+    {
+      "key": [
+        "local",
+        37,
+        5
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 306
+      },
+      "copy": {
+        "file": "mc_local37.jsonl",
+        "line": 6
+      }
+    },
+    {
+      "key": [
+        "local",
+        37,
+        6
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 307
+      },
+      "copy": {
+        "file": "mc_local37.jsonl",
+        "line": 7
+      }
+    },
+    {
+      "key": [
+        "none",
+        11,
+        0
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 1
+      },
+      "copy": {
+        "file": "r0_nonelocal.jsonl",
+        "line": 1
+      }
+    },
+    {
+      "key": [
+        "none",
+        23,
+        0
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 61
+      },
+      "copy": {
+        "file": "r0_nonelocal.jsonl",
+        "line": 2
+      }
+    },
+    {
+      "key": [
+        "none",
+        37,
+        0
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 121
+      },
+      "copy": {
+        "file": "r0_nonelocal.jsonl",
+        "line": 3
+      }
+    },
+    {
+      "key": [
+        "local",
+        11,
+        0
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 181
+      },
+      "copy": {
+        "file": "r0_nonelocal.jsonl",
+        "line": 4
+      }
+    },
+    {
+      "key": [
+        "local",
+        23,
+        0
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 241
+      },
+      "copy": {
+        "file": "r0_nonelocal.jsonl",
+        "line": 5
+      }
+    },
+    {
+      "key": [
+        "local",
+        37,
+        0
+      ],
+      "first": {
+        "file": "mc_nonelocal.jsonl",
+        "line": 301
+      },
+      "copy": {
+        "file": "r0_nonelocal.jsonl",
+        "line": 6
+      }
+    },
+    {
+      "key": [
+        "root",
+        11,
+        0
+      ],
+      "first": {
+        "file": "mc_root.jsonl",
+        "line": 1
+      },
+      "copy": {
+        "file": "r0_root.jsonl",
+        "line": 1
+      }
+    },
+    {
+      "key": [
+        "root",
+        23,
+        0
+      ],
+      "first": {
+        "file": "mc_root.jsonl",
+        "line": 61
+      },
+      "copy": {
+        "file": "r0_root.jsonl",
+        "line": 2
+      }
+    },
+    {
+      "key": [
+        "root",
+        37,
+        0
+      ],
+      "first": {
+        "file": "mc_root.jsonl",
+        "line": 121
+      },
+      "copy": {
+        "file": "r0_root.jsonl",
+        "line": 3
+      }
+    }
+  ],
+  "schema": "stream-sensitivity-provenance-v1",
+  "rows_sha256": "a5fa4945f0bef2def1be7f4afc8a61489e3cdb0e070ca0ef903b8132850e8dc2",
+  "portable_module_sha256": "7f6fb42cb02d161f5b32bdb7b851c056f905f8d3058a3ba37726529562685001",
+  "original_module": {
+    "file": "mc_policy.py",
+    "sha256": "a05325ae5361af7502248be9cc48c712adcd79d64060d45cc789452a953ca4c9"
+  },
+  "simulation_environment": {
+    "python": "3.12.3",
+    "numpy": "2.0.2",
+    "scipy": "1.16.3"
+  }
+}

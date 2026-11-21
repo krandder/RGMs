@@ -1,0 +1,84 @@
+{
+  "condition": {
+    "world": "interception",
+    "seed": 101,
+    "budget": 256
+  },
+  "repeat_scope": "fresh isolated run.py worker, all learners independently refit from regenerated fixed-seed data",
+  "exclusions": "wall/CPU timings, decision timing samples, gzip container timestamps",
+  "original_condition_sha256": "889050e7988f8312841f846e3ae6ddf886a2e01648ab863203732378fe04bb98",
+  "repeat_condition_sha256": "a47c03fff65123839f333c08743c960d8f37f040548cc31f1a0f8e773ec60e2d",
+  "dataset_semantic_sha256": [
+    "284d9709d6c5476d60501bed540811236f583b23c034b8849daec6679ba61761",
+    "284d9709d6c5476d60501bed540811236f583b23c034b8849daec6679ba61761"
+  ],
+  "hierarchy_semantic_sha256": [
+    "ccb8d95067398b649add437bfae1235d5c738e513f09f9cca8587021ab2124b4",
+    "ccb8d95067398b649add437bfae1235d5c738e513f09f9cca8587021ab2124b4"
+  ],
+  "decompressed_pickle_sha256": [
+    "18123c5cd270d6e3755163eeb91075aeda1aae7a16dd01922076a07b3d435fa9",
+    "18123c5cd270d6e3755163eeb91075aeda1aae7a16dd01922076a07b3d435fa9"
+  ],
+  "checks": {
+    "same_condition": true,
+    "same_runtime_sources": true,
+    "no_method_errors": true,
+    "same_methods": true,
+    "same_nested_prefix_hash": true,
+    "dataset_content_identical": true,
+    "hierarchy_content_identical": true,
+    "all_method_outputs_identical": true
+  },
+  "methods": {
+    "flat_model_dp": {
+      "policy_identical": true,
+      "expected_return_identical": true,
+      "normalized_return_identical": true,
+      "simulation_identical": true
+    },
+    "flat_pymdp": {
+      "policy_identical": true,
+      "expected_return_identical": true,
+      "normalized_return_identical": true,
+      "simulation_identical": true
+    },
+    "random": {
+      "policy_identical": true,
+      "expected_return_identical": true,
+      "normalized_return_identical": true,
+      "simulation_identical": true
+    },
+    "rgm_action_grounded": {
+      "policy_identical": true,
+      "expected_return_identical": true,
+      "normalized_return_identical": true,
+      "simulation_identical": true
+    },
+    "rgm_action_unconditioned": {
+      "policy_identical": true,
+      "expected_return_identical": true,
+      "normalized_return_identical": true,
+      "simulation_identical": true
+    },
+    "rgm_hierarchy_disabled": {
+      "policy_identical": true,
+      "expected_return_identical": true,
+      "normalized_return_identical": true,
+      "simulation_identical": true
+    },
+    "rgm_path_adapter": {
+      "policy_identical": true,
+      "expected_return_identical": true,
+      "normalized_return_identical": true,
+      "simulation_identical": true
+    },
+    "tabular_q": {
+      "policy_identical": true,
+      "expected_return_identical": true,
+      "normalized_return_identical": true,
+      "simulation_identical": true
+    }
+  },
+  "passed": true
+}

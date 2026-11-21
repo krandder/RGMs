@@ -1,0 +1,1280 @@
+[
+  {
+    "world": "interception",
+    "seed": 101,
+    "budget": 256,
+    "log_sha256": "1c099ce9e2eca4d731a78ad4ed529bfeb3259edcffb4825dfe10237c013ab551",
+    "constructor_sha256": "d64a1308a88a125cfad7bf516cec0adf52ecfa71028c6a3bbc9be8fc1bc9e4b0",
+    "instrumentation": "observe native compression inputs/outputs; call original function unchanged",
+    "diagnostic_status": "post hoc mechanism check; no benchmark model or parameter changed",
+    "calls": [
+      {
+        "level": 1,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              3
+            ],
+            "before_shape": [
+              5,
+              5,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.2,
+            "after_shape": [
+              5,
+              5,
+              1
+            ],
+            "collapsed_to_scalar": false,
+            "input_modality_names": [
+              "phase"
+            ]
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              0
+            ],
+            "before_shape": [
+              3,
+              3,
+              3
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": true,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 1.0,
+            "after_shape": [],
+            "collapsed_to_scalar": true,
+            "input_modality_names": [
+              "ball"
+            ]
+          },
+          {
+            "factor": 2,
+            "input_modalities": [
+              2
+            ],
+            "before_shape": [
+              3,
+              3,
+              3
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": true,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.6666666666666666,
+            "after_shape": [],
+            "collapsed_to_scalar": true,
+            "input_modality_names": [
+              "paddle"
+            ]
+          },
+          {
+            "factor": 3,
+            "input_modalities": [
+              1
+            ],
+            "before_shape": [
+              2,
+              2,
+              2
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 1.0,
+            "after_shape": [
+              2,
+              2,
+              2
+            ],
+            "collapsed_to_scalar": false,
+            "input_modality_names": [
+              "direction"
+            ]
+          },
+          {
+            "factor": 4,
+            "input_modalities": [
+              4
+            ],
+            "before_shape": [
+              2,
+              2,
+              2
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.5,
+            "after_shape": [
+              2,
+              2,
+              2
+            ],
+            "collapsed_to_scalar": false,
+            "input_modality_names": [
+              "boundary"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              5,
+              5,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.2,
+            "after_shape": [
+              5,
+              5,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              4,
+              4,
+              4
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": true,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 1.0,
+            "after_shape": [],
+            "collapsed_to_scalar": true
+          },
+          {
+            "factor": 2,
+            "input_modalities": [
+              4,
+              5
+            ],
+            "before_shape": [
+              3,
+              3,
+              3
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.3333333333333333,
+            "after_shape": [
+              3,
+              3,
+              3
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              5,
+              5,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.2,
+            "after_shape": [
+              5,
+              5,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              5,
+              5,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.2,
+            "after_shape": [
+              5,
+              5,
+              1
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              5,
+              5,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.2,
+            "after_shape": [
+              5,
+              5,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              5,
+              5,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.2,
+            "after_shape": [
+              5,
+              5,
+              1
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              5,
+              5,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.2,
+            "after_shape": [
+              5,
+              5,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              5,
+              5,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.2,
+            "after_shape": [
+              5,
+              5,
+              1
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              5,
+              5,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.2,
+            "after_shape": [
+              5,
+              5,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              5,
+              5,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.2,
+            "after_shape": [
+              5,
+              5,
+              1
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              5,
+              5,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              5,
+              5,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              5,
+              5,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              5,
+              5,
+              1
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              2,
+              2,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              2,
+              2,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              2,
+              2,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              2,
+              2,
+              1
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      }
+    ],
+    "final_encoded_contexts": 5
+  },
+  {
+    "world": "key_door",
+    "seed": 101,
+    "budget": 256,
+    "log_sha256": "3396bd0953e1653f9878e9a5586c8657e89e2a3862dda368fad9709a8fc09d6c",
+    "constructor_sha256": "d64a1308a88a125cfad7bf516cec0adf52ecfa71028c6a3bbc9be8fc1bc9e4b0",
+    "instrumentation": "observe native compression inputs/outputs; call original function unchanged",
+    "diagnostic_status": "post hoc mechanism check; no benchmark model or parameter changed",
+    "calls": [
+      {
+        "level": 1,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0
+            ],
+            "before_shape": [
+              5,
+              5,
+              4
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.2,
+            "after_shape": [
+              5,
+              5,
+              4
+            ],
+            "collapsed_to_scalar": false,
+            "input_modality_names": [
+              "position"
+            ]
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              1
+            ],
+            "before_shape": [
+              2,
+              2,
+              2
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 1.0,
+            "after_shape": [
+              2,
+              2,
+              2
+            ],
+            "collapsed_to_scalar": false,
+            "input_modality_names": [
+              "key"
+            ]
+          },
+          {
+            "factor": 2,
+            "input_modalities": [
+              2
+            ],
+            "before_shape": [
+              2,
+              2,
+              2
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.5,
+            "after_shape": [
+              2,
+              2,
+              2
+            ],
+            "collapsed_to_scalar": false,
+            "input_modality_names": [
+              "boundary"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              13,
+              13,
+              8
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.07692307692307693,
+            "after_shape": [
+              13,
+              13,
+              8
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              4,
+              4,
+              4
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.5,
+            "after_shape": [
+              4,
+              4,
+              4
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 2,
+            "input_modalities": [
+              4,
+              5
+            ],
+            "before_shape": [
+              3,
+              3,
+              3
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.3333333333333333,
+            "after_shape": [
+              3,
+              3,
+              3
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              41,
+              41,
+              5
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.024390243902439025,
+            "after_shape": [
+              41,
+              41,
+              5
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              12,
+              12,
+              9
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.08333333333333333,
+            "after_shape": [
+              12,
+              12,
+              9
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 2,
+            "input_modalities": [
+              4,
+              5
+            ],
+            "before_shape": [
+              5,
+              5,
+              5
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.2,
+            "after_shape": [
+              5,
+              5,
+              5
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              36,
+              36,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              36,
+              36,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              23,
+              23,
+              4
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              23,
+              23,
+              4
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 2,
+            "input_modalities": [
+              4,
+              5
+            ],
+            "before_shape": [
+              9,
+              9,
+              2
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.1111111111111111,
+            "after_shape": [
+              9,
+              9,
+              2
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              18,
+              18,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              18,
+              18,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              17,
+              17,
+              2
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              17,
+              17,
+              2
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 2,
+            "input_modalities": [
+              4,
+              5
+            ],
+            "before_shape": [
+              10,
+              10,
+              2
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.1,
+            "after_shape": [
+              10,
+              10,
+              2
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              9,
+              9,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              9,
+              9,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              9,
+              9,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              9,
+              9,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 2,
+            "input_modalities": [
+              4,
+              5
+            ],
+            "before_shape": [
+              7,
+              7,
+              2
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              7,
+              7,
+              2
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              4,
+              4,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              4,
+              4,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              4,
+              4,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              4,
+              4,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 2,
+            "input_modalities": [
+              4,
+              5
+            ],
+            "before_shape": [
+              4,
+              4,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              4,
+              4,
+              1
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              2,
+              2,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              2,
+              2,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              4,
+              5
+            ],
+            "before_shape": [
+              2,
+              2,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              2,
+              2,
+              1
+            ],
+            "collapsed_to_scalar": false
+          },
+          {
+            "factor": 2,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              2,
+              2,
+              1
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.0,
+            "after_shape": [
+              2,
+              2,
+              1
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      }
+    ],
+    "final_encoded_contexts": 10
+  },
+  {
+    "world": "weather",
+    "seed": 101,
+    "budget": 256,
+    "log_sha256": "cd097f9ad4bc85674ff1791302bd2a92129530029f0f1c1e1e5eef55523e40c3",
+    "constructor_sha256": "d64a1308a88a125cfad7bf516cec0adf52ecfa71028c6a3bbc9be8fc1bc9e4b0",
+    "instrumentation": "observe native compression inputs/outputs; call original function unchanged",
+    "diagnostic_status": "post hoc mechanism check; no benchmark model or parameter changed",
+    "calls": [
+      {
+        "level": 1,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              1
+            ],
+            "before_shape": [
+              2,
+              2,
+              2
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 1.0,
+            "after_shape": [
+              2,
+              2,
+              2
+            ],
+            "collapsed_to_scalar": false,
+            "input_modality_names": [
+              "umbrella"
+            ]
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              0
+            ],
+            "before_shape": [
+              2,
+              2,
+              2
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 1.0,
+            "after_shape": [
+              2,
+              2,
+              2
+            ],
+            "collapsed_to_scalar": false,
+            "input_modality_names": [
+              "rain"
+            ]
+          },
+          {
+            "factor": 2,
+            "input_modalities": [
+              2
+            ],
+            "before_shape": [
+              2,
+              2,
+              2
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.5,
+            "after_shape": [
+              2,
+              2,
+              2
+            ],
+            "collapsed_to_scalar": false,
+            "input_modality_names": [
+              "boundary"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "factors": [
+          {
+            "factor": 0,
+            "input_modalities": [
+              0,
+              1
+            ],
+            "before_shape": [
+              4,
+              4,
+              4
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": true,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 1.0,
+            "after_shape": [],
+            "collapsed_to_scalar": true
+          },
+          {
+            "factor": 1,
+            "input_modalities": [
+              2,
+              3
+            ],
+            "before_shape": [
+              4,
+              4,
+              4
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": true,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.75,
+            "after_shape": [],
+            "collapsed_to_scalar": true
+          },
+          {
+            "factor": 2,
+            "input_modalities": [
+              4,
+              5
+            ],
+            "before_shape": [
+              3,
+              3,
+              3
+            ],
+            "stream": 1,
+            "low_count_rule": false,
+            "dense_successor_rule": false,
+            "already_unitary": false,
+            "minimum_fraction_reachable_successors": 0.3333333333333333,
+            "after_shape": [
+              3,
+              3,
+              3
+            ],
+            "collapsed_to_scalar": false
+          }
+        ]
+      }
+    ],
+    "final_encoded_contexts": 1
+  }
+]

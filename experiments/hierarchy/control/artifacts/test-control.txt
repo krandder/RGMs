@@ -1,0 +1,14 @@
+test_actual_pymdp_policy_api_and_terminal_sink (test_control.LiveIntegrations.test_actual_pymdp_policy_api_and_terminal_sink) ... ok
+test_joint_preference_ablation (test_control.LiveIntegrations.test_joint_preference_ablation) ... ok
+test_legal_actions_flat_control_and_unknown_fallback (test_control.LiveIntegrations.test_legal_actions_flat_control_and_unknown_fallback) ... ok
+test_pymdp_does_not_collect_terminal_reward_repeatedly (test_control.LiveIntegrations.test_pymdp_does_not_collect_terminal_reward_repeatedly) ... ok
+test_real_levels_and_boundary_safe_edges (test_control.LiveIntegrations.test_real_levels_and_boundary_safe_edges) ... ok
+test_upper_projection_perturbation_changes_raw_state_candidates (test_control.LiveIntegrations.test_upper_projection_perturbation_changes_raw_state_candidates) ... ok
+test_exhaustive_two_step_weather_policies (test_control.Worlds.test_exhaustive_two_step_weather_policies) ... ok
+test_known_values_and_kernel_invariants (test_control.Worlds.test_known_values_and_kernel_invariants) ... ok
+test_simulation_and_nested_logs (test_control.Worlds.test_simulation_and_nested_logs) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 8.103s
+
+OK

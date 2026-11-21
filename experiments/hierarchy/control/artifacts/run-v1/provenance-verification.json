@@ -1,0 +1,13 @@
+{
+  "manifest_field": "upstream_commit",
+  "field_meaning": "fork checkout HEAD at benchmark start, not upstream base",
+  "fork_checkout_head": "43f08104f5a1071c22cac4bd2be51f4b7d80e88e",
+  "upstream_base": "e520920a7d46fb772d3ca05f541b715c89ebeeb8",
+  "constructor_sha256_by_revision": {
+    "e520920a7d46fb772d3ca05f541b715c89ebeeb8": "d64a1308a88a125cfad7bf516cec0adf52ecfa71028c6a3bbc9be8fc1bc9e4b0",
+    "43f08104f5a1071c22cac4bd2be51f4b7d80e88e": "d64a1308a88a125cfad7bf516cec0adf52ecfa71028c6a3bbc9be8fc1bc9e4b0",
+    "installed_file": "d64a1308a88a125cfad7bf516cec0adf52ecfa71028c6a3bbc9be8fc1bc9e4b0"
+  },
+  "constructor_identical": true,
+  "python_src_files_changed_between_base_and_checkout": []
+}

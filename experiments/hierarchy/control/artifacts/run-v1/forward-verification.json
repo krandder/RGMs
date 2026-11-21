@@ -1,0 +1,11 @@
+{
+  "policy_tables_checked": 750,
+  "expected_policy_tables": 750,
+  "maximum_return_error": 2.6645352591003757e-15,
+  "maximum_absolute_simulation_z": 3.0321555308129176,
+  "errors": [],
+  "missing_conditions": [],
+  "complete": true,
+  "method": "forward probability-mass propagation; does not invoke benchmark backward evaluator",
+  "oracle_checks": "independent weather one-step calculation, corridor shortest path, interception final-step uncertainty; fixed expected values"
+}

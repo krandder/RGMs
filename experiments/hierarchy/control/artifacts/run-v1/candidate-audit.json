@@ -1,0 +1,1452 @@
+{
+  "diagnostic_status": "post hoc candidate-matching audit; no fitting or policy changes",
+  "records": [
+    {
+      "world": "interception",
+      "seed": 101,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 101,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 101,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 102,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 102,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 102,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 103,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 103,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 103,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 104,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 104,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 104,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 105,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 105,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 105,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 106,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 106,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 106,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 107,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 107,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 107,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 108,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 108,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 108,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 109,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 109,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 109,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 110,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 110,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "interception",
+      "seed": 110,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "key_door",
+      "seed": 101,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 11,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            0,
+            0,
+            1
+          ],
+          "target": [
+            9,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            1,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 101,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 11,
+      "decoded_edges_outside_global_top32": 2,
+      "examples": [
+        {
+          "source": [
+            7,
+            2,
+            1
+          ],
+          "target": [
+            6,
+            2,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "source": [
+            4,
+            0,
+            1
+          ],
+          "target": [
+            4,
+            2,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            0,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 101,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 2,
+      "examples": [
+        {
+          "source": [
+            7,
+            0,
+            1
+          ],
+          "target": [
+            6,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "source": [
+            4,
+            0,
+            1
+          ],
+          "target": [
+            12,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            2,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 102,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 10,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "key_door",
+      "seed": 102,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            0,
+            0,
+            1
+          ],
+          "target": [
+            12,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            2,
+            1,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 102,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            3,
+            0,
+            1
+          ],
+          "target": [
+            12,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 103,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 10,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            2,
+            3,
+            1
+          ],
+          "target": [
+            7,
+            3,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            2,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 103,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 2,
+      "examples": [
+        {
+          "source": [
+            4,
+            0,
+            1
+          ],
+          "target": [
+            11,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "source": [
+            2,
+            0,
+            1
+          ],
+          "target": [
+            11,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            2,
+            1,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 103,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            2,
+            0,
+            1
+          ],
+          "target": [
+            11,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 104,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 10,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "key_door",
+      "seed": 104,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 11,
+      "decoded_edges_outside_global_top32": 2,
+      "examples": [
+        {
+          "source": [
+            0,
+            2,
+            1
+          ],
+          "target": [
+            12,
+            2,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "source": [
+            0,
+            0,
+            1
+          ],
+          "target": [
+            10,
+            2,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 104,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            10,
+            0,
+            1
+          ],
+          "target": [
+            4,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 105,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 11,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "key_door",
+      "seed": 105,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 9,
+      "decoded_edges_outside_global_top32": 3,
+      "examples": [
+        {
+          "source": [
+            1,
+            0,
+            1
+          ],
+          "target": [
+            11,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "source": [
+            8,
+            0,
+            1
+          ],
+          "target": [
+            11,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "source": [
+            9,
+            0,
+            1
+          ],
+          "target": [
+            11,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            2,
+            0,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 105,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 9,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            1,
+            0,
+            1
+          ],
+          "target": [
+            11,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            1,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 106,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 9,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            2,
+            0,
+            1
+          ],
+          "target": [
+            2,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            2,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 106,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            4,
+            0,
+            1
+          ],
+          "target": [
+            11,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 106,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 9,
+      "decoded_edges_outside_global_top32": 2,
+      "examples": [
+        {
+          "source": [
+            5,
+            0,
+            1
+          ],
+          "target": [
+            11,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "source": [
+            0,
+            0,
+            1
+          ],
+          "target": [
+            11,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 107,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 10,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            0,
+            0,
+            1
+          ],
+          "target": [
+            0,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            2,
+            1,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 107,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "key_door",
+      "seed": 107,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 2,
+      "examples": [
+        {
+          "source": [
+            2,
+            0,
+            1
+          ],
+          "target": [
+            12,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "source": [
+            8,
+            0,
+            1
+          ],
+          "target": [
+            12,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 108,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 9,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            5,
+            0,
+            1
+          ],
+          "target": [
+            4,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 108,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            7,
+            0,
+            1
+          ],
+          "target": [
+            12,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            2,
+            1,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 108,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 2,
+      "examples": [
+        {
+          "source": [
+            10,
+            0,
+            1
+          ],
+          "target": [
+            8,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "source": [
+            2,
+            0,
+            1
+          ],
+          "target": [
+            12,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            2,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 109,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 10,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "key_door",
+      "seed": 109,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 11,
+      "decoded_edges_outside_global_top32": 5,
+      "examples": [
+        {
+          "source": [
+            4,
+            3,
+            1
+          ],
+          "target": [
+            2,
+            1,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "source": [
+            1,
+            1,
+            1
+          ],
+          "target": [
+            9,
+            1,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "source": [
+            2,
+            3,
+            1
+          ],
+          "target": [
+            9,
+            1,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            0,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 109,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 9,
+      "decoded_edges_outside_global_top32": 2,
+      "examples": [
+        {
+          "source": [
+            2,
+            0,
+            1
+          ],
+          "target": [
+            12,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "source": [
+            9,
+            0,
+            1
+          ],
+          "target": [
+            12,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            0,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 110,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 11,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "key_door",
+      "seed": 110,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 1,
+      "examples": [
+        {
+          "source": [
+            0,
+            0,
+            1
+          ],
+          "target": [
+            5,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            2,
+            2,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "key_door",
+      "seed": 110,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 8,
+      "decoded_edges_outside_global_top32": 2,
+      "examples": [
+        {
+          "source": [
+            0,
+            0,
+            1
+          ],
+          "target": [
+            5,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            2,
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "source": [
+            6,
+            0,
+            1
+          ],
+          "target": [
+            5,
+            0,
+            1
+          ],
+          "length": 4,
+          "sequence": [
+            1,
+            1,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "world": "weather",
+      "seed": 101,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 101,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 101,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 102,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 102,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 102,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 103,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 103,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 103,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 104,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 104,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 104,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 105,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 105,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 105,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 106,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 106,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 106,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 107,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 107,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 107,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 108,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 108,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 108,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 109,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 109,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 109,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 110,
+      "budget": 256,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 110,
+      "budget": 1024,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    },
+    {
+      "world": "weather",
+      "seed": 110,
+      "budget": 4096,
+      "maximum_distinct_decoded_sequences_per_context": 2,
+      "decoded_edges_outside_global_top32": 0,
+      "examples": []
+    }
+  ]
+}

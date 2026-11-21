@@ -21,7 +21,7 @@ comparator and loses seven. Its mean chosen probe's exact information gain is
 sample total-variation distance from the exact posterior is about 0.038–0.041
 across policies and budgets. In this small family, probe selection gains
 in acquisition value and posterior concentration coincide at the larger
-training budget. The 200-update concentration comparison is less clear.
+training budget. At 200 updates both descriptive intervals include zero. Random also paid the training cost in this benchmark but did not use the draws; a random policy needs no training to make its choices.
 
 A post hoc [seed sensitivity](../acquisition_check/seed_check.json) kept the four truths together within each of the five seeds. Across all 32 sign assignments, the two-sided sign-flip values at 1,000 updates were .250 against random and .125 against reward; at 200 updates they were .625 and .500. This check assumes sign symmetry and the policy labels were not randomized. The measured positive mean should not be read as strong evidence beyond these worlds. The design and primary metric were committed before the study; the bootstrap specification was committed separately after the first saved cell.
 

@@ -1,6 +1,6 @@
 # Two post hoc controls for action selection
 
-Exact-greedy information gain scores **0.2749** on mean true-structure mass, and a fixed design that alternates the actuator at leaf zero scores **0.2725**. Both exceed the frozen balanced design's 0.2448 on this metric. Their flag Brier scores differ: exact-greedy improves on balanced, while the fixed design does slightly worse.
+Using the enumerated posterior and strict binary64 score comparisons, greedy information gain scores **0.2749** on mean true-structure mass, and a fixed design that alternates the actuator at leaf zero scores **0.2725**. Both exceed the frozen balanced design's 0.2448 on this metric. Their flag Brier scores differ: exact-greedy improves on balanced, while the fixed design does slightly worse.
 
 | Policy | Mean true-structure mass | Mean flag Brier, lower is better |
 |---|---:|---:|
@@ -18,7 +18,7 @@ Numerical ties affect the exact-greedy trajectory. The primary rule uses binary6
 
 The rerun uses the original Python 3.12.3, NumPy 2.5.3 and SciPy 1.18.1. All 144 strict-greedy choices match the independent review's recorded choices, and both reported baseline means match at four decimals. All 432 archived outcomes regenerate exactly; their scores agree within 3.34e-15. A separate scalar Polya-urn calculation checks all 432 new observation steps within 2.34e-15. A separate-process repeat is byte-identical, recorded in [validation.json](actuator_baseline_validation.json). Full choices, acquisition scores, tie gaps, paired differences, source hashes and checks are in [actuator_baselines.json](actuator_baselines.json).
 
-After placing [actuator_baselines.py](actuator_baselines.py) in `experiments/hierarchy/acquisition_check/`, rerun from the repository root with the original dependency versions:
+To rerun [the comparison](actuator_baselines.py) from the repository root with the original dependency versions:
 
 ```sh
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \

@@ -1,7 +1,6 @@
 # Phase 4: learning which transitions the actuator controls
 
-The information policy raised mean 16-round exact posterior mass on the true
-joint tree/control structure from 0.2448 with balanced interventions to 0.3038
+Over 16 rounds, mean exact posterior mass on the true joint tree/control structure was 0.3038 with information-seeking and 0.2448 with balanced interventions
 (paired difference +0.0590 across nine fixed truth–seed worlds). Mean node-flag
 Brier fell from 0.0609 to 0.0484 (difference −0.0125; smaller is better).
 Information won the truth-mass comparison in eight of nine paired worlds. The
@@ -25,7 +24,7 @@ The reward policy only chose action zero in all three root-control worlds (48 in
 The active policy's mean trained-sample
 TV from the exact posterior was 0.0818, based on 256 draws per round; this
 includes sampling noise and is not the exact TV of its learned distribution.
-The 26-structure posterior was enumerated only after choice for evaluation.
+Training scored all 26 candidates in every fit (432 intervention fits and 192 fixed-stream fits). For evaluation the exact normalization was separate from the sampler and did not choose its interventions. There was no reduction in distinct score evaluations versus enumeration.
 The information policy chose `(start leaf, actuator)` from its own trained
 GFlowNet samples; the balanced policy received each of the eight pairs twice.
 Each of 27 interventional cells used 16 transitions and 16 fresh 1,000-update

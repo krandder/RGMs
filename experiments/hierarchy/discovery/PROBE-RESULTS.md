@@ -3,8 +3,7 @@
 The frozen four-truth, five-seed, three-policy, two-budget matrix completed all
 120 cells and 1,200 rounds. The information policy chose probes from 256 actual
 draws of the GFlowNet retrained on its own history before each observation.
-Exact posterior enumeration was used only to score the chosen probes and check
-Bayes updates. All cells have one matching source-hash set. A separate fixed-seed
+The normalized exact posterior scored the chosen probes and checked Bayes updates. Training queried the unnormalized scores for all four candidate structures in each of the 1,200 fits; the normalized exact distribution was not used to choose probes. All cells have one matching source-hash set. A separate fixed-seed
 replay of a 1,000-update information-policy cell matched every non-timing field.
 
 The primary measure is mean area under exact posterior mass on the generating
@@ -39,6 +38,6 @@ and random chose the same probes and observed the same outcomes at both
 budgets. Because the budget arms use distinct sampler seeds and draws, this
 contrast does not isolate the causal effect of additional training updates.
 
-The 1,000-update information trials ended with mean .412 posterior mass on the true tree. None reached .8 in ten rounds. This is faster concentration in the stated mean-mass metric, not reliable identification of the hidden hierarchy.
+The 1,000-update information trials ended with mean .412 posterior mass on the true tree. None reached .8 in ten rounds. The information policy assigned the true tree more probability on average over these ten rounds. It did not reliably identify the tree, and probability on the shallow truth fell under every policy.
 
 The [complete results](artifacts/phase3/summary.json) include all paired differences and training times; [raw cells](artifacts/phase3/cells) preserve per-round actions, outcomes, trained sample counts and posterior scores. A [same-code fixed-seed rerun](artifacts/phase3/replay/receipt.json) reproduced every non-timing field of one 1,000-update cell. For an exact-posterior action comparison and a replay of all 1,200 choices, see the [separate diagnostic](../acquisition_check/README.md). For execution instructions, see [README](README.md).

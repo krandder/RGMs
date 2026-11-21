@@ -8,7 +8,7 @@ the correct joint tree and flags rose from 0.058 to 0.935. This makes the
 The no-effect case separates flag detection from recovering the generating
 tree. Its true-node flag Brier score improved while mass on the generating
 joint structure fell from 0.166 to 0.043. More data did not improve every
-structure readout. These nine fixed worlds do not establish general
+structure readout by 256 observations; the decline does not show permanent failure to recover the no-effect tree. These nine fixed worlds do not establish general
 identifiability or the performance of a learned acquisition policy.
 
 | Generating case | Transitions | True joint mass | True control inclusion | True-node Brier | Mean maximum false control |
@@ -39,7 +39,7 @@ random-number stream reproduce its balanced arm. Later data continue that
 stream through independently seeded balanced blocks; each start-leaf/actuator
 pair appears 2, 8, and 32 times at the three prefixes. No active-arm data or
 GFlowNet training enter this diagnostic. The [scope](SCOPE.md) was frozen
-before inspecting the continuation outcomes, with SHA-256
+in the runner before inspecting the continuation outcomes and committed to the fork with the results. Its SHA-256 was
 `5d82b13343fc8d9b824b5db9e3280951f7fd9406091d1d5b536fd902e21fcd4f`.
 
 The [verification receipt](verification.json) records an exact same-code
@@ -48,7 +48,7 @@ artifacts. All 144 interventions and outcomes, every checked exact posterior
 readout, and the frozen source hashes agree without differences. An independent
 [arithmetic check](metric-check.json) also reproduced all 27 prefix Brier,
 inclusion, and false-control readouts from the saved marginals and true trees.
-Across all 2,304 generated transitions, sequential Bayes updates agreed with
+The [standalone metric check](check_metrics.py) reconstructs the true node sets and recalculates these metrics from the saved marginals; run it with `python3 experiments/hierarchy/control_prefix/check_metrics.py experiments/hierarchy/control_prefix/results.json`. Across all 2,304 generated transitions, sequential Bayes updates agreed with
 full-history integrated likelihoods to maximum absolute error 8.92e-14.
 The first diagnostic took 72.42 wall seconds and 31.01 CPU seconds at
 niceness 19 with one numerical-library thread. Timings and creation timestamps

@@ -1,0 +1,1891 @@
+{
+  "schema": "hierarchy-phase4-summary-v1",
+  "n_interventional_cells": 27,
+  "n_negative_control_cells": 12,
+  "seeds": [
+    11,
+    23,
+    37
+  ],
+  "source_sha256": {
+    "posterior/__init__.py": "43a9de04401d3c4c11c8f6b2750585b932087296c4944e84c8786dceeef94318",
+    "posterior/model.py": "e81a3d81766ba45070d98d2de775fb61a9f6188ab270434becd933293ecbbc3c",
+    "posterior/grammar.py": "39adfc3f157b6f34ca2e36a3385ea2190d2455426546a7f9a44ae2455dc25eec",
+    "posterior/tb.py": "13d04923be334b1732607fb50c34e83fe4e481a0762e06592cb331739c79d480",
+    "posterior/exact.py": "9261b7bfa8dda3ec953e60a141db28d23b8ef401ba3b344e375d74e1740ef01f",
+    "discovery/PHASE4-PROTOCOL.md": "2a9ff16fb33d2c69e700ae4daf8e3a9c54b03495bb538b92e440753e211e807e",
+    "discovery/acquisition.py": "3bc3df539ba5d7cf2a76bc78dea184a4dcc6762f6f7fd03f35332c72cfb8b006",
+    "discovery/trial.py": "bdd0edf4b4766b97b50f8e4aa6cff0809aad0cc140a9645999640298fdd5ac46",
+    "discovery/control_acquisition.py": "ade835cae342778ce94363aa9b447d37af83f4ac563329273498dce5b5fa28ee",
+    "discovery/controllability.py": "b8893f3f0f47fa19d012651273a26bca80e487118d2cd255472bddf91d3e394c",
+    "discovery/interventions.py": "bf9113d2313ce39bfed54c1e6c2ac1637269f812554db650948d67e0ba7c9133",
+    "discovery/control_trial.py": "e9b959413677054c4f51fff6b2e62b2060fefb950733aa6660c8fec3ef2ebf2f",
+    "discovery/control_stream.py": "ee4453aa0175fde68fb559c62998dfb5f7e192dcfaf64d27143616741bddc0df",
+    "discovery/run_phase4.py": "6a94869719d577ed1e7346487c6e9cb6e802cf15a075a3db28b1b5a5473ae2be",
+    "discovery/run_phase4_null.py": "2cea74595f54dfd2c7641bae75a612fe51914e66df8fe46afacc5509f3c7e69c"
+  },
+  "policies": {
+    "information": {
+      "mean_area_under_truth_mass": 0.3037865522860501,
+      "mean_flag_brier": 0.048439188809704055,
+      "mean_terminal_truth_mass": 0.4242793330576123,
+      "mean_sample_tv": 0.08183857805575169,
+      "total_train_and_sample_seconds": 553.4058776833117,
+      "by_truth": {
+        "none": {
+          "mean_area_under_truth_mass": 0.30349662224614815,
+          "mean_flag_brier": 0.004499809597899678
+        },
+        "root": {
+          "mean_area_under_truth_mass": 0.5033839616977932,
+          "mean_flag_brier": 0.02496158918254736
+        },
+        "local": {
+          "mean_area_under_truth_mass": 0.10447907291420894,
+          "mean_flag_brier": 0.11585616764866513
+        }
+      },
+      "by_cell": {
+        "none_seed11": {
+          "area_under_truth_mass": 0.271915359336087,
+          "mean_flag_brier": 0.003531878270795639,
+          "terminal_truth_mass": 0.12152898944934314,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": null,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.5725158621045431,
+              "controlled": 0.06904713914828664,
+              "controlled_given_present": 0.12060301507537695
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000004,
+              "controlled": 0.05094682359862219,
+              "controlled_given_present": 0.05094682359862217
+            },
+            "0,2": {
+              "present": 0.1527413662746619,
+              "controlled": 0.012375144454361175,
+              "controlled_given_present": 0.08102025506376576
+            },
+            "0,3": {
+              "present": 0.1527413662746619,
+              "controlled": 0.012375144454361175,
+              "controlled_given_present": 0.08102025506376576
+            },
+            "1,2": {
+              "present": 0.1527413662746619,
+              "controlled": 0.01424530877173008,
+              "controlled_given_present": 0.09326424870466292
+            },
+            "1,3": {
+              "present": 0.1527413662746619,
+              "controlled": 0.01424530877173008,
+              "controlled_given_present": 0.09326424870466292
+            },
+            "2,3": {
+              "present": 0.5725158621045431,
+              "controlled": 0.04638538117576175,
+              "controlled_given_present": 0.08102025506376563
+            }
+          }
+        },
+        "none_seed23": {
+          "area_under_truth_mass": 0.27218192071773484,
+          "mean_flag_brier": 0.005244476356618782,
+          "terminal_truth_mass": 0.12152898944934314,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": null,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.15274136627466195,
+              "controlled": 0.014245308771730128,
+              "controlled_given_present": 0.0932642487046632
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000002,
+              "controlled": 0.0509468235986222,
+              "controlled_given_present": 0.05094682359862219
+            },
+            "0,2": {
+              "present": 0.5725158621045429,
+              "controlled": 0.06904713914828645,
+              "controlled_given_present": 0.12060301507537666
+            },
+            "0,3": {
+              "present": 0.15274136627466195,
+              "controlled": 0.014245308771730128,
+              "controlled_given_present": 0.0932642487046632
+            },
+            "1,2": {
+              "present": 0.15274136627466195,
+              "controlled": 0.012375144454361178,
+              "controlled_given_present": 0.08102025506376574
+            },
+            "1,3": {
+              "present": 0.5725158621045429,
+              "controlled": 0.04638538117576175,
+              "controlled_given_present": 0.08102025506376566
+            },
+            "2,3": {
+              "present": 0.15274136627466195,
+              "controlled": 0.012375144454361178,
+              "controlled_given_present": 0.08102025506376574
+            }
+          }
+        },
+        "none_seed37": {
+          "area_under_truth_mass": 0.36639258668462266,
+          "mean_flag_brier": 0.004723074166284614,
+          "terminal_truth_mass": 0.2395078568834304,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": null,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.15962434524989044,
+              "controlled": 0.014887244634704736,
+              "controlled_given_present": 0.09326424870466275
+            },
+            "0,1,2,3": {
+              "present": 1.000000000000001,
+              "controlled": 0.07595444114832342,
+              "controlled_given_present": 0.07595444114832334
+            },
+            "0,2": {
+              "present": 0.1347972526820465,
+              "controlled": 0.013825359249440687,
+              "controlled_given_present": 0.10256410256410271
+            },
+            "0,3": {
+              "present": 0.46118262973803303,
+              "controlled": 0.05908389562480135,
+              "controlled_given_present": 0.12811387900355864
+            },
+            "1,2": {
+              "present": 0.46118262973803303,
+              "controlled": 0.09709107994484904,
+              "controlled_given_present": 0.21052631578947364
+            },
+            "1,3": {
+              "present": 0.1347972526820465,
+              "controlled": 0.02299858339598902,
+              "controlled_given_present": 0.17061611374407615
+            },
+            "2,3": {
+              "present": 0.15962434524989044,
+              "controlled": 0.016371727717937434,
+              "controlled_given_present": 0.10256410256410227
+            }
+          }
+        },
+        "root_seed11": {
+          "area_under_truth_mass": 0.4909105604188189,
+          "mean_flag_brier": 0.02268404583152565,
+          "terminal_truth_mass": 0.8629218413012711,
+          "terminal_flag_precision": 1.0,
+          "terminal_flag_recall": 1.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.0322669770866909,
+              "controlled": 0.03062628333652017,
+              "controlled_given_present": 0.9491525423728812
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000016,
+              "controlled": 0.9427475970000438,
+              "controlled_given_present": 0.9427475970000424
+            },
+            "0,2": {
+              "present": 0.05024220870492743,
+              "controlled": 0.012560552176231872,
+              "controlled_given_present": 0.2500000000000003
+            },
+            "0,3": {
+              "present": 0.02717462873881769,
+              "controlled": 0.004940841588875942,
+              "controlled_given_present": 0.18181818181818174
+            },
+            "1,2": {
+              "present": 0.02717462873881769,
+              "controlled": 0.006793657184704433,
+              "controlled_given_present": 0.2500000000000004
+            },
+            "1,3": {
+              "present": 0.05024220870492743,
+              "controlled": 0.012560552176231872,
+              "controlled_given_present": 0.2500000000000003
+            },
+            "2,3": {
+              "present": 0.0322669770866909,
+              "controlled": 0.0201668606791818,
+              "controlled_given_present": 0.6249999999999996
+            }
+          }
+        },
+        "root_seed23": {
+          "area_under_truth_mass": 0.5120856706309805,
+          "mean_flag_brier": 0.026346596646492866,
+          "terminal_truth_mass": 0.9273566913623768,
+          "terminal_flag_precision": 1.0,
+          "terminal_flag_recall": 1.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.008160200078590042,
+              "controlled": 0.007515973756596087,
+              "controlled_given_present": 0.9210526315789468
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000009,
+              "controlled": 0.959316935301881,
+              "controlled_given_present": 0.9593169353018801
+            },
+            "0,2": {
+              "present": 0.023823576331052452,
+              "controlled": 0.005955894082763111,
+              "controlled_given_present": 0.24999999999999992
+            },
+            "0,3": {
+              "present": 0.0075396503936107865,
+              "controlled": 0.0018849125984026975,
+              "controlled_given_present": 0.2500000000000001
+            },
+            "1,2": {
+              "present": 0.0075396503936107865,
+              "controlled": 0.003769825196805393,
+              "controlled_given_present": 0.49999999999999994
+            },
+            "1,3": {
+              "present": 0.023823576331052452,
+              "controlled": 0.005955894082763111,
+              "controlled_given_present": 0.24999999999999992
+            },
+            "2,3": {
+              "present": 0.008160200078590042,
+              "controlled": 0.00510012504911877,
+              "controlled_given_present": 0.6249999999999993
+            }
+          }
+        },
+        "root_seed37": {
+          "area_under_truth_mass": 0.5071556540435801,
+          "mean_flag_brier": 0.025854125069623562,
+          "terminal_truth_mass": 0.9170263751354194,
+          "terminal_flag_precision": 1.0,
+          "terminal_flag_recall": 1.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.014130010327696578,
+              "controlled": 0.013801405436354794,
+              "controlled_given_present": 0.9767441860465114
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000013,
+              "controlled": 0.9716462359707481,
+              "controlled_given_present": 0.9716462359707467
+            },
+            "0,2": {
+              "present": 0.03340654839314315,
+              "controlled": 0.008351637098285793,
+              "controlled_given_present": 0.25000000000000017
+            },
+            "0,3": {
+              "present": 0.01906159515918114,
+              "controlled": 0.00953079757959056,
+              "controlled_given_present": 0.49999999999999944
+            },
+            "1,2": {
+              "present": 0.01906159515918114,
+              "controlled": 0.007624638063672459,
+              "controlled_given_present": 0.40000000000000013
+            },
+            "1,3": {
+              "present": 0.03340654839314315,
+              "controlled": 0.013362619357257287,
+              "controlled_given_present": 0.4000000000000008
+            },
+            "2,3": {
+              "present": 0.014130010327696578,
+              "controlled": 0.0035325025819241446,
+              "controlled_given_present": 0.25
+            }
+          }
+        },
+        "local_seed11": {
+          "area_under_truth_mass": 0.015554176660111033,
+          "mean_flag_brier": 0.14580279922417766,
+          "terminal_truth_mass": 0.025252531963736412,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": 0.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.31358953727155253,
+              "controlled": 0.057016279503918486,
+              "controlled_given_present": 0.18181818181818132
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000002,
+              "controlled": 0.38474386649275577,
+              "controlled_given_present": 0.38474386649275566
+            },
+            "0,2": {
+              "present": 0.33872902893092594,
+              "controlled": 0.03722297021218963,
+              "controlled_given_present": 0.10989010989010979
+            },
+            "0,3": {
+              "present": 0.11189060247188679,
+              "controlled": 0.014437497093146663,
+              "controlled_given_present": 0.12903225806451596
+            },
+            "1,2": {
+              "present": 0.11189060247188679,
+              "controlled": 0.05186981571544436,
+              "controlled_given_present": 0.4635761589403988
+            },
+            "1,3": {
+              "present": 0.33872902893092594,
+              "controlled": 0.04370697147495829,
+              "controlled_given_present": 0.12903225806451646
+            },
+            "2,3": {
+              "present": 0.31358953727155253,
+              "controlled": 0.14537263317224305,
+              "controlled_given_present": 0.46357615894039783
+            }
+          }
+        },
+        "local_seed23": {
+          "area_under_truth_mass": 0.2189470349071804,
+          "mean_flag_brier": 0.08135866801875613,
+          "terminal_truth_mass": 0.459180125319352,
+          "terminal_flag_precision": 1.0,
+          "terminal_flag_recall": 1.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.8100568434590707,
+              "controlled": 0.6688941227490451,
+              "controlled_given_present": 0.8257372654155498
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000004,
+              "controlled": 0.1802178171737304,
+              "controlled_given_present": 0.1802178171737303
+            },
+            "0,2": {
+              "present": 0.041383622867944954,
+              "controlled": 0.010345905716986232,
+              "controlled_given_present": 0.24999999999999983
+            },
+            "0,3": {
+              "present": 0.041383622867944954,
+              "controlled": 0.010345905716986232,
+              "controlled_given_present": 0.24999999999999983
+            },
+            "1,2": {
+              "present": 0.041383622867944954,
+              "controlled": 0.003282553655247756,
+              "controlled_given_present": 0.07932011331444754
+            },
+            "1,3": {
+              "present": 0.041383622867944954,
+              "controlled": 0.003282553655247756,
+              "controlled_given_present": 0.07932011331444754
+            },
+            "2,3": {
+              "present": 0.8100568434590707,
+              "controlled": 0.202514210864768,
+              "controlled_given_present": 0.2500000000000004
+            }
+          }
+        },
+        "local_seed37": {
+          "area_under_truth_mass": 0.07893600717533537,
+          "mean_flag_brier": 0.12040703570306158,
+          "terminal_truth_mass": 0.14421059665423844,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": 0.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.6589775507516182,
+              "controlled": 0.18827930021474748,
+              "controlled_given_present": 0.2857142857142848
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999992,
+              "controlled": 0.06717109361342367,
+              "controlled_given_present": 0.06717109361342373
+            },
+            "0,2": {
+              "present": 0.013457743755845172,
+              "controlled": 0.003845069644527181,
+              "controlled_given_present": 0.2857142857142849
+            },
+            "0,3": {
+              "present": 0.0037788371002040926,
+              "controlled": 0.0005530005512493787,
+              "controlled_given_present": 0.14634146341463397
+            },
+            "1,2": {
+              "present": 0.0037788371002040926,
+              "controlled": 0.00036422526267027526,
+              "controlled_given_present": 0.09638554216867504
+            },
+            "1,3": {
+              "present": 0.013457743755845172,
+              "controlled": 0.0011273502622697604,
+              "controlled_given_present": 0.08376963350785398
+            },
+            "2,3": {
+              "present": 0.6589775507516182,
+              "controlled": 0.11243218875383086,
+              "controlled_given_present": 0.17061611374407623
+            }
+          }
+        }
+      }
+    },
+    "reward": {
+      "mean_area_under_truth_mass": 0.15669758831661376,
+      "mean_flag_brier": 0.07932198915852028,
+      "mean_terminal_truth_mass": 0.13092361490462934,
+      "mean_sample_tv": 0.09443682249055475,
+      "total_train_and_sample_seconds": 561.4544149274006,
+      "by_truth": {
+        "none": {
+          "mean_area_under_truth_mass": 0.32463893942484484,
+          "mean_flag_brier": 0.011572387578664065
+        },
+        "root": {
+          "mean_area_under_truth_mass": 0.1196105074388288,
+          "mean_flag_brier": 0.08204224686970782
+        },
+        "local": {
+          "mean_area_under_truth_mass": 0.025843318086167636,
+          "mean_flag_brier": 0.14435133302718897
+        }
+      },
+      "by_cell": {
+        "none_seed11": {
+          "area_under_truth_mass": 0.3168251897122835,
+          "mean_flag_brier": 0.010937679454133573,
+          "terminal_truth_mass": 0.25779293441107004,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": null,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.21875869581730228,
+              "controlled": 0.05468967395432556,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000002,
+              "controlled": 0.25,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "0,2": {
+              "present": 0.21875869581730228,
+              "controlled": 0.05468967395432556,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "0,3": {
+              "present": 0.21875869581730228,
+              "controlled": 0.05468967395432556,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "1,2": {
+              "present": 0.21875869581730228,
+              "controlled": 0.05468967395432556,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "1,3": {
+              "present": 0.21875869581730228,
+              "controlled": 0.05468967395432556,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "2,3": {
+              "present": 0.21875869581730228,
+              "controlled": 0.05468967395432556,
+              "controlled_given_present": 0.24999999999999994
+            }
+          }
+        },
+        "none_seed23": {
+          "area_under_truth_mass": 0.37903473889150824,
+          "mean_flag_brier": 0.010537838682312041,
+          "terminal_truth_mass": 0.3270247070754513,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": null,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.14322972882101137,
+              "controlled": 0.03580743220525284,
+              "controlled_given_present": 0.25
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999997,
+              "controlled": 0.24999999999999994,
+              "controlled_given_present": 0.25000000000000006
+            },
+            "0,2": {
+              "present": 0.2775075995907085,
+              "controlled": 0.0693768998976771,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "0,3": {
+              "present": 0.14322972882101137,
+              "controlled": 0.03580743220525284,
+              "controlled_given_present": 0.25
+            },
+            "1,2": {
+              "present": 0.14322972882101137,
+              "controlled": 0.03580743220525284,
+              "controlled_given_present": 0.25
+            },
+            "1,3": {
+              "present": 0.2775075995907085,
+              "controlled": 0.0693768998976771,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "2,3": {
+              "present": 0.14322972882101137,
+              "controlled": 0.03580743220525284,
+              "controlled_given_present": 0.25
+            }
+          }
+        },
+        "none_seed37": {
+          "area_under_truth_mass": 0.27805688967074277,
+          "mean_flag_brier": 0.013241644599546576,
+          "terminal_truth_mass": 0.18218028580615742,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": null,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.12340916317738103,
+              "controlled": 0.030852290794345268,
+              "controlled_given_present": 0.2500000000000001
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999994,
+              "controlled": 0.23742189197010952,
+              "controlled_given_present": 0.23742189197010966
+            },
+            "0,2": {
+              "present": 0.12340916317738103,
+              "controlled": 0.030852290794345268,
+              "controlled_given_present": 0.2500000000000001
+            },
+            "0,3": {
+              "present": 0.4859839211295394,
+              "controlled": 0.2256353919530005,
+              "controlled_given_present": 0.4642857142857144
+            },
+            "1,2": {
+              "present": 0.4859839211295394,
+              "controlled": 0.12149598028238488,
+              "controlled_given_present": 0.25000000000000006
+            },
+            "1,3": {
+              "present": 0.12340916317738103,
+              "controlled": 0.0205681938628968,
+              "controlled_given_present": 0.16666666666666638
+            },
+            "2,3": {
+              "present": 0.12340916317738103,
+              "controlled": 0.0205681938628968,
+              "controlled_given_present": 0.16666666666666638
+            }
+          }
+        },
+        "root_seed11": {
+          "area_under_truth_mass": 0.1345599769815083,
+          "mean_flag_brier": 0.08165022102363907,
+          "terminal_truth_mass": 0.13076507003563206,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": 0.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.17181679348902706,
+              "controlled": 0.04295419837225676,
+              "controlled_given_present": 0.24999999999999997
+            },
+            "0,1,2,3": {
+              "present": 1.0,
+              "controlled": 0.25000000000000006,
+              "controlled_given_present": 0.25000000000000006
+            },
+            "0,2": {
+              "present": 0.13330613287941792,
+              "controlled": 0.03332653321985447,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "0,3": {
+              "present": 0.17181679348902706,
+              "controlled": 0.04295419837225676,
+              "controlled_given_present": 0.24999999999999997
+            },
+            "1,2": {
+              "present": 0.17181679348902706,
+              "controlled": 0.04295419837225676,
+              "controlled_given_present": 0.24999999999999997
+            },
+            "1,3": {
+              "present": 0.13330613287941792,
+              "controlled": 0.03332653321985447,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "2,3": {
+              "present": 0.17181679348902706,
+              "controlled": 0.04295419837225676,
+              "controlled_given_present": 0.24999999999999997
+            }
+          }
+        },
+        "root_seed23": {
+          "area_under_truth_mass": 0.10560839657076114,
+          "mean_flag_brier": 0.08236625088270501,
+          "terminal_truth_mass": 0.08593097813702331,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": 0.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.21875869581730228,
+              "controlled": 0.05468967395432556,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000002,
+              "controlled": 0.25,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "0,2": {
+              "present": 0.21875869581730228,
+              "controlled": 0.05468967395432556,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "0,3": {
+              "present": 0.21875869581730228,
+              "controlled": 0.05468967395432556,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "1,2": {
+              "present": 0.21875869581730228,
+              "controlled": 0.05468967395432556,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "1,3": {
+              "present": 0.21875869581730228,
+              "controlled": 0.05468967395432556,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "2,3": {
+              "present": 0.21875869581730228,
+              "controlled": 0.05468967395432556,
+              "controlled_given_present": 0.24999999999999994
+            }
+          }
+        },
+        "root_seed37": {
+          "area_under_truth_mass": 0.11866314876421696,
+          "mean_flag_brier": 0.08211026870277938,
+          "terminal_truth_mass": 0.10900823569181715,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": 0.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.14322972882101137,
+              "controlled": 0.03580743220525284,
+              "controlled_given_present": 0.25
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999997,
+              "controlled": 0.24999999999999994,
+              "controlled_given_present": 0.25000000000000006
+            },
+            "0,2": {
+              "present": 0.14322972882101137,
+              "controlled": 0.03580743220525284,
+              "controlled_given_present": 0.25
+            },
+            "0,3": {
+              "present": 0.2775075995907085,
+              "controlled": 0.0693768998976771,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "1,2": {
+              "present": 0.2775075995907085,
+              "controlled": 0.0693768998976771,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "1,3": {
+              "present": 0.14322972882101137,
+              "controlled": 0.03580743220525284,
+              "controlled_given_present": 0.25
+            },
+            "2,3": {
+              "present": 0.14322972882101137,
+              "controlled": 0.03580743220525284,
+              "controlled_given_present": 0.25
+            }
+          }
+        },
+        "local_seed11": {
+          "area_under_truth_mass": 0.025780182015308586,
+          "mean_flag_brier": 0.13978962967304093,
+          "terminal_truth_mass": 0.02799621809812716,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": 0.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.1990842175866821,
+              "controlled": 0.04977105439667048,
+              "controlled_given_present": 0.24999999999999978
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999992,
+              "controlled": 0.25000000000000006,
+              "controlled_given_present": 0.2500000000000003
+            },
+            "0,2": {
+              "present": 0.10405929879582568,
+              "controlled": 0.026014824698956423,
+              "controlled_given_present": 0.25000000000000006
+            },
+            "0,3": {
+              "present": 0.10583809022823323,
+              "controlled": 0.026459522557058312,
+              "controlled_given_present": 0.25000000000000006
+            },
+            "1,2": {
+              "present": 0.10583809022823323,
+              "controlled": 0.026459522557058312,
+              "controlled_given_present": 0.25000000000000006
+            },
+            "1,3": {
+              "present": 0.10405929879582568,
+              "controlled": 0.026014824698956423,
+              "controlled_given_present": 0.25000000000000006
+            },
+            "2,3": {
+              "present": 0.1990842175866821,
+              "controlled": 0.04977105439667048,
+              "controlled_given_present": 0.24999999999999978
+            }
+          }
+        },
+        "local_seed23": {
+          "area_under_truth_mass": 0.03498243458671871,
+          "mean_flag_brier": 0.1356062648719532,
+          "terminal_truth_mass": 0.04393045201363325,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": 0.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.3123943254302811,
+              "controlled": 0.0780985813575703,
+              "controlled_given_present": 0.25000000000000006
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000002,
+              "controlled": 0.25000000000000017,
+              "controlled_given_present": 0.2500000000000001
+            },
+            "0,2": {
+              "present": 0.09837853679351927,
+              "controlled": 0.024594634198379837,
+              "controlled_given_present": 0.2500000000000002
+            },
+            "0,3": {
+              "present": 0.09837853679351927,
+              "controlled": 0.024594634198379837,
+              "controlled_given_present": 0.2500000000000002
+            },
+            "1,2": {
+              "present": 0.09837853679351927,
+              "controlled": 0.024594634198379837,
+              "controlled_given_present": 0.2500000000000002
+            },
+            "1,3": {
+              "present": 0.09837853679351927,
+              "controlled": 0.024594634198379837,
+              "controlled_given_present": 0.2500000000000002
+            },
+            "2,3": {
+              "present": 0.3123943254302811,
+              "controlled": 0.0780985813575703,
+              "controlled_given_present": 0.25000000000000006
+            }
+          }
+        },
+        "local_seed37": {
+          "area_under_truth_mass": 0.016767337656475614,
+          "mean_flag_brier": 0.15765810453657275,
+          "terminal_truth_mass": 0.01368365287275238,
+          "terminal_flag_precision": 0.0,
+          "terminal_flag_recall": 0.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.21164049776523813,
+              "controlled": 0.05291012444130952,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000016,
+              "controlled": 0.5176891200578727,
+              "controlled_given_present": 0.5176891200578719
+            },
+            "0,2": {
+              "present": 0.11741487349774295,
+              "controlled": 0.029353718374435758,
+              "controlled_given_present": 0.25000000000000017
+            },
+            "0,3": {
+              "present": 0.14663679198210605,
+              "controlled": 0.10264575438747407,
+              "controlled_given_present": 0.6999999999999988
+            },
+            "1,2": {
+              "present": 0.14663679198210605,
+              "controlled": 0.03665919799552665,
+              "controlled_given_present": 0.25000000000000094
+            },
+            "1,3": {
+              "present": 0.11741487349774295,
+              "controlled": 0.07338429593608942,
+              "controlled_given_present": 0.6250000000000007
+            },
+            "2,3": {
+              "present": 0.21164049776523813,
+              "controlled": 0.10582024888261929,
+              "controlled_given_present": 0.500000000000001
+            }
+          }
+        }
+      }
+    },
+    "balanced": {
+      "mean_area_under_truth_mass": 0.2447858964772117,
+      "mean_flag_brier": 0.06091555430548994,
+      "mean_terminal_truth_mass": 0.34059681687129867,
+      "mean_sample_tv": 0.08190497132004632,
+      "total_train_and_sample_seconds": 541.0775248231366,
+      "by_truth": {
+        "none": {
+          "mean_area_under_truth_mass": 0.28279380576203067,
+          "mean_flag_brier": 0.008231634691405363
+        },
+        "root": {
+          "mean_area_under_truth_mass": 0.41443134151814237,
+          "mean_flag_brier": 0.039378648160818375
+        },
+        "local": {
+          "mean_area_under_truth_mass": 0.03713254215146206,
+          "mean_flag_brier": 0.1351363800642461
+        }
+      },
+      "by_cell": {
+        "none_seed11": {
+          "area_under_truth_mass": 0.25517410266652374,
+          "mean_flag_brier": 0.004525361054373769,
+          "terminal_truth_mass": 0.11688573870612681,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": null,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.5830784573646467,
+              "controlled": 0.047241165337870844,
+              "controlled_given_present": 0.08102025506376594
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999996,
+              "controlled": 0.05557481346270691,
+              "controlled_given_present": 0.055574813462706936
+            },
+            "0,2": {
+              "present": 0.14971499107713357,
+              "controlled": 0.01212994676393878,
+              "controlled_given_present": 0.08102025506376578
+            },
+            "0,3": {
+              "present": 0.14971499107713362,
+              "controlled": 0.013963056162634227,
+              "controlled_given_present": 0.09326424870466324
+            },
+            "1,2": {
+              "present": 0.14971499107713362,
+              "controlled": 0.012129946763938788,
+              "controlled_given_present": 0.08102025506376581
+            },
+            "1,3": {
+              "present": 0.14971499107713357,
+              "controlled": 0.01396305616263418,
+              "controlled_given_present": 0.09326424870466295
+            },
+            "2,3": {
+              "present": 0.5830784573646467,
+              "controlled": 0.09948258040344658,
+              "controlled_given_present": 0.1706161137440754
+            }
+          }
+        },
+        "none_seed23": {
+          "area_under_truth_mass": 0.23499731851899866,
+          "mean_flag_brier": 0.012811684849894547,
+          "terminal_truth_mass": 0.11688573870612702,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": null,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.5830784573646467,
+              "controlled": 0.047241165337870844,
+              "controlled_given_present": 0.08102025506376594
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999998,
+              "controlled": 0.055574813462706915,
+              "controlled_given_present": 0.05557481346270693
+            },
+            "0,2": {
+              "present": 0.14971499107713362,
+              "controlled": 0.013963056162634227,
+              "controlled_given_present": 0.09326424870466324
+            },
+            "0,3": {
+              "present": 0.14971499107713357,
+              "controlled": 0.01212994676393878,
+              "controlled_given_present": 0.08102025506376578
+            },
+            "1,2": {
+              "present": 0.14971499107713357,
+              "controlled": 0.01396305616263418,
+              "controlled_given_present": 0.09326424870466295
+            },
+            "1,3": {
+              "present": 0.14971499107713362,
+              "controlled": 0.012129946763938788,
+              "controlled_given_present": 0.08102025506376581
+            },
+            "2,3": {
+              "present": 0.5830784573646467,
+              "controlled": 0.09948258040344658,
+              "controlled_given_present": 0.1706161137440754
+            }
+          }
+        },
+        "none_seed37": {
+          "area_under_truth_mass": 0.3582099961005697,
+          "mean_flag_brier": 0.007357858169947776,
+          "terminal_truth_mass": 0.26329200676363373,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": null,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.14751819571019356,
+              "controlled": 0.015130071354891618,
+              "controlled_given_present": 0.10256410256410237
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000016,
+              "controlled": 0.06237075696836873,
+              "controlled_given_present": 0.062370756968368635
+            },
+            "0,2": {
+              "present": 0.10719369767650978,
+              "controlled": 0.009997339679674453,
+              "controlled_given_present": 0.09326424870466289
+            },
+            "0,3": {
+              "present": 0.47668913070350916,
+              "controlled": 0.026462311033656604,
+              "controlled_given_present": 0.05551272166538158
+            },
+            "1,2": {
+              "present": 0.47668913070350916,
+              "controlled": 0.07944818845058471,
+              "controlled_given_present": 0.16666666666666635
+            },
+            "1,3": {
+              "present": 0.10719369767650978,
+              "controlled": 0.01568688258680629,
+              "controlled_given_present": 0.14634146341463397
+            },
+            "2,3": {
+              "present": 0.14751819571019356,
+              "controlled": 0.04300125542969209,
+              "controlled_given_present": 0.2914979757085023
+            }
+          }
+        },
+        "root_seed11": {
+          "area_under_truth_mass": 0.347142978725147,
+          "mean_flag_brier": 0.05454397928838068,
+          "terminal_truth_mass": 0.801658546212132,
+          "terminal_flag_precision": 1.0,
+          "terminal_flag_recall": 1.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.004887266245700037,
+              "controlled": 0.004189085353457174,
+              "controlled_given_present": 0.857142857142857
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999996,
+              "controlled": 0.8753768026624233,
+              "controlled_given_present": 0.8753768026624238
+            },
+            "0,2": {
+              "present": 0.06276848691447082,
+              "controlled": 0.01569212172861772,
+              "controlled_given_present": 0.2500000000000003
+            },
+            "0,3": {
+              "present": 0.0332841872629233,
+              "controlled": 0.016642093631461633,
+              "controlled_given_present": 0.4999999999999995
+            },
+            "1,2": {
+              "present": 0.0332841872629233,
+              "controlled": 0.006442100760565833,
+              "controlled_given_present": 0.19354838709677516
+            },
+            "1,3": {
+              "present": 0.06276848691447082,
+              "controlled": 0.01569212172861772,
+              "controlled_given_present": 0.2500000000000003
+            },
+            "2,3": {
+              "present": 0.004887266245700037,
+              "controlled": 0.002665781588563669,
+              "controlled_given_present": 0.545454545454548
+            }
+          }
+        },
+        "root_seed23": {
+          "area_under_truth_mass": 0.43451785436309687,
+          "mean_flag_brier": 0.03283977243764854,
+          "terminal_truth_mass": 0.7514276341028987,
+          "terminal_flag_precision": 1.0,
+          "terminal_flag_recall": 1.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.01269576543860811,
+              "controlled": 0.00846384362573872,
+              "controlled_given_present": 0.6666666666666651
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999999,
+              "controlled": 0.9714576891742083,
+              "controlled_given_present": 0.9714576891742084
+            },
+            "0,2": {
+              "present": 0.2049211435111845,
+              "controlled": 0.05123028587779618,
+              "controlled_given_present": 0.2500000000000003
+            },
+            "0,3": {
+              "present": 0.012695765438608115,
+              "controlled": 0.00846384362573872,
+              "controlled_given_present": 0.6666666666666649
+            },
+            "1,2": {
+              "present": 0.012695765438608115,
+              "controlled": 0.008463843625738744,
+              "controlled_given_present": 0.6666666666666667
+            },
+            "1,3": {
+              "present": 0.2049211435111845,
+              "controlled": 0.05123028587779618,
+              "controlled_given_present": 0.2500000000000003
+            },
+            "2,3": {
+              "present": 0.01269576543860811,
+              "controlled": 0.008463843625738744,
+              "controlled_given_present": 0.6666666666666671
+            }
+          }
+        },
+        "root_seed37": {
+          "area_under_truth_mass": 0.46163319146618315,
+          "mean_flag_brier": 0.030752192756425906,
+          "terminal_truth_mass": 0.8400292106094432,
+          "terminal_flag_precision": 1.0,
+          "terminal_flag_recall": 1.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.003413841168854269,
+              "controlled": 0.0024097702368383093,
+              "controlled_given_present": 0.705882352941177
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000004,
+              "controlled": 0.8702421149732722,
+              "controlled_given_present": 0.8702421149732719
+            },
+            "0,2": {
+              "present": 0.019616094219783622,
+              "controlled": 0.004904023554945911,
+              "controlled_given_present": 0.2500000000000003
+            },
+            "0,3": {
+              "present": 0.03487730491287217,
+              "controlled": 0.006750446112168828,
+              "controlled_given_present": 0.1935483870967748
+            },
+            "1,2": {
+              "present": 0.03487730491287217,
+              "controlled": 0.017438652456436124,
+              "controlled_given_present": 0.5000000000000011
+            },
+            "1,3": {
+              "present": 0.019616094219783622,
+              "controlled": 0.004904023554945911,
+              "controlled_given_present": 0.2500000000000003
+            },
+            "2,3": {
+              "present": 0.003413841168854269,
+              "controlled": 0.002560380876640709,
+              "controlled_given_present": 0.7500000000000021
+            }
+          }
+        },
+        "local_seed11": {
+          "area_under_truth_mass": 0.041023246882939075,
+          "mean_flag_brier": 0.13078748902739115,
+          "terminal_truth_mass": 0.06954896347448256,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": 0.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.6297767533362131,
+              "controlled": 0.10745006218058577,
+              "controlled_given_present": 0.17061611374407526
+            },
+            "0,1,2,3": {
+              "present": 1.000000000000001,
+              "controlled": 0.07602365502869858,
+              "controlled_given_present": 0.0760236550286985
+            },
+            "0,2": {
+              "present": 0.0017846457322573358,
+              "controlled": 0.0007138582929029343,
+              "controlled_given_present": 0.39999999999999997
+            },
+            "0,3": {
+              "present": 0.0024366946304544535,
+              "controlled": 0.0009137604864204201,
+              "controlled_given_present": 0.375
+            },
+            "1,2": {
+              "present": 0.0024366946304544535,
+              "controlled": 0.0002499173979953297,
+              "controlled_given_present": 0.10256410256410305
+            },
+            "1,3": {
+              "present": 0.0017846457322573358,
+              "controlled": 0.00016644364342296484,
+              "controlled_given_present": 0.09326424870466371
+            },
+            "2,3": {
+              "present": 0.6297767533362131,
+              "controlled": 0.179936215238918,
+              "controlled_given_present": 0.2857142857142857
+            }
+          }
+        },
+        "local_seed23": {
+          "area_under_truth_mass": 0.05797230540788985,
+          "mean_flag_brier": 0.13089884485924314,
+          "terminal_truth_mass": 0.055025986608715494,
+          "terminal_flag_precision": 0.0,
+          "terminal_flag_recall": 0.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.9316089062236029,
+              "controlled": 0.1961281907839162,
+              "controlled_given_present": 0.21052631578947345
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000004,
+              "controlled": 0.053908634019807666,
+              "controlled_given_present": 0.053908634019807646
+            },
+            "0,2": {
+              "present": 0.00029262253787906727,
+              "controlled": 6.160474481664613e-05,
+              "controlled_given_present": 0.210526315789475
+            },
+            "0,3": {
+              "present": 0.0007987887015569935,
+              "controlled": 9.397514135964654e-05,
+              "controlled_given_present": 0.11764705882352972
+            },
+            "1,2": {
+              "present": 0.0007987887015569935,
+              "controlled": 0.00019969717538924903,
+              "controlled_given_present": 0.25000000000000083
+            },
+            "1,3": {
+              "present": 0.00029262253787906727,
+              "controlled": 6.160474481664613e-05,
+              "controlled_given_present": 0.210526315789475
+            },
+            "2,3": {
+              "present": 0.9316089062236029,
+              "controlled": 0.6576062867460726,
+              "controlled_given_present": 0.7058823529411764
+            }
+          }
+        },
+        "local_seed37": {
+          "area_under_truth_mass": 0.012402074163557259,
+          "mean_flag_brier": 0.14372280630610404,
+          "terminal_truth_mass": 0.050617526658128374,
+          "terminal_flag_precision": null,
+          "terminal_flag_recall": 0.0,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.32347068590314687,
+              "controlled": 0.08258826023059071,
+              "controlled_given_present": 0.25531914893617025
+            },
+            "0,1,2,3": {
+              "present": 1.000000000000001,
+              "controlled": 0.11081661047663455,
+              "controlled_given_present": 0.11081661047663442
+            },
+            "0,2": {
+              "present": 0.12872330431664966,
+              "controlled": 0.03960717055896907,
+              "controlled_given_present": 0.30769230769230727
+            },
+            "0,3": {
+              "present": 0.07226274686298215,
+              "controlled": 0.008501499630939116,
+              "controlled_given_present": 0.11764705882352997
+            },
+            "1,2": {
+              "present": 0.07226274686298215,
+              "controlled": 0.007411563780818712,
+              "controlled_given_present": 0.10256410256410299
+            },
+            "1,3": {
+              "present": 0.12872330431664966,
+              "controlled": 0.014142540046997259,
+              "controlled_given_present": 0.10986775178026562
+            },
+            "2,3": {
+              "present": 0.32347068590314687,
+              "controlled": 0.11251154292283382,
+              "controlled_given_present": 0.3478260869565221
+            }
+          }
+        }
+      }
+    }
+  },
+  "paired_comparisons": {
+    "information_minus_balanced": {
+      "mean_truth_mass_area_difference": 0.0590006558088384,
+      "mean_flag_brier_difference": -0.012476365495785895,
+      "paired_values": {
+        "none_seed11": {
+          "truth_mass_area_difference": 0.016741256669563276,
+          "flag_brier_difference": -0.0009934827835781299
+        },
+        "none_seed23": {
+          "truth_mass_area_difference": 0.03718460219873618,
+          "flag_brier_difference": -0.0075672084932757655
+        },
+        "none_seed37": {
+          "truth_mass_area_difference": 0.008182590584052962,
+          "flag_brier_difference": -0.002634784003663161
+        },
+        "root_seed11": {
+          "truth_mass_area_difference": 0.14376758169367193,
+          "flag_brier_difference": -0.03185993345685503
+        },
+        "root_seed23": {
+          "truth_mass_area_difference": 0.07756781626788367,
+          "flag_brier_difference": -0.0064931757911556726
+        },
+        "root_seed37": {
+          "truth_mass_area_difference": 0.04552246257739695,
+          "flag_brier_difference": -0.004898067686802343
+        },
+        "local_seed11": {
+          "truth_mass_area_difference": -0.025469070222828044,
+          "flag_brier_difference": 0.015015310196786508
+        },
+        "local_seed23": {
+          "truth_mass_area_difference": 0.16097472949929054,
+          "flag_brier_difference": -0.049540176840487005
+        },
+        "local_seed37": {
+          "truth_mass_area_difference": 0.06653393301177811,
+          "flag_brier_difference": -0.023315770603042463
+        }
+      }
+    },
+    "information_minus_reward": {
+      "mean_truth_mass_area_difference": 0.14708896396943633,
+      "mean_flag_brier_difference": -0.030882800348816228,
+      "paired_values": {
+        "none_seed11": {
+          "truth_mass_area_difference": -0.0449098303761965,
+          "flag_brier_difference": -0.007405801183337934
+        },
+        "none_seed23": {
+          "truth_mass_area_difference": -0.1068528181737734,
+          "flag_brier_difference": -0.005293362325693259
+        },
+        "none_seed37": {
+          "truth_mass_area_difference": 0.08833569701387989,
+          "flag_brier_difference": -0.00851857043326196
+        },
+        "root_seed11": {
+          "truth_mass_area_difference": 0.35635058343731063,
+          "flag_brier_difference": -0.05896617519211342
+        },
+        "root_seed23": {
+          "truth_mass_area_difference": 0.4064772740602194,
+          "flag_brier_difference": -0.05601965423621214
+        },
+        "root_seed37": {
+          "truth_mass_area_difference": 0.38849250527936313,
+          "flag_brier_difference": -0.056256143633155814
+        },
+        "local_seed11": {
+          "truth_mass_area_difference": -0.010226005355197553,
+          "flag_brier_difference": 0.006013169551136732
+        },
+        "local_seed23": {
+          "truth_mass_area_difference": 0.1839646003204617,
+          "flag_brier_difference": -0.05424759685319708
+        },
+        "local_seed37": {
+          "truth_mass_area_difference": 0.06216866951885976,
+          "flag_brier_difference": -0.037251068833511175
+        }
+      }
+    }
+  },
+  "negative_controls": {
+    "randomized_null": {
+      "mean_null_flag_brier": 0.02869812401364065,
+      "mean_terminal_maximum_false_control_probability": 0.47713681845329187,
+      "by_seed": {
+        "11": {
+          "mean_null_flag_brier": 0.025002746891761463,
+          "terminal_maximum_false_control_probability": 0.3713400892331706,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.6034276450039029,
+              "controlled": 0.3713400892331706,
+              "controlled_given_present": 0.6153846153846146
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999983,
+              "controlled": 0.3566263458387839,
+              "controlled_given_present": 0.3566263458387845
+            },
+            "0,2": {
+              "present": 0.27233054586627997,
+              "controlled": 0.029178272771387185,
+              "controlled_given_present": 0.1071428571428573
+            },
+            "0,3": {
+              "present": 0.04348120564774405,
+              "controlled": 0.00378097440415166,
+              "controlled_given_present": 0.08695652173913052
+            },
+            "1,2": {
+              "present": 0.04348120564774405,
+              "controlled": 0.010870301411935974,
+              "controlled_given_present": 0.2499999999999991
+            },
+            "1,3": {
+              "present": 0.27233054586627997,
+              "controlled": 0.04951464470296009,
+              "controlled_given_present": 0.18181818181818216
+            },
+            "2,3": {
+              "present": 0.6034276450039029,
+              "controlled": 0.15085691125097583,
+              "controlled_given_present": 0.25000000000000017
+            }
+          }
+        },
+        "23": {
+          "mean_null_flag_brier": 0.014664117027790571,
+          "terminal_maximum_false_control_probability": 0.21326565822555305,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.8530626329022124,
+              "controlled": 0.2068030625217486,
+              "controlled_given_present": 0.2424242424242426
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999999,
+              "controlled": 0.048394340277631696,
+              "controlled_given_present": 0.0483943402776317
+            },
+            "0,2": {
+              "present": 0.017510693503071363,
+              "controlled": 0.001123680866507253,
+              "controlled_given_present": 0.0641711229946524
+            },
+            "0,3": {
+              "present": 0.04133137618347371,
+              "controlled": 0.0027759879526213812,
+              "controlled_given_present": 0.06716417910447792
+            },
+            "1,2": {
+              "present": 0.04133137618347371,
+              "controlled": 0.0033739898925284834,
+              "controlled_given_present": 0.0816326530612249
+            },
+            "1,3": {
+              "present": 0.017510693503071363,
+              "controlled": 0.0018761457324719428,
+              "controlled_given_present": 0.10714285714285778
+            },
+            "2,3": {
+              "present": 0.8530626329022124,
+              "controlled": 0.21326565822555305,
+              "controlled_given_present": 0.24999999999999994
+            }
+          }
+        },
+        "37": {
+          "mean_null_flag_brier": 0.04642750812136992,
+          "terminal_maximum_false_control_probability": 0.8468047079011519,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.9526552963887961,
+              "controlled": 0.8468047079011519,
+              "controlled_given_present": 0.8888888888888887
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000013,
+              "controlled": 0.06162573713547882,
+              "controlled_given_present": 0.06162573713547874
+            },
+            "0,2": {
+              "present": 0.008945472174765299,
+              "controlled": 0.001052408491148864,
+              "controlled_given_present": 0.11764705882353002
+            },
+            "0,3": {
+              "present": 0.01174964608173678,
+              "controlled": 0.0018799433730778863,
+              "controlled_given_present": 0.16000000000000014
+            },
+            "1,2": {
+              "present": 0.01174964608173678,
+              "controlled": 0.0011243680460992194,
+              "controlled_given_present": 0.09569377990430673
+            },
+            "1,3": {
+              "present": 0.008945472174765299,
+              "controlled": 0.0009174843256169625,
+              "controlled_given_present": 0.10256410256410355
+            },
+            "2,3": {
+              "present": 0.9526552963887961,
+              "controlled": 0.2381638240971988,
+              "controlled_given_present": 0.24999999999999978
+            }
+          }
+        }
+      }
+    },
+    "observational_confounding": {
+      "mean_null_flag_brier": 0.0364729270130285,
+      "mean_terminal_maximum_false_control_probability": 0.5080611468325363,
+      "by_seed": {
+        "11": {
+          "mean_null_flag_brier": 0.03926542286257863,
+          "terminal_maximum_false_control_probability": 0.5914252986977924,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.6006663189899454,
+              "controlled": 0.5914252986977924,
+              "controlled_given_present": 0.9846153846153846
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000007,
+              "controlled": 0.4347604265480247,
+              "controlled_given_present": 0.43476042654802444
+            },
+            "0,2": {
+              "present": 0.2583493725727209,
+              "controlled": 0.06458734314318021,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "0,3": {
+              "present": 0.1294047361678397,
+              "controlled": 0.03235118404195996,
+              "controlled_given_present": 0.2500000000000003
+            },
+            "1,2": {
+              "present": 0.1294047361678397,
+              "controlled": 0.03235118404195996,
+              "controlled_given_present": 0.2500000000000003
+            },
+            "1,3": {
+              "present": 0.2583493725727209,
+              "controlled": 0.06458734314318021,
+              "controlled_given_present": 0.24999999999999994
+            },
+            "2,3": {
+              "present": 0.6006663189899454,
+              "controlled": 0.15016657974748643,
+              "controlled_given_present": 0.2500000000000001
+            }
+          }
+        },
+        "23": {
+          "mean_null_flag_brier": 0.05554337934822959,
+          "terminal_maximum_false_control_probability": 0.5956448543965658,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.7693746035955644,
+              "controlled": 0.5956448543965658,
+              "controlled_given_present": 0.7741935483870965
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999993,
+              "controlled": 0.22993327212940126,
+              "controlled_given_present": 0.22993327212940143
+            },
+            "0,2": {
+              "present": 0.043608869874938484,
+              "controlled": 0.007928885431806988,
+              "controlled_given_present": 0.1818181818181816
+            },
+            "0,3": {
+              "present": 0.15327481627163225,
+              "controlled": 0.025545802711938664,
+              "controlled_given_present": 0.16666666666666638
+            },
+            "1,2": {
+              "present": 0.15327481627163225,
+              "controlled": 0.018032331326074413,
+              "controlled_given_present": 0.1176470588235296
+            },
+            "1,3": {
+              "present": 0.043608869874938484,
+              "controlled": 0.004472704602557814,
+              "controlled_given_present": 0.10256410256410303
+            },
+            "2,3": {
+              "present": 0.7693746035955644,
+              "controlled": 0.19234365089889094,
+              "controlled_given_present": 0.24999999999999978
+            }
+          }
+        },
+        "37": {
+          "mean_null_flag_brier": 0.01460997882827728,
+          "terminal_maximum_false_control_probability": 0.33711328740325064,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.8638527989708307,
+              "controlled": 0.33711328740325064,
+              "controlled_given_present": 0.39024390243902396
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000009,
+              "controlled": 0.06717500270207918,
+              "controlled_given_present": 0.06717500270207913
+            },
+            "0,2": {
+              "present": 0.015659929094934584,
+              "controlled": 0.0013617329647769203,
+              "controlled_given_present": 0.08695652173913043
+            },
+            "0,3": {
+              "present": 0.04353989910176235,
+              "controlled": 0.003884600663354272,
+              "controlled_given_present": 0.08921933085501882
+            },
+            "1,2": {
+              "present": 0.04353989910176235,
+              "controlled": 0.00791634529122952,
+              "controlled_given_present": 0.18181818181818185
+            },
+            "1,3": {
+              "present": 0.015659929094934584,
+              "controlled": 0.002847259835442651,
+              "controlled_given_present": 0.18181818181818177
+            },
+            "2,3": {
+              "present": 0.8638527989708307,
+              "controlled": 0.21596319974270747,
+              "controlled_given_present": 0.24999999999999978
+            }
+          }
+        }
+      }
+    },
+    "shuffled_observational": {
+      "mean_null_flag_brier": 0.00966394320433667,
+      "mean_terminal_maximum_false_control_probability": 0.21096309406393723,
+      "by_seed": {
+        "11": {
+          "mean_null_flag_brier": 0.006765046872419036,
+          "terminal_maximum_false_control_probability": 0.18849969548769185,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.7539987819507662,
+              "controlled": 0.07435427125554543,
+              "controlled_given_present": 0.09861325115562393
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999989,
+              "controlled": 0.06897840673045133,
+              "controlled_given_present": 0.06897840673045141
+            },
+            "0,2": {
+              "present": 0.10144211420150144,
+              "controlled": 0.006795165544598189,
+              "controlled_given_present": 0.06698564593301441
+            },
+            "0,3": {
+              "present": 0.03405145691466324,
+              "controlled": 0.0031239868729048994,
+              "controlled_given_present": 0.09174311926605548
+            },
+            "1,2": {
+              "present": 0.03405145691466324,
+              "controlled": 0.0061911739844842245,
+              "controlled_given_present": 0.18181818181818177
+            },
+            "1,3": {
+              "present": 0.10144211420150144,
+              "controlled": 0.016907019033583593,
+              "controlled_given_present": 0.16666666666666685
+            },
+            "2,3": {
+              "present": 0.7539987819507662,
+              "controlled": 0.18849969548769185,
+              "controlled_given_present": 0.2500000000000004
+            }
+          }
+        },
+        "23": {
+          "mean_null_flag_brier": 0.013840522208485268,
+          "terminal_maximum_false_control_probability": 0.2368950319692301,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.8587444908884618,
+              "controlled": 0.2368950319692301,
+              "controlled_given_present": 0.27586206896551635
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000009,
+              "controlled": 0.058769936626836945,
+              "controlled_given_present": 0.05876993662683689
+            },
+            "0,2": {
+              "present": 0.03260608033332552,
+              "controlled": 0.002661720843536785,
+              "controlled_given_present": 0.08163265306122472
+            },
+            "0,3": {
+              "present": 0.03915466879013651,
+              "controlled": 0.0046064316223690185,
+              "controlled_given_present": 0.11764705882352985
+            },
+            "1,2": {
+              "present": 0.03915466879013651,
+              "controlled": 0.0027720119497441796,
+              "controlled_given_present": 0.0707964601769912
+            },
+            "1,3": {
+              "present": 0.03260608033332552,
+              "controlled": 0.0030409815854915115,
+              "controlled_given_present": 0.09326424870466359
+            },
+            "2,3": {
+              "present": 0.8587444908884618,
+              "controlled": 0.21468612272211526,
+              "controlled_given_present": 0.24999999999999978
+            }
+          }
+        },
+        "37": {
+          "mean_null_flag_brier": 0.008386260532105706,
+          "terminal_maximum_false_control_probability": 0.20749455473488976,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.8299782189395598,
+              "controlled": 0.05510228839432743,
+              "controlled_given_present": 0.0663900414937757
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999988,
+              "controlled": 0.050566326568126665,
+              "controlled_given_present": 0.05056632656812673
+            },
+            "0,2": {
+              "present": 0.016121857098589112,
+              "controlled": 0.0009624989312590519,
+              "controlled_given_present": 0.05970149253731345
+            },
+            "0,3": {
+              "present": 0.05129002961301359,
+              "controlled": 0.0041555312814744805,
+              "controlled_given_present": 0.08102025506376616
+            },
+            "1,2": {
+              "present": 0.05129002961301359,
+              "controlled": 0.006618068337163046,
+              "controlled_given_present": 0.12903225806451618
+            },
+            "1,3": {
+              "present": 0.016121857098589112,
+              "controlled": 0.002080239625624402,
+              "controlled_given_present": 0.12903225806451615
+            },
+            "2,3": {
+              "present": 0.8299782189395598,
+              "controlled": 0.20749455473488976,
+              "controlled_given_present": 0.24999999999999978
+            }
+          }
+        }
+      }
+    },
+    "exogenous": {
+      "mean_null_flag_brier": 0.022442080736477885,
+      "mean_terminal_maximum_false_control_probability": 0.4472183974178643,
+      "by_seed": {
+        "11": {
+          "mean_null_flag_brier": 0.005365093671611984,
+          "terminal_maximum_false_control_probability": 0.10571085577915058,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.5461727548589441,
+              "controlled": 0.10571085577915058,
+              "controlled_given_present": 0.19354838709677438
+            },
+            "0,1,2,3": {
+              "present": 1.0000000000000004,
+              "controlled": 0.06242874020665452,
+              "controlled_given_present": 0.062428740206654496
+            },
+            "0,2": {
+              "present": 0.05491805084289921,
+              "controlled": 0.0060337227782635994,
+              "controlled_given_present": 0.10986775178026456
+            },
+            "0,3": {
+              "present": 0.01507419088425594,
+              "controlled": 0.0008762177693754808,
+              "controlled_given_present": 0.05812701829924657
+            },
+            "1,2": {
+              "present": 0.01507419088425594,
+              "controlled": 0.002205979153793563,
+              "controlled_given_present": 0.14634146341463483
+            },
+            "1,3": {
+              "present": 0.05491805084289921,
+              "controlled": 0.008036787928229166,
+              "controlled_given_present": 0.1463414634146344
+            },
+            "2,3": {
+              "present": 0.5461727548589441,
+              "controlled": 0.044251055907551316,
+              "controlled_given_present": 0.08102025506376585
+            }
+          }
+        },
+        "23": {
+          "mean_null_flag_brier": 0.04069547190075076,
+          "terminal_maximum_false_control_probability": 0.8099317069433304,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.8774260158552747,
+              "controlled": 0.10322659010062042,
+              "controlled_given_present": 0.11764705882352926
+            },
+            "0,1,2,3": {
+              "present": 0.999999999999999,
+              "controlled": 0.14509807892834103,
+              "controlled_given_present": 0.14509807892834117
+            },
+            "0,2": {
+              "present": 0.00229649793047607,
+              "controlled": 0.00041754507826837823,
+              "controlled_given_present": 0.18181818181818263
+            },
+            "0,3": {
+              "present": 0.013452405763694705,
+              "controlled": 0.002445891957035402,
+              "controlled_given_present": 0.18181818181818188
+            },
+            "1,2": {
+              "present": 0.013452405763694705,
+              "controlled": 0.002832085423935733,
+              "controlled_given_present": 0.21052631578947412
+            },
+            "1,3": {
+              "present": 0.00229649793047607,
+              "controlled": 0.0007987818888612418,
+              "controlled_given_present": 0.34782608695652173
+            },
+            "2,3": {
+              "present": 0.8774260158552747,
+              "controlled": 0.8099317069433304,
+              "controlled_given_present": 0.923076923076923
+            }
+          }
+        },
+        "37": {
+          "mean_null_flag_brier": 0.02126567663707091,
+          "terminal_maximum_false_control_probability": 0.4260126295311118,
+          "terminal_node_marginals": {
+            "0,1": {
+              "present": 0.8401915749085817,
+              "controlled": 0.4260126295311118,
+              "controlled_given_present": 0.5070422535211268
+            },
+            "0,1,2,3": {
+              "present": 0.9999999999999992,
+              "controlled": 0.07382836280846516,
+              "controlled_given_present": 0.07382836280846522
+            },
+            "0,2": {
+              "present": 0.04756578657629087,
+              "controlled": 0.00792763109604847,
+              "controlled_given_present": 0.16666666666666652
+            },
+            "0,3": {
+              "present": 0.016431845396242588,
+              "controlled": 0.0024046603018891524,
+              "controlled_given_present": 0.14634146341463372
+            },
+            "1,2": {
+              "present": 0.016431845396242588,
+              "controlled": 0.0015325037157117455,
+              "controlled_given_present": 0.09326424870466331
+            },
+            "1,3": {
+              "present": 0.04756578657629087,
+              "controlled": 0.0038537921607197253,
+              "controlled_given_present": 0.08102025506376563
+            },
+            "2,3": {
+              "present": 0.8401915749085817,
+              "controlled": 0.1433502213114165,
+              "controlled_given_present": 0.1706161137440755
+            }
+          }
+        }
+      }
+    }
+  },
+  "observational_control_note": "The hidden common cause is absent from the causal model. The observational conditional P(y|x,u) can still be represented; association alone does not identify an intervention effect."
+}

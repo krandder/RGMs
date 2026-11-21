@@ -1,0 +1,914 @@
+{
+  "policy": "balanced",
+  "truth_id": "{\"tree\":[[0,1],[2,3]],\"controlled\":[[0,1]]}",
+  "environment_seed": 23,
+  "n_leaves": 4,
+  "repetitions_per_pair": 2,
+  "budget_updates_per_round": 1000,
+  "batch_size": 64,
+  "n_draws_per_round": 256,
+  "rounds": [
+    {
+      "round": 1,
+      "start_leaf": 0,
+      "action": 1,
+      "outcome": 0,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.02086972335434932,
+      "flag_brier": 0.14236510994000343,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.0905599271164307,
+      "train_and_sample_seconds": 3.8743374785408378,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.14840692163092845,
+          "controlled": 0.03710173040773211,
+          "controlled_given_present": 0.25
+        },
+        "0,1,2,3": {
+          "present": 1.0,
+          "controlled": 0.25,
+          "controlled_given_present": 0.25
+        },
+        "0,2": {
+          "present": 0.14840692163092845,
+          "controlled": 0.03710173040773211,
+          "controlled_given_present": 0.25
+        },
+        "0,3": {
+          "present": 0.14840692163092845,
+          "controlled": 0.03710173040773211,
+          "controlled_given_present": 0.25
+        },
+        "1,2": {
+          "present": 0.14840692163092845,
+          "controlled": 0.03710173040773211,
+          "controlled_given_present": 0.25
+        },
+        "1,3": {
+          "present": 0.14840692163092845,
+          "controlled": 0.03710173040773211,
+          "controlled_given_present": 0.25
+        },
+        "2,3": {
+          "present": 0.14840692163092845,
+          "controlled": 0.03710173040773211,
+          "controlled_given_present": 0.25
+        }
+      }
+    },
+    {
+      "round": 2,
+      "start_leaf": 2,
+      "action": 0,
+      "outcome": 2,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.019769499398860774,
+      "flag_brier": 0.14220055948730767,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.08796157210170852,
+      "train_and_sample_seconds": 3.9488031091168523,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.14058310683634326,
+          "controlled": 0.03514577670908582,
+          "controlled_given_present": 0.25000000000000006
+        },
+        "0,1,2,3": {
+          "present": 0.9999999999999999,
+          "controlled": 0.23682033373409275,
+          "controlled_given_present": 0.23682033373409278
+        },
+        "0,2": {
+          "present": 0.19330177189997208,
+          "controlled": 0.048325442974993006,
+          "controlled_given_present": 0.24999999999999992
+        },
+        "0,3": {
+          "present": 0.14058310683634326,
+          "controlled": 0.03514577670908582,
+          "controlled_given_present": 0.25000000000000006
+        },
+        "1,2": {
+          "present": 0.14058310683634326,
+          "controlled": 0.03514577670908582,
+          "controlled_given_present": 0.25000000000000006
+        },
+        "1,3": {
+          "present": 0.19330177189997208,
+          "controlled": 0.048325442974993006,
+          "controlled_given_present": 0.24999999999999992
+        },
+        "2,3": {
+          "present": 0.14058310683634326,
+          "controlled": 0.03514577670908582,
+          "controlled_given_present": 0.25000000000000006
+        }
+      }
+    },
+    {
+      "round": 3,
+      "start_leaf": 2,
+      "action": 1,
+      "outcome": 3,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.02202750637540012,
+      "flag_brier": 0.14494856962491107,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.08587597840059756,
+      "train_and_sample_seconds": 4.250173204578459,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.17948338528103816,
+          "controlled": 0.04487084632025952,
+          "controlled_given_present": 0.2499999999999999
+        },
+        "0,1,2,3": {
+          "present": 1.0000000000000002,
+          "controlled": 0.3061388810180246,
+          "controlled_given_present": 0.30613888101802456
+        },
+        "0,2": {
+          "present": 0.10442669689078578,
+          "controlled": 0.026106674222696444,
+          "controlled_given_present": 0.25
+        },
+        "0,3": {
+          "present": 0.13053337111348226,
+          "controlled": 0.032633342778370565,
+          "controlled_given_present": 0.25
+        },
+        "1,2": {
+          "present": 0.13053337111348226,
+          "controlled": 0.032633342778370565,
+          "controlled_given_present": 0.25
+        },
+        "1,3": {
+          "present": 0.10442669689078578,
+          "controlled": 0.026106674222696444,
+          "controlled_given_present": 0.25
+        },
+        "2,3": {
+          "present": 0.17948338528103816,
+          "controlled": 0.07179335411241528,
+          "controlled_given_present": 0.4000000000000001
+        }
+      }
+    },
+    {
+      "round": 4,
+      "start_leaf": 2,
+      "action": 1,
+      "outcome": 3,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.021715697818740335,
+      "flag_brier": 0.1486931216438023,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.1091414121866474,
+      "train_and_sample_seconds": 4.617407685145736,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.20847069905990712,
+          "controlled": 0.05211767476497681,
+          "controlled_given_present": 0.2500000000000001
+        },
+        "0,1,2,3": {
+          "present": 0.9999999999999998,
+          "controlled": 0.35830586018801847,
+          "controlled_given_present": 0.3583058601880185
+        },
+        "0,2": {
+          "present": 0.07528108577163307,
+          "controlled": 0.018820271442908272,
+          "controlled_given_present": 0.25000000000000006
+        },
+        "0,3": {
+          "present": 0.13898046603993802,
+          "controlled": 0.03474511650998449,
+          "controlled_given_present": 0.2499999999999999
+        },
+        "1,2": {
+          "present": 0.13898046603993802,
+          "controlled": 0.03474511650998449,
+          "controlled_given_present": 0.2499999999999999
+        },
+        "1,3": {
+          "present": 0.07528108577163307,
+          "controlled": 0.018820271442908272,
+          "controlled_given_present": 0.25000000000000006
+        },
+        "2,3": {
+          "present": 0.20847069905990712,
+          "controlled": 0.10423534952995356,
+          "controlled_given_present": 0.5
+        }
+      }
+    },
+    {
+      "round": 5,
+      "start_leaf": 1,
+      "action": 1,
+      "outcome": 0,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.03153861245084098,
+      "flag_brier": 0.14141557269041974,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.10973012425663069,
+      "train_and_sample_seconds": 4.1837550746276975,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.3027706795280735,
+          "controlled": 0.07569266988201837,
+          "controlled_given_present": 0.24999999999999994
+        },
+        "0,1,2,3": {
+          "present": 1.0000000000000004,
+          "controlled": 0.33383899965868036,
+          "controlled_given_present": 0.3338389996586802
+        },
+        "0,2": {
+          "present": 0.0728892376641658,
+          "controlled": 0.018222309416041454,
+          "controlled_given_present": 0.25000000000000006
+        },
+        "0,3": {
+          "present": 0.06541341841655912,
+          "controlled": 0.016353354604139773,
+          "controlled_given_present": 0.2499999999999999
+        },
+        "1,2": {
+          "present": 0.06541341841655912,
+          "controlled": 0.016353354604139773,
+          "controlled_given_present": 0.2499999999999999
+        },
+        "1,3": {
+          "present": 0.0728892376641658,
+          "controlled": 0.018222309416041454,
+          "controlled_given_present": 0.25000000000000006
+        },
+        "2,3": {
+          "present": 0.3027706795280735,
+          "controlled": 0.15138533976403684,
+          "controlled_given_present": 0.5000000000000002
+        }
+      }
+    },
+    {
+      "round": 6,
+      "start_leaf": 3,
+      "action": 0,
+      "outcome": 3,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.04586962409362075,
+      "flag_brier": 0.1332294636811116,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.10635780743860257,
+      "train_and_sample_seconds": 3.4675252940505743,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.42986390579164574,
+          "controlled": 0.10746597644791148,
+          "controlled_given_present": 0.2500000000000001
+        },
+        "0,1,2,3": {
+          "present": 1.0000000000000007,
+          "controlled": 0.2984169848644134,
+          "controlled_given_present": 0.2984169848644132
+        },
+        "0,2": {
+          "present": 0.03960805636020582,
+          "controlled": 0.009902014090051453,
+          "controlled_given_present": 0.24999999999999994
+        },
+        "0,3": {
+          "present": 0.0660134272670098,
+          "controlled": 0.016503356816752447,
+          "controlled_given_present": 0.24999999999999994
+        },
+        "1,2": {
+          "present": 0.0660134272670098,
+          "controlled": 0.016503356816752447,
+          "controlled_given_present": 0.24999999999999994
+        },
+        "1,3": {
+          "present": 0.03960805636020582,
+          "controlled": 0.009902014090051453,
+          "controlled_given_present": 0.24999999999999994
+        },
+        "2,3": {
+          "present": 0.42986390579164574,
+          "controlled": 0.21493195289582287,
+          "controlled_given_present": 0.5
+        }
+      }
+    },
+    {
+      "round": 7,
+      "start_leaf": 1,
+      "action": 0,
+      "outcome": 0,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.04332184674041665,
+      "flag_brier": 0.13081856931484692,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.10641685218414708,
+      "train_and_sample_seconds": 4.640719439834356,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.5255558893137405,
+          "controlled": 0.09555561623886187,
+          "controlled_given_present": 0.18181818181818174
+        },
+        "0,1,2,3": {
+          "present": 1.0000000000000004,
+          "controlled": 0.168719963734647,
+          "controlled_given_present": 0.16871996373464693
+        },
+        "0,2": {
+          "present": 0.023600091748112718,
+          "controlled": 0.004290925772384123,
+          "controlled_given_present": 0.1818181818181815
+        },
+        "0,3": {
+          "present": 0.02967890325899024,
+          "controlled": 0.009131970233535467,
+          "controlled_given_present": 0.307692307692308
+        },
+        "1,2": {
+          "present": 0.02967890325899024,
+          "controlled": 0.007419725814747556,
+          "controlled_given_present": 0.2499999999999999
+        },
+        "1,3": {
+          "present": 0.023600091748112718,
+          "controlled": 0.005900022937028178,
+          "controlled_given_present": 0.24999999999999992
+        },
+        "2,3": {
+          "present": 0.5255558893137405,
+          "controlled": 0.26277794465687027,
+          "controlled_given_present": 0.5
+        }
+      }
+    },
+    {
+      "round": 8,
+      "start_leaf": 0,
+      "action": 0,
+      "outcome": 0,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.03577616839617487,
+      "flag_brier": 0.13631286288797612,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.0813297053252521,
+      "train_and_sample_seconds": 2.9485895046964288,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.6034198394429118,
+          "controlled": 0.07786062444424663,
+          "controlled_given_present": 0.12903225806451604
+        },
+        "0,1,2,3": {
+          "present": 1.0000000000000004,
+          "controlled": 0.11263340798173502,
+          "controlled_given_present": 0.11263340798173496
+        },
+        "0,2": {
+          "present": 0.018107121963778307,
+          "controlled": 0.0023364028340359102,
+          "controlled_given_present": 0.1290322580645161
+        },
+        "0,3": {
+          "present": 0.030665287196721295,
+          "controlled": 0.007009208502107725,
+          "controlled_given_present": 0.22857142857142856
+        },
+        "1,2": {
+          "present": 0.030665287196721295,
+          "controlled": 0.0076663217991803255,
+          "controlled_given_present": 0.25000000000000006
+        },
+        "1,3": {
+          "present": 0.018107121963778307,
+          "controlled": 0.004526780490944574,
+          "controlled_given_present": 0.24999999999999986
+        },
+        "2,3": {
+          "present": 0.6034198394429118,
+          "controlled": 0.30170991972145583,
+          "controlled_given_present": 0.4999999999999999
+        }
+      }
+    },
+    {
+      "round": 9,
+      "start_leaf": 0,
+      "action": 0,
+      "outcome": 1,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.055586605633933195,
+      "flag_brier": 0.12802232717201048,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.08424448220909818,
+      "train_and_sample_seconds": 3.494668323546648,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.6613671649914901,
+          "controlled": 0.12024857545299822,
+          "controlled_given_present": 0.18181818181818185
+        },
+        "0,1,2,3": {
+          "present": 1.0000000000000007,
+          "controlled": 0.1131051466562083,
+          "controlled_given_present": 0.11310514665620823
+        },
+        "0,2": {
+          "present": 0.009898869453782804,
+          "controlled": 0.001277273477907459,
+          "controlled_given_present": 0.12903225806451618
+        },
+        "0,3": {
+          "present": 0.01421526951837798,
+          "controlled": 0.0032492044613435392,
+          "controlled_given_present": 0.22857142857142862
+        },
+        "1,2": {
+          "present": 0.01421526951837798,
+          "controlled": 0.0035538173795944972,
+          "controlled_given_present": 0.25000000000000017
+        },
+        "1,3": {
+          "present": 0.009898869453782804,
+          "controlled": 0.004949434726891393,
+          "controlled_given_present": 0.4999999999999991
+        },
+        "2,3": {
+          "present": 0.6613671649914901,
+          "controlled": 0.33068358249574453,
+          "controlled_given_present": 0.4999999999999992
+        }
+      }
+    },
+    {
+      "round": 10,
+      "start_leaf": 1,
+      "action": 1,
+      "outcome": 0,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.055176592605964435,
+      "flag_brier": 0.1303443635169889,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.07356090225628943,
+      "train_and_sample_seconds": 4.285859980620444,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.7112559655403357,
+          "controlled": 0.11854266092338916,
+          "controlled_given_present": 0.16666666666666652
+        },
+        "0,1,2,3": {
+          "present": 1.0000000000000007,
+          "controlled": 0.09461113468160877,
+          "controlled_given_present": 0.0946111346816087
+        },
+        "0,2": {
+          "present": 0.007657159790215486,
+          "controlled": 0.0009008423282606441,
+          "controlled_given_present": 0.11764705882352924
+        },
+        "0,3": {
+          "present": 0.007590430728862837,
+          "controlled": 0.0013800783143386977,
+          "controlled_given_present": 0.18181818181818182
+        },
+        "1,2": {
+          "present": 0.007590430728862837,
+          "controlled": 0.0018976076822157099,
+          "controlled_given_present": 0.2500000000000001
+        },
+        "1,3": {
+          "present": 0.007657159790215486,
+          "controlled": 0.003828579895107738,
+          "controlled_given_present": 0.49999999999999933
+        },
+        "2,3": {
+          "present": 0.7112559655403357,
+          "controlled": 0.3556279827701675,
+          "controlled_given_present": 0.49999999999999956
+        }
+      }
+    },
+    {
+      "round": 11,
+      "start_leaf": 3,
+      "action": 1,
+      "outcome": 3,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.0703293372604091,
+      "flag_brier": 0.12293124327929564,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.07717362951452911,
+      "train_and_sample_seconds": 3.4237059745937586,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.7516197226765233,
+          "controlled": 0.12526995377942043,
+          "controlled_given_present": 0.16666666666666652
+        },
+        "0,1,2,3": {
+          "present": 0.9999999999999989,
+          "controlled": 0.07051062303013307,
+          "controlled_given_present": 0.07051062303013315
+        },
+        "0,2": {
+          "present": 0.0024190023008478037,
+          "controlled": 0.0002845885059820941,
+          "controlled_given_present": 0.11764705882352923
+        },
+        "0,3": {
+          "present": 0.007224252376383213,
+          "controlled": 0.000932161596952673,
+          "controlled_given_present": 0.12903225806451618
+        },
+        "1,2": {
+          "present": 0.007224252376383213,
+          "controlled": 0.0018060630940958018,
+          "controlled_given_present": 0.24999999999999978
+        },
+        "1,3": {
+          "present": 0.0024190023008478037,
+          "controlled": 0.0009676009203391219,
+          "controlled_given_present": 0.4000000000000002
+        },
+        "2,3": {
+          "present": 0.7516197226765233,
+          "controlled": 0.3006478890706089,
+          "controlled_given_present": 0.3999999999999994
+        }
+      }
+    },
+    {
+      "round": 12,
+      "start_leaf": 1,
+      "action": 0,
+      "outcome": 1,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.12734809826221485,
+      "flag_brier": 0.10077042385266836,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.06393580253072476,
+      "train_and_sample_seconds": 3.756870971992612,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.790964392577863,
+          "controlled": 0.2259898264508179,
+          "controlled_given_present": 0.2857142857142856
+        },
+        "0,1,2,3": {
+          "present": 0.9999999999999994,
+          "controlled": 0.07869256297725095,
+          "controlled_given_present": 0.078692562977251
+        },
+        "0,2": {
+          "present": 0.004049602825397777,
+          "controlled": 0.00047642386181150304,
+          "controlled_given_present": 0.11764705882352937
+        },
+        "0,3": {
+          "present": 0.008634266295599255,
+          "controlled": 0.0011140988768515183,
+          "controlled_given_present": 0.1290322580645163
+        },
+        "1,2": {
+          "present": 0.008634266295599255,
+          "controlled": 0.002158566573899814,
+          "controlled_given_present": 0.25000000000000006
+        },
+        "1,3": {
+          "present": 0.004049602825397777,
+          "controlled": 0.0016198411301591123,
+          "controlled_given_present": 0.40000000000000036
+        },
+        "2,3": {
+          "present": 0.790964392577863,
+          "controlled": 0.3163857570311447,
+          "controlled_given_present": 0.39999999999999936
+        }
+      }
+    },
+    {
+      "round": 13,
+      "start_leaf": 3,
+      "action": 1,
+      "outcome": 3,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.1379508915425921,
+      "flag_brier": 0.0979692199209978,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.04473268606003779,
+      "train_and_sample_seconds": 2.857217760756612,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.820272352146795,
+          "controlled": 0.23436352918479803,
+          "controlled_given_present": 0.2857142857142851
+        },
+        "0,1,2,3": {
+          "present": 0.9999999999999999,
+          "controlled": 0.07043178961256312,
+          "controlled_given_present": 0.07043178961256313
+        },
+        "0,2": {
+          "present": 0.0021961001271213073,
+          "controlled": 0.00025836472083780093,
+          "controlled_given_present": 0.11764705882352945
+        },
+        "0,3": {
+          "present": 0.007995571439835326,
+          "controlled": 0.0009406554635100397,
+          "controlled_given_present": 0.11764705882352958
+        },
+        "1,2": {
+          "present": 0.007995571439835326,
+          "controlled": 0.001998892859958833,
+          "controlled_given_present": 0.25000000000000017
+        },
+        "1,3": {
+          "present": 0.0021961001271213073,
+          "controlled": 0.0008235375476704935,
+          "controlled_given_present": 0.3750000000000015
+        },
+        "2,3": {
+          "present": 0.820272352146795,
+          "controlled": 0.30760213205504733,
+          "controlled_given_present": 0.37499999999999906
+        }
+      }
+    },
+    {
+      "round": 14,
+      "start_leaf": 0,
+      "action": 1,
+      "outcome": 1,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.10442906601107195,
+      "flag_brier": 0.11144413987883794,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.11367543683914967,
+      "train_and_sample_seconds": 2.9901630179956555,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.8394443588461198,
+          "controlled": 0.17672512817813044,
+          "controlled_given_present": 0.21052631578947362
+        },
+        "0,1,2,3": {
+          "present": 1.0,
+          "controlled": 0.05686141149139626,
+          "controlled_given_present": 0.05686141149139626
+        },
+        "0,2": {
+          "present": 0.0010891924502673504,
+          "controlled": 0.00012814028826674712,
+          "controlled_given_present": 0.11764705882352942
+        },
+        "0,3": {
+          "present": 0.002928717477385556,
+          "controlled": 0.00034455499733947664,
+          "controlled_given_present": 0.11764705882352923
+        },
+        "1,2": {
+          "present": 0.002928717477385556,
+          "controlled": 0.0005324940867973743,
+          "controlled_given_present": 0.181818181818182
+        },
+        "1,3": {
+          "present": 0.0010891924502673504,
+          "controlled": 0.0002293036737404956,
+          "controlled_given_present": 0.2105263157894744
+        },
+        "2,3": {
+          "present": 0.8394443588461198,
+          "controlled": 0.3147916345672946,
+          "controlled_given_present": 0.3749999999999996
+        }
+      }
+    },
+    {
+      "round": 15,
+      "start_leaf": 2,
+      "action": 0,
+      "outcome": 2,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.0808216299729327,
+      "flag_brier": 0.12840709783631846,
+      "flag_precision": null,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.06728407232661303,
+      "train_and_sample_seconds": 3.368723548948765,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.8883101383823437,
+          "controlled": 0.18701266071207184,
+          "controlled_given_present": 0.2105263157894731
+        },
+        "0,1,2,3": {
+          "present": 1.0000000000000016,
+          "controlled": 0.05593721700976117,
+          "controlled_given_present": 0.05593721700976108
+        },
+        "0,2": {
+          "present": 0.0008510729613919966,
+          "controlled": 0.0001001262307519997,
+          "controlled_given_present": 0.11764705882352952
+        },
+        "0,3": {
+          "present": 0.002164346560296302,
+          "controlled": 0.0002546290070936831,
+          "controlled_given_present": 0.11764705882352963
+        },
+        "1,2": {
+          "present": 0.002164346560296302,
+          "controlled": 0.00039351755641750947,
+          "controlled_given_present": 0.18181818181818182
+        },
+        "1,3": {
+          "present": 0.0008510729613919966,
+          "controlled": 0.00017917325502989477,
+          "controlled_given_present": 0.21052631578947456
+        },
+        "2,3": {
+          "present": 0.8883101383823437,
+          "controlled": 0.48453280275400495,
+          "controlled_given_present": 0.5454545454545446
+        }
+      }
+    },
+    {
+      "round": 16,
+      "start_leaf": 3,
+      "action": 0,
+      "outcome": 2,
+      "estimated_acquisition": null,
+      "exact_truth_mass": 0.055025986608715494,
+      "flag_brier": 0.1545088730203939,
+      "flag_precision": 0.0,
+      "flag_recall": 0.0,
+      "sample_tv_before_observation": 0.06540731802521829,
+      "train_and_sample_seconds": 3.006649994291365,
+      "flag_marginals": {
+        "0,1": {
+          "present": 0.9316089062236029,
+          "controlled": 0.1961281907839162,
+          "controlled_given_present": 0.21052631578947345
+        },
+        "0,1,2,3": {
+          "present": 1.0000000000000004,
+          "controlled": 0.053908634019807666,
+          "controlled_given_present": 0.053908634019807646
+        },
+        "0,2": {
+          "present": 0.00029262253787906727,
+          "controlled": 6.160474481664613e-05,
+          "controlled_given_present": 0.210526315789475
+        },
+        "0,3": {
+          "present": 0.0007987887015569935,
+          "controlled": 9.397514135964654e-05,
+          "controlled_given_present": 0.11764705882352972
+        },
+        "1,2": {
+          "present": 0.0007987887015569935,
+          "controlled": 0.00019969717538924903,
+          "controlled_given_present": 0.25000000000000083
+        },
+        "1,3": {
+          "present": 0.00029262253787906727,
+          "controlled": 6.160474481664613e-05,
+          "controlled_given_present": 0.210526315789475
+        },
+        "2,3": {
+          "present": 0.9316089062236029,
+          "controlled": 0.6576062867460726,
+          "controlled_given_present": 0.7058823529411764
+        }
+      }
+    }
+  ],
+  "area_under_truth_mass": 0.05797230540788985,
+  "mean_flag_brier": 0.13089884485924314,
+  "truth_case": "local",
+  "training": [
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    },
+    {
+      "steps": 1000,
+      "trajectories": 64000,
+      "unique_reward_calls": 26
+    }
+  ],
+  "source_sha256": {
+    "posterior/__init__.py": "43a9de04401d3c4c11c8f6b2750585b932087296c4944e84c8786dceeef94318",
+    "posterior/model.py": "e81a3d81766ba45070d98d2de775fb61a9f6188ab270434becd933293ecbbc3c",
+    "posterior/grammar.py": "39adfc3f157b6f34ca2e36a3385ea2190d2455426546a7f9a44ae2455dc25eec",
+    "posterior/tb.py": "13d04923be334b1732607fb50c34e83fe4e481a0762e06592cb331739c79d480",
+    "posterior/exact.py": "9261b7bfa8dda3ec953e60a141db28d23b8ef401ba3b344e375d74e1740ef01f",
+    "discovery/PHASE4-PROTOCOL.md": "2a9ff16fb33d2c69e700ae4daf8e3a9c54b03495bb538b92e440753e211e807e",
+    "discovery/acquisition.py": "3bc3df539ba5d7cf2a76bc78dea184a4dcc6762f6f7fd03f35332c72cfb8b006",
+    "discovery/trial.py": "bdd0edf4b4766b97b50f8e4aa6cff0809aad0cc140a9645999640298fdd5ac46",
+    "discovery/control_acquisition.py": "ade835cae342778ce94363aa9b447d37af83f4ac563329273498dce5b5fa28ee",
+    "discovery/controllability.py": "b8893f3f0f47fa19d012651273a26bca80e487118d2cd255472bddf91d3e394c",
+    "discovery/interventions.py": "bf9113d2313ce39bfed54c1e6c2ac1637269f812554db650948d67e0ba7c9133",
+    "discovery/control_trial.py": "e9b959413677054c4f51fff6b2e62b2060fefb950733aa6660c8fec3ef2ebf2f",
+    "discovery/control_stream.py": "ee4453aa0175fde68fb559c62998dfb5f7e192dcfaf64d27143616741bddc0df",
+    "discovery/run_phase4.py": "6a94869719d577ed1e7346487c6e9cb6e802cf15a075a3db28b1b5a5473ae2be",
+    "discovery/run_phase4_null.py": "2cea74595f54dfd2c7641bae75a612fe51914e66df8fe46afacc5509f3c7e69c"
+  }
+}

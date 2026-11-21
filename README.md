@@ -2,6 +2,8 @@
 
 K. Zaghw, A. Pashea, M. Pritsch, W. Nuijten, K. Friston, and L. Da Costa, “Renormalising generative models for active inference: Foundations, derivations, and verification,” arXiv, Aug. 2026. [Online]. Available: [https://arxiv.org/abs/2608.09512](https://arxiv.org/abs/2608.09512).
 
+**Experiments added in this fork:** [Which hierarchies help an agent?](experiments/hierarchy/README.md) links the native reproduction, controller comparisons, structure samplers, and intervention results. The upstream library is unchanged.
+
 ## Overview
 
 **RGMs**: This repository provides a Python-native library for Renormalising Generative Models (RGMs) via careful translation of selected routines from the open-source [SPM](https://github.com/spm/spm) (Statistical Parametric Mapping) toolbox. Bringing RGM procedures into Python supports reproducibility with respect to the original RGM introductions ([“From pixels to planning: scale-free active inference”](https://www.frontiersin.org/journals/network-physiology/articles/10.3389/fnetp.2025.1521963/full), [“Gradient-free de novo learning”](https://www.mdpi.com/1099-4300/27/9/992)), as well as further experimentation, optimization, and research applications in an accessible open-source language. The repository comprises an inspectable Python translation of selected SPM DEM / RGM demonstrations, with MATLAB-paired parity tests that compare the live Python library against the original MATLAB authority.

@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-11-21T14:26:03.687228+00:00",
+  "diagnostic_result_sha256": "ec38ba3f1fbf9afca91d842bf33cb83d946e4a48391e120392ac29702797ebf8",
+  "repeat_result_sha256": "40bf3a61cb33148cefbb5f1acc754f1fde433c891c9e3a9a444f534005f99a39",
+  "verifier_source_sha256": "a47e6fc073ba4990a8c34e1d2757c5bfaea26abadf64e51644b9a4b391a8b9c2",
+  "same_code_repeat_scientific_outputs_identical": true,
+  "repeat_exclusions": [
+    "timing",
+    "created_utc"
+  ],
+  "matched_phase4_cells": [
+    {
+      "artifact": "none_seed-11_policy-balanced.json",
+      "phase4_sha256": "65237f0b0dcc5716fd4492b61662a559b98c052d0aa351caaf3849b28c96468c",
+      "all_16_interventions_and_outcomes_identical": true,
+      "frozen_sources_match": true,
+      "maximum_metric_error": 0.0
+    },
+    {
+      "artifact": "none_seed-23_policy-balanced.json",
+      "phase4_sha256": "00b05d85a35a194d69196577847f6e524396c65c545a7be8b9bc5d9f87f7eb95",
+      "all_16_interventions_and_outcomes_identical": true,
+      "frozen_sources_match": true,
+      "maximum_metric_error": 0.0
+    },
+    {
+      "artifact": "none_seed-37_policy-balanced.json",
+      "phase4_sha256": "41623e58f6a32c1a0174105e22927a80a84ad97aee4d030831aa3af57a2f1935",
+      "all_16_interventions_and_outcomes_identical": true,
+      "frozen_sources_match": true,
+      "maximum_metric_error": 0.0
+    },
+    {
+      "artifact": "root_seed-11_policy-balanced.json",
+      "phase4_sha256": "f20b41f25fbb1d347e81a84421e0bac714dad0a25c45af9b1164d096e4e83e26",
+      "all_16_interventions_and_outcomes_identical": true,
+      "frozen_sources_match": true,
+      "maximum_metric_error": 0.0
+    },
+    {
+      "artifact": "root_seed-23_policy-balanced.json",
+      "phase4_sha256": "ea263fbed719fff56980fd8d15e2ce213d6c6dfd86da210088577d8a81054db8",
+      "all_16_interventions_and_outcomes_identical": true,
+      "frozen_sources_match": true,
+      "maximum_metric_error": 0.0
+    },
+    {
+      "artifact": "root_seed-37_policy-balanced.json",
+      "phase4_sha256": "b68447f84b2243ae0dd3c5a3d9ce3871e5930b2b919cd0c2041c930455ad7941",
+      "all_16_interventions_and_outcomes_identical": true,
+      "frozen_sources_match": true,
+      "maximum_metric_error": 0.0
+    },
+    {
+      "artifact": "local_seed-11_policy-balanced.json",
+      "phase4_sha256": "ae3ce31a76b978ef19abda3a60abf8884cfd0d1e9b2c13c345bc2090f28e3e5e",
+      "all_16_interventions_and_outcomes_identical": true,
+      "frozen_sources_match": true,
+      "maximum_metric_error": 0.0
+    },
+    {
+      "artifact": "local_seed-23_policy-balanced.json",
+      "phase4_sha256": "7eae3e726d8d508d41a26df5564a6a43856ea04f499fb49a0637180ee4c5c11f",
+      "all_16_interventions_and_outcomes_identical": true,
+      "frozen_sources_match": true,
+      "maximum_metric_error": 0.0
+    },
+    {
+      "artifact": "local_seed-37_policy-balanced.json",
+      "phase4_sha256": "975e8cc819f3f4cceedfdc53bf8b9578ed3952c7be50a4009ac06fef98152eb6",
+      "all_16_interventions_and_outcomes_identical": true,
+      "frozen_sources_match": true,
+      "maximum_metric_error": 0.0
+    }
+  ],
+  "missing_phase4_cells": [],
+  "expected_phase4_cells": 9,
+  "all_available_prefixes_match": true,
+  "all_nine_prefixes_checked": true
+}

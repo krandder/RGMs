@@ -1,0 +1,101 @@
+[
+  {
+    "seed": 0,
+    "n_training": 512,
+    "stay": 0.74,
+    "concentration": 80,
+    "distinct_sampled_rivals": 142,
+    "true_log_evidence": -755.6428331703589,
+    "best_rival_log_evidence": -822.1138339938005,
+    "best_rival_depth": 4,
+    "gap_nats": 66.47100082344161
+  },
+  {
+    "seed": 0,
+    "n_training": 512,
+    "stay": 0.74,
+    "concentration": 10,
+    "distinct_sampled_rivals": 142,
+    "true_log_evidence": -762.9951448717893,
+    "best_rival_log_evidence": -764.8345168576991,
+    "best_rival_depth": 4,
+    "gap_nats": 1.8393719859097928
+  },
+  {
+    "seed": 0,
+    "n_training": 512,
+    "stay": 0.5,
+    "concentration": 10,
+    "distinct_sampled_rivals": 142,
+    "true_log_evidence": -773.0902316990156,
+    "best_rival_log_evidence": -851.0319048053918,
+    "best_rival_depth": 4,
+    "gap_nats": 77.94167310637624
+  },
+  {
+    "seed": 1,
+    "n_training": 512,
+    "stay": 0.74,
+    "concentration": 80,
+    "distinct_sampled_rivals": 291,
+    "true_log_evidence": -662.064463972237,
+    "best_rival_log_evidence": -687.1723309795884,
+    "best_rival_depth": 3,
+    "gap_nats": 25.107867007351388
+  },
+  {
+    "seed": 1,
+    "n_training": 512,
+    "stay": 0.74,
+    "concentration": 10,
+    "distinct_sampled_rivals": 291,
+    "true_log_evidence": -662.0547677507914,
+    "best_rival_log_evidence": -649.2945162179582,
+    "best_rival_depth": 3,
+    "gap_nats": -12.760251532833195
+  },
+  {
+    "seed": 1,
+    "n_training": 512,
+    "stay": 0.5,
+    "concentration": 10,
+    "distinct_sampled_rivals": 291,
+    "true_log_evidence": -679.2208483976024,
+    "best_rival_log_evidence": -704.6085000610424,
+    "best_rival_depth": 3,
+    "gap_nats": 25.38765166344001
+  },
+  {
+    "seed": 2,
+    "n_training": 512,
+    "stay": 0.74,
+    "concentration": 80,
+    "distinct_sampled_rivals": 147,
+    "true_log_evidence": -751.8700077410874,
+    "best_rival_log_evidence": -800.0215856431333,
+    "best_rival_depth": 4,
+    "gap_nats": 48.151577902045915
+  },
+  {
+    "seed": 2,
+    "n_training": 512,
+    "stay": 0.74,
+    "concentration": 10,
+    "distinct_sampled_rivals": 147,
+    "true_log_evidence": -752.8249700679262,
+    "best_rival_log_evidence": -749.6133334549874,
+    "best_rival_depth": 4,
+    "gap_nats": -3.2116366129388325
+  },
+  {
+    "seed": 2,
+    "n_training": 512,
+    "stay": 0.5,
+    "concentration": 10,
+    "distinct_sampled_rivals": 147,
+    "true_log_evidence": -760.6289053803623,
+    "best_rival_log_evidence": -829.5352475715885,
+    "best_rival_depth": 4,
+    "gap_nats": 68.90634219122614
+  }
+]

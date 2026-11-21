@@ -1,0 +1,176 @@
+[
+  {
+    "file": "visualizations/DEM_AtariIII/AtariIII_colab1_dem_active_inference_nr.png",
+    "nbytes": 91358,
+    "sha256": "70a67b2cd631bba99c76f01790add1ae683f81dffd227b97a1a3e2c7e215f615",
+    "size": [
+      887,
+      1222
+    ],
+    "rgba_sha256": "525fcf36c0be45eb87c074664296e9eb36511e58132d0a21a887ba39d850e96d"
+  },
+  {
+    "file": "visualizations/DEM_AtariIII/AtariIII_colab1_dem_attractors_basin.png",
+    "nbytes": 41149,
+    "sha256": "23cfc3ccc007cc274dcdf982c24767e8a080b54d34e9f33d00d604ee94b76ce1",
+    "size": [
+      905,
+      618
+    ],
+    "rgba_sha256": "7822ca39d26f690200e0cfb9d6dd744fd99d67f3ce4b10a1cdbb8c639c14492e"
+  },
+  {
+    "file": "visualizations/DEM_AtariIII/AtariIII_colab1_dem_attractors_mdp_post_sort.png",
+    "nbytes": 195354,
+    "sha256": "42b0b2ae8016ea9209b2bdf432b78640c395287814711f0841bfb40b749cca96",
+    "size": [
+      1167,
+      640
+    ],
+    "rgba_sha256": "b8f92067c87a6d758b4bef22968b48ea263f8cf8bce1e4f1be1e2f28776f76aa"
+  },
+  {
+    "file": "visualizations/DEM_AtariIII/AtariIII_colab1_dem_before_compression_rgb.png",
+    "nbytes": 96460,
+    "sha256": "8cc6389c3324e5a47baedafb304be74a7244fd16e7e815b06f6a2f046d15e632",
+    "size": [
+      913,
+      1201
+    ],
+    "rgba_sha256": "278749f23f23fb6c1a6850f9f9be0b734ac310444abccba0b4c3873398d821e1"
+  },
+  {
+    "file": "visualizations/DEM_AtariIII/AtariIII_colab1_dem_gameplay.png",
+    "nbytes": 2024,
+    "sha256": "e950d8fd9026f6d416a9a4428d0206d8460d1a0f0fa76f7821034b89450f3f34",
+    "size": [
+      175,
+      271
+    ],
+    "rgba_sha256": "b1c015f7bb47810c03fbe1bf9bf821b4c952e979c6ac40cd70d90cfc534dae3d"
+  },
+  {
+    "file": "visualizations/DEM_AtariIII/AtariIII_colab1_dem_generative_ai.png",
+    "nbytes": 80057,
+    "sha256": "cdb87dd3947db0007d45469d9d44fe704eb969f13d1728240d1157c4be96fccd",
+    "size": [
+      887,
+      1222
+    ],
+    "rgba_sha256": "d3c70d78a00c7e2c2146d25a28c0d1a20541830ba5b13fc0e9433ab99ba6c91f"
+  },
+  {
+    "file": "visualizations/DEM_AtariIII/AtariIII_colab1_dem_orbits_after.png",
+    "nbytes": 156369,
+    "sha256": "dafb73661e961e7b4cd94d23943ccf5e6fc4aca453c5e5f961ff8f08dce25152",
+    "size": [
+      1253,
+      649
+    ],
+    "rgba_sha256": "c955a396a97d4b406789c79f127525960fbaa925760c5cf376e5a43f33b91f8e"
+  },
+  {
+    "file": "visualizations/DEM_AtariIII/AtariIII_colab1_dem_orbits_before.png",
+    "nbytes": 192532,
+    "sha256": "6a59e4ec09e176a02da59bf1dc7bc3bf2c329f78c1b8f1239ec6476559ca2aad",
+    "size": [
+      1306,
+      657
+    ],
+    "rgba_sha256": "6f4aa67691df6dd065a3a2c922ab2eae1e4b22b7e72bff051bcd23e819b0e83d"
+  },
+  {
+    "file": "visualizations/DEM_AtariIII/AtariIII_colab1_dem_structure_learning.png",
+    "nbytes": 47723,
+    "sha256": "f0403c7280ca5a05375ff43065eac88777c1a6128a9439685f5b68f45b8321ba",
+    "size": [
+      995,
+      833
+    ],
+    "rgba_sha256": "71e1216f7a38ae30e2124cc1cc15cd836a1a0a026f5d743fa001488501d8dde5"
+  },
+  {
+    "file": "visualizations/DEM_AtariIII/AtariIII_colab1_dem_with_compression_rgb.png",
+    "nbytes": 111638,
+    "sha256": "2715d5184287b3eb6709b10493b99b2f5e9a5c5613cba2209d923fe65b01bb24",
+    "size": [
+      887,
+      1222
+    ],
+    "rgba_sha256": "5d12e92b4bee0dea9cbeb67154b536dae0c956a978d31d11c85149ed2e717e8c"
+  },
+  {
+    "file": "visualizations/DEM_drone_vi/DEM_drone_VI_colab2_active_inference.png",
+    "nbytes": 73279,
+    "sha256": "3940520dc69666f9f8b0cba35536bef964a601ba5155496f54ff180eb6f0448e",
+    "size": [
+      972,
+      1097
+    ],
+    "rgba_sha256": "bd84c762e5cc6a99b3d641f8b71a7543a6a2baae907a3c3ab0b2412ebf5c8ca3"
+  },
+  {
+    "file": "visualizations/DEM_drone_vi/DEM_drone_VI_colab2_behaviour.mp4",
+    "nbytes": 129749,
+    "sha256": "e9078319b144edcc99008f7ef25c3254110d43b0398c7faa4a2386d2fae8fa55",
+    "duration": 4.0,
+    "fps": 2.0,
+    "first_decoded_frame": [
+      1200,
+      1200,
+      3
+    ],
+    "decoded_frames": 8,
+    "frames_sha256": "01e015edb7b87564326a971f974ca41379ab1f94757f84df33ae5e0dbd50c470"
+  },
+  {
+    "file": "visualizations/DEM_drone_vi/DEM_drone_VI_colab2_mdp_params.png",
+    "nbytes": 39439,
+    "sha256": "2d3d88f22c58a652c7a1a4665fe3c8050f715b1cbae02f7cf086dcf8934e5394",
+    "size": [
+      1008,
+      1122
+    ],
+    "rgba_sha256": "0203a997b4c966e158e4f6f56cf9276f7e4e62814fe2c4f63ae92ed13d57233b"
+  },
+  {
+    "file": "visualizations/DEM_drone_vi/DEM_drone_VI_colab2_rgm.png",
+    "nbytes": 80568,
+    "sha256": "b23f1662e09b0e705a2800869856bc64218c6d87943617ffc4c5e538a6abca09",
+    "size": [
+      1187,
+      1417
+    ],
+    "rgba_sha256": "1b46b2941d44406415986dfbc92924fd42c7a5efa99d373645f79e1320daff26"
+  },
+  {
+    "file": "visualizations/DEM_drone_vi/DEM_drone_VI_colab2_true_env_early.png",
+    "nbytes": 33695,
+    "sha256": "333a028c7dbe0d71c3b48ecfb150d125b37517d1739b71b3d3256e313846d73f",
+    "size": [
+      578,
+      829
+    ],
+    "rgba_sha256": "a6fd0fd1448d893cff29c8c551875706a4d4592ddde86083bba379a580200937"
+  },
+  {
+    "file": "visualizations/DEM_drone_vi/DEM_drone_VI_colab2_true_scene_post_generate.png",
+    "nbytes": 13622,
+    "sha256": "3f191185cbe3f778ab41938a399aa75d0899800e2ae70f32428e8b0ecbcffaa9",
+    "size": [
+      556,
+      593
+    ],
+    "rgba_sha256": "8fc82b959c0e0efdf6af34c9730d5c507261f4aacd0a2c385714d3900b569ab8"
+  },
+  {
+    "file": "visualizations/DEM_drone_vi/DEM_drone_VI_colab2_wayfinding.png",
+    "nbytes": 81240,
+    "sha256": "da2ab55d520fed7a84ed78cefc853c02f142ce5a4c44e639ad1d176a5450c2f1",
+    "size": [
+      972,
+      1097
+    ],
+    "rgba_sha256": "a4580d45848284bcb5eae2a16d3f5ff9814d95f7be1ee80950946f18ef76acf7"
+  }
+]

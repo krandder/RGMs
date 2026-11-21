@@ -18,3 +18,11 @@ This analysis was added after the original six outcomes were known. It uses thei
 ```sh
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 nice -n 19 python3 -m experiments.hierarchy.subset_dp.predictive_depth --out /tmp/predictive-depth.json
 ```
+
+**Can a less accurate structure sampler still give a better forecast?** We selected the depth-two world (seed 2) with the largest observed held-out advantage for the 1,000-update sampler. A post hoc repeat reconstructed its realized 256-draw mixture and reproduced both archived held-out scores. Averaging directly over the known transition kernel instead of sampling test outcomes, its expected excess log loss was .05553 nats per transition, versus .07583 for the exact posterior predictor. Held-out noise therefore does not explain this particular predictive advantage. This is a selected case with one training history and one set of draws. It does not establish that approximate inference generally predicts better, or that it learned the intended posterior more accurately.
+
+The [calculation](predictive_witness.py) and [receipt](predictive_witness.json) give the two forecast matrices, simulator kernel, expected state frequencies and sampled trees. From the fork root in the original sampler environment:
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 nice -n 19 python3 -m experiments.hierarchy.subset_dp.predictive_witness --out /tmp/selected-forecast.json
+```

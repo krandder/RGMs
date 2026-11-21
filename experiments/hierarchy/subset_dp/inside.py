@@ -71,14 +71,19 @@ class Inside:
         self.logz=float(logsumexp(per_depth)); self.log_depth_probs=np.asarray(per_depth)-self.logz
         self.depth_probs=softmax(per_depth)
 
-    def predictive_matrix(self):
+    def predictive_matrix(self,given_depth=None):
         """Exact mixture P(next leaf | current leaf, observed training history).
 
         Carry probability mass down the inside-weighted tree for each possible
         source leaf. At a base group, emit its atomic categorical readout.
-        All held-out observations use the same fitted posterior.
+        All held-out observations use the same fitted posterior. When given_depth
+        is specified, renormalize the structural posterior within that depth.
         """
         t=self.top; n=t.n; alpha=self.problem.alpha; result=np.zeros((n,n))
+        root_weights=self.depth_probs
+        if given_depth is not None:
+            if given_depth not in range(1,self.depth+1): raise ValueError('depth outside support')
+            root_weights=np.eye(self.depth)[given_depth-1]
         weights={}
         for size,local in self.local.items():
             for d in range(2,min(self.depth,int(math.log2(size)))+1):
@@ -86,7 +91,7 @@ class Inside:
                 weights[size,d]=np.exp(local+sub[t.left[size]]+sub[t.right[size]]-self.z[size,d][t.ids[size],None])
         for x in range(n):
             mass={(n,d):np.zeros(1<<n) for d in range(1,self.depth+1)}
-            for d in range(1,self.depth+1): mass[n,d][t.full]=self.depth_probs[d-1]
+            for d in range(1,self.depth+1): mass[n,d][t.full]=root_weights[d-1]
             for size in reversed(t.sizes):
                 ids=t.ids[size]; atoms=t.groups[size]
                 if size>2:

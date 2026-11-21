@@ -1,0 +1,5161 @@
+{
+  "schema": "local-pair-count-baseline-v1",
+  "status": "post hoc descriptive count comparison on three frozen local worlds",
+  "created_utc": "2026-11-21T15:09:07.593991+00:00",
+  "source_file_name": "results.json",
+  "source_sha256": "ec38ba3f1fbf9afca91d842bf33cb83d946e4a48391e120392ac29702797ebf8",
+  "script_sha256": "31228b0a0c9ce06bee4897b1314476d8d5bcd38622cf8a3fd44ec6e6acb39d7f",
+  "python_version": "3.12.3",
+  "seeds": [
+    11,
+    23,
+    37
+  ],
+  "budgets": [
+    16,
+    64,
+    256
+  ],
+  "pair_comparisons": 54,
+  "method": {
+    "prior_per_row": "Beta(0.5, 0.5)",
+    "conditioning": "For each pair G retain y in G; condition separately on each start x.",
+    "alternative": "Separate within-pair outcome probability for each (x, actuator).",
+    "null": "One within-pair outcome probability for each x, pooled over actuator.",
+    "score": "Sum over x of log m(counts_x0) + log m(counts_x1) - log m(counts_x0 + counts_x1).",
+    "evidence": "Ordered observation likelihood; no binomial coefficients.",
+    "scope": "Conditional pair dependence only; no tree recovery, speed comparison or hypothesis-test decision.",
+    "cross_pair_scope": "Each pair conditions on different retained observations; scores are not a posterior over mutually exclusive pairs.",
+    "roundoff_tolerance_for_descriptive_ties_and_positive_sets": 1e-12
+  },
+  "maximum_gamma_vs_urn_error": 4.263256414560601e-14,
+  "cells": [
+    {
+      "truth_case": "local",
+      "environment_seed": 11,
+      "budget": 16,
+      "history_sha256": "a42e27fb5b0e495ecb64330a574a67842f96469b71e1ef2af4a5eeff7fcc7f3e",
+      "observations_per_start_actuator": 2,
+      "pairs": [
+        {
+          "destination_pair": [
+            0,
+            1
+          ],
+          "retained_observations": 9,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                4
+              ],
+              "actuator_specific_log_evidence": -1.9616585060234515,
+              "pooled_log_evidence": -1.2966822024302025,
+              "log_bayes_factor": -0.664976303593249
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                3
+              ],
+              "actuator_specific_log_evidence": -3.0602707946915624,
+              "pooled_log_evidence": -3.2425923514855173,
+              "log_bayes_factor": 0.1823215567939549
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                0
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            }
+          ],
+          "log_bayes_factor": -0.4826547467992941,
+          "maximum_gamma_vs_urn_error": 0.0
+        },
+        {
+          "destination_pair": [
+            0,
+            2
+          ],
+          "retained_observations": 5,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                0
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                2
+              ],
+              "actuator_specific_log_evidence": -2.7725887222397825,
+              "pooled_log_evidence": -2.772588722239782,
+              "log_bayes_factor": -4.440892098500626e-16
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                1
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            }
+          ],
+          "log_bayes_factor": -4.440892098500626e-16,
+          "maximum_gamma_vs_urn_error": 4.440892098500626e-16
+        },
+        {
+          "destination_pair": [
+            0,
+            3
+          ],
+          "retained_observations": 6,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                0
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                1
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -2.0794415416798366,
+              "log_bayes_factor": 0.693147180559945
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                3
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            }
+          ],
+          "log_bayes_factor": 0.18232155679395534,
+          "maximum_gamma_vs_urn_error": 1.1102230246251565e-15
+        },
+        {
+          "destination_pair": [
+            1,
+            2
+          ],
+          "retained_observations": 10,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.9616585060234515,
+              "pooled_log_evidence": -1.2966822024302025,
+              "log_bayes_factor": -0.664976303593249
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                2
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": -0.40546510810816594
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                1
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            }
+          ],
+          "log_bayes_factor": -1.5812670354674045,
+          "maximum_gamma_vs_urn_error": 1.5543122344752192e-15
+        },
+        {
+          "destination_pair": [
+            1,
+            3
+          ],
+          "retained_observations": 11,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.9616585060234515,
+              "pooled_log_evidence": -1.2966822024302025,
+              "log_bayes_factor": -0.664976303593249
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                1
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                3
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            }
+          ],
+          "log_bayes_factor": -1.6866275511252282,
+          "maximum_gamma_vs_urn_error": 1.1102230246251565e-15
+        },
+        {
+          "destination_pair": [
+            2,
+            3
+          ],
+          "retained_observations": 7,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                1
+              ],
+              "actuator_specific_log_evidence": -2.7725887222397825,
+              "pooled_log_evidence": -2.772588722239782,
+              "log_bayes_factor": -4.440892098500626e-16
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                3
+              ],
+              "actuator_specific_log_evidence": -3.0602707946915624,
+              "pooled_log_evidence": -3.2425923514855173,
+              "log_bayes_factor": 0.1823215567939549
+            }
+          ],
+          "log_bayes_factor": 0.18232155679395445,
+          "maximum_gamma_vs_urn_error": 4.440892098500626e-16
+        }
+      ],
+      "largest_score_pairs": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "positive_score_pairs_above_roundoff": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "truth_case": "local",
+      "environment_seed": 11,
+      "budget": 64,
+      "history_sha256": "b1be1e7202428e608b2472db33bc7974e9d090d9d3d01d3ccb058c123fa76008",
+      "observations_per_start_actuator": 8,
+      "pairs": [
+        {
+          "destination_pair": [
+            0,
+            1
+          ],
+          "retained_observations": 32,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  4,
+                  3
+                ],
+                [
+                  0,
+                  8
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                11
+              ],
+              "actuator_specific_log_evidence": -7.64288166209425,
+              "pooled_log_evidence": -10.298264222280608,
+              "log_bayes_factor": 2.655382560186358
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  7
+                ],
+                [
+                  5,
+                  3
+                ]
+              ],
+              "pooled_destination_counts": [
+                6,
+                10
+              ],
+              "actuator_specific_log_evidence": -10.92629600810002,
+              "pooled_log_evidence": -12.213402712669172,
+              "log_bayes_factor": 1.287106704569151
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                0
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            }
+          ],
+          "log_bayes_factor": 3.942489264755509,
+          "maximum_gamma_vs_urn_error": 5.329070518200751e-15
+        },
+        {
+          "destination_pair": [
+            0,
+            2
+          ],
+          "retained_observations": 27,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  4,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.2966822024302025,
+              "pooled_log_evidence": -1.2966822024302025,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                6,
+                0
+              ],
+              "actuator_specific_log_evidence": -2.0951898986479764,
+              "pooled_log_evidence": -1.4890540950776634,
+              "log_bayes_factor": -0.606135803570313
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  6
+                ],
+                [
+                  1,
+                  6
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                12
+              ],
+              "actuator_specific_log_evidence": -5.617165519770585,
+              "pooled_log_evidence": -5.08332846467162,
+              "log_bayes_factor": -0.5338370550989646
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                4
+              ],
+              "actuator_specific_log_evidence": -1.8562979903656278,
+              "pooled_log_evidence": -1.2966822024302025,
+              "log_bayes_factor": -0.5596157879354253
+            }
+          ],
+          "log_bayes_factor": -1.699588646604703,
+          "maximum_gamma_vs_urn_error": 1.0658141036401503e-14
+        },
+        {
+          "destination_pair": [
+            0,
+            3
+          ],
+          "retained_observations": 27,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  4,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                1
+              ],
+              "actuator_specific_log_evidence": -3.59926729542425,
+              "pooled_log_evidence": -3.59926729542425,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                6,
+                0
+              ],
+              "actuator_specific_log_evidence": -2.0951898986479764,
+              "pooled_log_evidence": -1.4890540950776634,
+              "log_bayes_factor": -0.606135803570313
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                3
+              ],
+              "actuator_specific_log_evidence": -3.0602707946915624,
+              "pooled_log_evidence": -3.2425923514855173,
+              "log_bayes_factor": 0.1823215567939549
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  0,
+                  7
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                12
+              ],
+              "actuator_specific_log_evidence": -2.965204785319412,
+              "pooled_log_evidence": -1.8252319266501367,
+              "log_bayes_factor": -1.1399728586692754
+            }
+          ],
+          "log_bayes_factor": -1.5637871054456336,
+          "maximum_gamma_vs_urn_error": 4.6629367034256575e-15
+        },
+        {
+          "destination_pair": [
+            1,
+            2
+          ],
+          "retained_observations": 37,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  3,
+                  0
+                ],
+                [
+                  8,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                11,
+                0
+              ],
+              "actuator_specific_log_evidence": -2.790851398174633,
+              "pooled_log_evidence": -1.7826723122313446,
+              "log_bayes_factor": -1.0081790859432882
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  7,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                10,
+                0
+              ],
+              "actuator_specific_log_evidence": -2.7263128770370635,
+              "pooled_log_evidence": -1.736152296596451,
+              "log_bayes_factor": -0.9901605804406124
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  6
+                ],
+                [
+                  0,
+                  6
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                12
+              ],
+              "actuator_specific_log_evidence": -2.978108190155327,
+              "pooled_log_evidence": -1.8252319266501367,
+              "log_bayes_factor": -1.1528762635051901
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                4
+              ],
+              "actuator_specific_log_evidence": -1.8562979903656278,
+              "pooled_log_evidence": -1.2966822024302025,
+              "log_bayes_factor": -0.5596157879354253
+            }
+          ],
+          "log_bayes_factor": -3.710831717824516,
+          "maximum_gamma_vs_urn_error": 1.176836406102666e-14
+        },
+        {
+          "destination_pair": [
+            1,
+            3
+          ],
+          "retained_observations": 37,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  3,
+                  1
+                ],
+                [
+                  8,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                11,
+                1
+              ],
+              "actuator_specific_log_evidence": -4.870292939854468,
+              "pooled_log_evidence": -4.960726142579288,
+              "log_bayes_factor": 0.09043320272482003
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  7,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                10,
+                0
+              ],
+              "actuator_specific_log_evidence": -2.7263128770370635,
+              "pooled_log_evidence": -1.736152296596451,
+              "log_bayes_factor": -0.9901605804406124
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                3
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  0,
+                  7
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                12
+              ],
+              "actuator_specific_log_evidence": -2.965204785319412,
+              "pooled_log_evidence": -1.8252319266501367,
+              "log_bayes_factor": -1.1399728586692754
+            }
+          ],
+          "log_bayes_factor": -2.5505258601510574,
+          "maximum_gamma_vs_urn_error": 4.6629367034256575e-15
+        },
+        {
+          "destination_pair": [
+            2,
+            3
+          ],
+          "retained_observations": 32,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                1
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  6,
+                  2
+                ],
+                [
+                  6,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                12,
+                3
+              ],
+              "actuator_specific_log_evidence": -9.930199282957513,
+              "pooled_log_evidence": -9.10868015540677,
+              "log_bayes_factor": -0.8215191275507436
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  3,
+                  5
+                ],
+                [
+                  1,
+                  7
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                12
+              ],
+              "actuator_specific_log_evidence": -10.92629600810002,
+              "pooled_log_evidence": -10.62850590915118,
+              "log_bayes_factor": -0.2977900989488411
+            }
+          ],
+          "log_bayes_factor": -1.1193092264995848,
+          "maximum_gamma_vs_urn_error": 5.329070518200751e-15
+        }
+      ],
+      "largest_score_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "positive_score_pairs_above_roundoff": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "truth_case": "local",
+      "environment_seed": 11,
+      "budget": 256,
+      "history_sha256": "0cd46e61e704128aecc3ba0a165aa99b5434af5bd3045b6e528e71be4bb4b248",
+      "observations_per_start_actuator": 32,
+      "pairs": [
+        {
+          "destination_pair": [
+            0,
+            1
+          ],
+          "retained_observations": 126,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  22,
+                  9
+                ],
+                [
+                  6,
+                  25
+                ]
+              ],
+              "pooled_destination_counts": [
+                28,
+                34
+              ],
+              "actuator_specific_log_evidence": -37.81286495814629,
+              "pooled_log_evidence": -44.97776378340927,
+              "log_bayes_factor": 7.164898825262981
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  8,
+                  22
+                ],
+                [
+                  24,
+                  6
+                ]
+              ],
+              "pooled_destination_counts": [
+                32,
+                28
+              ],
+              "actuator_specific_log_evidence": -36.28362983022297,
+              "pooled_log_evidence": -43.732541062357654,
+              "log_bayes_factor": 7.448911232134684
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                0
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            }
+          ],
+          "log_bayes_factor": 14.102984433631676,
+          "maximum_gamma_vs_urn_error": 3.552713678800501e-14
+        },
+        {
+          "destination_pair": [
+            0,
+            2
+          ],
+          "retained_observations": 127,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  22,
+                  0
+                ],
+                [
+                  6,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                28,
+                1
+              ],
+              "actuator_specific_log_evidence": -6.251678923644068,
+              "pooled_log_evidence": -6.303374257103627,
+              "log_bayes_factor": 0.05169533345955912
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  8,
+                  1
+                ],
+                [
+                  24,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                32,
+                2
+              ],
+              "actuator_specific_log_evidence": -10.596695166561013,
+              "pooled_log_evidence": -9.619689143959818,
+              "log_bayes_factor": -0.977006022601195
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  20
+                ],
+                [
+                  1,
+                  26
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                46
+              ],
+              "actuator_specific_log_evidence": -8.271685083754036,
+              "pooled_log_evidence": -7.0326977612423605,
+              "log_bayes_factor": -1.2389873225116759
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  7
+                ],
+                [
+                  2,
+                  7
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                14
+              ],
+              "actuator_specific_log_evidence": -10.463261048170377,
+              "pooled_log_evidence": -9.586063891950129,
+              "log_bayes_factor": -0.8771971562202481
+            }
+          ],
+          "log_bayes_factor": -3.04149516787356,
+          "maximum_gamma_vs_urn_error": 2.3092638912203256e-14
+        },
+        {
+          "destination_pair": [
+            0,
+            3
+          ],
+          "retained_observations": 131,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  22,
+                  1
+                ],
+                [
+                  6,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                28,
+                1
+              ],
+              "actuator_specific_log_evidence": -7.441262990517914,
+              "pooled_log_evidence": -6.303374257103627,
+              "log_bayes_factor": -1.1378887334142869
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  8,
+                  1
+                ],
+                [
+                  24,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                32,
+                2
+              ],
+              "actuator_specific_log_evidence": -10.596695166561013,
+              "pooled_log_evidence": -9.619689143959818,
+              "log_bayes_factor": -0.977006022601195
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  12
+                ],
+                [
+                  1,
+                  5
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                17
+              ],
+              "actuator_specific_log_evidence": -5.712181294526168,
+              "pooled_log_evidence": -5.579842435570356,
+              "log_bayes_factor": -0.1323388589558121
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  24
+                ],
+                [
+                  2,
+                  23
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                47
+              ],
+              "actuator_specific_log_evidence": -14.908780953633745,
+              "pooled_log_evidence": -13.546533923113401,
+              "log_bayes_factor": -1.3622470305203436
+            }
+          ],
+          "log_bayes_factor": -3.6094806454916375,
+          "maximum_gamma_vs_urn_error": 2.3092638912203256e-14
+        },
+        {
+          "destination_pair": [
+            1,
+            2
+          ],
+          "retained_observations": 125,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  9,
+                  0
+                ],
+                [
+                  25,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                34,
+                1
+              ],
+              "actuator_specific_log_evidence": -7.822905242975612,
+              "pooled_log_evidence": -6.587716785390654,
+              "log_bayes_factor": -1.2351884575849574
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  22,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                28,
+                2
+              ],
+              "actuator_specific_log_evidence": -10.080320320133172,
+              "pooled_log_evidence": -9.299106530657639,
+              "log_bayes_factor": -0.7812137894755331
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  20
+                ],
+                [
+                  0,
+                  26
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                46
+              ],
+              "actuator_specific_log_evidence": -4.28270103718976,
+              "pooled_log_evidence": -2.489402978972379,
+              "log_bayes_factor": -1.7932980582173812
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  7
+                ],
+                [
+                  0,
+                  7
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                14
+              ],
+              "actuator_specific_log_evidence": -3.126324134462763,
+              "pooled_log_evidence": -1.9008202839742943,
+              "log_bayes_factor": -1.2255038504884688
+            }
+          ],
+          "log_bayes_factor": -5.0352041557663405,
+          "maximum_gamma_vs_urn_error": 2.042810365310288e-14
+        },
+        {
+          "destination_pair": [
+            1,
+            3
+          ],
+          "retained_observations": 129,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  9,
+                  1
+                ],
+                [
+                  25,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                34,
+                1
+              ],
+              "actuator_specific_log_evidence": -6.867393797948166,
+              "pooled_log_evidence": -6.587716785390654,
+              "log_bayes_factor": -0.2796770125575119
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  22,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                28,
+                2
+              ],
+              "actuator_specific_log_evidence": -10.080320320133172,
+              "pooled_log_evidence": -9.299106530657639,
+              "log_bayes_factor": -0.7812137894755331
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  12
+                ],
+                [
+                  0,
+                  5
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                17
+              ],
+              "actuator_specific_log_evidence": -3.2272746447381673,
+              "pooled_log_evidence": -1.996323497114247,
+              "log_bayes_factor": -1.2309511476239203
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  24
+                ],
+                [
+                  0,
+                  23
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                47
+              ],
+              "actuator_specific_log_evidence": -4.312146220537677,
+              "pooled_log_evidence": -2.50009826808909,
+              "log_bayes_factor": -1.8120479524485873
+            }
+          ],
+          "log_bayes_factor": -4.103889902105553,
+          "maximum_gamma_vs_urn_error": 3.064215547965432e-14
+        },
+        {
+          "destination_pair": [
+            2,
+            3
+          ],
+          "retained_observations": 130,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                1
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -2.0794415416798366,
+              "log_bayes_factor": 0.693147180559945
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                2
+              ],
+              "actuator_specific_log_evidence": -4.158883083359673,
+              "pooled_log_evidence": -3.7534179752515064,
+              "log_bayes_factor": -0.4054651081081668
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  20,
+                  12
+                ],
+                [
+                  26,
+                  5
+                ]
+              ],
+              "pooled_destination_counts": [
+                46,
+                17
+              ],
+              "actuator_specific_log_evidence": -38.788134231158836,
+              "pooled_log_evidence": -39.037394389614946,
+              "log_bayes_factor": 0.24926015845611005
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  7,
+                  24
+                ],
+                [
+                  7,
+                  23
+                ]
+              ],
+              "pooled_destination_counts": [
+                14,
+                47
+              ],
+              "actuator_specific_log_evidence": -36.747202569138395,
+              "pooled_log_evidence": -35.14602201984323,
+              "log_bayes_factor": -1.6011805492951652
+            }
+          ],
+          "log_bayes_factor": -1.064238318387277,
+          "maximum_gamma_vs_urn_error": 4.263256414560601e-14
+        }
+      ],
+      "largest_score_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "positive_score_pairs_above_roundoff": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "truth_case": "local",
+      "environment_seed": 23,
+      "budget": 16,
+      "history_sha256": "8420c2c49efa2f8e8f370701c4b1649423f68fe1073289d2a932f39d22b47a30",
+      "observations_per_start_actuator": 2,
+      "pairs": [
+        {
+          "destination_pair": [
+            0,
+            1
+          ],
+          "retained_observations": 8,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                2
+              ],
+              "actuator_specific_log_evidence": -4.158883083359673,
+              "pooled_log_evidence": -3.7534179752515064,
+              "log_bayes_factor": -0.4054651081081668
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                1
+              ],
+              "actuator_specific_log_evidence": -3.0602707946915624,
+              "pooled_log_evidence": -3.2425923514855173,
+              "log_bayes_factor": 0.1823215567939549
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            }
+          ],
+          "log_bayes_factor": -0.22314355131421193,
+          "maximum_gamma_vs_urn_error": 2.6645352591003757e-15
+        },
+        {
+          "destination_pair": [
+            0,
+            2
+          ],
+          "retained_observations": 8,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": -0.40546510810816594
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                2
+              ],
+              "actuator_specific_log_evidence": -0.9808292530117257,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                1
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            }
+          ],
+          "log_bayes_factor": -0.9162907318741556,
+          "maximum_gamma_vs_urn_error": 1.5543122344752192e-15
+        },
+        {
+          "destination_pair": [
+            0,
+            3
+          ],
+          "retained_observations": 10,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": -0.40546510810816594
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                2
+              ],
+              "actuator_specific_log_evidence": -0.9808292530117257,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                3
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            }
+          ],
+          "log_bayes_factor": -1.4271163556401452,
+          "maximum_gamma_vs_urn_error": 1.5543122344752192e-15
+        },
+        {
+          "destination_pair": [
+            1,
+            2
+          ],
+          "retained_observations": 6,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": -0.40546510810816594
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                0
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                2
+              ],
+              "actuator_specific_log_evidence": -0.9808292530117257,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                1
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            }
+          ],
+          "log_bayes_factor": -0.40546510810816594,
+          "maximum_gamma_vs_urn_error": 1.5543122344752192e-15
+        },
+        {
+          "destination_pair": [
+            1,
+            3
+          ],
+          "retained_observations": 8,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": -0.40546510810816594
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                0
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                2
+              ],
+              "actuator_specific_log_evidence": -0.9808292530117257,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                3
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            }
+          ],
+          "log_bayes_factor": -0.9162907318741556,
+          "maximum_gamma_vs_urn_error": 1.5543122344752192e-15
+        },
+        {
+          "destination_pair": [
+            2,
+            3
+          ],
+          "retained_observations": 8,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                2
+              ],
+              "actuator_specific_log_evidence": -1.9616585060234515,
+              "pooled_log_evidence": -3.7534179752515064,
+              "log_bayes_factor": 1.791759469228055
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                3
+              ],
+              "actuator_specific_log_evidence": -3.0602707946915624,
+              "pooled_log_evidence": -3.2425923514855173,
+              "log_bayes_factor": 0.1823215567939549
+            }
+          ],
+          "log_bayes_factor": 1.9740810260220099,
+          "maximum_gamma_vs_urn_error": 0.0
+        }
+      ],
+      "largest_score_pairs": [
+        [
+          2,
+          3
+        ]
+      ],
+      "positive_score_pairs_above_roundoff": [
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "truth_case": "local",
+      "environment_seed": 23,
+      "budget": 64,
+      "history_sha256": "e34531562e8b74747d43ca098d7d14254df9549682cda005d06aede54246aea7",
+      "observations_per_start_actuator": 8,
+      "pairs": [
+        {
+          "destination_pair": [
+            0,
+            1
+          ],
+          "retained_observations": 32,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  3,
+                  5
+                ],
+                [
+                  2,
+                  5
+                ]
+              ],
+              "pooled_destination_counts": [
+                5,
+                10
+              ],
+              "actuator_specific_log_evidence": -12.017939627452039,
+              "pooled_log_evidence": -11.145562082667812,
+              "log_bayes_factor": -0.8723775447842268
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  4,
+                  4
+                ],
+                [
+                  7,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                11,
+                4
+              ],
+              "actuator_specific_log_evidence": -8.405021714141146,
+              "pooled_log_evidence": -10.298264222280608,
+              "log_bayes_factor": 1.893242508139462
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": -0.40546510810816594
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            }
+          ],
+          "log_bayes_factor": 0.6153998552470692,
+          "maximum_gamma_vs_urn_error": 1.7763568394002505e-15
+        },
+        {
+          "destination_pair": [
+            0,
+            2
+          ],
+          "retained_observations": 36,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  3,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                5,
+                0
+              ],
+              "actuator_specific_log_evidence": -2.1439800628174077,
+              "pooled_log_evidence": -1.4020427180880306,
+              "log_bayes_factor": -0.7419373447293771
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  4,
+                  0
+                ],
+                [
+                  7,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                11,
+                1
+              ],
+              "actuator_specific_log_evidence": -5.632432991901364,
+              "pooled_log_evidence": -4.960726142579288,
+              "log_bayes_factor": -0.6717068493220761
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  6
+                ],
+                [
+                  1,
+                  5
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                11
+              ],
+              "actuator_specific_log_evidence": -8.015060792568953,
+              "pooled_log_evidence": -7.120210391932659,
+              "log_bayes_factor": -0.8948504006362938
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  3
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                6
+              ],
+              "actuator_specific_log_evidence": -2.326301619611364,
+              "pooled_log_evidence": -1.4890540950776634,
+              "log_bayes_factor": -0.8372475245337005
+            }
+          ],
+          "log_bayes_factor": -3.1457421192214476,
+          "maximum_gamma_vs_urn_error": 8.881784197001252e-15
+        },
+        {
+          "destination_pair": [
+            0,
+            3
+          ],
+          "retained_observations": 32,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  3,
+                  0
+                ],
+                [
+                  2,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                5,
+                1
+              ],
+              "actuator_specific_log_evidence": -3.935739532045464,
+              "pooled_log_evidence": -3.886949367876032,
+              "log_bayes_factor": -0.04879016416943216
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  4,
+                  0
+                ],
+                [
+                  7,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                11,
+                0
+              ],
+              "actuator_specific_log_evidence": -2.859844269661584,
+              "pooled_log_evidence": -1.7826723122313446,
+              "log_bayes_factor": -1.0771719574302394
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                3
+              ],
+              "actuator_specific_log_evidence": -4.852030263919619,
+              "pooled_log_evidence": -4.446565155811454,
+              "log_bayes_factor": -0.4054651081081646
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  0,
+                  5
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                10
+              ],
+              "actuator_specific_log_evidence": -2.804085436176061,
+              "pooled_log_evidence": -1.736152296596451,
+              "log_bayes_factor": -1.0679331395796101
+            }
+          ],
+          "log_bayes_factor": -2.5993603692874463,
+          "maximum_gamma_vs_urn_error": 2.4424906541753444e-15
+        },
+        {
+          "destination_pair": [
+            1,
+            2
+          ],
+          "retained_observations": 32,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  5,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                10,
+                0
+              ],
+              "actuator_specific_log_evidence": -2.804085436176061,
+              "pooled_log_evidence": -1.736152296596451,
+              "log_bayes_factor": -1.0679331395796101
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  4,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                1
+              ],
+              "actuator_specific_log_evidence": -1.9898293829901483,
+              "pooled_log_evidence": -3.59926729542425,
+              "log_bayes_factor": 1.6094379124341018
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  6
+                ],
+                [
+                  0,
+                  5
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                11
+              ],
+              "actuator_specific_log_evidence": -2.891096813165694,
+              "pooled_log_evidence": -1.7826723122313446,
+              "log_bayes_factor": -1.1084245009343494
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  3
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                6
+              ],
+              "actuator_specific_log_evidence": -2.326301619611364,
+              "pooled_log_evidence": -1.4890540950776634,
+              "log_bayes_factor": -0.8372475245337005
+            }
+          ],
+          "log_bayes_factor": -1.4041672526135582,
+          "maximum_gamma_vs_urn_error": 4.884981308350689e-15
+        },
+        {
+          "destination_pair": [
+            1,
+            3
+          ],
+          "retained_observations": 28,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  5,
+                  0
+                ],
+                [
+                  5,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                10,
+                1
+              ],
+              "actuator_specific_log_evidence": -5.288992085964063,
+              "pooled_log_evidence": -4.827194749954769,
+              "log_bayes_factor": -0.46179733600929396
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  4,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.2966822024302025,
+              "pooled_log_evidence": -1.2966822024302025,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                3
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  0,
+                  5
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                10
+              ],
+              "actuator_specific_log_evidence": -2.804085436176061,
+              "pooled_log_evidence": -1.736152296596451,
+              "log_bayes_factor": -1.0679331395796101
+            }
+          ],
+          "log_bayes_factor": -2.0405560993548937,
+          "maximum_gamma_vs_urn_error": 2.4424906541753444e-15
+        },
+        {
+          "destination_pair": [
+            2,
+            3
+          ],
+          "retained_observations": 32,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                1
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                0
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  6,
+                  1
+                ],
+                [
+                  5,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                11,
+                3
+              ],
+              "actuator_specific_log_evidence": -9.5555058335161,
+              "pooled_log_evidence": -8.842976989673769,
+              "log_bayes_factor": -0.7125288438423318
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  3,
+                  5
+                ],
+                [
+                  3,
+                  5
+                ]
+              ],
+              "pooled_destination_counts": [
+                6,
+                10
+              ],
+              "actuator_specific_log_evidence": -13.18109043725772,
+              "pooled_log_evidence": -12.213402712669172,
+              "log_bayes_factor": -0.9676877245885471
+            }
+          ],
+          "log_bayes_factor": -1.680216568430879,
+          "maximum_gamma_vs_urn_error": 3.552713678800501e-15
+        }
+      ],
+      "largest_score_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "positive_score_pairs_above_roundoff": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "truth_case": "local",
+      "environment_seed": 23,
+      "budget": 256,
+      "history_sha256": "cabc2778cddd80eaa4be55b4ba55a771cf07970382446c7870016b5a23c3d4df",
+      "observations_per_start_actuator": 32,
+      "pairs": [
+        {
+          "destination_pair": [
+            0,
+            1
+          ],
+          "retained_observations": 127,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  19,
+                  9
+                ],
+                [
+                  4,
+                  23
+                ]
+              ],
+              "pooled_destination_counts": [
+                23,
+                32
+              ],
+              "actuator_specific_log_evidence": -32.6990909302667,
+              "pooled_log_evidence": -39.61749581564354,
+              "log_bayes_factor": 6.918404885376837
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  12,
+                  17
+                ],
+                [
+                  24,
+                  6
+                ]
+              ],
+              "pooled_destination_counts": [
+                36,
+                23
+              ],
+              "actuator_specific_log_evidence": -38.53621609378678,
+              "pooled_log_evidence": -41.72060167997995,
+              "log_bayes_factor": 3.184385586193173
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  2,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                4
+              ],
+              "actuator_specific_log_evidence": -7.506835950503013,
+              "pooled_log_evidence": -6.841859646909764,
+              "log_bayes_factor": -0.6649763035932486
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                2
+              ],
+              "actuator_specific_log_evidence": -4.446565155811452,
+              "pooled_log_evidence": -4.446565155811454,
+              "log_bayes_factor": 1.7763568394002505e-15
+            }
+          ],
+          "log_bayes_factor": 9.437814167976764,
+          "maximum_gamma_vs_urn_error": 3.552713678800501e-14
+        },
+        {
+          "destination_pair": [
+            0,
+            2
+          ],
+          "retained_observations": 131,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  19,
+                  3
+                ],
+                [
+                  4,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                23,
+                4
+              ],
+              "actuator_specific_log_evidence": -14.153118421800693,
+              "pooled_log_evidence": -13.215037836994142,
+              "log_bayes_factor": -0.938080584806551
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  12,
+                  0
+                ],
+                [
+                  24,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                36,
+                1
+              ],
+              "actuator_specific_log_evidence": -7.903854746946035,
+              "pooled_log_evidence": -6.671661615972312,
+              "log_bayes_factor": -1.232193130973723
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  18
+                ],
+                [
+                  2,
+                  20
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                38
+              ],
+              "actuator_specific_log_evidence": -16.752075091934053,
+              "pooled_log_evidence": -15.316758558887457,
+              "log_bayes_factor": -1.4353165330465956
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  13
+                ],
+                [
+                  2,
+                  9
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                22
+              ],
+              "actuator_specific_log_evidence": -11.869678590431729,
+              "pooled_log_evidence": -11.027382710674068,
+              "log_bayes_factor": -0.8422958797576605
+            }
+          ],
+          "log_bayes_factor": -4.44788612858453,
+          "maximum_gamma_vs_urn_error": 1.4210854715202004e-14
+        },
+        {
+          "destination_pair": [
+            0,
+            3
+          ],
+          "retained_observations": 130,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  19,
+                  1
+                ],
+                [
+                  4,
+                  4
+                ]
+              ],
+              "pooled_destination_counts": [
+                23,
+                5
+              ],
+              "actuator_specific_log_evidence": -12.581901722186796,
+              "pooled_log_evidence": -15.043164950393056,
+              "log_bayes_factor": 2.46126322820626
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  12,
+                  3
+                ],
+                [
+                  24,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                36,
+                4
+              ],
+              "actuator_specific_log_evidence": -15.187302975702668,
+              "pooled_log_evidence": -15.08717006746457,
+              "log_bayes_factor": -0.1001329082380984
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  10
+                ],
+                [
+                  2,
+                  8
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                18
+              ],
+              "actuator_specific_log_evidence": -13.321828622785599,
+              "pooled_log_evidence": -12.218858889965361,
+              "log_bayes_factor": -1.1029697328202381
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  18
+                ],
+                [
+                  2,
+                  19
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                37
+              ],
+              "actuator_specific_log_evidence": -14.041179938699614,
+              "pooled_log_evidence": -12.742620775371506,
+              "log_bayes_factor": -1.2985591633281075
+            }
+          ],
+          "log_bayes_factor": -0.040398576180184165,
+          "maximum_gamma_vs_urn_error": 2.1316282072803006e-14
+        },
+        {
+          "destination_pair": [
+            1,
+            2
+          ],
+          "retained_observations": 126,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  9,
+                  3
+                ],
+                [
+                  23,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                32,
+                4
+              ],
+              "actuator_specific_log_evidence": -14.258384774944759,
+              "pooled_log_evidence": -14.589502443535807,
+              "log_bayes_factor": 0.3311176685910482
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  17,
+                  0
+                ],
+                [
+                  6,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                23,
+                1
+              ],
+              "actuator_specific_log_evidence": -6.124434921807168,
+              "pooled_log_evidence": -6.0167474165778145,
+              "log_bayes_factor": -0.10768750522935377
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  18
+                ],
+                [
+                  2,
+                  20
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                38
+              ],
+              "actuator_specific_log_evidence": -16.752075091934053,
+              "pooled_log_evidence": -15.316758558887457,
+              "log_bayes_factor": -1.4353165330465956
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  13
+                ],
+                [
+                  2,
+                  9
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                22
+              ],
+              "actuator_specific_log_evidence": -8.53747408025652,
+              "pooled_log_evidence": -8.724797617680025,
+              "log_bayes_factor": 0.18732353742350583
+            }
+          ],
+          "log_bayes_factor": -1.0245628322613953,
+          "maximum_gamma_vs_urn_error": 8.881784197001252e-15
+        },
+        {
+          "destination_pair": [
+            1,
+            3
+          ],
+          "retained_observations": 125,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  9,
+                  1
+                ],
+                [
+                  23,
+                  4
+                ]
+              ],
+              "pooled_destination_counts": [
+                32,
+                5
+              ],
+              "actuator_specific_log_evidence": -17.895629112757035,
+              "pooled_log_evidence": -16.696342959403765,
+              "log_bayes_factor": -1.1992861533532704
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  17,
+                  3
+                ],
+                [
+                  6,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                23,
+                4
+              ],
+              "actuator_specific_log_evidence": -14.326369273001387,
+              "pooled_log_evidence": -13.215037836994142,
+              "log_bayes_factor": -1.1113314360072444
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  10
+                ],
+                [
+                  2,
+                  8
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                18
+              ],
+              "actuator_specific_log_evidence": -13.321828622785599,
+              "pooled_log_evidence": -12.218858889965361,
+              "log_bayes_factor": -1.1029697328202381
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  18
+                ],
+                [
+                  2,
+                  19
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                37
+              ],
+              "actuator_specific_log_evidence": -10.403593778973224,
+              "pooled_log_evidence": -9.970032053131746,
+              "log_bayes_factor": -0.43356172584147856
+            }
+          ],
+          "log_bayes_factor": -3.8471490480222315,
+          "maximum_gamma_vs_urn_error": 1.4210854715202004e-14
+        },
+        {
+          "destination_pair": [
+            2,
+            3
+          ],
+          "retained_observations": 129,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  3,
+                  1
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                5
+              ],
+              "actuator_specific_log_evidence": -6.841859646909768,
+              "pooled_log_evidence": -7.535006827469709,
+              "log_bayes_factor": 0.693147180559941
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                4
+              ],
+              "actuator_specific_log_evidence": -3.2425923514855186,
+              "pooled_log_evidence": -3.59926729542425,
+              "log_bayes_factor": 0.35667494393873156
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  18,
+                  10
+                ],
+                [
+                  20,
+                  8
+                ]
+              ],
+              "pooled_destination_counts": [
+                38,
+                18
+              ],
+              "actuator_specific_log_evidence": -38.80423681794948,
+              "pooled_log_evidence": -37.40809509227083,
+              "log_bayes_factor": -1.3961417256786532
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  13,
+                  18
+                ],
+                [
+                  9,
+                  19
+                ]
+              ],
+              "pooled_destination_counts": [
+                22,
+                37
+              ],
+              "actuator_specific_log_evidence": -42.51761459931575,
+              "pooled_log_evidence": -41.236804728601896,
+              "log_bayes_factor": -1.2808098707138527
+            }
+          ],
+          "log_bayes_factor": -1.6271294718938334,
+          "maximum_gamma_vs_urn_error": 2.842170943040401e-14
+        }
+      ],
+      "largest_score_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "positive_score_pairs_above_roundoff": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "truth_case": "local",
+      "environment_seed": 37,
+      "budget": 16,
+      "history_sha256": "71c4bfde532de9265b598356c8a021b035c6b0f58f455a6d9e9c2560b8656f1d",
+      "observations_per_start_actuator": 2,
+      "pairs": [
+        {
+          "destination_pair": [
+            0,
+            1
+          ],
+          "retained_observations": 6,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                1
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -2.0794415416798366,
+              "log_bayes_factor": 0.693147180559945
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                4
+              ],
+              "actuator_specific_log_evidence": -1.9616585060234515,
+              "pooled_log_evidence": -1.2966822024302025,
+              "log_bayes_factor": -0.664976303593249
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            }
+          ],
+          "log_bayes_factor": 0.028170876966695957,
+          "maximum_gamma_vs_urn_error": 2.220446049250313e-16
+        },
+        {
+          "destination_pair": [
+            0,
+            2
+          ],
+          "retained_observations": 5,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                1
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -2.0794415416798366,
+              "log_bayes_factor": 0.693147180559945
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                2
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": -0.40546510810816594
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                1
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            }
+          ],
+          "log_bayes_factor": 0.287682072451779,
+          "maximum_gamma_vs_urn_error": 1.5543122344752192e-15
+        },
+        {
+          "destination_pair": [
+            0,
+            3
+          ],
+          "retained_observations": 7,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                1
+              ],
+              "actuator_specific_log_evidence": -2.0794415416798366,
+              "pooled_log_evidence": -2.0794415416798366,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                2
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": -0.40546510810816594
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                3
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            }
+          ],
+          "log_bayes_factor": -0.9162907318741556,
+          "maximum_gamma_vs_urn_error": 1.5543122344752192e-15
+        },
+        {
+          "destination_pair": [
+            1,
+            2
+          ],
+          "retained_observations": 9,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                1
+              ],
+              "actuator_specific_log_evidence": -2.0794415416798366,
+              "pooled_log_evidence": -2.0794415416798366,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.9616585060234515,
+              "pooled_log_evidence": -1.2966822024302025,
+              "log_bayes_factor": -0.664976303593249
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                2
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": -0.40546510810816594
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                1
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            }
+          ],
+          "log_bayes_factor": -1.070441411701415,
+          "maximum_gamma_vs_urn_error": 1.5543122344752192e-15
+        },
+        {
+          "destination_pair": [
+            1,
+            3
+          ],
+          "retained_observations": 11,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                1
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -2.0794415416798366,
+              "log_bayes_factor": 0.693147180559945
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                0
+              ],
+              "actuator_specific_log_evidence": -1.9616585060234515,
+              "pooled_log_evidence": -1.2966822024302025,
+              "log_bayes_factor": -0.664976303593249
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                2
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -0.9808292530117257,
+              "log_bayes_factor": -0.40546510810816594
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                3
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            }
+          ],
+          "log_bayes_factor": -0.8881198549074596,
+          "maximum_gamma_vs_urn_error": 1.5543122344752192e-15
+        },
+        {
+          "destination_pair": [
+            2,
+            3
+          ],
+          "retained_observations": 10,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                1
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -2.0794415416798366,
+              "log_bayes_factor": 0.693147180559945
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                2
+              ],
+              "actuator_specific_log_evidence": -4.158883083359673,
+              "pooled_log_evidence": -3.7534179752515064,
+              "log_bayes_factor": -0.4054651081081668
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                3
+              ],
+              "actuator_specific_log_evidence": -3.0602707946915624,
+              "pooled_log_evidence": -3.2425923514855173,
+              "log_bayes_factor": 0.1823215567939549
+            }
+          ],
+          "log_bayes_factor": 0.470003629245733,
+          "maximum_gamma_vs_urn_error": 2.6645352591003757e-15
+        }
+      ],
+      "largest_score_pairs": [
+        [
+          2,
+          3
+        ]
+      ],
+      "positive_score_pairs_above_roundoff": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "truth_case": "local",
+      "environment_seed": 37,
+      "budget": 64,
+      "history_sha256": "bbb6d8c8cb040933d4a8b3332e469f7bdcbc62649655ad3726d65d91b5ea0cff",
+      "observations_per_start_actuator": 8,
+      "pairs": [
+        {
+          "destination_pair": [
+            0,
+            1
+          ],
+          "retained_observations": 32,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  5,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "pooled_destination_counts": [
+                8,
+                6
+              ],
+              "actuator_specific_log_evidence": -11.442575482548477,
+              "pooled_log_evidence": -11.124121751429946,
+              "log_bayes_factor": -0.3184537311185309
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  7
+                ],
+                [
+                  5,
+                  3
+                ]
+              ],
+              "pooled_destination_counts": [
+                6,
+                10
+              ],
+              "actuator_specific_log_evidence": -10.92629600810002,
+              "pooled_log_evidence": -12.213402712669172,
+              "log_bayes_factor": 1.287106704569151
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                1
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                1
+              ],
+              "actuator_specific_log_evidence": -0.6931471805599458,
+              "pooled_log_evidence": -0.6931471805599458,
+              "log_bayes_factor": 0.0
+            }
+          ],
+          "log_bayes_factor": 0.9686529734506202,
+          "maximum_gamma_vs_urn_error": 5.329070518200751e-15
+        },
+        {
+          "destination_pair": [
+            0,
+            2
+          ],
+          "retained_observations": 27,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  5,
+                  0
+                ],
+                [
+                  3,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                8,
+                1
+              ],
+              "actuator_specific_log_evidence": -4.644635069573548,
+              "pooled_log_evidence": -4.5180723462651144,
+              "log_bayes_factor": -0.12656272330843343
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                6,
+                0
+              ],
+              "actuator_specific_log_evidence": -2.0951898986479764,
+              "pooled_log_evidence": -1.4890540950776634,
+              "log_bayes_factor": -0.606135803570313
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  5
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                9
+              ],
+              "actuator_specific_log_evidence": -2.698724920518233,
+              "pooled_log_evidence": -1.6848590022088992,
+              "log_bayes_factor": -1.013865918309334
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                3
+              ],
+              "actuator_specific_log_evidence": -1.6739764335716716,
+              "pooled_log_evidence": -1.163150809805682,
+              "log_bayes_factor": -0.5108256237659896
+            }
+          ],
+          "log_bayes_factor": -2.25739006895407,
+          "maximum_gamma_vs_urn_error": 4.440892098500626e-15
+        },
+        {
+          "destination_pair": [
+            0,
+            3
+          ],
+          "retained_observations": 33,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  5,
+                  1
+                ],
+                [
+                  3,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                8,
+                1
+              ],
+              "actuator_specific_log_evidence": -5.050100177681713,
+              "pooled_log_evidence": -4.5180723462651144,
+              "log_bayes_factor": -0.5320278314165989
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                6,
+                0
+              ],
+              "actuator_specific_log_evidence": -2.0951898986479764,
+              "pooled_log_evidence": -1.4890540950776634,
+              "log_bayes_factor": -0.606135803570313
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                6
+              ],
+              "actuator_specific_log_evidence": -2.2775114554419282,
+              "pooled_log_evidence": -1.4890540950776634,
+              "log_bayes_factor": -0.7884573603642648
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  6
+                ],
+                [
+                  0,
+                  6
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                12
+              ],
+              "actuator_specific_log_evidence": -2.978108190155327,
+              "pooled_log_evidence": -1.8252319266501367,
+              "log_bayes_factor": -1.1528762635051901
+            }
+          ],
+          "log_bayes_factor": -3.079497258856367,
+          "maximum_gamma_vs_urn_error": 1.176836406102666e-14
+        },
+        {
+          "destination_pair": [
+            1,
+            2
+          ],
+          "retained_observations": 31,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  4,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                6,
+                1
+              ],
+              "actuator_specific_log_evidence": -4.580096548435976,
+              "pooled_log_evidence": -4.128111424692921,
+              "log_bayes_factor": -0.45198512374305455
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  7,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                10,
+                0
+              ],
+              "actuator_specific_log_evidence": -2.7263128770370635,
+              "pooled_log_evidence": -1.736152296596451,
+              "log_bayes_factor": -0.9901605804406124
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  1,
+                  5
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                9
+              ],
+              "actuator_specific_log_evidence": -5.183631570306234,
+              "pooled_log_evidence": -4.680591275762891,
+              "log_bayes_factor": -0.503040294543343
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                3
+              ],
+              "actuator_specific_log_evidence": -3.0602707946915624,
+              "pooled_log_evidence": -3.2425923514855173,
+              "log_bayes_factor": 0.1823215567939549
+            }
+          ],
+          "log_bayes_factor": -1.762864441933055,
+          "maximum_gamma_vs_urn_error": 1.9984014443252818e-15
+        },
+        {
+          "destination_pair": [
+            1,
+            3
+          ],
+          "retained_observations": 37,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  1
+                ],
+                [
+                  4,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                6,
+                1
+              ],
+              "actuator_specific_log_evidence": -4.0692709246699845,
+              "pooled_log_evidence": -4.128111424692921,
+              "log_bayes_factor": 0.05884050002293684
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  7,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                10,
+                0
+              ],
+              "actuator_specific_log_evidence": -2.7263128770370635,
+              "pooled_log_evidence": -1.736152296596451,
+              "log_bayes_factor": -0.9901605804406124
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  1,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                6
+              ],
+              "actuator_specific_log_evidence": -4.0692709246699845,
+              "pooled_log_evidence": -4.128111424692921,
+              "log_bayes_factor": 0.05884050002293684
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  6
+                ],
+                [
+                  0,
+                  6
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                12
+              ],
+              "actuator_specific_log_evidence": -5.617165519770585,
+              "pooled_log_evidence": -5.08332846467162,
+              "log_bayes_factor": -0.5338370550989646
+            }
+          ],
+          "log_bayes_factor": -1.4063166354937033,
+          "maximum_gamma_vs_urn_error": 1.0658141036401503e-14
+        },
+        {
+          "destination_pair": [
+            2,
+            3
+          ],
+          "retained_observations": 32,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                1,
+                1
+              ],
+              "actuator_specific_log_evidence": -1.3862943611198917,
+              "pooled_log_evidence": -2.0794415416798366,
+              "log_bayes_factor": 0.693147180559945
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                0
+              ],
+              "actuator_specific_log_evidence": 0.0,
+              "pooled_log_evidence": 0.0,
+              "log_bayes_factor": 0.0
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  4,
+                  4
+                ],
+                [
+                  5,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                9,
+                6
+              ],
+              "actuator_specific_log_evidence": -12.269254055732944,
+              "pooled_log_evidence": -11.692105789035885,
+              "log_bayes_factor": -0.5771482666970584
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  1,
+                  6
+                ],
+                [
+                  2,
+                  6
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                12
+              ],
+              "actuator_specific_log_evidence": -9.930199282957513,
+              "pooled_log_evidence": -9.10868015540677,
+              "log_bayes_factor": -0.8215191275507436
+            }
+          ],
+          "log_bayes_factor": -0.7055202136878571,
+          "maximum_gamma_vs_urn_error": 8.881784197001252e-15
+        }
+      ],
+      "largest_score_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "positive_score_pairs_above_roundoff": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "truth_case": "local",
+      "environment_seed": 37,
+      "budget": 256,
+      "history_sha256": "595fb242d47eb02d9893e09f5255cafcb43947e9307b93fbbd31ac915d128ccc",
+      "observations_per_start_actuator": 32,
+      "pairs": [
+        {
+          "destination_pair": [
+            0,
+            1
+          ],
+          "retained_observations": 130,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  22,
+                  7
+                ],
+                [
+                  5,
+                  24
+                ]
+              ],
+              "pooled_destination_counts": [
+                27,
+                31
+              ],
+              "actuator_specific_log_evidence": -33.20088617967931,
+              "pooled_log_evidence": -42.32483260673385,
+              "log_bayes_factor": 9.123946427054541
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  6,
+                  24
+                ],
+                [
+                  24,
+                  6
+                ]
+              ],
+              "pooled_destination_counts": [
+                30,
+                30
+              ],
+              "actuator_specific_log_evidence": -33.89981929730634,
+              "pooled_log_evidence": -43.86596094118221,
+              "log_bayes_factor": 9.966141643875872
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                6
+              ],
+              "actuator_specific_log_evidence": -2.2775114554419282,
+              "pooled_log_evidence": -1.4890540950776634,
+              "log_bayes_factor": -0.7884573603642648
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  2,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                4
+              ],
+              "actuator_specific_log_evidence": -3.935739532045464,
+              "pooled_log_evidence": -4.9855616565441405,
+              "log_bayes_factor": 1.0498221244986765
+            }
+          ],
+          "log_bayes_factor": 19.351452835064826,
+          "maximum_gamma_vs_urn_error": 2.842170943040401e-14
+        },
+        {
+          "destination_pair": [
+            0,
+            2
+          ],
+          "retained_observations": 111,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  22,
+                  2
+                ],
+                [
+                  5,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                27,
+                3
+              ],
+              "actuator_specific_log_evidence": -12.611746985556056,
+              "pooled_log_evidence": -11.69700180345599,
+              "log_bayes_factor": -0.9147451821000665
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  6,
+                  2
+                ],
+                [
+                  24,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                30,
+                3
+              ],
+              "actuator_specific_log_evidence": -11.88071067856049,
+              "pooled_log_evidence": -12.044752116914438,
+              "log_bayes_factor": 0.1640414383539479
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  19
+                ],
+                [
+                  0,
+                  18
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                37
+              ],
+              "actuator_specific_log_evidence": -4.075656995244032,
+              "pooled_log_evidence": -2.381202174823926,
+              "log_bayes_factor": -1.6944548204201055
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  2,
+                  7
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                9
+              ],
+              "actuator_specific_log_evidence": -7.108339511710941,
+              "pooled_log_evidence": -6.673021440453098,
+              "log_bayes_factor": -0.43531807125784283
+            }
+          ],
+          "log_bayes_factor": -2.880476635424067,
+          "maximum_gamma_vs_urn_error": 5.329070518200751e-15
+        },
+        {
+          "destination_pair": [
+            0,
+            3
+          ],
+          "retained_observations": 133,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  22,
+                  1
+                ],
+                [
+                  5,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                27,
+                3
+              ],
+              "actuator_specific_log_evidence": -11.37960330426343,
+              "pooled_log_evidence": -11.69700180345599,
+              "log_bayes_factor": 0.31739849919256
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  6,
+                  0
+                ],
+                [
+                  24,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                30,
+                1
+              ],
+              "actuator_specific_log_evidence": -7.5676769153735615,
+              "pooled_log_evidence": -6.404264492630546,
+              "log_bayes_factor": -1.1634124227430158
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  9
+                ],
+                [
+                  0,
+                  12
+                ]
+              ],
+              "pooled_destination_counts": [
+                0,
+                21
+              ],
+              "actuator_specific_log_evidence": -3.510090928859036,
+              "pooled_log_evidence": -2.100577980726449,
+              "log_bayes_factor": -1.409512948132587
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  0,
+                  27
+                ],
+                [
+                  2,
+                  22
+                ]
+              ],
+              "pooled_destination_counts": [
+                2,
+                49
+              ],
+              "actuator_specific_log_evidence": -10.949710358734556,
+              "pooled_log_evidence": -10.652356778727835,
+              "log_bayes_factor": -0.2973535800067211
+            }
+          ],
+          "log_bayes_factor": -2.552880451689764,
+          "maximum_gamma_vs_urn_error": 2.842170943040401e-14
+        },
+        {
+          "destination_pair": [
+            1,
+            2
+          ],
+          "retained_observations": 123,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  7,
+                  2
+                ],
+                [
+                  24,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                31,
+                3
+              ],
+              "actuator_specific_log_evidence": -12.206133078995112,
+              "pooled_log_evidence": -12.153385957917223,
+              "log_bayes_factor": -0.05274712107788915
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  24,
+                  2
+                ],
+                [
+                  6,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                30,
+                3
+              ],
+              "actuator_specific_log_evidence": -13.059365674902143,
+              "pooled_log_evidence": -12.044752116914438,
+              "log_bayes_factor": -1.0146135579877047
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  4,
+                  19
+                ],
+                [
+                  2,
+                  18
+                ]
+              ],
+              "pooled_destination_counts": [
+                6,
+                37
+              ],
+              "actuator_specific_log_evidence": -20.688930073063382,
+              "pooled_log_evidence": -19.493474118542693,
+              "log_bayes_factor": -1.195455954520689
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  3,
+                  2
+                ],
+                [
+                  1,
+                  7
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                9
+              ],
+              "actuator_specific_log_evidence": -8.782315945282615,
+              "pooled_log_evidence": -9.55382374733311,
+              "log_bayes_factor": 0.7715078020504951
+            }
+          ],
+          "log_bayes_factor": -1.4913088315357879,
+          "maximum_gamma_vs_urn_error": 5.329070518200751e-15
+        },
+        {
+          "destination_pair": [
+            1,
+            3
+          ],
+          "retained_observations": 145,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  7,
+                  1
+                ],
+                [
+                  24,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                31,
+                3
+              ],
+              "actuator_specific_log_evidence": -13.267005039680383,
+              "pooled_log_evidence": -12.153385957917223,
+              "log_bayes_factor": -1.1136190817631597
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  24,
+                  0
+                ],
+                [
+                  6,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                30,
+                1
+              ],
+              "actuator_specific_log_evidence": -6.294711239560673,
+              "pooled_log_evidence": -6.404264492630546,
+              "log_bayes_factor": 0.10955325306987262
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  4,
+                  9
+                ],
+                [
+                  2,
+                  12
+                ]
+              ],
+              "pooled_destination_counts": [
+                6,
+                21
+              ],
+              "actuator_specific_log_evidence": -16.870744433511824,
+              "pooled_log_evidence": -16.187780592323442,
+              "log_bayes_factor": -0.682963841188382
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  3,
+                  27
+                ],
+                [
+                  1,
+                  22
+                ]
+              ],
+              "pooled_destination_counts": [
+                4,
+                49
+              ],
+              "actuator_specific_log_evidence": -17.64921069889624,
+              "pooled_log_evidence": -16.4048387104919,
+              "log_bayes_factor": -1.244371988404339
+            }
+          ],
+          "log_bayes_factor": -2.931401658286008,
+          "maximum_gamma_vs_urn_error": 2.1316282072803006e-14
+        },
+        {
+          "destination_pair": [
+            2,
+            3
+          ],
+          "retained_observations": 126,
+          "per_start_leaf": [
+            {
+              "start_leaf": 0,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  1
+                ],
+                [
+                  1,
+                  2
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                3
+              ],
+              "actuator_specific_log_evidence": -5.545177444479564,
+              "pooled_log_evidence": -5.322033893165355,
+              "log_bayes_factor": -0.22314355131420882
+            },
+            {
+              "start_leaf": 1,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "pooled_destination_counts": [
+                3,
+                1
+              ],
+              "actuator_specific_log_evidence": -3.0602707946915624,
+              "pooled_log_evidence": -3.2425923514855173,
+              "log_bayes_factor": 0.1823215567939549
+            },
+            {
+              "start_leaf": 2,
+              "counts_by_actuator_then_destination": [
+                [
+                  19,
+                  9
+                ],
+                [
+                  18,
+                  12
+                ]
+              ],
+              "pooled_destination_counts": [
+                37,
+                21
+              ],
+              "actuator_specific_log_evidence": -41.609356039138866,
+              "pooled_log_evidence": -40.22732021982978,
+              "log_bayes_factor": -1.3820358193090883
+            },
+            {
+              "start_leaf": 3,
+              "counts_by_actuator_then_destination": [
+                [
+                  2,
+                  27
+                ],
+                [
+                  7,
+                  22
+                ]
+              ],
+              "pooled_destination_counts": [
+                9,
+                49
+              ],
+              "actuator_specific_log_evidence": -27.159520974117868,
+              "pooled_log_evidence": -27.294405061449908,
+              "log_bayes_factor": 0.13488408733203983
+            }
+          ],
+          "log_bayes_factor": -1.2879737264973024,
+          "maximum_gamma_vs_urn_error": 2.1316282072803006e-14
+        }
+      ],
+      "largest_score_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "positive_score_pairs_above_roundoff": [
+        [
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "reviewer_output_check": {
+    "file_name": "indep.out",
+    "sha256": "7dc06867753add964449679b9978b0644a154ee9c88c0e6abe2cae321d3eaff6",
+    "comparisons": 54,
+    "all_match_at_printed_precision": true,
+    "printed_decimal_places": 2,
+    "maximum_absolute_rounding_difference": 0.00479584423365953
+  }
+}

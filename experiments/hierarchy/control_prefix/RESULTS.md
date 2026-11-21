@@ -3,7 +3,7 @@
 The exact posterior's mean inclusion probability for the true local control
 flag rose from 0.129 after 16 transitions to 0.9999 after 256. Mean mass on
 the correct joint tree and flags rose from 0.058 to 0.935. This makes the
-16-transition budget a material limitation for this local-control case.
+16-transition budget a material limitation for this local-control case. A [post hoc count comparison](COUNT-BASELINE.md) without a tree also ranked the correct controlled pair first in all three local worlds at 64 and 256 transitions. It scores the two possible destinations given arrival in each pair; it does not recover the generating tree.
 
 The no-effect case separates flag detection from recovering the generating
 tree. Its true-node flag Brier score improved while mass on the generating

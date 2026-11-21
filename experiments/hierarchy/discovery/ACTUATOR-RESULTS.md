@@ -18,7 +18,11 @@ truth, not a general superiority claim.
 Both information and balanced recovered the true root-control flag at the
 0.5 threshold in all three root seeds; reward recovered it in none. For local
 control, information recovered the true flag in only seed 23, and neither
-comparator recovered it in any seed. The active policy's mean trained-sample
+comparator recovered it in any seed.
+
+The reward policy only chose action zero in all three root-control worlds (48 interventions). Its posterior probability that the root is controlled stayed at its .25 prior; the information policy ended at .958 on average. For a fixed tree, using only one actuator setting leaves the likelihood the same whether or not that node has separate rows for the untried setting. The unused rows integrate to one. In the local-control worlds, terminal probability that the genuinely controlled node both existed and was controlled averaged .305, .129 and .060 for information, balanced and reward.
+
+The active policy's mean trained-sample
 TV from the exact posterior was 0.0818, based on 256 draws per round; this
 includes sampling noise and is not the exact TV of its learned distribution.
 The 26-structure posterior was enumerated only after choice for evaluation.

@@ -12,3 +12,14 @@ The experiments separate three questions: does a learned hierarchy help a contro
 | Can it learn which transitions it controls? | Set an initial state and choose a binary actuator; infer the tree and node control flags jointly | [Own actions](discovery/ACTUATOR-RESULTS.md), [balanced prefixes](control_prefix/RESULTS.md) |
 
 The control and weather experiments run the upstream fast structure learning constructor. The balanced temporal trees used for posterior inference are a separately specified model with observed leaf states and integrated categorical transition parameters. Their exact posteriors are not posteriors for the entire upstream RGM package. All worlds here are synthetic. Each linked result identifies its baselines, seed unit, evidence files, commands and limits; the upstream licence is unchanged.
+
+For a short check from the fork root, use Python 3.12 with venv support:
+
+```sh
+python3 -m venv .venv-check
+.venv-check/bin/python -m pip install -r experiments/hierarchy/control/requirements-control.txt pytest==9.1.1
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 nice -n 19 .venv-check/bin/python -m pytest -q experiments/hierarchy
+.venv-check/bin/python -m experiments.hierarchy.acquisition_check.actuator experiments/hierarchy/discovery/artifacts/phase4 --output /tmp/actuator-check.json
+```
+
+The last command independently checks every archived actuator update without fitting a model. This environment uses the upstream numerical-library pins for the control experiments. To repeat the sampler fits with their original numerical libraries, use a separate Python 3.12 environment with NumPy 2.5.3 and SciPy 1.18.1, as recorded by the [structure benchmark](posterior/README.md) and [intervention study](discovery/README.md).

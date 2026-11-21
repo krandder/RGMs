@@ -1,0 +1,40 @@
+{
+  "compared": 6,
+  "ignored_per_case": [
+    "exact_prediction_seconds",
+    "fit_seconds",
+    "sample_256_seconds"
+  ],
+  "identical_non_timing_data": [
+    {
+      "case": "sixteen_depth2",
+      "seed": 0,
+      "sha256": "8c0a6cb21be21711c7f368e564d37ac03118caa217a8af5a3f7dd090f4019e7f"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 1,
+      "sha256": "bfc7864620987691728817af635099d620bf37aea6bdd0ac22acd8a33f52612d"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 2,
+      "sha256": "e6d0cf45a724244b8b8dc633e878b75288ce3cc27d538082e8657b96f05cb949"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 0,
+      "sha256": "e0faebe8fb18645eb0da3596ff5c4f793176a2b5c9d93094dc998ed26ab902b7"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 1,
+      "sha256": "5ac3912aa3276b2ab4016bf620d7121f24f06300f26ae186f065fd53ade5dacd"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 2,
+      "sha256": "e1d6126f94125fea44a68bcee605692c57381ca13d0f6623011c46321ef6fd2c"
+    }
+  ]
+}

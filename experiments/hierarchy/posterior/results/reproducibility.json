@@ -1,0 +1,10 @@
+{
+  "case": "four_control",
+  "seed": 0,
+  "budget": 200,
+  "max_probability_difference": 0.0,
+  "heldout_score_difference": 0.0,
+  "core_hashes_match": true,
+  "numpy": "2.5.3",
+  "new_fit_seconds": 0.7665376393124461
+}

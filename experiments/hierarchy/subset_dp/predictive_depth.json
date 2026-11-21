@@ -1,0 +1,175 @@
+{
+  "role": "Post hoc conditional-depth check; generator kernel used only for scoring.",
+  "source_distribution": "Average exact 512-step occupancy, initial leaf zero; model fixed after training.",
+  "training_transitions": 512,
+  "rows": [
+    {
+      "case": "sixteen_depth2",
+      "seed": 0,
+      "posterior_depth_mode": 4,
+      "predictive_best_depth": 4,
+      "depths_1_to_4": [
+        {
+          "expected_excess_log_loss_nats": 0.17266015391466585,
+          "heldout_excess_log_loss_nats": 0.15917029534456456
+        },
+        {
+          "expected_excess_log_loss_nats": 0.14045294184058982,
+          "heldout_excess_log_loss_nats": 0.13529452024197597
+        },
+        {
+          "expected_excess_log_loss_nats": 0.10222750434089994,
+          "heldout_excess_log_loss_nats": 0.10410972015327756
+        },
+        {
+          "expected_excess_log_loss_nats": 0.08972233849478276,
+          "heldout_excess_log_loss_nats": 0.09608606462521671
+        }
+      ],
+      "posterior_mixture": {
+        "expected_excess_log_loss_nats": 0.08972278063378866,
+        "heldout_excess_log_loss_nats": 0.0960848472719334
+      }
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 1,
+      "posterior_depth_mode": 4,
+      "predictive_best_depth": 4,
+      "depths_1_to_4": [
+        {
+          "expected_excess_log_loss_nats": 0.1385983097197544,
+          "heldout_excess_log_loss_nats": 0.1439604145035645
+        },
+        {
+          "expected_excess_log_loss_nats": 0.0937971412900204,
+          "heldout_excess_log_loss_nats": 0.1085060020066147
+        },
+        {
+          "expected_excess_log_loss_nats": 0.07587179701238483,
+          "heldout_excess_log_loss_nats": 0.08472803421178966
+        },
+        {
+          "expected_excess_log_loss_nats": 0.060100641554567624,
+          "heldout_excess_log_loss_nats": 0.07440723756147193
+        }
+      ],
+      "posterior_mixture": {
+        "expected_excess_log_loss_nats": 0.06010192867587956,
+        "heldout_excess_log_loss_nats": 0.07437227098924232
+      }
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 2,
+      "posterior_depth_mode": 4,
+      "predictive_best_depth": 3,
+      "depths_1_to_4": [
+        {
+          "expected_excess_log_loss_nats": 0.14184520693413188,
+          "heldout_excess_log_loss_nats": 0.1093145768733285
+        },
+        {
+          "expected_excess_log_loss_nats": 0.08792585984747514,
+          "heldout_excess_log_loss_nats": 0.06844403187810194
+        },
+        {
+          "expected_excess_log_loss_nats": 0.07373986177599576,
+          "heldout_excess_log_loss_nats": 0.06179128338312859
+        },
+        {
+          "expected_excess_log_loss_nats": 0.07583998252383672,
+          "heldout_excess_log_loss_nats": 0.0595053237932483
+        }
+      ],
+      "posterior_mixture": {
+        "expected_excess_log_loss_nats": 0.07582874278820087,
+        "heldout_excess_log_loss_nats": 0.059498500377033706
+      }
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 0,
+      "posterior_depth_mode": 4,
+      "predictive_best_depth": 4,
+      "depths_1_to_4": [
+        {
+          "expected_excess_log_loss_nats": 0.12664140050390638,
+          "heldout_excess_log_loss_nats": 0.1444181448644653
+        },
+        {
+          "expected_excess_log_loss_nats": 0.0890326581937037,
+          "heldout_excess_log_loss_nats": 0.10397965288537785
+        },
+        {
+          "expected_excess_log_loss_nats": 0.050082565896565,
+          "heldout_excess_log_loss_nats": 0.036856015685646344
+        },
+        {
+          "expected_excess_log_loss_nats": 0.03566781168782777,
+          "heldout_excess_log_loss_nats": 0.03205343026150693
+        }
+      ],
+      "posterior_mixture": {
+        "expected_excess_log_loss_nats": 0.03566774729540523,
+        "heldout_excess_log_loss_nats": 0.03205158795854648
+      }
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 1,
+      "posterior_depth_mode": 4,
+      "predictive_best_depth": 4,
+      "depths_1_to_4": [
+        {
+          "expected_excess_log_loss_nats": 0.1444006084298627,
+          "heldout_excess_log_loss_nats": 0.16807927869377015
+        },
+        {
+          "expected_excess_log_loss_nats": 0.10025811337775846,
+          "heldout_excess_log_loss_nats": 0.12441314773424611
+        },
+        {
+          "expected_excess_log_loss_nats": 0.055350960887205924,
+          "heldout_excess_log_loss_nats": 0.07410693251487767
+        },
+        {
+          "expected_excess_log_loss_nats": 0.0471414213679183,
+          "heldout_excess_log_loss_nats": 0.06580405337013816
+        }
+      ],
+      "posterior_mixture": {
+        "expected_excess_log_loss_nats": 0.04714142033089165,
+        "heldout_excess_log_loss_nats": 0.06580405315496117
+      }
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 2,
+      "posterior_depth_mode": 3,
+      "predictive_best_depth": 4,
+      "depths_1_to_4": [
+        {
+          "expected_excess_log_loss_nats": 0.162762070906406,
+          "heldout_excess_log_loss_nats": 0.17762048838720557
+        },
+        {
+          "expected_excess_log_loss_nats": 0.12137554992635805,
+          "heldout_excess_log_loss_nats": 0.1421368862608566
+        },
+        {
+          "expected_excess_log_loss_nats": 0.0962633454280811,
+          "heldout_excess_log_loss_nats": 0.08505682591374802
+        },
+        {
+          "expected_excess_log_loss_nats": 0.06410006558724175,
+          "heldout_excess_log_loss_nats": 0.05745453345430343
+        }
+      ],
+      "posterior_mixture": {
+        "expected_excess_log_loss_nats": 0.08962566985618053,
+        "heldout_excess_log_loss_nats": 0.0793488715631398
+      }
+    }
+  ]
+}

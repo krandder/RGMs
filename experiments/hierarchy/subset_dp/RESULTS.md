@@ -21,13 +21,14 @@ Subset construction took .90 s once; the normalizer took .50–2.02 s per histor
 
 ![Exact posterior mass on generating depth two across nested prefixes; two of three trajectories recover high mass by 8,192 transitions.](depth-prefix.svg)
 
-**Checks and rerun.** On four and eight leaves the implementation matches exhaustive enumeration on the log normalizer, every terminal probability and each individual forecast. On 16 leaves it checks the generating tree's posterior from an independent full-tree likelihood against its probability along the conditional split path. The depth-two seed-0 rerun reproduced every non-timing field.
+**Checks and rerun.** On four and eight leaves the implementation matches exhaustive enumeration on the log normalizer, every terminal probability and each individual forecast. On 16 leaves it checks the generating tree's posterior from an independent full-tree likelihood against its probability along the conditional split path. A fixed-seed rerun of all six cases reproduced every non-timing field, including the evidence, full predictive matrices and sample depth counts.
 
 ```sh
 export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
-python -m pytest -q experiments/hierarchy/subset_dp/test_inside.py
-python -m experiments.hierarchy.subset_dp.benchmark --out /tmp/scaled-exact.json
-python -m experiments.hierarchy.subset_dp.data_sensitivity --out /tmp/prefix-check.json
+python3 -m pytest -q experiments/hierarchy/subset_dp/test_inside.py
+python3 -m experiments.hierarchy.subset_dp.benchmark --out /tmp/scaled-exact.json
+python3 -m experiments.hierarchy.subset_dp.verify_repeat experiments/hierarchy/subset_dp/results.json /tmp/scaled-exact.json
+python3 -m experiments.hierarchy.subset_dp.data_sensitivity --out /tmp/prefix-check.json
 ```
 
 The same-family GFlowNet, particle, greedy and projected FSL measurements are in [the posterior experiment](../posterior/RESULTS.md). The online umbrella-controller readouts in [the RGM experiment](../bridge/RESULTS.md) use a different likelihood and candidate space.

@@ -1,6 +1,6 @@
 # Implementation notes before the measured run
 
-The protocol SHA-256 remains `599adff56f591e318bf4178db0870e21269faf7bbb302cbf39e07c4db85586eb`. The directory `artifacts/software-smoke` is an integration smoke run, not the reported benchmark: source edits occurred while its workers were active.
+The protocol SHA-256 remains `599adff56f591e318bf4178db0870e21269faf7bbb302cbf39e07c4db85586eb`. The directory `artifacts/software-smoke` is an integration smoke run, not the reported benchmark: source edits occurred while its workers were active. It used seed 101 on all three tasks with 256 transitions, a combination later included in the main matrix. The smoke and the final runs are not independent replicates.
 
 Corrections made before the measured suite:
 

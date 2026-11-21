@@ -1,0 +1,264 @@
+{
+  "policy": "reward",
+  "truth_id": "{\"tree\":[[0,3],[1,2]],\"controlled\":[]}",
+  "environment_seed": 23,
+  "budget_updates_per_round": 200,
+  "batch_size": 64,
+  "horizon": 10,
+  "n_draws_per_round": 256,
+  "reward_target": 0,
+  "area_under_truth_mass": 0.14057807568828415,
+  "first_round_truth_mass_0_8": 11,
+  "rounds": [
+    {
+      "round": 1,
+      "probe": 0,
+      "outcome": 0,
+      "estimated_acquisition": 0.25,
+      "oracle_probe_information_gain": 0.0,
+      "exact_truth_mass": 0.14840692163092842,
+      "exact_entropy": 1.176258590708434,
+      "sample_tv_before_observation": 0.019622985107214733,
+      "train_and_sample_seconds": 0.7823617421090603,
+      "sample_counts": {
+        "{\"tree\":[[0,2],[1,3]],\"controlled\":[]}": 41,
+        "{\"tree\":[[0,1],[2,3]],\"controlled\":[]}": 39,
+        "{\"tree\":[0,1,2,3],\"controlled\":[]}": 137,
+        "{\"tree\":[[0,3],[1,2]],\"controlled\":[]}": 39
+      }
+    },
+    {
+      "round": 2,
+      "probe": 0,
+      "outcome": 1,
+      "estimated_acquisition": 0.52734375,
+      "oracle_probe_information_gain": 0.005759675749655723,
+      "exact_truth_mass": 0.1178646658062052,
+      "exact_entropy": 1.1228775555514312,
+      "sample_tv_before_observation": 0.019500671630928376,
+      "train_and_sample_seconds": 1.2993286633864045,
+      "sample_counts": {
+        "{\"tree\":[[0,2],[1,3]],\"controlled\":[]}": 40,
+        "{\"tree\":[[0,3],[1,2]],\"controlled\":[]}": 39,
+        "{\"tree\":[[0,1],[2,3]],\"controlled\":[]}": 33,
+        "{\"tree\":[0,1,2,3],\"controlled\":[]}": 144
+      }
+    },
+    {
+      "round": 3,
+      "probe": 0,
+      "outcome": 3,
+      "estimated_acquisition": 0.3816731770833333,
+      "oracle_probe_information_gain": 0.0029886632245862193,
+      "exact_truth_mass": 0.12524568628503238,
+      "exact_entropy": 1.074727938231152,
+      "sample_tv_before_observation": 0.03838533419379472,
+      "train_and_sample_seconds": 0.4341362789273262,
+      "sample_counts": {
+        "{\"tree\":[0,1,2,3],\"controlled\":[]}": 147,
+        "{\"tree\":[[0,3],[1,2]],\"controlled\":[]}": 40,
+        "{\"tree\":[[0,1],[2,3]],\"controlled\":[]}": 41,
+        "{\"tree\":[[0,2],[1,3]],\"controlled\":[]}": 28
+      }
+    },
+    {
+      "round": 4,
+      "probe": 0,
+      "outcome": 0,
+      "estimated_acquisition": 0.30014648437499997,
+      "oracle_probe_information_gain": 0.00046203889148374296,
+      "exact_truth_mass": 0.13012472403930544,
+      "exact_entropy": 1.076877826522489,
+      "sample_tv_before_observation": 0.046383627429935306,
+      "train_and_sample_seconds": 0.5210772892460227,
+      "sample_counts": {
+        "{\"tree\":[0,1,2,3],\"controlled\":[]}": 148,
+        "{\"tree\":[[0,2],[1,3]],\"controlled\":[]}": 42,
+        "{\"tree\":[[0,3],[1,2]],\"controlled\":[]}": 34,
+        "{\"tree\":[[0,1],[2,3]],\"controlled\":[]}": 32
+      }
+    },
+    {
+      "round": 5,
+      "probe": 0,
+      "outcome": 0,
+      "estimated_acquisition": 0.42097981770833337,
+      "oracle_probe_information_gain": 0.0005881259955354927,
+      "exact_truth_mass": 0.13487589142613263,
+      "exact_entropy": 1.08900726420386,
+      "sample_tv_before_observation": 0.05321819807861109,
+      "train_and_sample_seconds": 0.5695193791761994,
+      "sample_counts": {
+        "{\"tree\":[[0,3],[1,2]],\"controlled\":[]}": 28,
+        "{\"tree\":[0,1,2,3],\"controlled\":[]}": 172,
+        "{\"tree\":[[0,2],[1,3]],\"controlled\":[]}": 31,
+        "{\"tree\":[[0,1],[2,3]],\"controlled\":[]}": 25
+      }
+    },
+    {
+      "round": 6,
+      "probe": 0,
+      "outcome": 3,
+      "estimated_acquisition": 0.5081705729166667,
+      "oracle_probe_information_gain": 0.0007629225421836908,
+      "exact_truth_mass": 0.14353254750258818,
+      "exact_entropy": 1.0749160420222106,
+      "sample_tv_before_observation": 0.017467858573867193,
+      "train_and_sample_seconds": 1.2380003714933991,
+      "sample_counts": {
+        "{\"tree\":[0,1,2,3],\"controlled\":[]}": 156,
+        "{\"tree\":[[0,3],[1,2]],\"controlled\":[]}": 39,
+        "{\"tree\":[[0,1],[2,3]],\"controlled\":[]}": 33,
+        "{\"tree\":[[0,2],[1,3]],\"controlled\":[]}": 28
+      }
+    },
+    {
+      "round": 7,
+      "probe": 0,
+      "outcome": 3,
+      "estimated_acquisition": 0.4416015625,
+      "oracle_probe_information_gain": 0.0005147322745748552,
+      "exact_truth_mass": 0.1501963349821913,
+      "exact_entropy": 1.0745674196503576,
+      "sample_tv_before_observation": 0.028768003754745128,
+      "train_and_sample_seconds": 2.0341248996555805,
+      "sample_counts": {
+        "{\"tree\":[[0,3],[1,2]],\"controlled\":[]}": 36,
+        "{\"tree\":[0,1,2,3],\"controlled\":[]}": 165,
+        "{\"tree\":[[0,1],[2,3]],\"controlled\":[]}": 24,
+        "{\"tree\":[[0,2],[1,3]],\"controlled\":[]}": 31
+      }
+    },
+    {
+      "round": 8,
+      "probe": 0,
+      "outcome": 3,
+      "estimated_acquisition": 0.3914605034722222,
+      "oracle_probe_information_gain": 0.0004956405647178739,
+      "exact_truth_mass": 0.1559115501778037,
+      "exact_entropy": 1.079501765421457,
+      "sample_tv_before_observation": 0.021174812758572817,
+      "train_and_sample_seconds": 0.3165141846984625,
+      "sample_counts": {
+        "{\"tree\":[0,1,2,3],\"controlled\":[]}": 154,
+        "{\"tree\":[[0,1],[2,3]],\"controlled\":[]}": 29,
+        "{\"tree\":[[0,3],[1,2]],\"controlled\":[]}": 41,
+        "{\"tree\":[[0,2],[1,3]],\"controlled\":[]}": 32
+      }
+    },
+    {
+      "round": 9,
+      "probe": 0,
+      "outcome": 0,
+      "estimated_acquisition": 0.35089246961805554,
+      "oracle_probe_information_gain": 0.0005126017652199456,
+      "exact_truth_mass": 0.1618710517259885,
+      "exact_entropy": 1.0809254812979876,
+      "sample_tv_before_observation": 0.028125246391699714,
+      "train_and_sample_seconds": 0.2734963418915868,
+      "sample_counts": {
+        "{\"tree\":[0,1,2,3],\"controlled\":[]}": 152,
+        "{\"tree\":[[0,1],[2,3]],\"controlled\":[]}": 30,
+        "{\"tree\":[[0,3],[1,2]],\"controlled\":[]}": 39,
+        "{\"tree\":[[0,2],[1,3]],\"controlled\":[]}": 35
+      }
+    },
+    {
+      "round": 10,
+      "probe": 0,
+      "outcome": 2,
+      "estimated_acquisition": 0.41172230113636366,
+      "oracle_probe_information_gain": 0.0005027522861813694,
+      "exact_truth_mass": 0.13775138330666573,
+      "exact_entropy": 1.0544976537266952,
+      "sample_tv_before_observation": 0.026552717750306654,
+      "train_and_sample_seconds": 0.43280347529798746,
+      "sample_counts": {
+        "{\"tree\":[0,1,2,3],\"controlled\":[]}": 164,
+        "{\"tree\":[[0,3],[1,2]],\"controlled\":[]}": 42,
+        "{\"tree\":[[0,2],[1,3]],\"controlled\":[]}": 22,
+        "{\"tree\":[[0,1],[2,3]],\"controlled\":[]}": 28
+      }
+    }
+  ],
+  "truth_index": 3,
+  "training": [
+    {
+      "steps": 200,
+      "trajectories": 12800,
+      "unique_reward_calls": 4,
+      "reward_seconds": 0.0003744419664144516
+    },
+    {
+      "steps": 200,
+      "trajectories": 12800,
+      "unique_reward_calls": 4,
+      "reward_seconds": 0.0005077365785837173
+    },
+    {
+      "steps": 200,
+      "trajectories": 12800,
+      "unique_reward_calls": 4,
+      "reward_seconds": 0.0004329737275838852
+    },
+    {
+      "steps": 200,
+      "trajectories": 12800,
+      "unique_reward_calls": 4,
+      "reward_seconds": 0.0005964143201708794
+    },
+    {
+      "steps": 200,
+      "trajectories": 12800,
+      "unique_reward_calls": 4,
+      "reward_seconds": 0.00074028130620718
+    },
+    {
+      "steps": 200,
+      "trajectories": 12800,
+      "unique_reward_calls": 4,
+      "reward_seconds": 0.0005235997959971428
+    },
+    {
+      "steps": 200,
+      "trajectories": 12800,
+      "unique_reward_calls": 4,
+      "reward_seconds": 0.0005591288208961487
+    },
+    {
+      "steps": 200,
+      "trajectories": 12800,
+      "unique_reward_calls": 4,
+      "reward_seconds": 0.00044137705117464066
+    },
+    {
+      "steps": 200,
+      "trajectories": 12800,
+      "unique_reward_calls": 4,
+      "reward_seconds": 0.0005283132195472717
+    },
+    {
+      "steps": 200,
+      "trajectories": 12800,
+      "unique_reward_calls": 4,
+      "reward_seconds": 0.00042592547833919525
+    }
+  ],
+  "world_seed": 12449047935834991245,
+  "generator": "fixed-parameter TemporalWorld, iid=False",
+  "posterior": "collapsed Dirichlet model; exact enumeration for evaluation only",
+  "source_sha256": {
+    "posterior/__init__.py": "43a9de04401d3c4c11c8f6b2750585b932087296c4944e84c8786dceeef94318",
+    "posterior/model.py": "e81a3d81766ba45070d98d2de775fb61a9f6188ab270434becd933293ecbbc3c",
+    "posterior/grammar.py": "39adfc3f157b6f34ca2e36a3385ea2190d2455426546a7f9a44ae2455dc25eec",
+    "posterior/tb.py": "13d04923be334b1732607fb50c34e83fe4e481a0762e06592cb331739c79d480",
+    "posterior/exact.py": "9261b7bfa8dda3ec953e60a141db28d23b8ef401ba3b344e375d74e1740ef01f",
+    "discovery/PROTOCOL.md": "439272ce11e4a00fc2849dd83ffcd6a9da79d32f6125237ab5c40263b0073d4d",
+    "discovery/acquisition.py": "3bc3df539ba5d7cf2a76bc78dea184a4dcc6762f6f7fd03f35332c72cfb8b006",
+    "discovery/trial.py": "bdd0edf4b4766b97b50f8e4aa6cff0809aad0cc140a9645999640298fdd5ac46",
+    "discovery/run_phase3.py": "fa82338353e8b93c9e33076ac32c74b83a383fe4e67029acc963e86ed5f14d6d"
+  },
+  "dependencies": {
+    "numpy": "2.5.3"
+  }
+}

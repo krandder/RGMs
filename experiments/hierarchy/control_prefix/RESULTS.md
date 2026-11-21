@@ -1,4 +1,4 @@
-# More balanced interventions recover local control in these worlds
+# Post hoc: more balanced interventions recover local control in these worlds
 
 The exact posterior's mean inclusion probability for the true local control
 flag rose from 0.129 after 16 transitions to 0.9999 after 256. Mean mass on
@@ -6,7 +6,7 @@ the correct joint tree and flags rose from 0.058 to 0.935. This makes the
 16-transition budget a material limitation for this local-control case. A [post hoc count comparison](COUNT-BASELINE.md) without a tree also ranked the correct controlled pair first in all three local worlds at 64 and 256 transitions. It scores the two possible destinations given arrival in each pair; it does not recover the generating tree.
 
 The no-effect case separates flag detection from recovering the generating
-tree. Its true-node flag Brier score improved while mass on the generating
+tree. The no-effect generator has a flexible 12-parameter transition table; a two-level uncontrolled tree uses eight parameters and can approximate its law. Its true-node flag Brier score improved while mass on the generating
 joint structure fell from 0.166 to 0.043. More data did not improve every
 structure readout by 256 observations; the decline does not show permanent failure to recover the no-effect tree. These nine fixed worlds do not establish general
 identifiability or the performance of a learned acquisition policy.
@@ -39,7 +39,7 @@ random-number stream reproduce its balanced arm. Later data continue that
 stream through independently seeded balanced blocks; each start-leaf/actuator
 pair appears 2, 8, and 32 times at the three prefixes. No active-arm data or
 GFlowNet training enter this diagnostic. The [scope](SCOPE.md) was frozen
-in the runner before inspecting the continuation outcomes and committed to the fork with the results. Its SHA-256 was
+in the runner before the continuation, according to file times; the scope was first committed to the fork with the results. Its SHA-256 was
 `5d82b13343fc8d9b824b5db9e3280951f7fd9406091d1d5b536fd902e21fcd4f`.
 
 The [verification receipt](verification.json) records an exact same-code

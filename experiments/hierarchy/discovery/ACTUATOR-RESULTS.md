@@ -24,7 +24,7 @@ Mean terminal joint probability was 0.424, 0.341, 0.131 for information, balance
 
 The active policy's mean trained-sample
 TV from the exact posterior was 0.0818, based on 256 draws per round; this
-includes sampling noise and is not the exact TV of its learned distribution. The corresponding sample TVs were .0819 for balanced and .0944 for reward.
+includes sampling noise and is not the exact TV of its learned distribution. Using 256 independent draws from the exact posterior on those same histories would itself give expected TV .0847. For balanced, the observed and reference values were .0819 and .0822; for reward, .0944 and .0962. The [finite-draw comparison](../acquisition_check/draw_noise.json) sums each category’s binomial count distribution; reproduce with `python -m experiments.hierarchy.acquisition_check.draw_noise`. These nearby means do not certify that the underlying sampling laws match.
 Training scored all 26 candidates in every fit (432 intervention fits and 192 fixed-stream fits). For evaluation the exact normalization was separate from the sampler and did not choose its interventions. There was no reduction in distinct score evaluations versus enumeration.
 The information policy chose `(start leaf, actuator)` from its own trained
 GFlowNet samples; the balanced policy received each of the eight pairs twice.
@@ -32,6 +32,8 @@ Each of 27 interventional cells used 16 transitions and 16 fresh 1,000-update
 fits, with batch size 64.
 
 Two [post hoc comparisons](../acquisition_check/ACTUATOR-BASELINES.md) used the same nine worlds. One-step information under the enumerated posterior, using strict binary64 score comparisons, averaged .2749 joint mass, versus .2725 for a fixed schedule that alternated the actuator at leaf zero. Both exceeded balanced exploration (.2448). Their Brier scores were .0537 and .0621 respectively, versus .0609 for balanced. Treating nearly equal exact information scores as tied changed the exact-policy mean mass to .2885. Thus a fixed experiment can improve average joint mass without improving flag accuracy, and the ranking on these realized histories does not establish a sampler advantage.
+
+A [post hoc stream check](../acquisition_check/stream_sensitivity/README.md) used 59 new outcome streams plus the original in each of the nine worlds. Balanced exploration averaged .2435, greedy information from exact posterior weights .2854 (strict numerical ties) or .2849 (random near-ties), and greedy information from 256 independent exact posterior draws .2893. The last arm is a proxy; no trained GFlowNet was rerun. Its paired gain over balanced was .0458 (stream SE .0040), and it won 6.4 of nine worlds per stream on average. The registered trained arm’s .0590 gain and eight wins describe its particular streams. These comparisons address randomness in outcomes and choices conditional on the nine worlds.
 
 The 12 no-effect controls show why actuator association needs care. Terminal
 maximum joint node-present/action-on probabilities for seeds 11/23/37 were:

@@ -9,6 +9,8 @@ start-state intervention, recorded as `Transition(x, 0, y)`; the binary actuator
 is held at zero and is not the probe. The learner sees only its own transition
 history. The generating tree and its sampled transition parameters remain
 hidden until evaluation.
+This is a small synthetic temporal hierarchy model with integrated categorical
+parameters, not the upstream RGM constructor or its planner.
 
 At each round, train the same GFlowNet architecture for the same number of
 updates on each policy's accumulated history. Run two predeclared training
@@ -33,6 +35,11 @@ the chosen probe's exact one-step information gain. Report every generating
 tree separately as well as the aggregate, including seed-level results and
 elapsed training time. A gain in acquisition value without a gain in
 posterior concentration is a negative result for the stated purpose.
+For paired information-minus-baseline differences, report descriptive 95%
+intervals from 10,000 bootstrap resamples of the five environment seeds
+(bootstrap seed 20261121), retaining all four truths in each resampled seed.
+These intervals describe variation over the fixed synthetic worlds and are
+not a claim about a wider population of environments.
 
 The exact oracle enumerates all candidate trees solely after each transition
 for evaluation. Its posterior must sum to one and must agree with a separate
@@ -62,8 +69,19 @@ unknown. The prior over flags must put positive mass on no effect, selective
 effect, and full effect. Marginalize transition parameters under the same
 Dirichlet family as phase 2.
 
-Pre-register a randomized intervention arm that balances `u=0` and `u=1`
-within each starting leaf. In an observational negative control, a hidden
+The active arm retrains the same joint tree-and-flag GFlowNet after each
+observed transition and samples joint structures. It considers every legal
+pair `(x,u)` and chooses the pair with the largest sample-based expected
+information gain about that joint structure from the next leaf `y`. It then
+executes `u` as its own actuator and records `(x,u,y)`. This is the direct test
+of whether the phase-3 experiment-selection mechanism can learn which parts
+of the hierarchy the agent controls. Do not collapse `u` into the externally
+set start leaf, and do not use exact posterior weights in acquisition.
+
+Compare with a randomized intervention arm that balances `u=0` and `u=1`
+within each starting leaf at the same data and sampler-training budget, plus
+a reward-only arm choosing `(x,u)` to maximize a fixed one-step preference for
+`y=0` under the same trained draws. In an observational negative control, a hidden
 context affects both `u` and `y`, while `u` has no causal effect on `y`; the
 flag model does not receive that context. This exposes any spurious control
 claim caused by confounding and is not an identification test. A second
@@ -71,10 +89,17 @@ negative control shuffles actuator labels within starting-leaf strata. A
 third uses a truly exogenous node that changes with `x` but is unaffected by
 `u`. The
 controllability readout is posterior inclusion probability for each node's
-action flag, with precision/recall at a threshold fixed before the run,
+action flag, with nodes identified by their descendant leaf sets. A missing
+node is distinct from a present node whose action flag is off. Report both
+posterior node-presence probability and joint node-present/action-on
+probability, with precision/recall at threshold 0.5,
 calibration/Brier score, and the posterior probability of the true joint
-tree-and-flag structure. Compare randomized and observational data at equal
-transition and training budgets across multiple seeds. An observational
+tree-and-flag structure. The primary active-versus-balanced-random comparison
+is area under exact posterior mass on the true joint structure; flag Brier
+score is a co-primary diagnostic because wrong trees can still imply the right
+control claims. Compare active, reward-only, balanced-random, and
+observational data at equal transition and training budgets across multiple
+seeds. An observational
 association that the model treats as an actuator effect is a failure, not a
 discovery. Exact enumeration on the tiny family remains an evaluation oracle.
 

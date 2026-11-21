@@ -16,10 +16,23 @@ done
 
 The wrapper uses one numerical-library thread, niceness 19, a noninteractive graphics backend, unbuffered output and an 8 GiB Linux address-space limit per child. It records Python version, arguments, wall/CPU time, peak resident memory, full log SHA-256, return code, and native marker. Atari uses upstream's native default seed 2; the drone script sets seed 1. These are stock simulations. No hardware or physical control system was involved.
 
-`check_media.py --checkout .` verifies the emitted PNGs and decodes a frame of each MP4. `summarize.py` checks log hashes and native markers, extracts the parity gates' missing file names, and verifies the public lists of failed tests and error nodes against pytest's reported totals. It also preserves the first suite run as a secondary observation. To reproduce that complete bundle, run the upstream suite in a second disposable source tree with `--output /tmp/rgm-native`, then run:
+`check_media.py --checkout .` decodes the emitted PNGs and every frame of each MP4. `summarize.py` checks log hashes and native markers, extracts the parity gates' missing file names, and verifies the public lists of failed tests and error nodes against pytest's reported totals. It also preserves the first suite run as a secondary observation. To reproduce that complete bundle, run the upstream suite in a second disposable source tree with `--output /tmp/rgm-native`, then run:
 
 ```sh
 /tmp/rgm-env/bin/python experiments/hierarchy/reproduction/summarize.py --runs /tmp/rgm-native --isolated-tests /tmp/rgm-clean --output /tmp/rgm-reproduction.json
 ```
 
 Exact log hashes will differ on another machine because upstream includes absolute paths and timings. Compare exit codes, markers, missing reference file names and test outcomes; interpret times in light of machine load.
+
+The full Python environment used for the recorded runs is [environment.txt](environment.txt). Use `pip install -r experiments/hierarchy/reproduction/environment.txt` to reproduce its transitive packages. For `--repeat-parity`, invoke each parity job a second time with a fresh output directory and pass that directory to `summarize.py`. Both parity gates require MATLAB-created reference files.
+
+For a fixed-seed native check, run both native jobs again in a clean upstream source tree and a fresh receipt directory. Then run:
+
+```sh
+/tmp/rgm-env/bin/python experiments/hierarchy/reproduction/check_media.py --checkout . --require-all
+/tmp/rgm-env/bin/python experiments/hierarchy/reproduction/compare_native.py \
+  --first /tmp/rgm-native --repeat /tmp/rgm-repeat --first-tree . \
+  --repeat-tree /tmp/rgm-upstream-repeat --output /tmp/rgm-native-comparison.json
+```
+
+This compares the 32 Atari hit counts and both simulation runs' decoded media (RGBA pixels for PNGs, all RGB frames for the MP4), independently of path, log timing and encoding metadata.

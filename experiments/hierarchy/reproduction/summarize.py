@@ -32,10 +32,19 @@ def receipt(root,job):
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--runs',type=Path,required=True)
-    ap.add_argument('--isolated-tests',type=Path,required=True);ap.add_argument('--output',type=Path,required=True)
+    ap.add_argument('--isolated-tests',type=Path,required=True);ap.add_argument('--repeat-parity',type=Path);ap.add_argument('--output',type=Path,required=True)
     args=ap.parse_args()
     result={'upstream':'e520920a7d46fb772d3ca05f541b715c89ebeeb8',
             'runs':{job:receipt(args.isolated_tests if job=='pytest' else args.runs,job) for job in JOBS},
             'initial_concurrent_pytest':receipt(args.runs,'pytest')}
+    first=result['initial_concurrent_pytest']; isolated=result['runs']['pytest']
+    result['pytest_repeat_agreement']={k:(first[k]==isolated[k]) for k in
+        ('outcomes','failure_examples','failed_tests','error_nodes','returncode')}
+    if args.repeat_parity:
+        result['parity_repeat']={}
+        for job in ('parity-atari','parity-drone'):
+            repeat=receipt(args.repeat_parity,job)
+            result['parity_repeat'][job]={'log_sha256':repeat['log_sha256'],'returncode':repeat['returncode'],
+                'same_reference_files':repeat['missing_reference_files']==result['runs'][job]['missing_reference_files']}
     args.output.write_text(json.dumps(result,indent=2)+'\n')
 if __name__=='__main__': main()

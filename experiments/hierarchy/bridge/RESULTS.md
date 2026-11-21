@@ -20,9 +20,9 @@ Means over the five fixed seeds per world. Loss is held-out negative natural-log
 **Reproduce.** From the fork root with upstream requirements installed, set `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1` and run:
 
 ```sh
-python -m experiments.hierarchy.bridge.experiment --output /tmp/bridge-results.json
-python -m experiments.hierarchy.bridge.summarize --results /tmp/bridge-results.json --repeat
-python -m pytest -q experiments/hierarchy/bridge/test_bridge.py
+python3 -m experiments.hierarchy.bridge.experiment --output /tmp/bridge-results.json
+python3 -m experiments.hierarchy.bridge.summarize --results /tmp/bridge-results.json --repeat
+python3 -m pytest -q experiments/hierarchy/bridge/test_bridge.py
 ```
 
 The summary includes all seed-paired differences; raw weights, sampled counts, rare boundary decisions and timing by seed are in `results.json`. Tests compare causal readout states with the actual columns passed between levels by the upstream constructor and check integrated evidence against sequential prediction. No real-weather or partially observed control task was run.

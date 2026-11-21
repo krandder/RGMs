@@ -19,12 +19,15 @@ Means over the five fixed seeds per world. Loss is held-out negative natural-log
 
 **Cost and decision ties.** Evaluating and normalizing all seven evidences took less than a millisecond at the median in each world, after dictionaries and counts were available. The sampled local-flow learner took about .11–.17 s at the medians, visited each candidate, and gave a maximum empirical total-variation distance of .0060 among the ten cases (8,192 draws per case). With so few candidates enumeration is preferable. The apparent return difference between approximate and exact inference is sensitive to ties: in lag-two weather their respective means were .7709 and .7661 under a strict comparison, .7709 and .7704 for a 1e-12 tie tolerance, and .7709 for both at 1e-5. The tolerance analysis was added after seeing the initial result. There is no evidence here that approximate sampling improves control.
 
+A [higher-precision boundary check](boundary_check.json) separates floating-point effects from small differences between mixtures. When a dominant row has three dry and one wet observation, its rain forecast equals the .3 decision cutoff. The 8,192 draws selected only the two dominant heads in each lag-two run; the exact posterior still put between 6.6e−9 and 1.5e−5 mass on other heads. Recomputing evidence with rational Beta integrals and decisions at 90 decimal digits found, along the exact controller’s history in four seeds, a step where the sampled forecast was exactly .3 and the exact mixture differed by more than 1e−12. Strict mean returns were .7709 and .7662 even at high precision. Treating forecasts within 1e−5 as tied removed the measured gap; the original strict discrepancy cannot all be attributed to floating-point rounding.
+
 **Reproduce.** From the fork root with upstream requirements installed, set `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1` and run:
 
 ```sh
 python3 -m experiments.hierarchy.bridge.experiment --output /tmp/bridge-results.json
 python3 -m experiments.hierarchy.bridge.summarize --results /tmp/bridge-results.json --repeat
 python3 -m experiments.hierarchy.bridge.context_check --out /tmp/bridge-context.json
+python3 -m experiments.hierarchy.bridge.boundary_check --out /tmp/bridge-boundary.json
 python3 -m pytest -q experiments/hierarchy/bridge/test_bridge.py
 ```
 

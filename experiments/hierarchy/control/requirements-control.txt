@@ -1,0 +1,3 @@
+# The measured environment used Python 3.12.3.
+-r ../../../requirements.txt
+inferactively-pymdp==0.0.7.1

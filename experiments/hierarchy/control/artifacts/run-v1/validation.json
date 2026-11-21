@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-11-21T13:58:02.569120+00:00",
+  "protocol_sha256": "599adff56f591e318bf4178db0870e21269faf7bbb302cbf39e07c4db85586eb",
+  "frozen_runtime_sources_unchanged": true,
+  "condition_count": 90,
+  "independent_policy_evaluations": 750,
+  "maximum_evaluation_error": 2.6645352591003757e-15,
+  "matched_candidate_conditions": 90,
+  "matched_candidate_changed_policy_count": 9,
+  "matched_candidate_maximum_raw_return_change": 0.0,
+  "representation_diagnostic_conditions": 90,
+  "candidate_audit_conditions": 90,
+  "fresh_worker_refit_passed": true,
+  "test_count": 9,
+  "test_receipt_sha256": "63d355c73ac64865fad7667c9722add15e29caf64574a283b8f47b4ecf6a34c5",
+  "grounded_equals_flat_and_hierarchy_disabled_all_conditions": true,
+  "publication_scan_file_count": 246,
+  "publication_scan_private_path_or_identity_matches": 0,
+  "results_sha256": "c1b3f612ddb23ede1a3be3c80f4e3c9847271085d00fc62b610c4c8b0a76b92d",
+  "passed": true
+}

@@ -90,12 +90,15 @@ class LiveIntegrations(unittest.TestCase):
         self.assertEqual(possible,accepted+h.filtered_option_count)
         self.assertGreater(h.metadata['explicit_reset_boundary_edges'],0)
 
-    def test_removing_live_upper_mappings_changes_candidates(self):
+    def test_upper_projection_perturbation_changes_raw_state_candidates(self):
         original=RGMHierarchy.encode
         with patch.object(RGMHierarchy,'encode',lambda self,observation,level_limit=None:original(self,observation,level_limit=1)):
             removed=RGMHierarchy(self.log,self.world.observations,self.world.cardinalities)
         self.assertNotEqual(self.hierarchy.contexts,removed.contexts)
         self.assertNotEqual(self.hierarchy.options,removed.options)
+        changed=[state for state in range(len(self.world.states))
+                 if self.hierarchy.options.get(self.hierarchy.contexts[state],[])!=removed.options.get(removed.contexts[state],[])]
+        self.assertTrue(changed,'Changing only context labels does not demonstrate functional hierarchy use')
 
     def test_legal_actions_flat_control_and_unknown_fallback(self):
         world=self.world;h=self.hierarchy
@@ -139,6 +142,18 @@ class LiveIntegrations(unittest.TestCase):
         self.assertEqual(calls[0].shape,(11,11,3))
         for state in np.flatnonzero(terminal):np.testing.assert_array_equal(calls[0][10,state,:],1)
         self.assertTrue(np.all((policy>=0)&(policy<3)))
+
+    def test_pymdp_does_not_collect_terminal_reward_repeatedly(self):
+        # One action pays 1 once then terminates. The other pays .6 each step.
+        # Without a zero-reward sink, imagined terminal self-loops incorrectly
+        # win at every horizon. The real policy API must reverse at horizon 3.
+        p=np.zeros((3,2,3));p[0,0,1]=1;p[0,1,2]=1
+        p[1,:,1]=1;p[2,:,2]=1
+        reward_values=np.array([0.,.6,1.])
+        reward_a=np.array([[1.,0.,0.],[0.,0.,1.],[0.,1.,0.]])
+        policy,details=flat_pymdp(p,reward_a,reward_values,3,np.array([False,True,False]))
+        self.assertEqual(policy[1,0],0)
+        self.assertEqual(policy[3,0],1)
 
 
 if __name__=='__main__':unittest.main(verbosity=2)

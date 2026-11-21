@@ -1,0 +1,28 @@
+{
+  "protocol_sha256": "599adff56f591e318bf4178db0870e21269faf7bbb302cbf39e07c4db85586eb",
+  "source_sha256": {
+    "worlds.py": "d6951736bf243265f9fd4b4813a55d814fa351e34942fe3857cf0a185f124614",
+    "baselines.py": "cce43ad140311762e032008bd39c87a9c90adc692fc702a87ea1bfdd55ae194b",
+    "rgm_adapter.py": "753c5d2f38cc4636513ac4d8155e3fd32c239cc5b5a79638cf365b7fb40b8770",
+    "run.py": "2a5a5572ba25f5cf3a5e9f47193c5051803112a64428bdb6522ea492960b0600"
+  },
+  "upstream_commit": "090174f86812e012933a3d7d3e000265e4382526",
+  "python": "3.12.3",
+  "dependencies": {
+    "numpy": "2.0.2",
+    "scipy": "1.16.3",
+    "inferactively-pymdp": "0.0.7.1"
+  },
+  "worlds": [
+    "interception"
+  ],
+  "seeds": [
+    101
+  ],
+  "budgets": [
+    256
+  ],
+  "threads": 1,
+  "niceness": 19,
+  "mode": "sequential isolated condition workers"
+}

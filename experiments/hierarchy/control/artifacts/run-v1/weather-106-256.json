@@ -1,0 +1,2451 @@
+{
+  "world": "weather",
+  "seed": 106,
+  "budget": 256,
+  "horizon": 8,
+  "state_count": 4,
+  "source_sha256": {
+    "worlds.py": "d6951736bf243265f9fd4b4813a55d814fa351e34942fe3857cf0a185f124614",
+    "baselines.py": "cce43ad140311762e032008bd39c87a9c90adc692fc702a87ea1bfdd55ae194b",
+    "rgm_adapter.py": "753c5d2f38cc4636513ac4d8155e3fd32c239cc5b5a79638cf365b7fb40b8770",
+    "run.py": "2a5a5572ba25f5cf3a5e9f47193c5051803112a64428bdb6522ea492960b0600"
+  },
+  "action_count": 2,
+  "oracle_expected_return": 6.000000000000002,
+  "random_expected_return": 4.800000000000001,
+  "dataset": "datasets/weather-106.npz",
+  "dataset_sha256": "94c9217f1060ed2348c4c6385e2af6e696192a5e9fc55eb59e65cd038ba3613a",
+  "nested_prefix_sha256": "1683fb3fc8044db5f9af6a6646439d6a1fc98ee3d72e6bd01506e65ee012f5a3",
+  "hierarchy": {
+    "constructor": "python_src.toolbox.DEM.spm_faster_structure_learning.spm_faster_structure_learning",
+    "constructor_sha256": "d64a1308a88a125cfad7bf516cec0adf52ecfa71028c6a3bbc9be8fc1bc9e4b0",
+    "level_count": 3,
+    "selected_level": 2,
+    "constructor_wall_seconds": 0.11579984799027443,
+    "level_summaries": [
+      {
+        "state_cardinalities": [
+          2,
+          2,
+          2
+        ],
+        "path_cardinalities": [
+          2,
+          2,
+          2
+        ],
+        "likelihood_shapes": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "tensor_elements": 36,
+        "tensor_nonzeros": 17,
+        "dense_tensor_bytes": 288,
+        "actual_tensor_buffer_bytes": 300,
+        "time_scale": 2.0
+      },
+      {
+        "state_cardinalities": [
+          1,
+          1,
+          3
+        ],
+        "path_cardinalities": [
+          1,
+          1,
+          3
+        ],
+        "likelihood_shapes": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "tensor_elements": 49,
+        "tensor_nonzeros": 21,
+        "dense_tensor_bytes": 392,
+        "actual_tensor_buffer_bytes": 392,
+        "time_scale": 2.0
+      },
+      {
+        "state_cardinalities": [
+          5
+        ],
+        "path_cardinalities": [
+          5
+        ],
+        "likelihood_shapes": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "tensor_elements": 155,
+        "tensor_nonzeros": 19,
+        "dense_tensor_bytes": 1240,
+        "actual_tensor_buffer_bytes": 1152,
+        "time_scale": 2.0
+      }
+    ],
+    "observation_sequence_length": 288,
+    "explicit_reset_boundary_edges": 31,
+    "boundary_policy": "boundary modality marks resets; control edges/options never span episodes; native predictive B still sees reset jumps",
+    "distinct_encoded_contexts": 1,
+    "unknown_observation_states": 0,
+    "observation_state_count": 4,
+    "contexts_with_macro_options": 1,
+    "macro_option_count": 20,
+    "candidate_sequences_rejected_by_upper_path_support": 0,
+    "artifact": "hierarchies/weather-106-256.pkl.gz",
+    "artifact_sha256": "0760c03728306dbc6cb2dc7a1d44957a583cb59189b4eace856fe20da6b4b6c4",
+    "serialized_compressed_bytes": 927,
+    "flat_transition_tensor_elements": 32,
+    "observed_state_action_fraction": 1.0,
+    "raw_observation_state_coverage": 1.0
+  },
+  "methods": {
+    "random": {
+      "expected_return": 4.800000000000001,
+      "normalized_return": 0.0,
+      "policy": [
+        [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ],
+        [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ],
+        [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ],
+        [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ],
+        [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ],
+        [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ],
+        [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ],
+        [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ],
+        [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ]
+      ],
+      "details": {},
+      "fit_time": {
+        "wall_seconds": 0.0,
+        "cpu_seconds": 0.0
+      },
+      "policy_construction_time": {
+        "wall_seconds": 2.3515895009040833e-06,
+        "cpu_seconds": 2.1869999999868384e-06
+      },
+      "evaluation_time": {
+        "wall_seconds": 0.022238176316022873,
+        "cpu_seconds": 0.019162860999999975
+      },
+      "simulation": {
+        "mean_return": 4.9565,
+        "standard_error": 0.102492989097159,
+        "episodes": 200,
+        "first_three_trajectories": [
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              0,
+              2,
+              0.0
+            ]
+          ],
+          [
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ]
+          ]
+        ]
+      },
+      "decision_latency": {
+        "accessor": "precomputed policy table; stochastic categorical draw for random",
+        "repetitions": 10000,
+        "median_seconds": 4.803500000000001e-06,
+        "p99_seconds": 1.3779590000000014e-05,
+        "maximum_seconds": 0.010216849,
+        "checksum": 0
+      }
+    },
+    "tabular_q": {
+      "expected_return": 5.5600000000000005,
+      "normalized_return": 0.6333333333333326,
+      "policy": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "details": {
+        "replay_passes": 20,
+        "updates": 5120,
+        "alpha": "visit_count**-0.6"
+      },
+      "fit_time": {
+        "wall_seconds": 0.0,
+        "cpu_seconds": 0.0
+      },
+      "policy_construction_time": {
+        "wall_seconds": 0.026578878983855247,
+        "cpu_seconds": 0.026547088000000052
+      },
+      "evaluation_time": {
+        "wall_seconds": 0.012607051990926266,
+        "cpu_seconds": 0.012216595999999913
+      },
+      "simulation": {
+        "mean_return": 5.627000000000001,
+        "standard_error": 0.05365397230139249,
+        "episodes": 200,
+        "first_three_trajectories": [
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ]
+          ],
+          [
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ]
+          ]
+        ]
+      },
+      "decision_latency": {
+        "accessor": "precomputed policy table; stochastic categorical draw for random",
+        "repetitions": 10000,
+        "median_seconds": 4.3400000000000005e-07,
+        "p99_seconds": 6.170200000000004e-07,
+        "maximum_seconds": 0.000255522,
+        "checksum": 7500
+      },
+      "decisions_disagreeing_with_grounded": 8
+    },
+    "flat_model_dp": {
+      "expected_return": 5.825776000000001,
+      "normalized_return": 0.854813333333333,
+      "policy": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ]
+      ],
+      "details": {},
+      "fit_time": {
+        "wall_seconds": 0.0024525336921215057,
+        "cpu_seconds": 0.0024340600000000157
+      },
+      "policy_construction_time": {
+        "wall_seconds": 0.00013160612434148788,
+        "cpu_seconds": 0.0001301850000000604
+      },
+      "evaluation_time": {
+        "wall_seconds": 0.011911142617464066,
+        "cpu_seconds": 0.011882403999999958
+      },
+      "simulation": {
+        "mean_return": 5.864,
+        "standard_error": 0.046721886449145364,
+        "episodes": 200,
+        "first_three_trajectories": [
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ]
+          ],
+          [
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ]
+          ]
+        ]
+      },
+      "decision_latency": {
+        "accessor": "precomputed policy table; stochastic categorical draw for random",
+        "repetitions": 10000,
+        "median_seconds": 3.77e-07,
+        "p99_seconds": 5.130300000000007e-07,
+        "maximum_seconds": 0.000660685,
+        "checksum": 6250
+      },
+      "decisions_disagreeing_with_grounded": 0
+    },
+    "flat_pymdp": {
+      "expected_return": 5.825776000000001,
+      "normalized_return": 0.854813333333333,
+      "policy": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ]
+      ],
+      "details": {
+        "package": "inferactively-pymdp",
+        "version": "0.0.7.1",
+        "license": "MIT",
+        "policy_api": "pymdp.agent.Agent.infer_policies",
+        "actual_policy_api_calls": 16,
+        "horizon_cap": 4,
+        "gamma": 16.0,
+        "state_information_gain": false,
+        "parameter_information_gain": false,
+        "action_selection": "argmax posterior action marginal",
+        "terminal_reward_handling": "one arrival reward then zero-reward absorbing sink",
+        "model_state_count": 4,
+        "reward_observation_model": "empirical reward distribution conditional on arrived state"
+      },
+      "fit_time": {
+        "wall_seconds": 0.0024525336921215057,
+        "cpu_seconds": 0.0024340600000000157
+      },
+      "policy_construction_time": {
+        "wall_seconds": 6.647795076481998,
+        "cpu_seconds": 1.2615896320000002
+      },
+      "evaluation_time": {
+        "wall_seconds": 0.01262897439301014,
+        "cpu_seconds": 0.011157208999999835
+      },
+      "simulation": {
+        "mean_return": 5.864,
+        "standard_error": 0.046721886449145364,
+        "episodes": 200,
+        "first_three_trajectories": [
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ]
+          ],
+          [
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ]
+          ]
+        ]
+      },
+      "decision_latency": {
+        "accessor": "precomputed policy table; stochastic categorical draw for random",
+        "repetitions": 10000,
+        "median_seconds": 2.8e-07,
+        "p99_seconds": 4.4600000000000005e-07,
+        "maximum_seconds": 0.000132502,
+        "checksum": 6250
+      },
+      "decisions_disagreeing_with_grounded": 0
+    },
+    "rgm_path_adapter": {
+      "expected_return": 5.6000000000000005,
+      "normalized_return": 0.666666666666666,
+      "policy": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "details": {
+        "assumption": "observed abstract successor paths treated as selectable; primitive decoder chooses most frequent logged action",
+        "observed_abstract_edges": 2,
+        "temporal_edge_lengths": [
+          2,
+          4
+        ],
+        "primitive_recovery": "all primitives scored with empirical encoded-context transition probabilities",
+        "unknown_context_fallback": "raw-state empirical immediate reward; zero for unseen actions"
+      },
+      "fit_time": {
+        "wall_seconds": 0.1515351217240095,
+        "cpu_seconds": 0.10171108000000006
+      },
+      "policy_construction_time": {
+        "wall_seconds": 0.008050021715462208,
+        "cpu_seconds": 0.0005533840000002677
+      },
+      "evaluation_time": {
+        "wall_seconds": 0.036326197907328606,
+        "cpu_seconds": 0.011226321000000095
+      },
+      "simulation": {
+        "mean_return": 5.6,
+        "standard_error": 6.296129884194243e-17,
+        "episodes": 200,
+        "first_three_trajectories": [
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ]
+          ],
+          [
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ]
+          ]
+        ]
+      },
+      "decision_latency": {
+        "accessor": "precomputed policy table; stochastic categorical draw for random",
+        "repetitions": 10000,
+        "median_seconds": 3.7200000000000005e-07,
+        "p99_seconds": 4.1000000000000004e-07,
+        "maximum_seconds": 0.001007721,
+        "checksum": 10000
+      },
+      "decisions_disagreeing_with_grounded": 9
+    },
+    "rgm_action_grounded": {
+      "expected_return": 5.825776000000001,
+      "normalized_return": 0.854813333333333,
+      "policy": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ]
+      ],
+      "details": {
+        "state_time_decisions": 32,
+        "candidate_options_scored": 496,
+        "macro_selected_decisions": 6,
+        "primitive_recovery_fraction": 0.8125,
+        "adapter": "upstream level-2 options evaluated under empirical joint action-conditioned model; replan every step"
+      },
+      "fit_time": {
+        "wall_seconds": 0.15398765541613102,
+        "cpu_seconds": 0.10414514000000008
+      },
+      "policy_construction_time": {
+        "wall_seconds": 0.004546067677438259,
+        "cpu_seconds": 0.0019444529999996796
+      },
+      "evaluation_time": {
+        "wall_seconds": 0.022264965809881687,
+        "cpu_seconds": 0.010048888000000034
+      },
+      "simulation": {
+        "mean_return": 5.864,
+        "standard_error": 0.046721886449145364,
+        "episodes": 200,
+        "first_three_trajectories": [
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ]
+          ],
+          [
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ]
+          ]
+        ]
+      },
+      "decision_latency": {
+        "accessor": "precomputed policy table; stochastic categorical draw for random",
+        "repetitions": 10000,
+        "median_seconds": 3.2600000000000003e-07,
+        "p99_seconds": 4.0000000000000003e-07,
+        "maximum_seconds": 0.001007401,
+        "checksum": 6250
+      },
+      "decisions_disagreeing_with_grounded": 0
+    },
+    "rgm_action_unconditioned": {
+      "expected_return": 6.000000000000002,
+      "normalized_return": 1.0,
+      "policy": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "details": {
+        "state_time_decisions": 32,
+        "candidate_options_scored": 496,
+        "macro_selected_decisions": 0,
+        "primitive_recovery_fraction": 1.0,
+        "adapter": "upstream level-2 options evaluated under empirical joint action-conditioned model; replan every step",
+        "ablation": "action-pooled transition model; observed immediate state-action rewards retained"
+      },
+      "fit_time": {
+        "wall_seconds": 0.15398765541613102,
+        "cpu_seconds": 0.10414514000000008
+      },
+      "policy_construction_time": {
+        "wall_seconds": 0.0025058453902602196,
+        "cpu_seconds": 0.0015051459999999572
+      },
+      "evaluation_time": {
+        "wall_seconds": 0.025478875264525414,
+        "cpu_seconds": 0.010866781999999908
+      },
+      "simulation": {
+        "mean_return": 6.0725,
+        "standard_error": 0.07142110065023118,
+        "episodes": 200,
+        "first_three_trajectories": [
+          [
+            [
+              0,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ]
+          ],
+          [
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              0,
+              0,
+              1.0
+            ]
+          ]
+        ]
+      },
+      "decision_latency": {
+        "accessor": "precomputed policy table; stochastic categorical draw for random",
+        "repetitions": 10000,
+        "median_seconds": 4.1900000000000003e-07,
+        "p99_seconds": 4.79e-07,
+        "maximum_seconds": 0.0020155530000000002,
+        "checksum": 5000
+      },
+      "decisions_disagreeing_with_grounded": 7
+    },
+    "rgm_hierarchy_disabled": {
+      "expected_return": 5.825776000000001,
+      "normalized_return": 0.854813333333333,
+      "policy": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ]
+      ],
+      "details": {
+        "upper_level_options_used": false,
+        "same_empirical_model": true
+      },
+      "fit_time": {
+        "wall_seconds": 0.0024525336921215057,
+        "cpu_seconds": 0.0024340600000000157
+      },
+      "policy_construction_time": {
+        "wall_seconds": 0.00013428740203380585,
+        "cpu_seconds": 0.0001333629999997754
+      },
+      "evaluation_time": {
+        "wall_seconds": 0.024813376367092133,
+        "cpu_seconds": 0.011299513999999622
+      },
+      "simulation": {
+        "mean_return": 5.864,
+        "standard_error": 0.046721886449145364,
+        "episodes": 200,
+        "first_three_trajectories": [
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ]
+          ],
+          [
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              0,
+              0,
+              1.0
+            ]
+          ]
+        ]
+      },
+      "decision_latency": {
+        "accessor": "precomputed policy table; stochastic categorical draw for random",
+        "repetitions": 10000,
+        "median_seconds": 3.3800000000000004e-07,
+        "p99_seconds": 4.09e-07,
+        "maximum_seconds": 0.001417651,
+        "checksum": 6250
+      },
+      "decisions_disagreeing_with_grounded": 0
+    },
+    "rgm_separated_preferences": {
+      "expected_return": 4.553104000000001,
+      "normalized_return": -0.2057466666666661,
+      "policy": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "details": {
+        "coefficients": [
+          0.7816709708941156,
+          -0.473441753332868,
+          0.1639491868500037
+        ],
+        "joint_reward_interaction_removed": true
+      },
+      "fit_time": {
+        "wall_seconds": 0.15398765541613102,
+        "cpu_seconds": 0.10414514000000008
+      },
+      "policy_construction_time": {
+        "wall_seconds": 0.001768866553902626,
+        "cpu_seconds": 0.0017680469999996618
+      },
+      "evaluation_time": {
+        "wall_seconds": 0.03273256029933691,
+        "cpu_seconds": 0.010285375000000041
+      },
+      "simulation": {
+        "mean_return": 4.6305000000000005,
+        "standard_error": 0.06473835045859991,
+        "episodes": 200,
+        "first_three_trajectories": [
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              0,
+              2,
+              0.0
+            ]
+          ],
+          [
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              0,
+              2,
+              0.0
+            ],
+            [
+              2,
+              1,
+              3,
+              0.7
+            ],
+            [
+              3,
+              0,
+              0,
+              1.0
+            ],
+            [
+              0,
+              1,
+              1,
+              0.7
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ],
+            [
+              1,
+              1,
+              1,
+              0.7
+            ]
+          ]
+        ]
+      },
+      "decision_latency": {
+        "accessor": "precomputed policy table; stochastic categorical draw for random",
+        "repetitions": 10000,
+        "median_seconds": 3.8e-07,
+        "p99_seconds": 4.16e-07,
+        "maximum_seconds": 0.003011615,
+        "checksum": 7500
+      },
+      "decisions_disagreeing_with_grounded": 17
+    }
+  },
+  "errors": {}
+}

@@ -19,6 +19,8 @@ Subset construction took .90 s once; the normalizer took .50–2.02 s per histor
 
 **How much data?** A post hoc check used nested prefixes of the same three depth-two trajectories, with no changes to either generator or inference model. At 2,048 transitions all three posteriors still favored depth four. At 8,192 transitions two favored depth two (posterior .983 and above .9999) and the third still gave depth two only .005. The finite-data result does not establish that the generating depth can never be recovered. See `data_sensitivity.json` for every prefix, seed and reweighting.
 
+![Exact posterior mass on generating depth two across nested prefixes; two of three trajectories recover high mass by 8,192 transitions.](depth-prefix.svg)
+
 **Checks and rerun.** On four and eight leaves the implementation matches exhaustive enumeration on the log normalizer, every terminal probability and each individual forecast. On 16 leaves it checks the generating tree's posterior from an independent full-tree likelihood against its probability along the conditional split path. The depth-two seed-0 rerun reproduced every non-timing field.
 
 ```sh

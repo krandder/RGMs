@@ -16,8 +16,9 @@ def run(top,d,seed):
     start=time.perf_counter(); inside=Inside(top,problem,h); fit=time.perf_counter()-start
     start=time.perf_counter(); matrix=inside.predictive_matrix(); predtime=time.perf_counter()-start
     start=time.perf_counter(); draws=inside.sample(256,seed+301); drawtime=time.perf_counter()-start
-    known=float(np.exp(problem.log_weight(truth,h)-inside.logz)); ancestral=float(inside.probability_via_branches(truth))
-    assert np.isclose(known,ancestral,atol=1e-12,rtol=1e-6)
+    logknown=problem.log_weight(truth,h)-inside.logz
+    assert abs(logknown-inside.log_probability_via_branches(truth))<1e-9
+    known=float(np.exp(logknown))
     return dict(case=f'sixteen_depth{d}',seed=seed,hist_sha256=sha256(np.asarray([(r.x,r.action,r.y) for r in h],dtype='<i2').tobytes()).hexdigest(),
           support_size=sum(structure_count(n,d0) for d0 in range(1,problem.max_depth+1)),
           truth=truth.to_dict(),truth_log_weight=problem.log_weight(truth,h),exact_log_normalizer=inside.logz,

@@ -68,7 +68,8 @@ class Inside:
                 z[ids]=logsumexp(local+sub[left]+sub[right],axis=1); self.z[size,d]=z
         per_depth=[self.z[n,d][top.full]+problem.log_depth_prior[d-1]-math.log(structure_count(n,d))
                    for d in range(1,self.depth+1)]
-        self.logz=float(logsumexp(per_depth)); self.depth_probs=softmax(per_depth)
+        self.logz=float(logsumexp(per_depth)); self.log_depth_probs=np.asarray(per_depth)-self.logz
+        self.depth_probs=softmax(per_depth)
 
     def predictive_matrix(self):
         """Exact mixture P(next leaf | current leaf, observed training history).
@@ -124,11 +125,16 @@ class Inside:
             return walk(s//2,d-1,int(l[i])),walk(s//2,d-1,int(r[i]))
         return [Structure(walk(self.top.n,1+rng.choice(self.depth,p=self.depth_probs),self.top.full)) for _ in range(count)]
 
-    def probability_via_branches(self,structure):
+    def log_probability_via_branches(self,structure):
+        from ..posterior.model import leaves
         def descend(tree,d):
-            if d==1: return 1.
-            from ..posterior.model import leaves
+            if d==1: return 0.
             group=leaves(tree); s=len(group); g=mask(group); target=mask(leaves(tree[0]))
-            cdf,l,_=self.branch_cdf(s,d,g); i=int(np.flatnonzero(l==target)[0])
-            return (cdf[i]-(cdf[i-1] if i else 0.))*descend(tree[0],d-1)*descend(tree[1],d-1)
-        return self.depth_probs[structure.depth-1]*descend(structure.tree,structure.depth)
+            j=self.top.id_to_row[s][g]; i=int(np.flatnonzero(self.top.left[s][j]==target)[0])
+            l=self.top.left[s][j,i]; r=self.top.right[s][j,i]; sub=self.z[s//2,d-1]
+            logsplit=self.local[s][j,i]+sub[l]+sub[r]-self.z[s,d][g]
+            return logsplit+descend(tree[0],d-1)+descend(tree[1],d-1)
+        return self.log_depth_probs[structure.depth-1]+descend(structure.tree,structure.depth)
+
+    def probability_via_branches(self,structure):
+        return float(np.exp(self.log_probability_via_branches(structure)))

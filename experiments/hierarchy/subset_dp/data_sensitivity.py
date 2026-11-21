@@ -12,7 +12,7 @@ def main():
     reference=json.loads(Path(__file__).with_name('results.json').read_text())
     for seed in range(3):
         truth=random_structure(16,2,seed+19); w=TemporalWorld(truth,seed+31)
-        for n in [0,128,512,2048,8192]:
+        for n in [0,128,512,2048,8192,16384]:
             h=w.sample(n,seed+101); posterior=Inside(top,problem,h); probs=posterior.depth_probs
             uniform=probs/np.exp(problem.log_depth_prior); uniform/=uniform.sum()
             mass=float(np.exp(problem.log_weight(truth,h)-posterior.logz))

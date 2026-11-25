@@ -1,0 +1,5135 @@
+{
+  "config": {
+    "mode": "scaled",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "budgets": [
+      200,
+      1000
+    ],
+    "batch_size": 64,
+    "cases": [
+      [
+        "sixteen_depth2",
+        16,
+        2,
+        false,
+        false,
+        512
+      ],
+      [
+        "sixteen_depth4",
+        16,
+        4,
+        false,
+        false,
+        512
+      ]
+    ],
+    "source_sha256": {
+      "__init__.py": "43a9de04401d3c4c11c8f6b2750585b932087296c4944e84c8786dceeef94318",
+      "baselines.py": "e5d2db585bd519cb73cce208ed6c3e077a4a1d9e6b065ff1fc1467c1ec347a2e",
+      "exact.py": "9261b7bfa8dda3ec953e60a141db28d23b8ef401ba3b344e375d74e1740ef01f",
+      "fsl_bridge.py": "2a9b9c785e4b3f53baa259af8d75d068e95b2f659dfe6d1f9272c369ae6304b6",
+      "grammar.py": "39adfc3f157b6f34ca2e36a3385ea2190d2455426546a7f9a44ae2455dc25eec",
+      "model.py": "e81a3d81766ba45070d98d2de775fb61a9f6188ab270434becd933293ecbbc3c",
+      "run_benchmark.py": "bf27a18318af1befabf65259b088676619fdad25b416d161d7c211ae225bf6b4",
+      "tb.py": "13d04923be334b1732607fb50c34e83fe4e481a0762e06592cb331739c79d480",
+      "test_posterior.py": "c6de21dbf0fa1d4df67857b6f66dfc0aee337a98fbd13038fbd79f90b9fcb608"
+    },
+    "python": "3.12.3",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "exact_used_for_training": false,
+    "generator": "recursive nested temporal transitions",
+    "prior": {
+      "alpha": 0.5,
+      "complexity_penalty": 0.02,
+      "node_penalty": 0.15,
+      "control_prior": 0.25
+    }
+  },
+  "rows": [
+    {
+      "case": "sixteen_depth2",
+      "seed": 0,
+      "truth": {
+        "tree": [
+          [
+            0,
+            4,
+            5,
+            6,
+            12,
+            13,
+            14,
+            15
+          ],
+          [
+            1,
+            2,
+            3,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -821.5708889599251,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.4449145507114136,
+      "method": "gflownet",
+      "budget": 200,
+      "seconds": 86.54589542932808,
+      "training": {
+        "seed": 201,
+        "steps": 200,
+        "batch_size": 64,
+        "trajectories": 12800,
+        "unique_reward_calls": 11570,
+        "seconds": 86.54589542932808,
+        "reward_seconds": 31.76919639389962,
+        "loss_curve": [
+          {
+            "step": 1,
+            "loss": 228.42919873944106
+          },
+          {
+            "step": 10,
+            "loss": 239.6926027642894
+          },
+          {
+            "step": 20,
+            "loss": 227.85085566904542
+          },
+          {
+            "step": 30,
+            "loss": 213.2706580838624
+          },
+          {
+            "step": 40,
+            "loss": 301.11659755420806
+          },
+          {
+            "step": 50,
+            "loss": 225.38218063303847
+          },
+          {
+            "step": 60,
+            "loss": 289.70709315498374
+          },
+          {
+            "step": 70,
+            "loss": 276.5348054244194
+          },
+          {
+            "step": 80,
+            "loss": 250.96863701683395
+          },
+          {
+            "step": 90,
+            "loss": 273.64526074918456
+          },
+          {
+            "step": 100,
+            "loss": 235.7507899826905
+          },
+          {
+            "step": 110,
+            "loss": 179.29611045222217
+          },
+          {
+            "step": 120,
+            "loss": 252.03927888795891
+          },
+          {
+            "step": 130,
+            "loss": 228.70246627766434
+          },
+          {
+            "step": 140,
+            "loss": 240.8396106838312
+          },
+          {
+            "step": 150,
+            "loss": 225.1261483171724
+          },
+          {
+            "step": 160,
+            "loss": 207.17846904806146
+          },
+          {
+            "step": 170,
+            "loss": 239.913665424692
+          },
+          {
+            "step": 180,
+            "loss": 161.45570194972834
+          },
+          {
+            "step": 190,
+            "loss": 218.52173151439047
+          },
+          {
+            "step": 200,
+            "loss": 191.12139837969104
+          }
+        ],
+        "epsilon": 0.15,
+        "hidden": 32,
+        "learning_rate": 0.003,
+        "parameter_count": 11205
+      },
+      "sample_seconds": 1.5359008274972439,
+      "draw_count": 256,
+      "mean_log_predictive": -1.5463497344835904,
+      "sum_log_predictive": -791.7310640555983,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action",
+      "sample_depth_probabilities": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.03515625,
+        "4": 0.96484375
+      },
+      "sample_truth_frequency": 0.0
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 0,
+      "truth": {
+        "tree": [
+          [
+            0,
+            4,
+            5,
+            6,
+            12,
+            13,
+            14,
+            15
+          ],
+          [
+            1,
+            2,
+            3,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -821.5708889599251,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.4449145507114136,
+      "method": "gflownet",
+      "budget": 1000,
+      "seconds": 390.5013249628246,
+      "training": {
+        "seed": 201,
+        "steps": 1000,
+        "batch_size": 64,
+        "trajectories": 64000,
+        "unique_reward_calls": 59414,
+        "seconds": 390.5013249628246,
+        "reward_seconds": 136.92651137709618,
+        "loss_curve": [
+          {
+            "step": 1,
+            "loss": 228.42919873944106
+          },
+          {
+            "step": 50,
+            "loss": 225.38218063303847
+          },
+          {
+            "step": 100,
+            "loss": 235.7507899826905
+          },
+          {
+            "step": 150,
+            "loss": 225.1261483171724
+          },
+          {
+            "step": 200,
+            "loss": 191.12139837969104
+          },
+          {
+            "step": 250,
+            "loss": 187.32985687477097
+          },
+          {
+            "step": 300,
+            "loss": 125.17186703316
+          },
+          {
+            "step": 350,
+            "loss": 112.90457701900752
+          },
+          {
+            "step": 400,
+            "loss": 149.98667704600834
+          },
+          {
+            "step": 450,
+            "loss": 106.26429375010906
+          },
+          {
+            "step": 500,
+            "loss": 108.70712564126576
+          },
+          {
+            "step": 550,
+            "loss": 155.47065580997162
+          },
+          {
+            "step": 600,
+            "loss": 111.0392820921888
+          },
+          {
+            "step": 650,
+            "loss": 57.94230609777104
+          },
+          {
+            "step": 700,
+            "loss": 85.36875438399338
+          },
+          {
+            "step": 750,
+            "loss": 98.90341363162503
+          },
+          {
+            "step": 800,
+            "loss": 105.87720880561571
+          },
+          {
+            "step": 850,
+            "loss": 90.81743905062137
+          },
+          {
+            "step": 900,
+            "loss": 61.01275602310511
+          },
+          {
+            "step": 950,
+            "loss": 61.04332898226302
+          },
+          {
+            "step": 1000,
+            "loss": 67.32523631697458
+          }
+        ],
+        "epsilon": 0.15,
+        "hidden": 32,
+        "learning_rate": 0.003,
+        "parameter_count": 11205
+      },
+      "sample_seconds": 0.6125041944906116,
+      "draw_count": 256,
+      "mean_log_predictive": -1.5442065868752364,
+      "sum_log_predictive": -790.633772480121,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action",
+      "sample_depth_probabilities": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0390625,
+        "4": 0.9609375
+      },
+      "sample_truth_frequency": 0.0
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 0,
+      "truth": {
+        "tree": [
+          [
+            0,
+            4,
+            5,
+            6,
+            12,
+            13,
+            14,
+            15
+          ],
+          [
+            1,
+            2,
+            3,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -821.5708889599251,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.4449145507114136,
+      "method": "prior_importance_particles",
+      "budget": 64,
+      "seconds": 0.08058802131563425,
+      "particles": 64,
+      "reward_calls": 63,
+      "ess": 2.091096027312574,
+      "proposal": "proper structure prior; self-normalized evidence weights",
+      "mean_log_predictive": -1.558927396627885,
+      "sum_log_predictive": -798.1708270734771,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 0,
+      "truth": {
+        "tree": [
+          [
+            0,
+            4,
+            5,
+            6,
+            12,
+            13,
+            14,
+            15
+          ],
+          [
+            1,
+            2,
+            3,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -821.5708889599251,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.4449145507114136,
+      "method": "prior_importance_particles",
+      "budget": 256,
+      "seconds": 0.3254978787153959,
+      "particles": 256,
+      "reward_calls": 249,
+      "ess": 2.8935795234295236,
+      "proposal": "proper structure prior; self-normalized evidence weights",
+      "mean_log_predictive": -1.5638040310141186,
+      "sum_log_predictive": -800.6676638792287,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 0,
+      "truth": {
+        "tree": [
+          [
+            0,
+            4,
+            5,
+            6,
+            12,
+            13,
+            14,
+            15
+          ],
+          [
+            1,
+            2,
+            3,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -821.5708889599251,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.4449145507114136,
+      "method": "greedy",
+      "budget": 256,
+      "seconds": 0.23591667134314775,
+      "attempts": 256,
+      "reward_calls": 164,
+      "accepted": 10,
+      "log_weight": -810.354496638549,
+      "chosen_structure": {
+        "tree": [
+          [
+            [
+              0,
+              4,
+              12,
+              15
+            ],
+            [
+              5,
+              6,
+              13,
+              14
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              11
+            ],
+            [
+              7,
+              8,
+              9,
+              10
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "mean_log_predictive": -1.5574793288573443,
+      "sum_log_predictive": -797.4294163749603,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 0,
+      "truth": {
+        "tree": [
+          [
+            0,
+            4,
+            5,
+            6,
+            12,
+            13,
+            14,
+            15
+          ],
+          [
+            1,
+            2,
+            3,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -821.5708889599251,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.4449145507114136,
+      "method": "upstream_fsl_projected",
+      "budget": null,
+      "seconds": 0.7838132586330175,
+      "native_seconds": 0.7775417240336537,
+      "native_levels": [
+        {
+          "groups_1based": {
+            "1": [
+              [
+                8,
+                10
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                2,
+                15
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                13,
+                12
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                3,
+                16
+              ],
+              [
+                9,
+                14
+              ]
+            ]
+          },
+          "descendant_leaf_groups": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              15
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              6,
+              10
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              8,
+              13
+            ],
+            [
+              11,
+              12
+            ]
+          ],
+          "factor_count": 8,
+          "id_A": [
+            4,
+            3,
+            7,
+            2,
+            4,
+            2,
+            6,
+            1,
+            8,
+            1,
+            6,
+            5,
+            5,
+            8,
+            3,
+            7
+          ],
+          "id_D": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "id_E": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "groups_1based": {
+            "1": []
+          },
+          "descendant_leaf_groups": [],
+          "factor_count": 0,
+          "id_A": [],
+          "id_D": [],
+          "id_E": []
+        }
+      ],
+      "native_descendant_clusters": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "projection_symmetric_difference": 6,
+      "projection_missing_clusters": [],
+      "projection_added_clusters": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          14,
+          15
+        ],
+        [
+          0,
+          1,
+          4,
+          14
+        ],
+        [
+          2,
+          3,
+          5,
+          15
+        ],
+        [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        [
+          6,
+          7,
+          9,
+          10
+        ],
+        [
+          8,
+          11,
+          12,
+          13
+        ]
+      ],
+      "projected_structure": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                14
+              ]
+            ],
+            [
+              [
+                2,
+                15
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                6,
+                10
+              ],
+              [
+                7,
+                9
+              ]
+            ],
+            [
+              [
+                8,
+                13
+              ],
+              [
+                11,
+                12
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "projection": "balanced greedy co-membership agglomeration; depth minimizes cluster symmetric difference, ties shallow",
+      "score_semantics": "projected grouping with benchmark collapsed heads; not native FSL likelihood",
+      "mean_log_predictive": -1.5793909963962125,
+      "sum_log_predictive": -808.6481901548608,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 1,
+      "truth": {
+        "tree": [
+          [
+            0,
+            2,
+            3,
+            4,
+            6,
+            9,
+            11,
+            12
+          ],
+          [
+            1,
+            5,
+            7,
+            8,
+            10,
+            13,
+            14,
+            15
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -730.2316365429934,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.2883648091869493,
+      "method": "gflownet",
+      "budget": 200,
+      "seconds": 69.8132689492777,
+      "training": {
+        "seed": 202,
+        "steps": 200,
+        "batch_size": 64,
+        "trajectories": 12800,
+        "unique_reward_calls": 11642,
+        "seconds": 69.8132689492777,
+        "reward_seconds": 24.510748891159892,
+        "loss_curve": [
+          {
+            "step": 1,
+            "loss": 340.37508934651703
+          },
+          {
+            "step": 10,
+            "loss": 430.99088133950636
+          },
+          {
+            "step": 20,
+            "loss": 475.8355078601463
+          },
+          {
+            "step": 30,
+            "loss": 480.88925269078663
+          },
+          {
+            "step": 40,
+            "loss": 444.5911692876426
+          },
+          {
+            "step": 50,
+            "loss": 362.8171180845947
+          },
+          {
+            "step": 60,
+            "loss": 429.4607916219296
+          },
+          {
+            "step": 70,
+            "loss": 450.2617954830055
+          },
+          {
+            "step": 80,
+            "loss": 477.9087875098431
+          },
+          {
+            "step": 90,
+            "loss": 393.29134085734114
+          },
+          {
+            "step": 100,
+            "loss": 432.4150095312773
+          },
+          {
+            "step": 110,
+            "loss": 398.59914877458186
+          },
+          {
+            "step": 120,
+            "loss": 326.77537079625904
+          },
+          {
+            "step": 130,
+            "loss": 399.5765810808087
+          },
+          {
+            "step": 140,
+            "loss": 360.5350527592837
+          },
+          {
+            "step": 150,
+            "loss": 381.0834954869898
+          },
+          {
+            "step": 160,
+            "loss": 377.4601577361552
+          },
+          {
+            "step": 170,
+            "loss": 324.17942074101165
+          },
+          {
+            "step": 180,
+            "loss": 293.9894724700445
+          },
+          {
+            "step": 190,
+            "loss": 302.63101912985826
+          },
+          {
+            "step": 200,
+            "loss": 264.3534490265007
+          }
+        ],
+        "epsilon": 0.15,
+        "hidden": 32,
+        "learning_rate": 0.003,
+        "parameter_count": 11205
+      },
+      "sample_seconds": 0.6204639403149486,
+      "draw_count": 256,
+      "mean_log_predictive": -1.4062642312722924,
+      "sum_log_predictive": -720.0072864114137,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action",
+      "sample_depth_probabilities": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0234375,
+        "4": 0.9765625
+      },
+      "sample_truth_frequency": 0.0
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 1,
+      "truth": {
+        "tree": [
+          [
+            0,
+            2,
+            3,
+            4,
+            6,
+            9,
+            11,
+            12
+          ],
+          [
+            1,
+            5,
+            7,
+            8,
+            10,
+            13,
+            14,
+            15
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -730.2316365429934,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.2883648091869493,
+      "method": "gflownet",
+      "budget": 1000,
+      "seconds": 391.6767208604142,
+      "training": {
+        "seed": 202,
+        "steps": 1000,
+        "batch_size": 64,
+        "trajectories": 64000,
+        "unique_reward_calls": 59615,
+        "seconds": 391.6767208604142,
+        "reward_seconds": 134.76208926923573,
+        "loss_curve": [
+          {
+            "step": 1,
+            "loss": 340.37508934651703
+          },
+          {
+            "step": 50,
+            "loss": 362.8171180845947
+          },
+          {
+            "step": 100,
+            "loss": 432.4150095312773
+          },
+          {
+            "step": 150,
+            "loss": 381.0834954869898
+          },
+          {
+            "step": 200,
+            "loss": 264.3534490265007
+          },
+          {
+            "step": 250,
+            "loss": 268.1579264035564
+          },
+          {
+            "step": 300,
+            "loss": 219.39396059565854
+          },
+          {
+            "step": 350,
+            "loss": 189.1980161446374
+          },
+          {
+            "step": 400,
+            "loss": 137.42084247559103
+          },
+          {
+            "step": 450,
+            "loss": 145.1797233192215
+          },
+          {
+            "step": 500,
+            "loss": 145.4526438395426
+          },
+          {
+            "step": 550,
+            "loss": 123.13366796179574
+          },
+          {
+            "step": 600,
+            "loss": 118.13638180659359
+          },
+          {
+            "step": 650,
+            "loss": 107.0375632979065
+          },
+          {
+            "step": 700,
+            "loss": 146.55581181937302
+          },
+          {
+            "step": 750,
+            "loss": 104.10327165297232
+          },
+          {
+            "step": 800,
+            "loss": 184.24500530645383
+          },
+          {
+            "step": 850,
+            "loss": 212.54705741687297
+          },
+          {
+            "step": 900,
+            "loss": 171.50684509997487
+          },
+          {
+            "step": 950,
+            "loss": 186.29191025195516
+          },
+          {
+            "step": 1000,
+            "loss": 174.1998624210596
+          }
+        ],
+        "epsilon": 0.15,
+        "hidden": 32,
+        "learning_rate": 0.003,
+        "parameter_count": 11205
+      },
+      "sample_seconds": 0.808322673663497,
+      "draw_count": 256,
+      "mean_log_predictive": -1.359500573691839,
+      "sum_log_predictive": -696.0642937302216,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action",
+      "sample_depth_probabilities": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.08203125,
+        "4": 0.91796875
+      },
+      "sample_truth_frequency": 0.0
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 1,
+      "truth": {
+        "tree": [
+          [
+            0,
+            2,
+            3,
+            4,
+            6,
+            9,
+            11,
+            12
+          ],
+          [
+            1,
+            5,
+            7,
+            8,
+            10,
+            13,
+            14,
+            15
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -730.2316365429934,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.2883648091869493,
+      "method": "prior_importance_particles",
+      "budget": 64,
+      "seconds": 0.34082943573594093,
+      "particles": 64,
+      "reward_calls": 61,
+      "ess": 1.136862914057634,
+      "proposal": "proper structure prior; self-normalized evidence weights",
+      "mean_log_predictive": -1.4468605193537436,
+      "sum_log_predictive": -740.7925859091167,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 1,
+      "truth": {
+        "tree": [
+          [
+            0,
+            2,
+            3,
+            4,
+            6,
+            9,
+            11,
+            12
+          ],
+          [
+            1,
+            5,
+            7,
+            8,
+            10,
+            13,
+            14,
+            15
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -730.2316365429934,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.2883648091869493,
+      "method": "prior_importance_particles",
+      "budget": 256,
+      "seconds": 0.33394528459757566,
+      "particles": 256,
+      "reward_calls": 248,
+      "ess": 1.0483445716279156,
+      "proposal": "proper structure prior; self-normalized evidence weights",
+      "mean_log_predictive": -1.4389598835687765,
+      "sum_log_predictive": -736.7474603872136,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 1,
+      "truth": {
+        "tree": [
+          [
+            0,
+            2,
+            3,
+            4,
+            6,
+            9,
+            11,
+            12
+          ],
+          [
+            1,
+            5,
+            7,
+            8,
+            10,
+            13,
+            14,
+            15
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -730.2316365429934,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.2883648091869493,
+      "method": "greedy",
+      "budget": 256,
+      "seconds": 0.31865180749446154,
+      "attempts": 256,
+      "reward_calls": 192,
+      "accepted": 17,
+      "log_weight": -718.7466978236305,
+      "chosen_structure": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                2
+              ],
+              [
+                4,
+                9
+              ]
+            ],
+            [
+              [
+                8,
+                13
+              ],
+              [
+                10,
+                14
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                7
+              ],
+              [
+                5,
+                15
+              ]
+            ],
+            [
+              [
+                3,
+                11
+              ],
+              [
+                6,
+                12
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "mean_log_predictive": -1.4195991656944813,
+      "sum_log_predictive": -726.8347728355744,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 1,
+      "truth": {
+        "tree": [
+          [
+            0,
+            2,
+            3,
+            4,
+            6,
+            9,
+            11,
+            12
+          ],
+          [
+            1,
+            5,
+            7,
+            8,
+            10,
+            13,
+            14,
+            15
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -730.2316365429934,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.2883648091869493,
+      "method": "upstream_fsl_projected",
+      "budget": null,
+      "seconds": 0.4360107211396098,
+      "native_seconds": 0.42913383338600397,
+      "native_levels": [
+        {
+          "groups_1based": {
+            "1": [
+              [
+                16,
+                6
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                15,
+                14
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                4,
+                13
+              ],
+              [
+                7,
+                3
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                12,
+                1
+              ]
+            ]
+          },
+          "descendant_leaf_groups": [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              12
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              5,
+              15
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              13,
+              14
+            ]
+          ],
+          "factor_count": 8,
+          "id_A": [
+            8,
+            4,
+            6,
+            5,
+            7,
+            1,
+            6,
+            4,
+            2,
+            7,
+            2,
+            8,
+            5,
+            3,
+            3,
+            1
+          ],
+          "id_D": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "id_E": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "groups_1based": {
+            "1": []
+          },
+          "descendant_leaf_groups": [],
+          "factor_count": 0,
+          "id_A": [],
+          "id_D": [],
+          "id_E": []
+        }
+      ],
+      "native_descendant_clusters": [
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          13,
+          14
+        ]
+      ],
+      "projection_symmetric_difference": 6,
+      "projection_missing_clusters": [],
+      "projection_added_clusters": [
+        [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          11,
+          12
+        ],
+        [
+          0,
+          1,
+          7,
+          11
+        ],
+        [
+          2,
+          3,
+          6,
+          12
+        ],
+        [
+          4,
+          5,
+          8,
+          9,
+          10,
+          13,
+          14,
+          15
+        ],
+        [
+          4,
+          5,
+          9,
+          15
+        ],
+        [
+          8,
+          10,
+          13,
+          14
+        ]
+      ],
+      "projected_structure": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                11
+              ],
+              [
+                1,
+                7
+              ]
+            ],
+            [
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                12
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                4,
+                9
+              ],
+              [
+                5,
+                15
+              ]
+            ],
+            [
+              [
+                8,
+                10
+              ],
+              [
+                13,
+                14
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "projection": "balanced greedy co-membership agglomeration; depth minimizes cluster symmetric difference, ties shallow",
+      "score_semantics": "projected grouping with benchmark collapsed heads; not native FSL likelihood",
+      "mean_log_predictive": -1.433249857767464,
+      "sum_log_predictive": -733.8239271769415,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 2,
+      "truth": {
+        "tree": [
+          [
+            0,
+            3,
+            5,
+            6,
+            7,
+            8,
+            10,
+            12
+          ],
+          [
+            1,
+            2,
+            4,
+            9,
+            11,
+            13,
+            14,
+            15
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -809.2132440288208,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.385266585507488,
+      "method": "gflownet",
+      "budget": 200,
+      "seconds": 68.76231056172401,
+      "training": {
+        "seed": 203,
+        "steps": 200,
+        "batch_size": 64,
+        "trajectories": 12800,
+        "unique_reward_calls": 11596,
+        "seconds": 68.76231056172401,
+        "reward_seconds": 26.397127106785774,
+        "loss_curve": [
+          {
+            "step": 1,
+            "loss": 154.74489987834355
+          },
+          {
+            "step": 10,
+            "loss": 136.1978340012278
+          },
+          {
+            "step": 20,
+            "loss": 156.32266683967825
+          },
+          {
+            "step": 30,
+            "loss": 151.1955348263795
+          },
+          {
+            "step": 40,
+            "loss": 158.6134587598027
+          },
+          {
+            "step": 50,
+            "loss": 122.20561174762025
+          },
+          {
+            "step": 60,
+            "loss": 110.38140317553814
+          },
+          {
+            "step": 70,
+            "loss": 151.14601679093857
+          },
+          {
+            "step": 80,
+            "loss": 171.86320005179607
+          },
+          {
+            "step": 90,
+            "loss": 147.11611504826652
+          },
+          {
+            "step": 100,
+            "loss": 174.39867650266427
+          },
+          {
+            "step": 110,
+            "loss": 122.14279752368017
+          },
+          {
+            "step": 120,
+            "loss": 163.22498034187277
+          },
+          {
+            "step": 130,
+            "loss": 132.30903645093144
+          },
+          {
+            "step": 140,
+            "loss": 104.54246426846467
+          },
+          {
+            "step": 150,
+            "loss": 133.24042388572713
+          },
+          {
+            "step": 160,
+            "loss": 116.04590585044443
+          },
+          {
+            "step": 170,
+            "loss": 132.89832708385035
+          },
+          {
+            "step": 180,
+            "loss": 133.32739413310554
+          },
+          {
+            "step": 190,
+            "loss": 140.99424514204622
+          },
+          {
+            "step": 200,
+            "loss": 211.00480894709574
+          }
+        ],
+        "epsilon": 0.15,
+        "hidden": 32,
+        "learning_rate": 0.003,
+        "parameter_count": 11205
+      },
+      "sample_seconds": 1.5488684233278036,
+      "draw_count": 256,
+      "mean_log_predictive": -1.460192025903153,
+      "sum_log_predictive": -747.6183172624143,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action",
+      "sample_depth_probabilities": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0234375,
+        "4": 0.9765625
+      },
+      "sample_truth_frequency": 0.0
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 2,
+      "truth": {
+        "tree": [
+          [
+            0,
+            3,
+            5,
+            6,
+            7,
+            8,
+            10,
+            12
+          ],
+          [
+            1,
+            2,
+            4,
+            9,
+            11,
+            13,
+            14,
+            15
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -809.2132440288208,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.385266585507488,
+      "method": "gflownet",
+      "budget": 1000,
+      "seconds": 419.0593882333487,
+      "training": {
+        "seed": 203,
+        "steps": 1000,
+        "batch_size": 64,
+        "trajectories": 64000,
+        "unique_reward_calls": 56108,
+        "seconds": 419.0593882333487,
+        "reward_seconds": 148.63760007545352,
+        "loss_curve": [
+          {
+            "step": 1,
+            "loss": 154.74489987834355
+          },
+          {
+            "step": 50,
+            "loss": 122.20561174762025
+          },
+          {
+            "step": 100,
+            "loss": 174.39867650266427
+          },
+          {
+            "step": 150,
+            "loss": 133.24042388572713
+          },
+          {
+            "step": 200,
+            "loss": 211.00480894709574
+          },
+          {
+            "step": 250,
+            "loss": 185.59831849108338
+          },
+          {
+            "step": 300,
+            "loss": 254.74640269824167
+          },
+          {
+            "step": 350,
+            "loss": 255.74545420021977
+          },
+          {
+            "step": 400,
+            "loss": 260.3151865024059
+          },
+          {
+            "step": 450,
+            "loss": 214.29645782428952
+          },
+          {
+            "step": 500,
+            "loss": 352.86445935715403
+          },
+          {
+            "step": 550,
+            "loss": 276.8881898931496
+          },
+          {
+            "step": 600,
+            "loss": 149.1149320690247
+          },
+          {
+            "step": 650,
+            "loss": 295.31609965034374
+          },
+          {
+            "step": 700,
+            "loss": 226.73645703594795
+          },
+          {
+            "step": 750,
+            "loss": 195.056719046013
+          },
+          {
+            "step": 800,
+            "loss": 219.7646516922345
+          },
+          {
+            "step": 850,
+            "loss": 202.3970838098292
+          },
+          {
+            "step": 900,
+            "loss": 106.8689127586348
+          },
+          {
+            "step": 950,
+            "loss": 197.43334371541047
+          },
+          {
+            "step": 1000,
+            "loss": 144.82872380694653
+          }
+        ],
+        "epsilon": 0.15,
+        "hidden": 32,
+        "learning_rate": 0.003,
+        "parameter_count": 11205
+      },
+      "sample_seconds": 0.5613062297925353,
+      "draw_count": 256,
+      "mean_log_predictive": -1.4308876848016134,
+      "sum_log_predictive": -732.6144946184261,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action",
+      "sample_depth_probabilities": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.140625,
+        "4": 0.859375
+      },
+      "sample_truth_frequency": 0.0
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 2,
+      "truth": {
+        "tree": [
+          [
+            0,
+            3,
+            5,
+            6,
+            7,
+            8,
+            10,
+            12
+          ],
+          [
+            1,
+            2,
+            4,
+            9,
+            11,
+            13,
+            14,
+            15
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -809.2132440288208,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.385266585507488,
+      "method": "prior_importance_particles",
+      "budget": 64,
+      "seconds": 0.16764015890657902,
+      "particles": 64,
+      "reward_calls": 62,
+      "ess": 2.0426144920297085,
+      "proposal": "proper structure prior; self-normalized evidence weights",
+      "mean_log_predictive": -1.4804375807492431,
+      "sum_log_predictive": -757.9840413436125,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 2,
+      "truth": {
+        "tree": [
+          [
+            0,
+            3,
+            5,
+            6,
+            7,
+            8,
+            10,
+            12
+          ],
+          [
+            1,
+            2,
+            4,
+            9,
+            11,
+            13,
+            14,
+            15
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -809.2132440288208,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.385266585507488,
+      "method": "prior_importance_particles",
+      "budget": 256,
+      "seconds": 2.53615799266845,
+      "particles": 256,
+      "reward_calls": 250,
+      "ess": 1.1284024855299721,
+      "proposal": "proper structure prior; self-normalized evidence weights",
+      "mean_log_predictive": -1.4734309023526506,
+      "sum_log_predictive": -754.3966220045571,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 2,
+      "truth": {
+        "tree": [
+          [
+            0,
+            3,
+            5,
+            6,
+            7,
+            8,
+            10,
+            12
+          ],
+          [
+            1,
+            2,
+            4,
+            9,
+            11,
+            13,
+            14,
+            15
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -809.2132440288208,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.385266585507488,
+      "method": "greedy",
+      "budget": 256,
+      "seconds": 0.789175565354526,
+      "attempts": 256,
+      "reward_calls": 174,
+      "accepted": 10,
+      "log_weight": -812.901187709863,
+      "chosen_structure": {
+        "tree": [
+          [
+            [
+              0,
+              1,
+              3,
+              11
+            ],
+            [
+              6,
+              8,
+              12,
+              13
+            ]
+          ],
+          [
+            [
+              2,
+              5,
+              7,
+              10
+            ],
+            [
+              4,
+              9,
+              14,
+              15
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "mean_log_predictive": -1.5329895711625228,
+      "sum_log_predictive": -784.8906604352117,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth2",
+      "seed": 2,
+      "truth": {
+        "tree": [
+          [
+            0,
+            3,
+            5,
+            6,
+            7,
+            8,
+            10,
+            12
+          ],
+          [
+            1,
+            2,
+            4,
+            9,
+            11,
+            13,
+            14,
+            15
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -809.2132440288208,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.385266585507488,
+      "method": "upstream_fsl_projected",
+      "budget": null,
+      "seconds": 0.6818529907613993,
+      "native_seconds": 0.6749223237857223,
+      "native_levels": [
+        {
+          "groups_1based": {
+            "1": [
+              [
+                3,
+                2
+              ],
+              [
+                14,
+                16
+              ],
+              [
+                7,
+                15
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                5,
+                12
+              ],
+              [
+                10,
+                1
+              ],
+              [
+                4,
+                13
+              ],
+              [
+                9,
+                8
+              ]
+            ]
+          },
+          "descendant_leaf_groups": [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              12
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              6,
+              14
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              13,
+              15
+            ]
+          ],
+          "factor_count": 8,
+          "id_A": [
+            6,
+            1,
+            1,
+            7,
+            5,
+            4,
+            3,
+            8,
+            8,
+            6,
+            4,
+            5,
+            7,
+            2,
+            3,
+            2
+          ],
+          "id_D": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "id_E": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "groups_1based": {
+            "1": []
+          },
+          "descendant_leaf_groups": [],
+          "factor_count": 0,
+          "id_A": [],
+          "id_D": [],
+          "id_E": []
+        }
+      ],
+      "native_descendant_clusters": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          13,
+          15
+        ]
+      ],
+      "projection_symmetric_difference": 6,
+      "projection_missing_clusters": [],
+      "projection_added_clusters": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          9,
+          11,
+          12
+        ],
+        [
+          0,
+          1,
+          2,
+          9
+        ],
+        [
+          3,
+          4,
+          11,
+          12
+        ],
+        [
+          5,
+          6,
+          7,
+          8,
+          10,
+          13,
+          14,
+          15
+        ],
+        [
+          5,
+          6,
+          10,
+          14
+        ],
+        [
+          7,
+          8,
+          13,
+          15
+        ]
+      ],
+      "projected_structure": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                9
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              [
+                3,
+                12
+              ],
+              [
+                4,
+                11
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                5,
+                10
+              ],
+              [
+                6,
+                14
+              ]
+            ],
+            [
+              [
+                7,
+                8
+              ],
+              [
+                13,
+                15
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "projection": "balanced greedy co-membership agglomeration; depth minimizes cluster symmetric difference, ties shallow",
+      "score_semantics": "projected grouping with benchmark collapsed heads; not native FSL likelihood",
+      "mean_log_predictive": -1.4946326561254137,
+      "sum_log_predictive": -765.2519199362118,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 0,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                12
+              ],
+              [
+                5,
+                15
+              ]
+            ],
+            [
+              [
+                4,
+                14
+              ],
+              [
+                6,
+                13
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                9
+              ],
+              [
+                2,
+                10
+              ]
+            ],
+            [
+              [
+                3,
+                8
+              ],
+              [
+                7,
+                11
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1195.720358186764,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -2.1504176104048702,
+      "method": "gflownet",
+      "budget": 200,
+      "seconds": 19.748993206769228,
+      "training": {
+        "seed": 201,
+        "steps": 200,
+        "batch_size": 64,
+        "trajectories": 12800,
+        "unique_reward_calls": 2206,
+        "seconds": 19.748993206769228,
+        "reward_seconds": 4.7649556109681726,
+        "loss_curve": [
+          {
+            "step": 1,
+            "loss": 3577.6325544624497
+          },
+          {
+            "step": 10,
+            "loss": 3819.4154151615994
+          },
+          {
+            "step": 20,
+            "loss": 2486.6946873957595
+          },
+          {
+            "step": 30,
+            "loss": 4126.195710144737
+          },
+          {
+            "step": 40,
+            "loss": 4994.51209595322
+          },
+          {
+            "step": 50,
+            "loss": 5885.866965688221
+          },
+          {
+            "step": 60,
+            "loss": 6781.18332880416
+          },
+          {
+            "step": 70,
+            "loss": 7365.676039032198
+          },
+          {
+            "step": 80,
+            "loss": 7331.984972213563
+          },
+          {
+            "step": 90,
+            "loss": 7655.328365314621
+          },
+          {
+            "step": 100,
+            "loss": 7491.9752458598205
+          },
+          {
+            "step": 110,
+            "loss": 7983.67821395636
+          },
+          {
+            "step": 120,
+            "loss": 7246.44642318876
+          },
+          {
+            "step": 130,
+            "loss": 6674.875456175994
+          },
+          {
+            "step": 140,
+            "loss": 6954.655756093927
+          },
+          {
+            "step": 150,
+            "loss": 8027.239457533322
+          },
+          {
+            "step": 160,
+            "loss": 7646.847566179313
+          },
+          {
+            "step": 170,
+            "loss": 7210.161349042197
+          },
+          {
+            "step": 180,
+            "loss": 7381.859151084452
+          },
+          {
+            "step": 190,
+            "loss": 7523.44461192993
+          },
+          {
+            "step": 200,
+            "loss": 8001.941518230151
+          }
+        ],
+        "epsilon": 0.15,
+        "hidden": 32,
+        "learning_rate": 0.003,
+        "parameter_count": 11205
+      },
+      "sample_seconds": 0.047585027292370796,
+      "draw_count": 256,
+      "mean_log_predictive": -2.2908822835210465,
+      "sum_log_predictive": -1172.9317291627758,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action",
+      "sample_depth_probabilities": {
+        "1": 0.921875,
+        "2": 0.07421875,
+        "3": 0.00390625,
+        "4": 0.0
+      },
+      "sample_truth_frequency": 0.0
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 0,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                12
+              ],
+              [
+                5,
+                15
+              ]
+            ],
+            [
+              [
+                4,
+                14
+              ],
+              [
+                6,
+                13
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                9
+              ],
+              [
+                2,
+                10
+              ]
+            ],
+            [
+              [
+                3,
+                8
+              ],
+              [
+                7,
+                11
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1195.720358186764,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -2.1504176104048702,
+      "method": "gflownet",
+      "budget": 1000,
+      "seconds": 71.78550777025521,
+      "training": {
+        "seed": 201,
+        "steps": 1000,
+        "batch_size": 64,
+        "trajectories": 64000,
+        "unique_reward_calls": 8100,
+        "seconds": 71.78550777025521,
+        "reward_seconds": 19.18200412672013,
+        "loss_curve": [
+          {
+            "step": 1,
+            "loss": 3577.6325544624497
+          },
+          {
+            "step": 50,
+            "loss": 5885.866965688221
+          },
+          {
+            "step": 100,
+            "loss": 7491.9752458598205
+          },
+          {
+            "step": 150,
+            "loss": 8027.239457533322
+          },
+          {
+            "step": 200,
+            "loss": 8001.941518230151
+          },
+          {
+            "step": 250,
+            "loss": 7060.59740125162
+          },
+          {
+            "step": 300,
+            "loss": 7131.892480334734
+          },
+          {
+            "step": 350,
+            "loss": 7303.779914774144
+          },
+          {
+            "step": 400,
+            "loss": 6215.413241686792
+          },
+          {
+            "step": 450,
+            "loss": 6174.24787879569
+          },
+          {
+            "step": 500,
+            "loss": 5843.729441439261
+          },
+          {
+            "step": 550,
+            "loss": 6072.477490714709
+          },
+          {
+            "step": 600,
+            "loss": 5294.146999495431
+          },
+          {
+            "step": 650,
+            "loss": 5565.446237545782
+          },
+          {
+            "step": 700,
+            "loss": 4810.727325812394
+          },
+          {
+            "step": 750,
+            "loss": 5496.254548880812
+          },
+          {
+            "step": 800,
+            "loss": 4307.012754904864
+          },
+          {
+            "step": 850,
+            "loss": 4617.881765279386
+          },
+          {
+            "step": 900,
+            "loss": 4325.789604514451
+          },
+          {
+            "step": 950,
+            "loss": 4016.652588219174
+          },
+          {
+            "step": 1000,
+            "loss": 4012.0476074711823
+          }
+        ],
+        "epsilon": 0.15,
+        "hidden": 32,
+        "learning_rate": 0.003,
+        "parameter_count": 11205
+      },
+      "sample_seconds": 0.12536304723471403,
+      "draw_count": 256,
+      "mean_log_predictive": -2.2742572170954625,
+      "sum_log_predictive": -1164.4196951528768,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action",
+      "sample_depth_probabilities": {
+        "1": 0.78515625,
+        "2": 0.109375,
+        "3": 0.05859375,
+        "4": 0.046875
+      },
+      "sample_truth_frequency": 0.0
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 0,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                12
+              ],
+              [
+                5,
+                15
+              ]
+            ],
+            [
+              [
+                4,
+                14
+              ],
+              [
+                6,
+                13
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                9
+              ],
+              [
+                2,
+                10
+              ]
+            ],
+            [
+              [
+                3,
+                8
+              ],
+              [
+                7,
+                11
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1195.720358186764,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -2.1504176104048702,
+      "method": "prior_importance_particles",
+      "budget": 64,
+      "seconds": 0.2063989108428359,
+      "particles": 64,
+      "reward_calls": 63,
+      "ess": 1.9999999999997797,
+      "proposal": "proper structure prior; self-normalized evidence weights",
+      "mean_log_predictive": -2.2948357552692773,
+      "sum_log_predictive": -1174.95590669787,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 0,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                12
+              ],
+              [
+                5,
+                15
+              ]
+            ],
+            [
+              [
+                4,
+                14
+              ],
+              [
+                6,
+                13
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                9
+              ],
+              [
+                2,
+                10
+              ]
+            ],
+            [
+              [
+                3,
+                8
+              ],
+              [
+                7,
+                11
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1195.720358186764,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -2.1504176104048702,
+      "method": "prior_importance_particles",
+      "budget": 256,
+      "seconds": 0.6092814523726702,
+      "particles": 256,
+      "reward_calls": 249,
+      "ess": 7.00000000000132,
+      "proposal": "proper structure prior; self-normalized evidence weights",
+      "mean_log_predictive": -2.29483575526938,
+      "sum_log_predictive": -1174.9559066979225,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 0,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                12
+              ],
+              [
+                5,
+                15
+              ]
+            ],
+            [
+              [
+                4,
+                14
+              ],
+              [
+                6,
+                13
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                9
+              ],
+              [
+                2,
+                10
+              ]
+            ],
+            [
+              [
+                3,
+                8
+              ],
+              [
+                7,
+                11
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1195.720358186764,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -2.1504176104048702,
+      "method": "greedy",
+      "budget": 256,
+      "seconds": 0.2316292505711317,
+      "attempts": 256,
+      "reward_calls": 122,
+      "accepted": 13,
+      "log_weight": -1284.0100829860166,
+      "chosen_structure": {
+        "tree": [
+          [
+            0,
+            3,
+            5,
+            7,
+            8,
+            11,
+            12,
+            15
+          ],
+          [
+            1,
+            2,
+            4,
+            6,
+            9,
+            10,
+            13,
+            14
+          ]
+        ],
+        "controlled": []
+      },
+      "mean_log_predictive": -2.291637150984654,
+      "sum_log_predictive": -1173.3182213041428,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 0,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                12
+              ],
+              [
+                5,
+                15
+              ]
+            ],
+            [
+              [
+                4,
+                14
+              ],
+              [
+                6,
+                13
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                9
+              ],
+              [
+                2,
+                10
+              ]
+            ],
+            [
+              [
+                3,
+                8
+              ],
+              [
+                7,
+                11
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1195.720358186764,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -2.1504176104048702,
+      "method": "upstream_fsl_projected",
+      "budget": null,
+      "seconds": 0.691865217871964,
+      "native_seconds": 0.6539048636332154,
+      "native_levels": [
+        {
+          "groups_1based": {
+            "1": [
+              [
+                2,
+                13
+              ],
+              [
+                10,
+                5
+              ],
+              [
+                4,
+                9
+              ],
+              [
+                16,
+                15
+              ],
+              [
+                12,
+                11
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                8,
+                14
+              ],
+              [
+                1,
+                7
+              ]
+            ]
+          },
+          "descendant_leaf_groups": [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              14,
+              15
+            ]
+          ],
+          "factor_count": 8,
+          "id_A": [
+            8,
+            1,
+            6,
+            3,
+            2,
+            6,
+            8,
+            7,
+            3,
+            2,
+            5,
+            5,
+            1,
+            7,
+            4,
+            4
+          ],
+          "id_D": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "id_E": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "groups_1based": {
+            "1": []
+          },
+          "descendant_leaf_groups": [],
+          "factor_count": 0,
+          "id_A": [],
+          "id_D": [],
+          "id_E": []
+        }
+      ],
+      "native_descendant_clusters": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          14,
+          15
+        ]
+      ],
+      "projection_symmetric_difference": 6,
+      "projection_missing_clusters": [],
+      "projection_added_clusters": [
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          12
+        ],
+        [
+          0,
+          1,
+          6,
+          12
+        ],
+        [
+          2,
+          3,
+          5,
+          8
+        ],
+        [
+          4,
+          7,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15
+        ],
+        [
+          4,
+          7,
+          9,
+          13
+        ],
+        [
+          10,
+          11,
+          14,
+          15
+        ]
+      ],
+      "projected_structure": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                6
+              ],
+              [
+                1,
+                12
+              ]
+            ],
+            [
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                4,
+                9
+              ],
+              [
+                7,
+                13
+              ]
+            ],
+            [
+              [
+                10,
+                11
+              ],
+              [
+                14,
+                15
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "projection": "balanced greedy co-membership agglomeration; depth minimizes cluster symmetric difference, ties shallow",
+      "score_semantics": "projected grouping with benchmark collapsed heads; not native FSL likelihood",
+      "mean_log_predictive": -2.6573053216852425,
+      "sum_log_predictive": -1360.5403247028441,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 1,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                12
+              ],
+              [
+                2,
+                6
+              ]
+            ],
+            [
+              [
+                3,
+                9
+              ],
+              [
+                4,
+                11
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                8
+              ],
+              [
+                10,
+                15
+              ]
+            ],
+            [
+              [
+                5,
+                13
+              ],
+              [
+                7,
+                14
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1149.4930578911617,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -2.149462388160888,
+      "method": "gflownet",
+      "budget": 200,
+      "seconds": 12.159512917511165,
+      "training": {
+        "seed": 202,
+        "steps": 200,
+        "batch_size": 64,
+        "trajectories": 12800,
+        "unique_reward_calls": 2349,
+        "seconds": 12.159512917511165,
+        "reward_seconds": 3.0609192037954926,
+        "loss_curve": [
+          {
+            "step": 1,
+            "loss": 6370.716929914014
+          },
+          {
+            "step": 10,
+            "loss": 6089.872326132472
+          },
+          {
+            "step": 20,
+            "loss": 5764.1514011839245
+          },
+          {
+            "step": 30,
+            "loss": 7381.661665869093
+          },
+          {
+            "step": 40,
+            "loss": 9646.681473935922
+          },
+          {
+            "step": 50,
+            "loss": 9434.740686173012
+          },
+          {
+            "step": 60,
+            "loss": 11622.685499184949
+          },
+          {
+            "step": 70,
+            "loss": 12698.722290364367
+          },
+          {
+            "step": 80,
+            "loss": 13256.921485652623
+          },
+          {
+            "step": 90,
+            "loss": 13313.222948147359
+          },
+          {
+            "step": 100,
+            "loss": 13522.977385049944
+          },
+          {
+            "step": 110,
+            "loss": 12134.388505426858
+          },
+          {
+            "step": 120,
+            "loss": 12879.904470358506
+          },
+          {
+            "step": 130,
+            "loss": 12905.109541287988
+          },
+          {
+            "step": 140,
+            "loss": 12547.659268466286
+          },
+          {
+            "step": 150,
+            "loss": 12864.3903215729
+          },
+          {
+            "step": 160,
+            "loss": 12894.595253212057
+          },
+          {
+            "step": 170,
+            "loss": 11989.92734230685
+          },
+          {
+            "step": 180,
+            "loss": 13448.226071113786
+          },
+          {
+            "step": 190,
+            "loss": 12695.350292962723
+          },
+          {
+            "step": 200,
+            "loss": 13021.119234235968
+          }
+        ],
+        "epsilon": 0.15,
+        "hidden": 32,
+        "learning_rate": 0.003,
+        "parameter_count": 11205
+      },
+      "sample_seconds": 0.013160989619791508,
+      "draw_count": 256,
+      "mean_log_predictive": -2.3175416668546585,
+      "sum_log_predictive": -1186.5813334295851,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action",
+      "sample_depth_probabilities": {
+        "1": 1.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "sample_truth_frequency": 0.0
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 1,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                12
+              ],
+              [
+                2,
+                6
+              ]
+            ],
+            [
+              [
+                3,
+                9
+              ],
+              [
+                4,
+                11
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                8
+              ],
+              [
+                10,
+                15
+              ]
+            ],
+            [
+              [
+                5,
+                13
+              ],
+              [
+                7,
+                14
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1149.4930578911617,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -2.149462388160888,
+      "method": "gflownet",
+      "budget": 1000,
+      "seconds": 54.657724471762776,
+      "training": {
+        "seed": 202,
+        "steps": 1000,
+        "batch_size": 64,
+        "trajectories": 64000,
+        "unique_reward_calls": 4014,
+        "seconds": 54.657724471762776,
+        "reward_seconds": 7.369477994740009,
+        "loss_curve": [
+          {
+            "step": 1,
+            "loss": 6370.716929914014
+          },
+          {
+            "step": 50,
+            "loss": 9434.740686173012
+          },
+          {
+            "step": 100,
+            "loss": 13522.977385049944
+          },
+          {
+            "step": 150,
+            "loss": 12864.3903215729
+          },
+          {
+            "step": 200,
+            "loss": 13021.119234235968
+          },
+          {
+            "step": 250,
+            "loss": 12238.550220904035
+          },
+          {
+            "step": 300,
+            "loss": 11693.283821995585
+          },
+          {
+            "step": 350,
+            "loss": 11562.239744450657
+          },
+          {
+            "step": 400,
+            "loss": 11188.58520100699
+          },
+          {
+            "step": 450,
+            "loss": 10285.18762861341
+          },
+          {
+            "step": 500,
+            "loss": 10495.29258825598
+          },
+          {
+            "step": 550,
+            "loss": 10349.868958307965
+          },
+          {
+            "step": 600,
+            "loss": 9757.99572080702
+          },
+          {
+            "step": 650,
+            "loss": 9016.233064435033
+          },
+          {
+            "step": 700,
+            "loss": 9037.621921679061
+          },
+          {
+            "step": 750,
+            "loss": 9089.7681631125
+          },
+          {
+            "step": 800,
+            "loss": 8797.556260212474
+          },
+          {
+            "step": 850,
+            "loss": 8763.345107701023
+          },
+          {
+            "step": 900,
+            "loss": 7585.190001875614
+          },
+          {
+            "step": 950,
+            "loss": 8177.730549651746
+          },
+          {
+            "step": 1000,
+            "loss": 7541.043146214593
+          }
+        ],
+        "epsilon": 0.15,
+        "hidden": 32,
+        "learning_rate": 0.003,
+        "parameter_count": 11205
+      },
+      "sample_seconds": 0.02528188470751047,
+      "draw_count": 256,
+      "mean_log_predictive": -2.3175416668546585,
+      "sum_log_predictive": -1186.5813334295851,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action",
+      "sample_depth_probabilities": {
+        "1": 1.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "sample_truth_frequency": 0.0
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 1,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                12
+              ],
+              [
+                2,
+                6
+              ]
+            ],
+            [
+              [
+                3,
+                9
+              ],
+              [
+                4,
+                11
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                8
+              ],
+              [
+                10,
+                15
+              ]
+            ],
+            [
+              [
+                5,
+                13
+              ],
+              [
+                7,
+                14
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1149.4930578911617,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -2.149462388160888,
+      "method": "prior_importance_particles",
+      "budget": 64,
+      "seconds": 0.12905355542898178,
+      "particles": 64,
+      "reward_calls": 61,
+      "ess": 3.9999999999991207,
+      "proposal": "proper structure prior; self-normalized evidence weights",
+      "mean_log_predictive": -2.3175416668545488,
+      "sum_log_predictive": -1186.581333429529,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 1,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                12
+              ],
+              [
+                2,
+                6
+              ]
+            ],
+            [
+              [
+                3,
+                9
+              ],
+              [
+                4,
+                11
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                8
+              ],
+              [
+                10,
+                15
+              ]
+            ],
+            [
+              [
+                5,
+                13
+              ],
+              [
+                7,
+                14
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1149.4930578911617,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -2.149462388160888,
+      "method": "prior_importance_particles",
+      "budget": 256,
+      "seconds": 0.42636703234165907,
+      "particles": 256,
+      "reward_calls": 248,
+      "ess": 9.000000000001961,
+      "proposal": "proper structure prior; self-normalized evidence weights",
+      "mean_log_predictive": -2.317541666854768,
+      "sum_log_predictive": -1186.5813334296413,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 1,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                12
+              ],
+              [
+                2,
+                6
+              ]
+            ],
+            [
+              [
+                3,
+                9
+              ],
+              [
+                4,
+                11
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                8
+              ],
+              [
+                10,
+                15
+              ]
+            ],
+            [
+              [
+                5,
+                13
+              ],
+              [
+                7,
+                14
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1149.4930578911617,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -2.149462388160888,
+      "method": "greedy",
+      "budget": 256,
+      "seconds": 0.0922384262084961,
+      "attempts": 256,
+      "reward_calls": 43,
+      "accepted": 3,
+      "log_weight": -1226.249256696613,
+      "chosen_structure": {
+        "tree": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "controlled": []
+      },
+      "mean_log_predictive": -2.3175416668546585,
+      "sum_log_predictive": -1186.5813334295851,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 1,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                12
+              ],
+              [
+                2,
+                6
+              ]
+            ],
+            [
+              [
+                3,
+                9
+              ],
+              [
+                4,
+                11
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                8
+              ],
+              [
+                10,
+                15
+              ]
+            ],
+            [
+              [
+                5,
+                13
+              ],
+              [
+                7,
+                14
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1149.4930578911617,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -2.149462388160888,
+      "method": "upstream_fsl_projected",
+      "budget": null,
+      "seconds": 0.3469615625217557,
+      "native_seconds": 0.3419525558128953,
+      "native_levels": [
+        {
+          "groups_1based": {
+            "1": [
+              [
+                6,
+                13
+              ],
+              [
+                3,
+                16
+              ],
+              [
+                8,
+                14
+              ],
+              [
+                7,
+                2
+              ],
+              [
+                15,
+                10
+              ],
+              [
+                9,
+                12
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          "descendant_leaf_groups": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              15
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              5,
+              12
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              9,
+              14
+            ]
+          ],
+          "factor_count": 8,
+          "id_A": [
+            8,
+            4,
+            2,
+            8,
+            7,
+            1,
+            4,
+            3,
+            6,
+            5,
+            7,
+            6,
+            1,
+            3,
+            5,
+            2
+          ],
+          "id_D": [
+            [],
+            [],
+            [],
+            [],
+            [
+              1
+            ],
+            [],
+            [],
+            []
+          ],
+          "id_E": [
+            [],
+            [],
+            [],
+            [],
+            [
+              2
+            ],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "groups_1based": {
+            "1": [
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "descendant_leaf_groups": [
+            [
+              9,
+              14
+            ]
+          ],
+          "factor_count": 1,
+          "id_A": [
+            1,
+            1
+          ],
+          "id_D": [
+            [
+              1
+            ]
+          ],
+          "id_E": [
+            [
+              2
+            ]
+          ]
+        }
+      ],
+      "native_descendant_clusters": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          14
+        ]
+      ],
+      "projection_symmetric_difference": 6,
+      "projection_missing_clusters": [],
+      "projection_added_clusters": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          10,
+          15
+        ],
+        [
+          0,
+          1,
+          3,
+          6
+        ],
+        [
+          2,
+          4,
+          10,
+          15
+        ],
+        [
+          5,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14
+        ],
+        [
+          5,
+          7,
+          12,
+          13
+        ],
+        [
+          8,
+          9,
+          11,
+          14
+        ]
+      ],
+      "projected_structure": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                6
+              ]
+            ],
+            [
+              [
+                2,
+                15
+              ],
+              [
+                4,
+                10
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                5,
+                12
+              ],
+              [
+                7,
+                13
+              ]
+            ],
+            [
+              [
+                8,
+                11
+              ],
+              [
+                9,
+                14
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "projection": "balanced greedy co-membership agglomeration; depth minimizes cluster symmetric difference, ties shallow",
+      "score_semantics": "projected grouping with benchmark collapsed heads; not native FSL likelihood",
+      "mean_log_predictive": -2.684137036579659,
+      "sum_log_predictive": -1374.2781627287854,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 2,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                10
+              ],
+              [
+                3,
+                6
+              ]
+            ],
+            [
+              [
+                5,
+                12
+              ],
+              [
+                7,
+                8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                14
+              ],
+              [
+                4,
+                13
+              ]
+            ],
+            [
+              [
+                2,
+                15
+              ],
+              [
+                9,
+                11
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1119.9569098996685,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.997747830918368,
+      "method": "gflownet",
+      "budget": 200,
+      "seconds": 13.022945538163185,
+      "training": {
+        "seed": 203,
+        "steps": 200,
+        "batch_size": 64,
+        "trajectories": 12800,
+        "unique_reward_calls": 2685,
+        "seconds": 13.022945538163185,
+        "reward_seconds": 3.9602329405024648,
+        "loss_curve": [
+          {
+            "step": 1,
+            "loss": 4513.247394840477
+          },
+          {
+            "step": 10,
+            "loss": 5541.883987075325
+          },
+          {
+            "step": 20,
+            "loss": 6631.388017527906
+          },
+          {
+            "step": 30,
+            "loss": 7413.595819799361
+          },
+          {
+            "step": 40,
+            "loss": 8546.501932387047
+          },
+          {
+            "step": 50,
+            "loss": 10921.093329236823
+          },
+          {
+            "step": 60,
+            "loss": 10560.731126111652
+          },
+          {
+            "step": 70,
+            "loss": 12693.405907703685
+          },
+          {
+            "step": 80,
+            "loss": 13090.161051755073
+          },
+          {
+            "step": 90,
+            "loss": 13340.79324868012
+          },
+          {
+            "step": 100,
+            "loss": 12832.034167287859
+          },
+          {
+            "step": 110,
+            "loss": 12089.283241338058
+          },
+          {
+            "step": 120,
+            "loss": 12570.317880847877
+          },
+          {
+            "step": 130,
+            "loss": 13694.409453716016
+          },
+          {
+            "step": 140,
+            "loss": 12321.700165061182
+          },
+          {
+            "step": 150,
+            "loss": 13649.641633939993
+          },
+          {
+            "step": 160,
+            "loss": 12986.18260966174
+          },
+          {
+            "step": 170,
+            "loss": 11902.034614956734
+          },
+          {
+            "step": 180,
+            "loss": 12247.857436939075
+          },
+          {
+            "step": 190,
+            "loss": 12108.677195986562
+          },
+          {
+            "step": 200,
+            "loss": 13007.746046181972
+          }
+        ],
+        "epsilon": 0.15,
+        "hidden": 32,
+        "learning_rate": 0.003,
+        "parameter_count": 11205
+      },
+      "sample_seconds": 0.026530379429459572,
+      "draw_count": 256,
+      "mean_log_predictive": -2.173586345748113,
+      "sum_log_predictive": -1112.8762090230339,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action",
+      "sample_depth_probabilities": {
+        "1": 0.9765625,
+        "2": 0.01953125,
+        "3": 0.0,
+        "4": 0.00390625
+      },
+      "sample_truth_frequency": 0.0
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 2,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                10
+              ],
+              [
+                3,
+                6
+              ]
+            ],
+            [
+              [
+                5,
+                12
+              ],
+              [
+                7,
+                8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                14
+              ],
+              [
+                4,
+                13
+              ]
+            ],
+            [
+              [
+                2,
+                15
+              ],
+              [
+                9,
+                11
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1119.9569098996685,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.997747830918368,
+      "method": "gflownet",
+      "budget": 1000,
+      "seconds": 71.80254363175482,
+      "training": {
+        "seed": 203,
+        "steps": 1000,
+        "batch_size": 64,
+        "trajectories": 64000,
+        "unique_reward_calls": 7303,
+        "seconds": 71.80254363175482,
+        "reward_seconds": 17.98180571384728,
+        "loss_curve": [
+          {
+            "step": 1,
+            "loss": 4513.247394840477
+          },
+          {
+            "step": 50,
+            "loss": 10921.093329236823
+          },
+          {
+            "step": 100,
+            "loss": 12832.034167287859
+          },
+          {
+            "step": 150,
+            "loss": 13649.641633939993
+          },
+          {
+            "step": 200,
+            "loss": 13007.746046181972
+          },
+          {
+            "step": 250,
+            "loss": 12039.355855528576
+          },
+          {
+            "step": 300,
+            "loss": 10776.627115022133
+          },
+          {
+            "step": 350,
+            "loss": 11242.999839280885
+          },
+          {
+            "step": 400,
+            "loss": 10542.285427762035
+          },
+          {
+            "step": 450,
+            "loss": 10924.514813196929
+          },
+          {
+            "step": 500,
+            "loss": 10629.982589899546
+          },
+          {
+            "step": 550,
+            "loss": 10630.89860319381
+          },
+          {
+            "step": 600,
+            "loss": 9246.000231173162
+          },
+          {
+            "step": 650,
+            "loss": 10079.566802291989
+          },
+          {
+            "step": 700,
+            "loss": 9098.397891003948
+          },
+          {
+            "step": 750,
+            "loss": 8318.530981357624
+          },
+          {
+            "step": 800,
+            "loss": 9516.453444529852
+          },
+          {
+            "step": 850,
+            "loss": 8672.516494354875
+          },
+          {
+            "step": 900,
+            "loss": 9101.84808707387
+          },
+          {
+            "step": 950,
+            "loss": 8815.804054691105
+          },
+          {
+            "step": 1000,
+            "loss": 8425.446045261273
+          }
+        ],
+        "epsilon": 0.15,
+        "hidden": 32,
+        "learning_rate": 0.003,
+        "parameter_count": 11205
+      },
+      "sample_seconds": 0.02898181788623333,
+      "draw_count": 256,
+      "mean_log_predictive": -2.16333876769343,
+      "sum_log_predictive": -1107.6294490590362,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action",
+      "sample_depth_probabilities": {
+        "1": 0.890625,
+        "2": 0.07421875,
+        "3": 0.03125,
+        "4": 0.00390625
+      },
+      "sample_truth_frequency": 0.0
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 2,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                10
+              ],
+              [
+                3,
+                6
+              ]
+            ],
+            [
+              [
+                5,
+                12
+              ],
+              [
+                7,
+                8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                14
+              ],
+              [
+                4,
+                13
+              ]
+            ],
+            [
+              [
+                2,
+                15
+              ],
+              [
+                9,
+                11
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1119.9569098996685,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.997747830918368,
+      "method": "prior_importance_particles",
+      "budget": 64,
+      "seconds": 0.1105426037684083,
+      "particles": 64,
+      "reward_calls": 62,
+      "ess": 3.000000000000327,
+      "proposal": "proper structure prior; self-normalized evidence weights",
+      "mean_log_predictive": -2.175368319305628,
+      "sum_log_predictive": -1113.7885794844815,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 2,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                10
+              ],
+              [
+                3,
+                6
+              ]
+            ],
+            [
+              [
+                5,
+                12
+              ],
+              [
+                7,
+                8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                14
+              ],
+              [
+                4,
+                13
+              ]
+            ],
+            [
+              [
+                2,
+                15
+              ],
+              [
+                9,
+                11
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1119.9569098996685,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.997747830918368,
+      "method": "prior_importance_particles",
+      "budget": 256,
+      "seconds": 0.2850475152954459,
+      "particles": 256,
+      "reward_calls": 250,
+      "ess": 7.000000000255978,
+      "proposal": "proper structure prior; self-normalized evidence weights",
+      "mean_log_predictive": -2.175368319303449,
+      "sum_log_predictive": -1113.788579483366,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 2,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                10
+              ],
+              [
+                3,
+                6
+              ]
+            ],
+            [
+              [
+                5,
+                12
+              ],
+              [
+                7,
+                8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                14
+              ],
+              [
+                4,
+                13
+              ]
+            ],
+            [
+              [
+                2,
+                15
+              ],
+              [
+                9,
+                11
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1119.9569098996685,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.997747830918368,
+      "method": "greedy",
+      "budget": 256,
+      "seconds": 0.23133776802569628,
+      "attempts": 256,
+      "reward_calls": 179,
+      "accepted": 9,
+      "log_weight": -1223.7230577506068,
+      "chosen_structure": {
+        "tree": [
+          [
+            [
+              0,
+              6,
+              7,
+              10
+            ],
+            [
+              3,
+              4,
+              13,
+              14
+            ]
+          ],
+          [
+            [
+              1,
+              5,
+              8,
+              12
+            ],
+            [
+              2,
+              9,
+              11,
+              15
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "mean_log_predictive": -2.250842459215387,
+      "sum_log_predictive": -1152.4313391182782,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    },
+    {
+      "case": "sixteen_depth4",
+      "seed": 2,
+      "truth": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                10
+              ],
+              [
+                3,
+                6
+              ]
+            ],
+            [
+              [
+                5,
+                12
+              ],
+              [
+                7,
+                8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1,
+                14
+              ],
+              [
+                4,
+                13
+              ]
+            ],
+            [
+              [
+                2,
+                15
+              ],
+              [
+                9,
+                11
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "iid": false,
+      "n_leaves": 16,
+      "training_records": 512,
+      "truth_log_weight": -1119.9569098996685,
+      "support_size": 646402186,
+      "oracle_mean_log_predictive": -1.997747830918368,
+      "method": "upstream_fsl_projected",
+      "budget": null,
+      "seconds": 1.446632751263678,
+      "native_seconds": 1.431069071404636,
+      "native_levels": [
+        {
+          "groups_1based": {
+            "1": [
+              [
+                3,
+                5
+              ],
+              [
+                10,
+                12
+              ],
+              [
+                14,
+                2
+              ],
+              [
+                11,
+                13
+              ],
+              [
+                1,
+                9
+              ],
+              [
+                15,
+                7
+              ],
+              [
+                8,
+                16
+              ],
+              [
+                6,
+                4
+              ]
+            ]
+          },
+          "descendant_leaf_groups": [
+            [
+              0,
+              8
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              6,
+              14
+            ],
+            [
+              7,
+              15
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              10,
+              12
+            ]
+          ],
+          "factor_count": 8,
+          "id_A": [
+            5,
+            3,
+            1,
+            8,
+            1,
+            8,
+            6,
+            7,
+            5,
+            2,
+            4,
+            2,
+            4,
+            3,
+            6,
+            7
+          ],
+          "id_D": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "id_E": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "groups_1based": {
+            "1": []
+          },
+          "descendant_leaf_groups": [],
+          "factor_count": 0,
+          "id_A": [],
+          "id_D": [],
+          "id_E": []
+        }
+      ],
+      "native_descendant_clusters": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          15
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          12
+        ]
+      ],
+      "projection_symmetric_difference": 6,
+      "projection_missing_clusters": [],
+      "projection_added_clusters": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          13
+        ],
+        [
+          0,
+          1,
+          8,
+          13
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15
+        ],
+        [
+          6,
+          7,
+          14,
+          15
+        ],
+        [
+          9,
+          10,
+          11,
+          12
+        ]
+      ],
+      "projected_structure": {
+        "tree": [
+          [
+            [
+              [
+                0,
+                8
+              ],
+              [
+                1,
+                13
+              ]
+            ],
+            [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                6,
+                14
+              ],
+              [
+                7,
+                15
+              ]
+            ],
+            [
+              [
+                9,
+                11
+              ],
+              [
+                10,
+                12
+              ]
+            ]
+          ]
+        ],
+        "controlled": []
+      },
+      "projection": "balanced greedy co-membership agglomeration; depth minimizes cluster symmetric difference, ties shallow",
+      "score_semantics": "projected grouping with benchmark collapsed heads; not native FSL likelihood",
+      "mean_log_predictive": -2.4033463579406424,
+      "sum_log_predictive": -1230.513335265609,
+      "n_heldout": 512,
+      "protocol": "parameters and structure weights frozen at training data; condition on each held-out x/action"
+    }
+  ]
+}
